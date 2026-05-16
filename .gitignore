@@ -1,3 +1,6 @@
 huashu-design/
 FrontEndDesignSKILL.md
 SETUP.md
+.env
+.DS_Store
+.claude/

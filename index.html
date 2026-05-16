@@ -9,6 +9,7 @@
 <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="fantrax_data.js"></script>
 <style>
 :root {
   --bg:        #0D0820;
@@ -212,6 +213,76 @@ footer{border-top:1px solid var(--border);padding:2.5rem 0}
 .flex-between{display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
 @media(max-width:700px){.two-col{grid-template-columns:1fr}.h2h-selectors{grid-template-columns:1fr}.h2h-vs{display:none}.nav-links{display:none}.season-hero{grid-template-columns:1fr}.career-grid{grid-template-columns:1fr 1fr}}
+
+/* ── FANTRAX LIVE DATA SECTIONS ─────────────────────────────────────────── */
+
+/* Division badge */
+.div-badge{display:inline-block;font-family:'Barlow Semi Condensed',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:4px;margin-right:7px;flex-shrink:0}
+.div-badge.d1{background:rgba(0,112,60,.18);color:var(--green-l)}
+.div-badge.d2{background:rgba(127,73,117,.22);color:var(--purple-l)}
+.div-badge.d3{background:rgba(75,108,183,.22);color:#7A9EF5}
+
+/* Streak badge */
+.streak-w{color:var(--green-l);font-weight:600}
+.streak-l{color:#E55;font-weight:500}
+.streak-d{color:var(--muted);font-weight:500}
+
+/* Filter tabs (reused across sections) */
+.ftabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.5rem}
+.ftab{font-family:'Barlow Semi Condensed',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.05em;padding:6px 16px;border-radius:100px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s}
+.ftab:hover{border-color:var(--purple-l);color:var(--text)}
+.ftab.on{background:var(--green);border-color:var(--green);color:#fff}
+
+/* Search input */
+.search-wrap{position:relative;margin-bottom:1.25rem}
+.search-wrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 14px 10px 38px;color:var(--text);font-size:.88rem;font-family:'Barlow',sans-serif;outline:none;transition:border-color .2s}
+.search-input::placeholder{color:var(--dim)}
+.search-input:focus{border-color:var(--purple-l)}
+
+/* Roster pos group label */
+.pos-group-hd{font-family:'Barlow Semi Condensed',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green);padding:10px 14px 6px;border-bottom:1px solid var(--border);background:var(--surface)}
+
+/* Status badges for roster */
+.status-act{color:var(--green-l);font-weight:600;font-size:.78rem}
+.status-res{color:var(--muted);font-size:.78rem}
+.status-ir{color:#E55;font-size:.78rem}
+
+/* Avail badge for player pool */
+.avail-fa{color:var(--green-l);font-size:.75rem;font-weight:600}
+.avail-w{color:#F5A623;font-size:.75rem;font-weight:600}
+
+/* Move type badges */
+.move-badge{display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px}
+.move-claim{background:rgba(0,112,60,.2);color:var(--green-l)}
+.move-drop{background:rgba(229,85,85,.15);color:#E55}
+.move-trade{background:rgba(127,73,117,.22);color:var(--purple-l)}
+.move-waiver{background:rgba(245,166,35,.15);color:#F5A623}
+
+/* Moves two-up leaderboards */
+.moves-leaders{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:2rem}
+.leader-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.leader-hd{font-family:'Barlow Semi Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface2)}
+.leader-row{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,.04);font-size:.82rem}
+.leader-row:last-child{border-bottom:none}
+.leader-pos{font-family:'Barlow Semi Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.1em;color:var(--dim);min-width:28px}
+.leader-cnt{font-family:'Barlow Semi Condensed',sans-serif;font-weight:800;color:var(--green-l)}
+
+/* Trade event cards */
+.trade-events{display:flex;flex-direction:column;gap:12px;margin-top:1.5rem}
+.trade-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.trade-card-hd{display:flex;align-items:center;gap:10px;padding:8px 14px;background:var(--surface2);border-bottom:1px solid var(--border);font-family:'Barlow Semi Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.trade-team-row{display:flex;align-items:flex-start;gap:10px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,.04)}
+.trade-team-row:last-child{border-bottom:none}
+.trade-recv{font-family:'Barlow Semi Condensed',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);padding-top:3px;min-width:48px}
+.trade-players{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.trade-player-tag{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;background:rgba(127,73,117,.12);border:1px solid var(--border);border-radius:6px;padding:2px 8px}
+.trade-player-tag .tp-pos{font-family:'Barlow Semi Condensed',sans-serif;font-size:.65rem;font-weight:700;color:var(--dim)}
+
+/* Export date label */
+.export-date{font-size:.72rem;color:var(--dim);margin-top:.5rem}
+
+@media(max-width:700px){.moves-leaders{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -481,7 +552,7 @@ function useActiveSection(ids){
 // ─── COMPONENTS ─────────────────────────────────────────────────────────────
 
 function StickyNav({active}){
-  const links=[['champions','Champions'],['seasons','Seasons'],['records','Records'],['h2h','H2H'],['managers','Managers']];
+  const links=[['champions','Champions'],['seasons','Seasons'],['standings','Standings'],['moves','Moves'],['records','Records'],['h2h','H2H'],['managers','Managers']];
   return(
     <nav className="nav">
       <a className="nav-brand" href="#hero">
@@ -674,7 +745,7 @@ function SeasonResults(){
         <div className="reveal" style={{opacity:inView?1:0,transform:inView?'none':'translateY(24px)',transition:'opacity .6s,transform .6s'}}>
           <div className="s-label">Season by Season</div>
           <h2 className="s-title">Season Results</h2>
-          <p className="s-sub">Select a season to explore final standings, the playoff bracket, and key stats.</p>
+          <p className="s-sub">Select a season to explore final standings and key stats.</p>
         </div>
         <div className="pills">
           {SEASONS.map(y=>(
@@ -698,14 +769,13 @@ function SeasonResults(){
             <table className="dt">
               <thead>
                 <tr>
-                  <th>Fin</th><th>Manager</th><th>W</th><th>L</th>
-                  <th>PF</th><th>PA</th><th>Diff</th><th>Playoffs</th>
+                  <th>Rk</th><th>Team</th><th>W</th><th>D</th><th>L</th>
+                  <th>Pts</th><th>FPts For</th><th>FPts Ag</th>
                 </tr>
               </thead>
               <tbody>
                 {standings.map(row=>{
                   const m=mgr(row.managerId);
-                  const diff=row.pf-row.pa;
                   return(
                     <tr key={row.managerId}>
                       <td><span className={`rank-num${row.rank===1?' gold':row.rank===2?' silver':row.rank===3?' bronze':''}`}>{row.rank}</span></td>
@@ -719,50 +789,16 @@ function SeasonResults(){
                         </div>
                       </td>
                       <td className="num-green">{row.w}</td>
-                      <td style={{color:'var(--muted)'}}>{row.l}</td>
-                      <td>{row.pf.toFixed(1)}</td>
+                      <td style={{color:'var(--muted)'}}>—</td>
+                      <td style={{color:'var(--dim)'}}>{row.l}</td>
+                      <td style={{fontFamily:'Barlow Semi Condensed,sans-serif',fontWeight:800}}>{3*row.w}</td>
+                      <td className="num-green">{row.pf.toFixed(1)}</td>
                       <td style={{color:'var(--muted)'}}>{row.pa.toFixed(1)}</td>
-                      <td className={diff>=0?'num-green':'num-red'}>{diff>=0?'+':''}{diff.toFixed(1)}</td>
-                      <td>{row.playoffs?<span style={{color:'var(--green-l)',fontSize:'.75rem',fontWeight:700}}>✓ Playoffs</span>:<span style={{color:'var(--dim)',fontSize:'.75rem'}}>—</span>}</td>
                     </tr>
                   );
                 })}
               </tbody>
             </table>
-          </div>
-          <div className="s-label" style={{marginBottom:'.75rem'}}>Playoff Bracket</div>
-          <div className="bracket">
-            <div className="b-round">
-              <div className="b-lbl">Semifinals</div>
-              {play.semis.map((m,i)=>{
-                const w=m.home.score>m.away.score?m.home.id:m.away.id;
-                const homeM=mgr(m.home.id),awayM=mgr(m.away.id);
-                return(
-                  <div className="b-match" key={i}>
-                    <div className={`b-team${m.home.id===w?' w':' l'}`}>
-                      <span>{homeM.name}</span><span className="b-score">{m.home.score}</span>
-                    </div>
-                    <div className={`b-team${m.away.id===w?' w':' l'}`}>
-                      <span>{awayM.name}</span><span className="b-score">{m.away.score}</span>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="b-round">
-              <div className="b-lbl">Championship</div>
-              <div className="b-match">
-                {[play.final.home,play.final.away].map((t,i)=>{
-                  const w=play.final.home.score>play.final.away.score?play.final.home.id:play.final.away.id;
-                  const tm=mgr(t.id);
-                  return(
-                    <div key={i} className={`b-team${t.id===w?' w':' l'}`}>
-                      <span>{tm.name}{t.id===w&&' 🏆'}</span><span className="b-score">{t.score}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1073,10 +1109,551 @@ function Footer(){
   );
 }
 
+// ─── LIVE DATA HELPERS ───────────────────────────────────────────────────────
+
+function divClass(div){return div===1?'d1':div===2?'d2':div===3?'d3':''}
+
+function DivBadge({div}){
+  if(!div)return null;
+  return <span className={`div-badge ${divClass(div)}`}>D{div}</span>;
+}
+
+function streakClass(streak){
+  if(!streak)return '';
+  const s=streak.toUpperCase();
+  if(s.includes('(W)'))return 'streak-w';
+  if(s.includes('(L)'))return 'streak-l';
+  return 'streak-d';
+}
+
+// ─── LIVE STANDINGS ──────────────────────────────────────────────────────────
+
+function LiveStandings(){
+  const [div,setDiv]=React.useState(0);
+  const [sortCol,setSortCol]=React.useState('rk');
+  const [sortDir,setSortDir]=React.useState('asc');
+
+  const data=(typeof FANTRAX_STANDINGS!=='undefined')?FANTRAX_STANDINGS:[];
+
+  const filtered=div===0?data:data.filter(r=>r.div===div);
+  const sorted=[...filtered].sort((a,b)=>{
+    const av=a[sortCol],bv=b[sortCol];
+    const v=av>bv?1:av<bv?-1:0;
+    return sortDir==='asc'?v:-v;
+  });
+
+  const handleSort=col=>{
+    if(col===sortCol)setSortDir(d=>d==='asc'?'desc':'asc');
+    else{setSortCol(col);setSortDir(col==='rk'||col==='w'||col==='pts'?'asc':'desc')}
+  };
+  const thCls=col=>sortCol===col?(sortDir==='asc'?'sort-up':'sort-dn'):'';
+
+  return(
+    <section id="standings">
+      <div className="container">
+        <div className="s-label">Live Data · GW37</div>
+        <h2 className="s-title">Current Standings</h2>
+        <p className="s-sub">Full league table — all three divisions.</p>
+        <p className="export-date">Exported {FANTRAX_EXPORT_DATE}</p>
+
+        <div className="ftabs" style={{marginTop:'1.25rem'}}>
+          {[[0,'All'],[1,'Division 1'],[2,'Division 2'],[3,'Division 3']].map(([v,l])=>(
+            <button key={v} className={`ftab${div===v?' on':''}`} onClick={()=>setDiv(v)}>{l}</button>
+          ))}
+        </div>
+
+        <div className="table-wrap">
+          <table className="dt">
+            <thead>
+              <tr>
+                <th onClick={()=>handleSort('rk')} className={thCls('rk')}>Rk</th>
+                <th>Team</th>
+                <th onClick={()=>handleSort('w')} className={thCls('w')}>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th onClick={()=>handleSort('pts')} className={thCls('pts')}>Pts</th>
+                <th onClick={()=>handleSort('fptsF')} className={thCls('fptsF')}>FPts For</th>
+                <th onClick={()=>handleSort('fptsA')} className={thCls('fptsA')}>FPts Ag</th>
+                <th>Streak</th>
+              </tr>
+            </thead>
+            <tbody>
+              {sorted.map(r=>(
+                <tr key={r.team}>
+                  <td><span className={`rank-num${r.rk===1?' gold':r.rk===2?' silver':r.rk===3?' bronze':''}`}>{r.rk}</span></td>
+                  <td>
+                    <span className="m-cell">
+                      <DivBadge div={r.div}/>
+                      <span>{r.name}</span>
+                    </span>
+                  </td>
+                  <td className="num-green">{r.w}</td>
+                  <td style={{color:'var(--muted)'}}>{r.d}</td>
+                  <td style={{color:'var(--dim)'}}>{r.l}</td>
+                  <td style={{fontFamily:'Barlow Semi Condensed,sans-serif',fontWeight:800}}>{r.pts}</td>
+                  <td className="num-green">{r.fptsF.toFixed(1)}</td>
+                  <td style={{color:'var(--muted)'}}>{r.fptsA.toFixed(1)}</td>
+                  <td className={streakClass(r.streak)}>{r.streak}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── MY ROSTER ───────────────────────────────────────────────────────────────
+
+function MyRoster(){
+  const [tab,setTab]=React.useState('active');
+  const all=(typeof FANTRAX_ROSTER!=='undefined')?FANTRAX_ROSTER:[];
+
+  const byStatus=tab==='active'
+    ?all.filter(p=>p.status==='Act')
+    :all.filter(p=>p.status==='Res'||p.status==='IR');
+
+  const posOrder=['G','D','M','F'];
+  const grouped=posOrder.reduce((acc,pos)=>{
+    const g=byStatus.filter(p=>p.pos===pos);
+    if(g.length)acc.push({pos,players:g});
+    return acc;
+  },[]);
+
+  const statusEl=s=>{
+    if(s==='Act')return <span className="status-act">Active</span>;
+    if(s==='Res')return <span className="status-res">Reserve</span>;
+    if(s==='IR')return <span className="status-ir">IR</span>;
+    return <span>{s}</span>;
+  };
+  const posLabel={'G':'GK','D':'DEF','M':'MID','F':'FWD'};
+
+  return(
+    <section id="roster">
+      <div className="container">
+        <div className="s-label">My Team</div>
+        <h2 className="s-title">Current Roster</h2>
+        <p className="s-sub">Active squad and reserves.</p>
+
+        <div className="ftabs">
+          <button className={`ftab${tab==='active'?' on':''}`} onClick={()=>setTab('active')}>Active</button>
+          <button className={`ftab${tab==='bench'?' on':''}`} onClick={()=>setTab('bench')}>Reserve / IR</button>
+        </div>
+
+        <div className="table-wrap">
+          <table className="dt" style={{tableLayout:'fixed'}}>
+            <thead>
+              <tr>
+                <th style={{width:'30%'}}>Player</th>
+                <th style={{width:'8%'}}>Pos</th>
+                <th style={{width:'8%'}}>Team</th>
+                <th style={{width:'10%'}}>Status</th>
+                <th style={{width:'22%'}}>Next Match</th>
+                <th style={{width:'10%'}}>FPts</th>
+                <th style={{width:'8%'}}>FP/G</th>
+                <th style={{width:'4%'}}>GP</th>
+              </tr>
+            </thead>
+            <tbody>
+              {grouped.map(({pos,players})=>(
+                <React.Fragment key={pos}>
+                  <tr><td colSpan={8} className="pos-group-hd">{posLabel[pos]||pos}</td></tr>
+                  {players.map(p=>(
+                    <tr key={p.player}>
+                      <td style={{fontWeight:600}}>{p.player}</td>
+                      <td style={{color:'var(--muted)',fontSize:'.78rem'}}>{p.pos}</td>
+                      <td style={{color:'var(--muted)',fontSize:'.78rem'}}>{p.team}</td>
+                      <td>{statusEl(p.status)}</td>
+                      <td style={{fontSize:'.78rem',color:'var(--muted)'}}>{p.opponent||'—'}</td>
+                      <td className="num-green">{p.fpts.toFixed(2)}</td>
+                      <td>{p.fpg.toFixed(2)}</td>
+                      <td style={{color:'var(--dim)'}}>{p.gp}</td>
+                    </tr>
+                  ))}
+                </React.Fragment>
+              ))}
+              {grouped.length===0&&(
+                <tr><td colSpan={8} style={{textAlign:'center',color:'var(--dim)',padding:'2rem'}}>No players in this group.</td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── PLAYER POOL ─────────────────────────────────────────────────────────────
+
+function PlayerPool(){
+  const [pos,setPos]=React.useState('All');
+  const [avail,setAvail]=React.useState('All');
+  const [query,setQuery]=React.useState('');
+  const [sortCol,setSortCol]=React.useState('fpts');
+  const [sortDir,setSortDir]=React.useState('desc');
+
+  const data=(typeof FANTRAX_ALL_PLAYERS!=='undefined'&&FANTRAX_ALL_PLAYERS.length)?FANTRAX_ALL_PLAYERS:(typeof FANTRAX_PLAYERS!=='undefined')?FANTRAX_PLAYERS:[];
+
+  const filtered=data.filter(p=>{
+    if(pos!=='All'&&p.pos!==pos)return false;
+    if(avail!=='All'&&!p.status.startsWith(avail))return false;
+    if(query&&!p.player.toLowerCase().includes(query.toLowerCase()))return false;
+    return true;
+  });
+
+  const sorted=[...filtered].sort((a,b)=>{
+    const av=a[sortCol],bv=b[sortCol];
+    const v=av>bv?1:av<bv?-1:0;
+    return sortDir==='asc'?v:-v;
+  });
+
+  const handleSort=col=>{
+    if(col===sortCol)setSortDir(d=>d==='asc'?'desc':'asc');
+    else{setSortCol(col);setSortDir('desc')}
+  };
+  const thCls=col=>sortCol===col?(sortDir==='asc'?'sort-up':'sort-dn'):'';
+
+  const availEl=s=>{
+    if(s==='FA')return <span className="avail-fa">FA</span>;
+    if(s.startsWith('W'))return <span className="avail-w">W</span>;
+    return <span style={{color:'var(--dim)',fontSize:'.75rem'}}>{s}</span>;
+  };
+
+  return(
+    <section id="players">
+      <div className="container">
+        <div className="s-label">Outfield Players</div>
+        <h2 className="s-title">Player Pool</h2>
+        <p className="s-sub">All outfield players sorted by season fantasy points. Filter by availability to find pickup targets.</p>
+
+        <div className="search-wrap" style={{marginTop:'1.25rem'}}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input className="search-input" placeholder="Search player…" value={query} onChange={e=>setQuery(e.target.value)}/>
+        </div>
+
+        <div className="ftabs">
+          {['All','G','D','M','F'].map(p=>(
+            <button key={p} className={`ftab${pos===p?' on':''}`} onClick={()=>setPos(p)}>{p==='All'?'All Pos':p}</button>
+          ))}
+        </div>
+
+        <div className="ftabs" style={{marginTop:'-0.5rem'}}>
+          {['All','FA','W'].map(a=>(
+            <button key={a} className={`ftab${avail===a?' on':''}`} onClick={()=>setAvail(a)}>
+              {a==='All'?'All':a==='FA'?'Free Agents':'Waivers'}
+            </button>
+          ))}
+        </div>
+
+        <div className="table-wrap">
+          <table className="dt">
+            <thead>
+              <tr>
+                <th onClick={()=>handleSort('rank')} className={thCls('rank')}>Rank</th>
+                <th>Player</th>
+                <th>Team</th>
+                <th>Pos</th>
+                <th>Avail</th>
+                <th style={{fontSize:'.72rem',color:'var(--muted)'}}>Next</th>
+                <th onClick={()=>handleSort('fpts')} className={thCls('fpts')}>FPts</th>
+                <th onClick={()=>handleSort('fpg')} className={thCls('fpg')}>FP/G</th>
+                <th>Ros%</th>
+              </tr>
+            </thead>
+            <tbody>
+              {sorted.slice(0,100).map(p=>(
+                <tr key={p.player}>
+                  <td><span className="rank-num">{p.rank}</span></td>
+                  <td style={{fontWeight:600}}>{p.player}</td>
+                  <td style={{color:'var(--muted)',fontSize:'.78rem'}}>{p.team}</td>
+                  <td style={{color:'var(--muted)',fontSize:'.78rem'}}>{p.pos}</td>
+                  <td>{availEl(p.status)}</td>
+                  <td style={{fontSize:'.75rem',color:'var(--dim)'}}>{p.opponent||'—'}</td>
+                  <td className="num-green">{p.fpts.toFixed(2)}</td>
+                  <td>{p.fpg.toFixed(2)}</td>
+                  <td style={{color:'var(--dim)',fontSize:'.78rem'}}>{p.rostered}</td>
+                </tr>
+              ))}
+              {sorted.length===0&&(
+                <tr><td colSpan={9} style={{textAlign:'center',color:'var(--dim)',padding:'2rem'}}>No players match your filters.</td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+        {sorted.length>100&&<p style={{textAlign:'center',marginTop:'1rem',color:'var(--dim)',fontSize:'.8rem'}}>Showing top 100 of {sorted.length} matches. Refine your filters to narrow results.</p>}
+      </div>
+    </section>
+  );
+}
+
+// ─── RECENT MOVES ─────────────────────────────────────────────────────────────
+
+function RecentMoves(){
+  const [tab,setTab]=React.useState('log');
+  const [typeFilter,setTypeFilter]=React.useState('All');
+
+  const txData=(typeof FANTRAX_TRANSACTIONS!=='undefined')?FANTRAX_TRANSACTIONS:[];
+  const tradesData=(typeof FANTRAX_TRADES!=='undefined')?FANTRAX_TRADES:[];
+  const teamData=(typeof FANTRAX_TEAM_ACTIVITY!=='undefined')?FANTRAX_TEAM_ACTIVITY:[];
+  const moveData=(typeof FANTRAX_PLAYER_MOVES!=='undefined')?FANTRAX_PLAYER_MOVES:{mostAdded:[],mostDropped:[]};
+
+  const moveBadge=type=>{
+    const cls=type==='Claim'?'move-claim':type==='Drop'?'move-drop':type==='Trade'?'move-trade':'move-waiver';
+    return <span className={`move-badge ${cls}`}>{type}</span>;
+  };
+
+  const filteredTx=typeFilter==='All'?txData:
+    typeFilter==='Trade'&&tradesData.length?tradesData:
+    txData.filter(r=>r.type===typeFilter);
+
+  // Group trade rows by exact date → each group is one trade event
+  const tradeEvents=React.useMemo(()=>{
+    const groups={};
+    tradesData.forEach(r=>{
+      if(!groups[r.date])groups[r.date]={date:r.date,gw:r.gw,teams:{}};
+      if(!groups[r.date].teams[r.fantasyTeam])groups[r.date].teams[r.fantasyTeam]=[];
+      groups[r.date].teams[r.fantasyTeam].push({player:r.player,pos:r.pos});
+    });
+    return Object.values(groups).sort((a,b)=>b.date.localeCompare(a.date));
+  },[tradesData]);
+
+  // Most traded players
+  const mostTraded=React.useMemo(()=>{
+    const counts={};
+    tradesData.forEach(r=>{
+      if(!counts[r.player])counts[r.player]={player:r.player,pos:r.pos,count:0};
+      counts[r.player].count++;
+    });
+    return Object.values(counts).sort((a,b)=>b.count-a.count).slice(0,10);
+  },[tradesData]);
+
+  // Unique trade events per team (how many trades each team was involved in)
+  const tradesByTeamMap=React.useMemo(()=>{
+    const teamDates={};
+    tradesData.forEach(r=>{
+      if(!teamDates[r.fantasyTeam])teamDates[r.fantasyTeam]=new Set();
+      teamDates[r.fantasyTeam].add(r.date);
+    });
+    const m={};
+    Object.entries(teamDates).forEach(([t,s])=>{m[t]=s.size});
+    return m;
+  },[tradesData]);
+
+  const [sortTCol,setSortTCol]=React.useState('total');
+  const [sortTDir,setSortTDir]=React.useState('desc');
+  const handleTSort=col=>{
+    if(col===sortTCol)setSortTDir(d=>d==='asc'?'desc':'asc');
+    else{setSortTCol(col);setSortTDir('desc')}
+  };
+  const thTCls=col=>sortTCol===col?(sortTDir==='asc'?'sort-up':'sort-dn'):'';
+  // Overlay trade counts from FANTRAX_TRADES (transaction_history has no trades)
+  const sortedTeams=[...teamData].map(r=>({
+    ...r,
+    trades:tradesByTeamMap[r.team]||0,
+    total:r.claims+r.drops+(tradesByTeamMap[r.team]||0),
+  })).sort((a,b)=>{
+    const v=a[sortTCol]>b[sortTCol]?1:a[sortTCol]<b[sortTCol]?-1:0;
+    return sortTDir==='asc'?v:-v;
+  });
+
+  return(
+    <section id="moves">
+      <div className="container">
+        <div className="s-label">Market Activity</div>
+        <h2 className="s-title">Moves &amp; Transactions</h2>
+        <p className="s-sub">Recent claims, drops and trades across the league. Switch to Trade filter for full trade history.</p>
+
+        <div className="ftabs" style={{marginTop:'1.25rem'}}>
+          <button className={`ftab${tab==='log'?' on':''}`} onClick={()=>setTab('log')}>Move Log</button>
+          <button className={`ftab${tab==='trades'?' on':''}`} onClick={()=>setTab('trades')}>Trade History</button>
+          <button className={`ftab${tab==='teams'?' on':''}`} onClick={()=>setTab('teams')}>Busiest Teams</button>
+          <button className={`ftab${tab==='players'?' on':''}`} onClick={()=>setTab('players')}>Most Moved Players</button>
+        </div>
+
+        {tab==='log'&&(
+          <>
+            <div className="ftabs" style={{marginTop:'-0.25rem'}}>
+              {['All','Claim','Drop','Trade','Waiver'].map(t=>(
+                <button key={t} className={`ftab${typeFilter===t?' on':''}`} onClick={()=>setTypeFilter(t)}>{t}</button>
+              ))}
+            </div>
+            <div className="table-wrap">
+              <table className="dt">
+                <thead>
+                  <tr>
+                    <th>Player</th>
+                    <th>Pos</th>
+                    <th>Type</th>
+                    <th>Fantasy Team</th>
+                    <th>Date</th>
+                    <th className="ta-r">GW</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredTx.map((r,i)=>(
+                    <tr key={i}>
+                      <td style={{fontWeight:600}}>{r.player}</td>
+                      <td style={{color:'var(--muted)',fontSize:'.78rem'}}>{r.pos}</td>
+                      <td>{moveBadge(r.type)}</td>
+                      <td style={{fontSize:'.82rem'}}>
+                        <DivBadge div={r.fantasyTeam.match(/^(\d+)/)?parseInt(r.fantasyTeam):0}/>
+                        {r.fantasyTeam.replace(/^\d+\s*[-–]\s*/,'')}
+                      </td>
+                      <td style={{fontSize:'.78rem',color:'var(--muted)'}}>{r.date}</td>
+                      <td className="ta-r" style={{color:'var(--dim)',fontSize:'.78rem'}}>{r.gw}</td>
+                    </tr>
+                  ))}
+                  {filteredTx.length===0&&(
+                    <tr><td colSpan={6} style={{textAlign:'center',color:'var(--dim)',padding:'2rem'}}>No moves match filter.</td></tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
+
+        {tab==='trades'&&(
+          <>
+            {tradesData.length===0?(
+              <p style={{color:'var(--dim)',fontSize:'.88rem',marginTop:'1.5rem'}}>Trade data will appear here after the next export.</p>
+            ):(
+              <>
+                <div className="moves-leaders">
+                  <div className="leader-card">
+                    <div className="leader-hd">Most Traded Players</div>
+                    {mostTraded.map(p=>(
+                      <div className="leader-row" key={p.player}>
+                        <div><span className="leader-pos">{p.pos}</span><span>{p.player}</span></div>
+                        <span style={{fontFamily:'Barlow Semi Condensed,sans-serif',fontWeight:800,color:'var(--purple-l)'}}>{p.count}×</span>
+                      </div>
+                    ))}
+                    {mostTraded.length===0&&<div className="leader-row" style={{color:'var(--dim)'}}>No data</div>}
+                  </div>
+                  <div className="leader-card">
+                    <div className="leader-hd">Most Active Traders</div>
+                    {Object.entries(tradesByTeamMap).sort((a,b)=>b[1]-a[1]).map(([team,n])=>{
+                      const div=parseInt((team.match(/^(\d+)/)||[])[1])||0;
+                      return(
+                        <div className="leader-row" key={team}>
+                          <div><DivBadge div={div}/><span>{team.replace(/^\d+\s*[-–]\s*/,'')}</span></div>
+                          <span style={{fontFamily:'Barlow Semi Condensed,sans-serif',fontWeight:800,color:'var(--purple-l)'}}>{n} trade{n!==1?'s':''}</span>
+                        </div>
+                      );
+                    })}
+                    {Object.keys(tradesByTeamMap).length===0&&<div className="leader-row" style={{color:'var(--dim)'}}>No data</div>}
+                  </div>
+                </div>
+                <div className="trade-events">
+                  {tradeEvents.map((ev,i)=>(
+                    <div key={i} className="trade-card">
+                      <div className="trade-card-hd">
+                        <span className="move-badge move-trade">Trade</span>
+                        <span>GW {ev.gw}</span>
+                        <span style={{color:'var(--dim)',marginLeft:'auto',fontFamily:'Barlow,sans-serif',fontWeight:400,textTransform:'none',letterSpacing:0,fontSize:'.78rem'}}>{ev.date}</span>
+                      </div>
+                      {Object.entries(ev.teams).map(([team,players])=>{
+                        const div=parseInt((team.match(/^(\d+)/)||[])[1])||0;
+                        return(
+                          <div key={team} className="trade-team-row">
+                            <span className="trade-recv">rcvd</span>
+                            <div style={{flex:1}}>
+                              <div style={{fontWeight:600,fontSize:'.82rem',display:'flex',alignItems:'center',gap:'4px'}}>
+                                <DivBadge div={div}/>{team.replace(/^\d+\s*[-–]\s*/,'')}
+                              </div>
+                              <div className="trade-players">
+                                {players.map(p=>(
+                                  <span key={p.player} className="trade-player-tag">
+                                    <span className="tp-pos">{p.pos}</span>{p.player}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </>
+        )}
+
+        {tab==='teams'&&(
+          <div className="table-wrap">
+            <table className="dt">
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <th onClick={()=>handleTSort('claims')} className={thTCls('claims')}>Claims</th>
+                  <th onClick={()=>handleTSort('drops')} className={thTCls('drops')}>Drops</th>
+                  <th onClick={()=>handleTSort('trades')} className={thTCls('trades')}>Trades</th>
+                  <th onClick={()=>handleTSort('total')} className={thTCls('total')}>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                {sortedTeams.map((r,i)=>(
+                  <tr key={r.team}>
+                    <td>
+                      <span className="m-cell">
+                        <DivBadge div={r.div}/>
+                        <span>{r.name}</span>
+                      </span>
+                    </td>
+                    <td className="num-green">{r.claims}</td>
+                    <td style={{color:'#E55',fontWeight:500}}>{r.drops}</td>
+                    <td style={{color:'var(--purple-l)',fontWeight:500}}>{r.trades}</td>
+                    <td style={{fontFamily:'Barlow Semi Condensed,sans-serif',fontWeight:800}}>{r.total}</td>
+                  </tr>
+                ))}
+                {sortedTeams.length===0&&(
+                  <tr><td colSpan={5} style={{textAlign:'center',color:'var(--dim)',padding:'2rem'}}>No data.</td></tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        {tab==='players'&&(
+          <div className="moves-leaders">
+            <div className="leader-card">
+              <div className="leader-hd">Most Added Players</div>
+              {moveData.mostAdded.map((p,i)=>(
+                <div className="leader-row" key={p.player}>
+                  <div>
+                    <span className="leader-pos">{p.pos}</span>
+                    <span>{p.player}</span>
+                  </div>
+                  <span className="leader-cnt">{p.count}×</span>
+                </div>
+              ))}
+            </div>
+            <div className="leader-card">
+              <div className="leader-hd">Most Dropped Players</div>
+              {moveData.mostDropped.map((p,i)=>(
+                <div className="leader-row" key={p.player}>
+                  <div>
+                    <span className="leader-pos">{p.pos}</span>
+                    <span>{p.player}</span>
+                  </div>
+                  <span style={{fontFamily:'Barlow Semi Condensed,sans-serif',fontWeight:800,color:'#E55'}}>{p.count}×</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
 // ─── APP ─────────────────────────────────────────────────────────────────────
 
 function App(){
-  const sectionIds=['hero','champions','seasons','records','h2h','managers'];
+  const sectionIds=['hero','champions','seasons','standings','moves','records','h2h','managers'];
   const active=useActiveSection(sectionIds);
   return(
     <>
@@ -1084,6 +1661,8 @@ function App(){
       <HeroSection/>
       <HallOfChampions/>
       <SeasonResults/>
+      <LiveStandings/>
+      <RecentMoves/>
       <RecordsVault/>
       <HeadToHead/>
       <ManagerProfiles/>

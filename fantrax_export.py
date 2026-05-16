@@ -18,9 +18,7 @@ Output is saved to: ./fantrax_data/YYYY-MM-DD/
 """
 
 import os
-import re
 import time
-import shutil
 from datetime import date
 from pathlib import Path
 from dotenv import load_dotenv
@@ -37,23 +35,21 @@ PASSWORD    = os.getenv("FANTRAX_PASSWORD")
 OUTPUT_DIR  = Path("fantrax_data") / str(date.today())
 
 # Fantrax sections to visit, in order.
-# Each entry: (label, url_suffix, needs_export_click)
+# Each entry: (label, url_suffix)
+# URLs verified against live league navigation.
+# Excluded: /matchups, /livescoring, /draft-results — visual-only pages, no CSV export.
 SECTIONS = [
-    ("standings",       "/standings",                       True),
-    ("rosters",         "/rosters",                         True),
-    ("players",         "/players",                         True),
-    ("scoring",         "/scoring",                         True),
-    ("matchups",        "/matchups",                        True),
-    ("transactions",    "/transactions",                    True),
-    ("draft_results",   "/draft/results",                   True),
-    ("team_stats",      "/stats/team",                      True),
-    ("schedule",        "/schedule",                        True),
-    ("trade_history",   "/transactions/trades",             True),
-    ("waiver_history",  "/transactions/waivers",            True),
+    ("standings",            "/standings"),
+    ("roster",               "/team/roster"),
+    ("players",              "/players"),
+    ("transaction_history",  "/transactions/history"),
 ]
 
-# Selectors for the CSV export button — Fantrax uses several patterns
+# Selectors for the CSV export button.
+# Fantrax uses Angular Material with get_app mat-icon inside mdc-icon-button.
 EXPORT_SELECTORS = [
+    "button:has(mat-icon:has-text('get_app'))",   # confirmed via DOM inspection
+    "button:has(mat-icon:has-text('file_download'))",
     "button:has-text('Export')",
     "button:has-text('CSV')",
     "a:has-text('Export')",
@@ -62,7 +58,6 @@ EXPORT_SELECTORS = [
     "[title='Export to CSV']",
     ".export-btn",
     ".csv-export",
-    "mat-icon:has-text('file_download')",       # Angular Material icon
     "[data-test='export-button']",
 ]
 
@@ -70,8 +65,11 @@ EXPORT_SELECTORS = [
 
 def wait_for_page_ready(page, timeout=15000):
     """Wait for the Angular/JS app to finish rendering."""
-    page.wait_for_load_state("networkidle", timeout=timeout)
-    time.sleep(1.5)  # extra buffer for Angular change detection
+    try:
+        page.wait_for_load_state("networkidle", timeout=timeout)
+    except PlaywrightTimeout:
+        pass  # Angular SPAs often don't reach networkidle; fall through
+    time.sleep(2)  # extra buffer for Angular change detection
 
 
 def try_export(page, label, download_dir):
@@ -124,6 +122,114 @@ def screenshot(page, label, download_dir):
     print(f"  ⚠ No export found. Debug screenshot: {path}")
 
 
+# ── Custom exports ───────────────────────────────────────────────────────────
+
+TRADE_TOGGLE_SELECTORS = [
+    "button:has-text('Trades')",
+    "mat-tab:has-text('Trades')",
+    "[role='tab']:has-text('Trades')",
+    "mat-button-toggle:has-text('Trades')",
+    "label:has-text('Trades')",
+]
+
+ALL_PLAYERS_SELECTORS = [
+    "button:has-text('All')",
+    "mat-button-toggle:has-text('All')",
+    "[role='tab']:has-text('All')",
+    "label:has-text('All')",
+]
+
+OUTFIELD_SELECTORS = [
+    "button:has-text('Outfield Players')",
+    "mat-button-toggle:has-text('Outfield Players')",
+    "button:has-text('Outfield')",
+    "label:has-text('Outfield')",
+]
+
+
+def click_first_visible(page, selectors, description, timeout=3000):
+    """Try selectors in order; click the first visible one. Returns True on success."""
+    for sel in selectors:
+        try:
+            el = page.locator(sel).first
+            if el.is_visible(timeout=timeout):
+                el.click()
+                print(f"  → Clicked {description} via: {sel}")
+                return True
+        except (PlaywrightTimeout, Exception):
+            continue
+    print(f"  ! Could not find {description}")
+    return False
+
+
+def export_trades(page, download_dir):
+    """Navigate to transactions/history, toggle to Trades view, export CSV."""
+    url = BASE_URL + "/transactions/history"
+    print(f"[trades] {url}")
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        wait_for_page_ready(page)
+
+        for banner_text in ["Never", "Dismiss", "No thanks"]:
+            try:
+                page.click(f"button:has-text('{banner_text}')", timeout=1500)
+                time.sleep(0.3)
+            except PlaywrightTimeout:
+                pass
+
+        # Expand Transactions nav if needed (same as existing pattern)
+        try:
+            page.click("button:has-text('Transactions')", timeout=3000)
+            time.sleep(1)
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            wait_for_page_ready(page)
+        except PlaywrightTimeout:
+            pass
+
+        click_first_visible(page, TRADE_TOGGLE_SELECTORS, "Trades toggle")
+        time.sleep(2)
+
+        success = try_export(page, "trades", download_dir)
+        if not success:
+            screenshot(page, "trades", download_dir)
+        return success
+    except Exception as e:
+        print(f"  ! Error on trades: {e}")
+        screenshot(page, "trades", download_dir)
+        return False
+
+
+def export_all_players(page, download_dir):
+    """Navigate to players, switch to All + Outfield Players filters, export CSV."""
+    url = BASE_URL + "/players"
+    print(f"[all_players] {url}")
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        wait_for_page_ready(page)
+
+        for banner_text in ["Never", "Dismiss", "No thanks"]:
+            try:
+                page.click(f"button:has-text('{banner_text}')", timeout=1500)
+                time.sleep(0.3)
+            except PlaywrightTimeout:
+                pass
+
+        click_first_visible(page, ALL_PLAYERS_SELECTORS, "All players filter")
+        time.sleep(2)
+
+        click_first_visible(page, OUTFIELD_SELECTORS, "Outfield Players filter")
+        time.sleep(2)
+
+        success = try_export(page, "all_players", download_dir)
+        if not success:
+            screenshot(page, "all_players", download_dir)
+        return success
+    except Exception as e:
+        print(f"  ! Error on all_players: {e}")
+        screenshot(page, "all_players", download_dir)
+        return False
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -151,14 +257,27 @@ def main():
 
         # ── Step 1: Log in ────────────────────────────────────────────────
         print("Logging in...")
-        page.goto("https://www.fantrax.com/login", wait_until="networkidle")
+        page.goto("https://www.fantrax.com/login", wait_until="domcontentloaded", timeout=30000)
         wait_for_page_ready(page)
 
-        # Handle the login form — Fantrax uses Angular reactive forms
+        # Dismiss cookie banner if present
         try:
-            page.fill("input[type='email'], input[name='email'], #email", EMAIL)
-            page.fill("input[type='password'], input[name='password'], #password", PASSWORD)
-            page.click("button[type='submit'], button:has-text('Log In'), button:has-text('Sign In')")
+            page.click("button:has-text('Dismiss')", timeout=4000)
+            time.sleep(0.5)
+        except PlaywrightTimeout:
+            pass
+
+        # Handle the login form — Fantrax uses Angular Material inputs
+        try:
+            # Angular Material inputs: first input = email, second = password
+            inputs = page.locator("input").all()
+            if len(inputs) < 2:
+                # Wait a bit more for Angular to render
+                time.sleep(3)
+                inputs = page.locator("input").all()
+            inputs[0].fill(EMAIL)
+            inputs[1].fill(PASSWORD)
+            page.click("button:has-text('Login'), button:has-text('Log In'), button:has-text('Sign In'), button[type='submit']")
             wait_for_page_ready(page, timeout=20000)
         except Exception as e:
             page.screenshot(path=str(OUTPUT_DIR / "_debug_login.png"))
@@ -173,12 +292,30 @@ def main():
         print(f"  ✓ Logged in (landed on: {page.url})\n")
 
         # ── Step 2: Visit each section and export ─────────────────────────
-        for label, suffix, _ in SECTIONS:
+        for label, suffix in SECTIONS:
             url = BASE_URL + suffix
             print(f"[{label}] {url}")
             try:
-                page.goto(url, wait_until="networkidle", timeout=30000)
+                page.goto(url, wait_until="domcontentloaded", timeout=30000)
                 wait_for_page_ready(page)
+
+                # Dismiss notification/cookie banners that can block clicks
+                for banner_text in ["Never", "Dismiss", "No thanks"]:
+                    try:
+                        page.click(f"button:has-text('{banner_text}')", timeout=1500)
+                        time.sleep(0.3)
+                    except PlaywrightTimeout:
+                        pass
+
+                # Transaction sub-pages require expanding the Transactions nav first
+                if "transactions" in suffix:
+                    try:
+                        page.click("button:has-text('Transactions')", timeout=3000)
+                        time.sleep(1)
+                        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                        wait_for_page_ready(page)
+                    except PlaywrightTimeout:
+                        pass
 
                 success = try_export(page, label, OUTPUT_DIR)
                 results[label] = "✓" if success else "✗ (no export button found)"
@@ -194,6 +331,10 @@ def main():
                 print(f"  ! Error on {label}: {e}")
                 results[label] = f"✗ ({e})"
 
+        # ── Step 3: Custom toggle/filter exports ──────────────────────────
+        results["trades"]      = "✓" if export_trades(page, OUTPUT_DIR)      else "✗"
+        results["all_players"] = "✓" if export_all_players(page, OUTPUT_DIR) else "✗"
+
         browser.close()
 
     # ── Summary ───────────────────────────────────────────────────────────
@@ -204,7 +345,7 @@ def main():
     exported = [k for k, v in results.items() if v == "✓"]
     failed   = [k for k, v in results.items() if v != "✓"]
 
-    print(f"\n  Exported: {len(exported)} / {len(SECTIONS)} sections")
+    print(f"\n  Exported: {len(exported)} / {len(results)} sections")
     if failed:
         print(f"  Failed:   {', '.join(failed)}")
         print("\n  Tip: Check the _debug_*.png screenshots in the output folder")

@@ -1,0 +1,191 @@
+year,week,t1_team,t2_team,t1_score,t2_score
+2019,1,Phil Jones Moans,Tim's Team,141.75,116.0
+2019,1,Alex's Historic Collapse Week 2 of 8,Brendan's Pool Boyz,77.0,114.5
+2019,1,In Talks FC,Ole's Novelty Wheels,85.5,86.5
+2019,1,KDB's LCL,Pepe Pig,112.25,133.25
+2019,1,The team formerly known as Maupay FC,Romelu Bukake,106.0,60.0
+2019,2,Pepe Pig,Phil Jones Moans,93.25,105.75
+2019,2,Brendan's Pool Boyz,Tim's Team,47.5,91.75
+2019,2,In Talks FC,KDB's LCL,110.0,119.5
+2019,2,Ole's Novelty Wheels,The team formerly known as Maupay FC,89.75,39.75
+2019,2,Romelu Bukake,Alex's Historic Collapse Week 2 of 8,106.5,78.5
+2019,3,Phil Jones Moans,In Talks FC,98.75,148.5
+2019,3,Alex's Historic Collapse Week 2 of 8,The team formerly known as Maupay FC,98.75,64.0
+2019,3,Brendan's Pool Boyz,Pepe Pig,122.5,52.75
+2019,3,KDB's LCL,Ole's Novelty Wheels,68.25,80.0
+2019,3,Tim's Team,Romelu Bukake,54.5,74.0
+2019,4,KDB's LCL,Phil Jones Moans,94.75,106.5
+2019,4,In Talks FC,Brendan's Pool Boyz,134.5,108.25
+2019,4,Ole's Novelty Wheels,Alex's Historic Collapse Week 2 of 8,92.75,145.25
+2019,4,Romelu Bukake,Pepe Pig,95.25,129.0
+2019,4,The team formerly known as Maupay FC,Tim's Team,61.0,105.25
+2019,5,Phil Jones Moans,Ole's Novelty Wheels,119.25,97.0
+2019,5,Brendan's Pool Boyz,KDB's LCL,100.75,103.5
+2019,5,Pepe Pig,The team formerly known as Maupay FC,107.0,83.0
+2019,5,Romelu Bukake,In Talks FC,116.75,105.25
+2019,5,Tim's Team,Alex's Historic Collapse Week 2 of 8,79.25,123.5
+2019,6,Phil Jones Moans,Brendan's Pool Boyz,105.75,91.75
+2019,6,Alex's Historic Collapse Week 2 of 8,Pepe Pig,72.25,75.5
+2019,6,KDB's LCL,Romelu Bukake,70.0,54.25
+2019,6,Ole's Novelty Wheels,Tim's Team,114.25,103.25
+2019,6,The team formerly known as Maupay FC,In Talks FC,115.75,108.5
+2019,7,Romelu Bukake,Phil Jones Moans,68.5,126.0
+2019,7,Brendan's Pool Boyz,Ole's Novelty Wheels,78.75,87.75
+2019,7,In Talks FC,Alex's Historic Collapse Week 2 of 8,107.25,98.25
+2019,7,Pepe Pig,Tim's Team,97.5,65.5
+2019,7,The team formerly known as Maupay FC,KDB's LCL,93.75,78.75
+2019,8,Phil Jones Moans,The team formerly known as Maupay FC,52.25,46.0
+2019,8,Alex's Historic Collapse Week 2 of 8,KDB's LCL,113.25,101.0
+2019,8,Brendan's Pool Boyz,Romelu Bukake,92.25,119.75
+2019,8,Ole's Novelty Wheels,Pepe Pig,109.25,40.75
+2019,8,Tim's Team,In Talks FC,84.25,78.5
+2019,9,Alex's Historic Collapse Week 2 of 8,Phil Jones Moans,58.25,46.5
+2019,9,In Talks FC,Pepe Pig,108.0,71.5
+2019,9,KDB's LCL,Tim's Team,103.75,82.5
+2019,9,Romelu Bukake,Ole's Novelty Wheels,74.5,102.5
+2019,9,The team formerly known as Maupay FC,Brendan's Pool Boyz,79.75,115.5
+2019,10,Tim's Team,Phil Jones Moans,60.0,26.5
+2019,10,Brendan's Pool Boyz,Alex's Historic Collapse Week 2 of 8,130.0,109.5
+2019,10,Ole's Novelty Wheels,In Talks FC,140.5,33.5
+2019,10,Pepe Pig,KDB's LCL,71.0,149.5
+2019,10,Romelu Bukake,The team formerly known as Maupay FC,24.0,149.25
+2019,11,Phil Jones Moans,Pepe Pig,50.5,112.0
+2019,11,Alex's Historic Collapse Week 2 of 8,Romelu Bukake,152.25,37.75
+2019,11,KDB's LCL,In Talks FC,85.5,71.0
+2019,11,The team formerly known as Maupay FC,Ole's Novelty Wheels,119.75,127.5
+2019,11,Tim's Team,Brendan's Pool Boyz,72.0,123.5
+2019,12,In Talks FC,Phil Jones Moans,107.5,79.0
+2019,12,Ole's Novelty Wheels,KDB's LCL,98.75,82.25
+2019,12,Pepe Pig,Brendan's Pool Boyz,85.25,95.25
+2019,12,Romelu Bukake,Tim's Team,34.5,114.25
+2019,12,The team formerly known as Maupay FC,Alex's Historic Collapse Week 2 of 8,94.5,141.75
+2019,13,Phil Jones Moans,KDB's LCL,84.25,98.25
+2019,13,Alex's Historic Collapse Week 2 of 8,Ole's Novelty Wheels,101.0,143.0
+2019,13,Brendan's Pool Boyz,In Talks FC,61.5,91.25
+2019,13,Pepe Pig,Romelu Bukake,101.0,40.25
+2019,13,Tim's Team,The team formerly known as Maupay FC,79.25,115.25
+2019,14,Ole's Novelty Wheels,Phil Jones Moans,88.0,69.5
+2019,14,Alex's Historic Collapse Week 2 of 8,Tim's Team,88.0,100.75
+2019,14,In Talks FC,Romelu Bukake,117.25,57.75
+2019,14,KDB's LCL,Brendan's Pool Boyz,94.5,85.75
+2019,14,The team formerly known as Maupay FC,Pepe Pig,90.5,109.25
+2019,15,Brendan's Pool Boyz,Phil Jones Moans,105.25,67.0
+2019,15,In Talks FC,The team formerly known as Maupay FC,119.5,73.5
+2019,15,Pepe Pig,Alex's Historic Collapse Week 2 of 8,88.25,88.75
+2019,15,Romelu Bukake,KDB's LCL,63.75,87.25
+2019,15,Tim's Team,Ole's Novelty Wheels,85.5,148.75
+2019,16,Phil Jones Moans,Romelu Bukake,131.75,74.75
+2019,16,Alex's Historic Collapse Week 2 of 8,In Talks FC,93.25,68.75
+2019,16,KDB's LCL,The team formerly known as Maupay FC,63.75,116.0
+2019,16,Ole's Novelty Wheels,Brendan's Pool Boyz,120.0,75.75
+2019,16,Tim's Team,Pepe Pig,86.75,150.25
+2019,17,The team formerly known as Maupay FC,Phil Jones Moans,103.5,96.0
+2019,17,In Talks FC,Tim's Team,108.5,78.5
+2019,17,KDB's LCL,Alex's Historic Collapse Week 2 of 8,90.75,118.25
+2019,17,Pepe Pig,Ole's Novelty Wheels,101.75,107.5
+2019,17,Romelu Bukake,Brendan's Pool Boyz,23.75,122.5
+2019,18,Phil Jones Moans,Alex's Historic Collapse Week 2 of 8,90.0,78.5
+2019,18,Brendan's Pool Boyz,The team formerly known as Maupay FC,152.75,52.75
+2019,18,Ole's Novelty Wheels,Romelu Bukake,71.25,43.5
+2019,18,Pepe Pig,In Talks FC,54.0,95.25
+2019,18,Tim's Team,KDB's LCL,39.5,109.5
+2019,19,Phil Jones Moans,Tim's Team,60.25,60.5
+2019,19,Alex's Historic Collapse Week 2 of 8,Brendan's Pool Boyz,106.75,184.25
+2019,19,In Talks FC,Ole's Novelty Wheels,48.25,90.75
+2019,19,KDB's LCL,Pepe Pig,58.25,109.25
+2019,19,The team formerly known as Maupay FC,Romelu Bukake,74.0,43.0
+2019,20,Pepe Pig,Phil Jones Moans,82.5,76.75
+2019,20,Brendan's Pool Boyz,Tim's Team,106.75,59.0
+2019,20,In Talks FC,KDB's LCL,84.75,111.75
+2019,20,Ole's Novelty Wheels,The team formerly known as Maupay FC,96.5,53.25
+2019,20,Romelu Bukake,Alex's Historic Collapse Week 2 of 8,55.0,71.25
+2019,21,Phil Jones Moans,In Talks FC,94.5,35.5
+2019,21,Alex's Historic Collapse Week 2 of 8,The team formerly known as Maupay FC,93.25,75.5
+2019,21,Brendan's Pool Boyz,Pepe Pig,120.0,90.75
+2019,21,KDB's LCL,Ole's Novelty Wheels,91.0,91.5
+2019,21,Tim's Team,Romelu Bukake,73.0,66.75
+2019,22,KDB's LCL,Phil Jones Moans,124.0,117.25
+2019,22,In Talks FC,Brendan's Pool Boyz,129.25,123.0
+2019,22,Ole's Novelty Wheels,Alex's Historic Collapse Week 2 of 8,130.5,68.5
+2019,22,Romelu Bukake,Pepe Pig,28.0,103.5
+2019,22,The team formerly known as Maupay FC,Tim's Team,75.75,61.5
+2019,23,Phil Jones Moans,Ole's Novelty Wheels,83.5,160.75
+2019,23,Brendan's Pool Boyz,KDB's LCL,137.25,97.75
+2019,23,Pepe Pig,The team formerly known as Maupay FC,81.0,41.25
+2019,23,Romelu Bukake,In Talks FC,32.0,74.25
+2019,23,Tim's Team,Alex's Historic Collapse Week 2 of 8,74.0,95.5
+2019,24,Phil Jones Moans,Brendan's Pool Boyz,94.0,86.75
+2019,24,Alex's Historic Collapse Week 2 of 8,Pepe Pig,118.75,106.75
+2019,24,KDB's LCL,Romelu Bukake,92.25,49.0
+2019,24,Ole's Novelty Wheels,Tim's Team,114.25,65.5
+2019,24,The team formerly known as Maupay FC,In Talks FC,71.5,100.75
+2019,25,Romelu Bukake,Phil Jones Moans,29.5,118.0
+2019,25,Brendan's Pool Boyz,Ole's Novelty Wheels,98.75,101.5
+2019,25,In Talks FC,Alex's Historic Collapse Week 2 of 8,108.25,122.0
+2019,25,Pepe Pig,Tim's Team,83.0,73.75
+2019,25,The team formerly known as Maupay FC,KDB's LCL,87.25,106.25
+2019,26,Phil Jones Moans,The team formerly known as Maupay FC,114.25,71.25
+2019,26,Alex's Historic Collapse Week 2 of 8,KDB's LCL,103.0,91.5
+2019,26,Brendan's Pool Boyz,Romelu Bukake,106.5,116.0
+2019,26,Ole's Novelty Wheels,Pepe Pig,57.75,93.0
+2019,26,Tim's Team,In Talks FC,97.75,72.5
+2019,27,Alex's Historic Collapse Week 2 of 8,Phil Jones Moans,135.0,118.25
+2019,27,In Talks FC,Pepe Pig,49.75,69.0
+2019,27,KDB's LCL,Tim's Team,64.0,70.0
+2019,27,Romelu Bukake,Ole's Novelty Wheels,114.75,103.0
+2019,27,The team formerly known as Maupay FC,Brendan's Pool Boyz,112.5,80.0
+2019,28,Tim's Team,Phil Jones Moans,57.25,54.75
+2019,28,Brendan's Pool Boyz,Alex's Historic Collapse Week 2 of 8,46.25,89.5
+2019,28,Ole's Novelty Wheels,In Talks FC,129.0,46.5
+2019,28,Pepe Pig,KDB's LCL,59.25,98.5
+2019,28,Romelu Bukake,The team formerly known as Maupay FC,15.0,65.5
+2019,29,Phil Jones Moans,Pepe Pig,120.75,80.0
+2019,29,Alex's Historic Collapse Week 2 of 8,Romelu Bukake,111.75,56.0
+2019,29,KDB's LCL,In Talks FC,96.25,65.75
+2019,29,The team formerly known as Maupay FC,Ole's Novelty Wheels,48.25,98.0
+2019,29,Tim's Team,Brendan's Pool Boyz,76.75,61.0
+2019,30,In Talks FC,Phil Jones Moans,88.0,128.75
+2019,30,Ole's Novelty Wheels,KDB's LCL,65.25,122.25
+2019,30,Pepe Pig,Brendan's Pool Boyz,89.25,151.5
+2019,30,Romelu Bukake,Tim's Team,53.25,113.75
+2019,30,The team formerly known as Maupay FC,Alex's Historic Collapse Week 2 of 8,79.0,116.0
+2019,31,Phil Jones Moans,KDB's LCL,113.5,70.0
+2019,31,Alex's Historic Collapse Week 2 of 8,Ole's Novelty Wheels,115.0,62.75
+2019,31,Brendan's Pool Boyz,In Talks FC,87.25,74.0
+2019,31,Pepe Pig,Romelu Bukake,79.5,59.75
+2019,31,Tim's Team,The team formerly known as Maupay FC,91.25,101.75
+2019,32,Ole's Novelty Wheels,Phil Jones Moans,94.25,77.0
+2019,32,Alex's Historic Collapse Week 2 of 8,Tim's Team,67.0,30.75
+2019,32,In Talks FC,Romelu Bukake,125.0,55.5
+2019,32,KDB's LCL,Brendan's Pool Boyz,84.25,107.25
+2019,32,The team formerly known as Maupay FC,Pepe Pig,61.0,124.75
+2019,33,Brendan's Pool Boyz,Phil Jones Moans,117.5,82.0
+2019,33,In Talks FC,The team formerly known as Maupay FC,61.0,45.75
+2019,33,Pepe Pig,Alex's Historic Collapse Week 2 of 8,68.75,122.75
+2019,33,Romelu Bukake,KDB's LCL,45.75,81.25
+2019,33,Tim's Team,Ole's Novelty Wheels,45.75,117.25
+2019,34,Phil Jones Moans,Romelu Bukake,88.0,48.0
+2019,34,Alex's Historic Collapse Week 2 of 8,In Talks FC,118.25,101.0
+2019,34,KDB's LCL,The team formerly known as Maupay FC,106.5,93.5
+2019,34,Ole's Novelty Wheels,Brendan's Pool Boyz,114.0,137.5
+2019,34,Tim's Team,Pepe Pig,45.25,124.75
+2019,35,The team formerly known as Maupay FC,Phil Jones Moans,43.5,113.25
+2019,35,In Talks FC,Tim's Team,90.75,64.75
+2019,35,KDB's LCL,Alex's Historic Collapse Week 2 of 8,104.5,106.75
+2019,35,Pepe Pig,Ole's Novelty Wheels,106.75,133.0
+2019,35,Romelu Bukake,Brendan's Pool Boyz,47.0,97.5
+2019,36,Phil Jones Moans,Alex's Historic Collapse Week 2 of 8,119.5,116.75
+2019,36,Brendan's Pool Boyz,The team formerly known as Maupay FC,113.25,117.25
+2019,36,Ole's Novelty Wheels,Romelu Bukake,110.5,42.75
+2019,36,Pepe Pig,In Talks FC,94.0,87.25
+2019,36,Tim's Team,KDB's LCL,60.5,102.5
+2019,37,Phil Jones Moans,Tim's Team,113.25,77.25
+2019,37,Alex's Historic Collapse Week 2 of 8,Brendan's Pool Boyz,123.75,144.5
+2019,37,In Talks FC,Ole's Novelty Wheels,74.25,84.0
+2019,37,KDB's LCL,Pepe Pig,85.5,110.0
+2019,37,The team formerly known as Maupay FC,Romelu Bukake,81.75,49.75
+2019,38,Pepe Pig,Phil Jones Moans,52.25,75.5
+2019,38,Brendan's Pool Boyz,Tim's Team,93.75,60.25
+2019,38,In Talks FC,KDB's LCL,91.5,179.0
+2019,38,Ole's Novelty Wheels,The team formerly known as Maupay FC,69.5,86.25
+2019,38,Romelu Bukake,Alex's Historic Collapse Week 2 of 8,71.0,49.5

@@ -10,6 +10,7 @@
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="fantrax_data.js"></script>
+<script src="fantrax_historical.js"></script>
 <style>
 :root {
   --bg:        #0D0820;
@@ -292,162 +293,10 @@ const LOGO = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0
 
 // ─── DATA ───────────────────────────────────────────────────────────────────
 
-const MANAGERS = [
-  {id:1, name:'Conlon',  team:"The Lads FC",          color:'#1A7A4A', championships:[2021,2023]},
-  {id:2, name:'Murphy',  team:"Murphy's Marauders",   color:'#7F4975', championships:[2019]},
-  {id:3, name:"O'Brien", team:"O'Brien's Outlaws",    color:'#4B6CB7', championships:[2020]},
-  {id:4, name:'Walsh',   team:"Walsh Warriors",        color:'#B76B4B', championships:[2022]},
-  {id:5, name:'Ryan',    team:"Ryan's Rockets",        color:'#6B4BB7', championships:[]},
-  {id:6, name:'Kelly',   team:"Kelly's Heroes",        color:'#1A8070', championships:[2024]},
-  {id:7, name:'Brennan', team:"Brennan's Boys",        color:'#854040', championships:[]},
-  {id:8, name:'Doyle',   team:"Doyle's Dynamos",       color:'#707040', championships:[]},
-  {id:9, name:'Malone',  team:"Malone's Machine",      color:'#407070', championships:[]},
-  {id:10,name:'Quinn',   team:"Quinn's Quest",          color:'#906040', championships:[]},
-];
-
-const SEASONS = [2019,2020,2021,2022,2023,2024];
-
-// Each row: {managerId, rank, w, l, pf, pa, playoffs}
-const SEASON_STANDINGS = {
-  2019:[
-    {managerId:2, rank:1, w:11,l:2, pf:1654.2,pa:1342.8,playoffs:true,champion:true},
-    {managerId:1, rank:2, w:10,l:3, pf:1623.8,pa:1398.2,playoffs:true},
-    {managerId:4, rank:3, w:9, l:4, pf:1589.4,pa:1456.3,playoffs:true},
-    {managerId:6, rank:4, w:7, l:6, pf:1562.1,pa:1487.6,playoffs:true},
-    {managerId:3, rank:5, w:7, l:6, pf:1534.7,pa:1498.2,playoffs:false},
-    {managerId:5, rank:6, w:6, l:7, pf:1487.3,pa:1523.6,playoffs:false},
-    {managerId:8, rank:7, w:5, l:8, pf:1423.6,pa:1587.4,playoffs:false},
-    {managerId:9, rank:8, w:4, l:9, pf:1398.2,pa:1612.3,playoffs:false},
-    {managerId:7, rank:9, w:3, l:10,pf:1342.8,pa:1689.4,playoffs:false},
-    {managerId:10,rank:10,w:3, l:10,pf:1298.4,pa:1720.6,playoffs:false},
-  ],
-  2020:[
-    {managerId:3, rank:1, w:11,l:2, pf:1789.3,pa:1312.4,playoffs:true,champion:true},
-    {managerId:5, rank:2, w:9, l:4, pf:1723.6,pa:1398.7,playoffs:true},
-    {managerId:1, rank:3, w:9, l:4, pf:1698.4,pa:1423.8,playoffs:true},
-    {managerId:2, rank:4, w:8, l:5, pf:1643.2,pa:1456.3,playoffs:true},
-    {managerId:6, rank:5, w:7, l:6, pf:1589.7,pa:1498.2,playoffs:false},
-    {managerId:4, rank:6, w:6, l:7, pf:1534.2,pa:1543.6,playoffs:false},
-    {managerId:10,rank:7, w:5, l:8, pf:1487.6,pa:1589.4,playoffs:false},
-    {managerId:8, rank:8, w:4, l:9, pf:1423.4,pa:1632.8,playoffs:false},
-    {managerId:9, rank:9, w:3, l:10,pf:1367.8,pa:1698.4,playoffs:false},
-    {managerId:7, rank:10,w:3, l:10,pf:1234.5,pa:1762.3,playoffs:false},
-  ],
-  2021:[
-    {managerId:1, rank:1, w:11,l:2, pf:1842.6,pa:1298.3,playoffs:true,champion:true},
-    {managerId:4, rank:2, w:10,l:3, pf:1756.3,pa:1398.7,playoffs:true},
-    {managerId:3, rank:3, w:8, l:5, pf:1689.4,pa:1434.2,playoffs:true},
-    {managerId:2, rank:4, w:8, l:5, pf:1643.7,pa:1467.8,playoffs:true},
-    {managerId:6, rank:5, w:7, l:6, pf:1598.2,pa:1512.4,playoffs:false},
-    {managerId:5, rank:6, w:6, l:7, pf:1534.8,pa:1567.3,playoffs:false},
-    {managerId:7, rank:7, w:5, l:8, pf:1467.3,pa:1612.4,playoffs:false},
-    {managerId:10,rank:8, w:4, l:9, pf:1398.6,pa:1678.2,playoffs:false},
-    {managerId:8, rank:9, w:3, l:10,pf:1342.8,pa:1734.5,playoffs:false},
-    {managerId:9, rank:10,w:3, l:10,pf:1278.4,pa:1798.3,playoffs:false},
-  ],
-  2022:[
-    {managerId:4, rank:1, w:10,l:3, pf:1798.4,pa:1312.6,playoffs:true,champion:true},
-    {managerId:6, rank:2, w:9, l:4, pf:1734.8,pa:1367.4,playoffs:true},
-    {managerId:1, rank:3, w:9, l:4, pf:1712.3,pa:1389.6,playoffs:true},
-    {managerId:5, rank:4, w:8, l:5, pf:1656.7,pa:1423.8,playoffs:true},
-    {managerId:2, rank:5, w:7, l:6, pf:1598.4,pa:1478.2,playoffs:false},
-    {managerId:3, rank:6, w:6, l:7, pf:1534.6,pa:1534.7,playoffs:false},
-    {managerId:9, rank:7, w:5, l:8, pf:1478.2,pa:1598.3,playoffs:false},
-    {managerId:8, rank:8, w:4, l:9, pf:1398.7,pa:1656.4,playoffs:false},
-    {managerId:7, rank:9, w:3, l:10,pf:1334.2,pa:1723.6,playoffs:false},
-    {managerId:10,rank:10,w:3, l:10,pf:1267.8,pa:1798.4,playoffs:false},
-  ],
-  2023:[
-    {managerId:1, rank:1, w:12,l:1, pf:1923.4,pa:1278.6,playoffs:true,champion:true},
-    {managerId:2, rank:2, w:10,l:3, pf:1823.6,pa:1354.8,playoffs:true},
-    {managerId:6, rank:3, w:8, l:5, pf:1756.4,pa:1412.3,playoffs:true},
-    {managerId:4, rank:4, w:7, l:6, pf:1689.3,pa:1467.8,playoffs:true},
-    {managerId:5, rank:5, w:7, l:6, pf:1634.8,pa:1512.4,playoffs:false},
-    {managerId:3, rank:6, w:6, l:7, pf:1578.3,pa:1567.4,playoffs:false},
-    {managerId:8, rank:7, w:5, l:8, pf:1512.6,pa:1623.7,playoffs:false},
-    {managerId:10,rank:8, w:3, l:10,pf:1423.8,pa:1712.4,playoffs:false},
-    {managerId:9, rank:9, w:2, l:11,pf:1356.4,pa:1789.3,playoffs:false},
-    {managerId:7, rank:10,w:1, l:12,pf:1267.4,pa:1845.6,playoffs:false},
-  ],
-  2024:[
-    {managerId:6, rank:1, w:10,l:3, pf:1834.6,pa:1312.8,playoffs:true,champion:true},
-    {managerId:3, rank:2, w:9, l:4, pf:1756.3,pa:1378.4,playoffs:true},
-    {managerId:1, rank:3, w:8, l:5, pf:1698.4,pa:1423.6,playoffs:true},
-    {managerId:2, rank:4, w:8, l:5, pf:1645.8,pa:1467.3,playoffs:true},
-    {managerId:4, rank:5, w:7, l:6, pf:1589.3,pa:1512.4,playoffs:false},
-    {managerId:5, rank:6, w:6, l:7, pf:1534.7,pa:1567.8,playoffs:false},
-    {managerId:9, rank:7, w:5, l:8, pf:1478.3,pa:1623.4,playoffs:false},
-    {managerId:7, rank:8, w:4, l:9, pf:1398.6,pa:1698.4,playoffs:false},
-    {managerId:8, rank:9, w:3, l:10,pf:1334.7,pa:1756.3,playoffs:false},
-    {managerId:10,rank:10,w:2, l:11,pf:1267.4,pa:1823.6,playoffs:false},
-  ],
-};
-
-const PLAYOFFS = {
-  2019:{
-    semis:[
-      {home:{id:2,score:164.3},away:{id:1,score:145.8}},
-      {home:{id:4,score:158.6},away:{id:6,score:142.3}},
-    ],
-    final:{home:{id:2,score:178.4},away:{id:4,score:156.2}},
-    champion:2, ruup:4,
-  },
-  2020:{
-    semis:[
-      {home:{id:3,score:176.2},away:{id:1,score:164.7}},
-      {home:{id:5,score:168.4},away:{id:2,score:153.9}},
-    ],
-    final:{home:{id:3,score:182.1},away:{id:5,score:167.4}},
-    champion:3, ruup:5,
-  },
-  2021:{
-    semis:[
-      {home:{id:1,score:184.6},away:{id:3,score:161.3}},
-      {home:{id:4,score:174.2},away:{id:2,score:162.8}},
-    ],
-    final:{home:{id:1,score:192.4},away:{id:4,score:178.1}},
-    champion:1, ruup:4,
-  },
-  2022:{
-    semis:[
-      {home:{id:4,score:177.3},away:{id:1,score:163.4}},
-      {home:{id:6,score:169.8},away:{id:5,score:154.2}},
-    ],
-    final:{home:{id:4,score:183.7},away:{id:6,score:171.4}},
-    champion:4, ruup:6,
-  },
-  2023:{
-    semis:[
-      {home:{id:1,score:187.4},away:{id:6,score:158.9}},
-      {home:{id:2,score:176.3},away:{id:4,score:161.7}},
-    ],
-    final:{home:{id:1,score:196.8},away:{id:2,score:174.2}},
-    champion:1, ruup:2,
-  },
-  2024:{
-    semis:[
-      {home:{id:6,score:181.4},away:{id:1,score:167.8}},
-      {home:{id:3,score:174.6},away:{id:2,score:163.2}},
-    ],
-    final:{home:{id:6,score:188.7},away:{id:3,score:172.4}},
-    champion:6, ruup:3,
-  },
-};
-
-const RECORDS = [
-  {icon:'⚡',label:'Highest Single-Week Score',value:'196.8',unit:'pts',holder:'Conlon',ctx:'Week 14 (Championship) · 2023'},
-  {icon:'📉',label:'Lowest Single-Week Score',value:'42.2',unit:'pts',holder:'Brennan',ctx:'Week 4 · 2020'},
-  {icon:'🏃',label:'Biggest Win Margin',value:'94.6',unit:'pts',holder:'Conlon',ctx:'def. Malone by 94.6 · Wk 11 · 2023'},
-  {icon:'📅',label:'Most Points in a Season',value:'1,923.4',unit:'pts',holder:'Conlon',ctx:'2023 Regular Season'},
-  {icon:'📉',label:'Fewest Points in a Season',value:'1,234.5',unit:'pts',holder:'Brennan',ctx:'2020 Regular Season'},
-  {icon:'🏆',label:'Best Regular Season Record',value:'12-1',unit:'',holder:'Conlon',ctx:'2023 · 92.3% win rate'},
-  {icon:'🔥',label:'Longest Winning Streak',value:'9',unit:'straight',holder:'Murphy',ctx:'Weeks 2–10 · 2019'},
-  {icon:'💀',label:'Longest Losing Streak',value:'8',unit:'straight',holder:'Quinn',ctx:'Weeks 5–12 · 2022'},
-  {icon:'⭐',label:'Highest Scoring Player Week',value:'52.3',unit:'pts',holder:'Conlon',ctx:"Mahomes · Wk 11 · 2023"},
-  {icon:'🔄',label:'Most Transactions in a Season',value:'47',unit:'moves',holder:'Ryan',ctx:'2021 Season'},
-  {icon:'💰',label:'Best Trade Return',value:'+38.4',unit:'pts avg Δ',holder:"O'Brien",ctx:'Acquired CMC for picks · 2020'},
-  {icon:'📊',label:'All-Time Win Rate',value:'71.6',unit:'%',holder:'Conlon',ctx:'58–23 career record'},
-];
+const MANAGERS = HIST_MANAGERS.filter(m => m.has_name);
+const SEASONS  = HIST_SEASONS;
+const SEASON_STANDINGS = HIST_STANDINGS;
+const RECORDS  = HIST_RECORDS;
 
 // ─── UTILS ──────────────────────────────────────────────────────────────────
 
@@ -456,53 +305,43 @@ function initials(name){return name.split(/[\s']+/).map(p=>p[0]).join('').slice(
 
 function computeAllTime(){
   const stats={};
-  MANAGERS.forEach(m=>{stats[m.id]={wins:0,losses:0,pf:0,pa:0,championships:m.championships.length,seasons:0}});
+  MANAGERS.forEach(m=>{stats[m.id]={wins:0,losses:0,draws:0,pf:0,pa:0,championships:m.championships.length,seasons:0}});
   SEASONS.forEach(yr=>{
-    SEASON_STANDINGS[yr].forEach(row=>{
-      const s=stats[row.managerId];
-      s.wins+=row.w; s.losses+=row.l; s.pf+=row.pf; s.pa+=row.pa; s.seasons+=1;
+    (SEASON_STANDINGS[yr]||[]).forEach(row=>{
+      const s=stats[row.owner_id];
+      if(!s)return;
+      s.wins+=row.w; s.losses+=row.l; s.draws+=(row.d||0); s.pf+=row.pf; s.pa+=row.pa; s.seasons+=1;
     });
   });
   return MANAGERS.map(m=>({...m, ...stats[m.id],
-    winPct:(stats[m.id].wins/(stats[m.id].wins+stats[m.id].losses)*100).toFixed(1),
-    avgPF:(stats[m.id].pf/stats[m.id].seasons).toFixed(1),
+    winPct:(stats[m.id].wins/(stats[m.id].wins+stats[m.id].losses+stats[m.id].draws)*100).toFixed(1),
+    avgPF:(stats[m.id].pf/Math.max(stats[m.id].seasons,1)).toFixed(1),
   }));
 }
 const ALL_TIME = computeAllTime();
 
-function seededRand(seed){const x=Math.sin(seed+1)*1e4;return x-Math.floor(x)}
-
 function getH2HData(m1id,m2id){
-  let wins=0,losses=0,pf=0,pa=0;
-  const rows=[];
-  SEASONS.forEach(yr=>{
-    const s1=SEASON_STANDINGS[yr].find(s=>s.managerId===m1id);
-    const s2=SEASON_STANDINGS[yr].find(s=>s.managerId===m2id);
-    if(!s1||!s2)return;
-    const seed=m1id*1000+m2id*100+yr;
-    const n=seededRand(seed)>0.45?2:1;
-    for(let i=0;i<n;i++){
-      const ms=seed+i*17;
-      const rankDiff=s2.rank-s1.rank;
-      const winProb=0.5+(rankDiff/22);
-      const m1w=seededRand(ms)<winProb;
-      const avg1=s1.pf/13, avg2=s2.pf/13;
-      const sc1=avg1*(0.82+seededRand(ms*3)*0.36);
-      const sc2=avg2*(0.82+seededRand(ms*7)*0.36);
-      if(m1w)wins++;else losses++;
-      pf+=sc1;pa+=sc2;
-      const wk=Math.floor(seededRand(ms*11)*13)+1;
-      rows.push({yr,wk,sc1:sc1.toFixed(2),sc2:sc2.toFixed(2),m1w});
-    }
-  });
-  rows.sort((a,b)=>b.yr-a.yr||b.wk-a.wk);
-  return{wins,losses,pf:pf.toFixed(1),pa:pa.toFixed(1),rows:rows.slice(0,8)};
+  const ids=[m1id,m2id].sort();
+  const key=ids.join(':');
+  const pair=HIST_H2H[key];
+  if(!pair)return{wins:0,losses:0,pf:'0.0',pa:'0.0',rows:[]};
+  const flip=m1id!==ids[0];
+  const wins  =flip?pair.losses:pair.wins;
+  const losses=flip?pair.wins:pair.losses;
+  const pf    =flip?pair.pa:pair.pf;
+  const pa    =flip?pair.pf:pair.pa;
+  const rows=(pair.matches||[]).map(r=>{
+    const sc1=flip?r.s2:r.s1;
+    const sc2=flip?r.s1:r.s2;
+    return{yr:r.year,wk:r.week,sc1:sc1.toFixed(2),sc2:sc2.toFixed(2),m1w:sc1>sc2};
+  }).slice(0,8);
+  return{wins,losses,pf:pf.toFixed(1),pa:pa.toFixed(1),rows};
 }
 
 function computeManagerCareer(mid){
   const seasons=[];
   SEASONS.forEach(yr=>{
-    const row=SEASON_STANDINGS[yr].find(s=>s.managerId===mid);
+    const row=(SEASON_STANDINGS[yr]||[]).find(s=>s.owner_id===mid);
     if(row) seasons.push({yr,...row});
   });
   return seasons;
@@ -571,10 +410,12 @@ function StickyNav({active}){
 function HeroSection(){
   const ref=React.useRef();
   const inView=useInView(ref,0.1);
-  const season6=useCountUp(6,inView);
-  const mgrs=useCountUp(10,inView);
-  const score=useCountUp(196.8,inView,1);
-  const latestChamp=mgr(PLAYOFFS[2024].champion);
+  const topScore=parseFloat((HIST_RECORDS[0]||{}).value||0);
+  const seasonsCount=useCountUp(SEASONS.length,inView);
+  const mgrsCount=useCountUp(MANAGERS.length,inView);
+  const score=useCountUp(topScore,inView,1);
+  const champRow2024=(SEASON_STANDINGS[2024]||[]).find(s=>s.champion);
+  const latestChamp=champRow2024?(mgr(champRow2024.owner_id)||{name:champRow2024.team_name,team:champRow2024.team_name}):null;
   return(
     <section id="hero" ref={ref}>
       <div className="hero-stripe"/>
@@ -582,21 +423,21 @@ function HeroSection(){
       <div className="hero-fade"/>
       <div className="container hero-content">
         <div className="hero-est" style={{opacity:inView?1:0,transition:'opacity .6s .1s'}}>
-          Est. 2019 · Official League Archive
+          Est. 2018 · Official League Archive
         </div>
         <h1 className="hero-title" style={{opacity:inView?1:0,transition:'opacity .7s .2s,transform .7s .2s',transform:inView?'none':'translateY(24px)'}}>
           TOGGA<br/><em>BOYS</em><br/>REF
         </h1>
         <p className="hero-sub" style={{opacity:inView?1:0,transition:'opacity .6s .35s'}}>
-          Six seasons of glory, heartbreak, and questionable roster decisions.
+          Seven seasons of glory, heartbreak, and questionable roster decisions.
         </p>
         <div className="hero-stats" style={{opacity:inView?1:0,transition:'opacity .6s .45s'}}>
           <div className="hero-stat-item">
-            <div className="hero-stat-num">{season6}</div>
+            <div className="hero-stat-num">{seasonsCount}</div>
             <div className="hero-stat-lbl">Seasons</div>
           </div>
           <div className="hero-stat-item">
-            <div className="hero-stat-num">{mgrs}</div>
+            <div className="hero-stat-num">{mgrsCount}</div>
             <div className="hero-stat-lbl">Managers</div>
           </div>
           <div className="hero-stat-item">
@@ -605,11 +446,11 @@ function HeroSection(){
           </div>
         </div>
         <div style={{opacity:inView?1:0,transition:'opacity .6s .55s'}}>
-          <div className="champ-badge">
+          {latestChamp&&<div className="champ-badge">
             <div className="champ-badge-dot"/>
             <span className="champ-badge-text">2024 Champion&nbsp;·&nbsp;</span>
             <span className="champ-badge-name">{latestChamp.name} — {latestChamp.team}</span>
-          </div>
+          </div>}
         </div>
       </div>
     </section>
@@ -671,17 +512,16 @@ function HallOfChampions(){
         </div>
         <div className="champ-row">
           {SEASONS.map(yr=>{
-            const c=PLAYOFFS[yr];const champ=mgr(c.champion);const ru=mgr(c.ruup);
-            const s1=SEASON_STANDINGS[yr].find(s=>s.managerId===c.champion);
+            const champRow=(SEASON_STANDINGS[yr]||[]).find(s=>s.rank===1)||{};
+            const champ=mgr(champRow.owner_id)||{name:champRow.team_name||'—',team:champRow.team_name||'',color:'#555'};
             return(
               <div className="champ-card" key={yr}>
                 <div className="trophy-icon">🏆</div>
                 <div className="cc-yr">{yr}</div>
                 <div className="cc-name">{champ.name}</div>
-                <div className="cc-team">{champ.team}</div>
-                <div className="cc-rec">{s1.w}–{s1.l}</div>
-                <div className="cc-pf">{s1.pf.toFixed(1)} PF</div>
-                <div style={{marginTop:'6px',fontSize:'.7rem',color:'var(--muted)'}}>Runner-up: {ru.name}</div>
+                <div className="cc-team">{champRow.team_name}</div>
+                <div className="cc-rec">{champRow.w}–{champRow.d}–{champRow.l}</div>
+                <div className="cc-pf">{(champRow.pf||0).toFixed(1)} PF</div>
               </div>
             );
           })}
@@ -735,10 +575,10 @@ function SeasonResults(){
   const ref=React.useRef();
   const inView=useInView(ref);
   const selectYr=y=>{setYr(y);setKey(k=>k+1)};
-  const standings=SEASON_STANDINGS[yr];
-  const play=PLAYOFFS[yr];
-  const topScore=standings.reduce((a,b)=>b.pf>a.pf?b:a);
-  const champ=mgr(play.champion);
+  const standings=SEASON_STANDINGS[yr]||[];
+  const champRow=standings.find(s=>s.rank===1)||{};
+  const topScore=standings.reduce((a,b)=>b.pf>a.pf?b:a,champRow);
+  const champ=mgr(champRow.owner_id)||{name:champRow.team_name||'—',team:champRow.team_name||''};
   return(
     <section id="seasons" ref={ref}>
       <div className="container">
@@ -757,11 +597,11 @@ function SeasonResults(){
             <div className="stat-block" style={{borderColor:'var(--border-g)'}}>
               <div className="s-label" style={{marginBottom:'.3rem'}}>Champion</div>
               <div className="stat-block-num" style={{color:'var(--green-l)'}}>{champ.name}</div>
-              <div style={{fontSize:'.8rem',color:'var(--muted)',marginTop:'4px'}}>{champ.team}</div>
+              <div style={{fontSize:'.8rem',color:'var(--muted)',marginTop:'4px'}}>{champRow.team_name}</div>
             </div>
             <div className="stat-block">
               <div className="s-label" style={{marginBottom:'.3rem'}}>Top Scorer</div>
-              <div className="stat-block-num">{mgr(topScore.managerId).name}</div>
+              <div className="stat-block-num">{(mgr(topScore.owner_id)||{name:topScore.team_name||'—'}).name}</div>
               <div style={{fontSize:'.8rem',color:'var(--muted)',marginTop:'4px'}}>{topScore.pf.toFixed(1)} pts · {yr} season</div>
             </div>
           </div>
@@ -775,23 +615,23 @@ function SeasonResults(){
               </thead>
               <tbody>
                 {standings.map(row=>{
-                  const m=mgr(row.managerId);
+                  const m=mgr(row.owner_id)||{name:row.team_name,team:row.team_name,color:'#555555'};
                   return(
-                    <tr key={row.managerId}>
+                    <tr key={row.owner_id}>
                       <td><span className={`rank-num${row.rank===1?' gold':row.rank===2?' silver':row.rank===3?' bronze':''}`}>{row.rank}</span></td>
                       <td>
                         <div className="m-cell">
                           <div className="m-avatar" style={{background:m.color}}>{initials(m.name)}</div>
                           <div>
                             <div style={{fontWeight:600}}>{m.name}{row.champion&&<span className="badge-champ">Champ</span>}</div>
-                            <div className="m-team">{m.team}</div>
+                            <div className="m-team">{row.team_name}</div>
                           </div>
                         </div>
                       </td>
                       <td className="num-green">{row.w}</td>
-                      <td style={{color:'var(--muted)'}}>—</td>
+                      <td style={{color:'var(--muted)'}}>{row.d}</td>
                       <td style={{color:'var(--dim)'}}>{row.l}</td>
-                      <td style={{fontFamily:'Barlow Semi Condensed,sans-serif',fontWeight:800}}>{3*row.w}</td>
+                      <td style={{fontFamily:'Barlow Semi Condensed,sans-serif',fontWeight:800}}>{row.pts}</td>
                       <td className="num-green">{row.pf.toFixed(1)}</td>
                       <td style={{color:'var(--muted)'}}>{row.pa.toFixed(1)}</td>
                     </tr>
@@ -840,10 +680,10 @@ function HeadToHead(){
   const[m2,setM2]=React.useState('');
   const data=React.useMemo(()=>{
     if(!m1||!m2||m1===m2)return null;
-    return getH2HData(+m1,+m2);
+    return getH2HData(m1,m2);
   },[m1,m2]);
-  const m1obj=m1?mgr(+m1):null;
-  const m2obj=m2?mgr(+m2):null;
+  const m1obj=m1?mgr(m1):null;
+  const m2obj=m2?mgr(m2):null;
   const total=data?data.wins+data.losses:0;
   const m1pct=total?Math.round(data.wins/total*100):50;
   return(
@@ -857,14 +697,14 @@ function HeadToHead(){
         <div className="h2h-selectors">
           <select className="mgr-select" value={m1} onChange={e=>setM1(e.target.value)}>
             <option value="">Select manager…</option>
-            {MANAGERS.filter(m=>m.id!==+m2).map(m=>(
+            {MANAGERS.filter(m=>m.id!==m2).map(m=>(
               <option key={m.id} value={m.id}>{m.name} — {m.team}</option>
             ))}
           </select>
           <div className="h2h-vs">VS</div>
           <select className="mgr-select" value={m2} onChange={e=>setM2(e.target.value)}>
             <option value="">Select manager…</option>
-            {MANAGERS.filter(m=>m.id!==+m1).map(m=>(
+            {MANAGERS.filter(m=>m.id!==m1).map(m=>(
               <option key={m.id} value={m.id}>{m.name} — {m.team}</option>
             ))}
           </select>
@@ -936,18 +776,7 @@ function ManagerModal({manager,onClose}){
   const totalL=career.reduce((a,b)=>a+b.l,0);
   const totalPF=career.reduce((a,b)=>a+b.pf,0);
   const bestSzn=career.reduce((a,b)=>b.pf>a.pf?b:a,career[0]);
-  const SIGS={
-    1:"Dominant regular seasons backed up in the playoffs. Two championships, best all-time win rate — the standard everyone else chases.",
-    2:"The original champion. Known for high-volume transactions and lethal playoff runs. Built for the big moment.",
-    3:"Quietly consistent. Rarely misses the playoffs, and a championship to their name. The dark horse every season.",
-    4:"One of the most complete managers in the league. Strong record, big-game winner, and always dangerous in January.",
-    5:"Volume drafter. Highest transaction count on record. Often in the mix but the championship has remained elusive.",
-    6:"A slow rise to power. Back-to-back finals appearances culminating in the 2024 crown. The new era begins.",
-    7:"Loveable underdog. Always there, always optimistic. The league wouldn't be the same without them.",
-    8:"Streaky but capable. Has had moments of brilliance — just needs everything to align.",
-    9:"The quiet manager. Low drama, steady presence, occasionally dangerous. Still hunting that first title.",
-    10:"The perennial rebuilder. Every season is \"next year.\" Genuinely beloved for the banter they bring.",
-  };
+
   return(
     <div className="modal-overlay" onClick={e=>{if(e.target===e.currentTarget)onClose()}}>
       <div className="modal-box">
@@ -994,7 +823,7 @@ function ManagerModal({manager,onClose}){
                 <thead>
                   <tr>
                     <th>Season</th><th>Finish</th><th>W</th><th>L</th>
-                    <th>PF</th><th>PA</th><th>Playoffs</th>
+                    <th>PF</th><th>PA</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1011,7 +840,6 @@ function ManagerModal({manager,onClose}){
                       <td style={{color:'var(--muted)'}}>{row.l}</td>
                       <td>{row.pf.toFixed(1)}</td>
                       <td style={{color:'var(--muted)'}}>{row.pa.toFixed(1)}</td>
-                      <td>{row.playoffs?<span style={{color:'var(--green-l)',fontSize:'.75rem',fontWeight:700}}>✓</span>:<span style={{color:'var(--dim)'}}>—</span>}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -1036,10 +864,7 @@ function ManagerModal({manager,onClose}){
               </div>
             </div>
           </div>
-          <div className="modal-section">
-            <div className="modal-section-title">Manager Profile</div>
-            <div className="sig-block">{SIGS[manager.id]}</div>
-          </div>
+
         </div>
       </div>
     </div>

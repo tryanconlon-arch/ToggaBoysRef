@@ -1,0 +1,211 @@
+year,week,t1_team,t2_team,t1_score,t2_score
+2018,1,Culture Change,Blake's Team,56.75,78.0
+2018,1,2 More Years of Fellaini,Aubazette FC,132.5,78.25
+2018,1,Ashley notso Young,Firmino's 1st Friend,131.0,86.0
+2018,1,Romelu Bukake,Tim's Team,71.25,82.25
+2018,1,Team I_am_Tim,Sturridge's Comeback Tour,72.5,118.5
+2018,1,Woot's Team,Ry Rob's Team,118.25,50.0
+2018,2,Ry Rob's Team,Culture Change,118.5,43.25
+2018,2,2 More Years of Fellaini,Woot's Team,111.75,102.25
+2018,2,Aubazette FC,Romelu Bukake,81.25,69.0
+2018,2,Blake's Team,Firmino's 1st Friend,52.75,129.0
+2018,2,Sturridge's Comeback Tour,Ashley notso Young,136.0,117.75
+2018,2,Tim's Team,Team I_am_Tim,92.0,95.0
+2018,3,Culture Change,2 More Years of Fellaini,93.25,119.0
+2018,3,Ashley notso Young,Tim's Team,104.0,92.25
+2018,3,Blake's Team,Sturridge's Comeback Tour,55.75,69.25
+2018,3,Firmino's 1st Friend,Ry Rob's Team,133.5,99.5
+2018,3,Team I_am_Tim,Romelu Bukake,88.0,110.25
+2018,3,Woot's Team,Aubazette FC,56.25,67.0
+2018,4,Woot's Team,Culture Change,105.75,76.0
+2018,4,2 More Years of Fellaini,Firmino's 1st Friend,94.25,95.5
+2018,4,Aubazette FC,Team I_am_Tim,101.0,71.5
+2018,4,Romelu Bukake,Ashley notso Young,92.0,83.0
+2018,4,Ry Rob's Team,Sturridge's Comeback Tour,80.25,91.5
+2018,4,Tim's Team,Blake's Team,91.75,65.0
+2018,5,Culture Change,Aubazette FC,63.0,89.75
+2018,5,Ashley notso Young,Team I_am_Tim,106.0,99.0
+2018,5,Blake's Team,Romelu Bukake,81.0,94.75
+2018,5,Firmino's 1st Friend,Woot's Team,58.75,107.5
+2018,5,Ry Rob's Team,Tim's Team,43.75,82.0
+2018,5,Sturridge's Comeback Tour,2 More Years of Fellaini,154.25,115.5
+2018,6,Culture Change,Firmino's 1st Friend,122.75,36.0
+2018,6,2 More Years of Fellaini,Tim's Team,87.0,93.0
+2018,6,Aubazette FC,Ashley notso Young,136.25,114.0
+2018,6,Romelu Bukake,Ry Rob's Team,63.5,46.5
+2018,6,Team I_am_Tim,Blake's Team,133.25,76.75
+2018,6,Woot's Team,Sturridge's Comeback Tour,113.5,91.25
+2018,7,Sturridge's Comeback Tour,Culture Change,99.0,83.25
+2018,7,2 More Years of Fellaini,Romelu Bukake,127.25,75.25
+2018,7,Blake's Team,Ashley notso Young,105.5,104.0
+2018,7,Firmino's 1st Friend,Aubazette FC,44.5,71.5
+2018,7,Ry Rob's Team,Team I_am_Tim,104.0,72.5
+2018,7,Tim's Team,Woot's Team,95.0,80.75
+2018,8,Culture Change,Tim's Team,51.75,95.75
+2018,8,Ashley notso Young,Ry Rob's Team,88.25,92.25
+2018,8,Aubazette FC,Blake's Team,141.0,102.25
+2018,8,Firmino's 1st Friend,Sturridge's Comeback Tour,61.25,87.25
+2018,8,Team I_am_Tim,2 More Years of Fellaini,54.75,127.75
+2018,8,Woot's Team,Romelu Bukake,78.75,88.5
+2018,9,Romelu Bukake,Culture Change,102.0,56.0
+2018,9,2 More Years of Fellaini,Ashley notso Young,81.0,58.0
+2018,9,Ry Rob's Team,Blake's Team,87.75,95.25
+2018,9,Sturridge's Comeback Tour,Aubazette FC,64.25,97.5
+2018,9,Tim's Team,Firmino's 1st Friend,102.5,67.75
+2018,9,Woot's Team,Team I_am_Tim,86.75,115.25
+2018,10,Culture Change,Team I_am_Tim,62.25,82.75
+2018,10,Ashley notso Young,Woot's Team,82.75,110.0
+2018,10,Aubazette FC,Ry Rob's Team,137.5,77.5
+2018,10,Blake's Team,2 More Years of Fellaini,60.5,111.5
+2018,10,Firmino's 1st Friend,Romelu Bukake,80.75,83.5
+2018,10,Sturridge's Comeback Tour,Tim's Team,109.75,116.0
+2018,11,Culture Change,Ashley notso Young,63.75,61.75
+2018,11,2 More Years of Fellaini,Ry Rob's Team,113.75,73.5
+2018,11,Romelu Bukake,Sturridge's Comeback Tour,46.25,77.5
+2018,11,Team I_am_Tim,Firmino's 1st Friend,61.25,142.0
+2018,11,Tim's Team,Aubazette FC,95.25,85.5
+2018,11,Woot's Team,Blake's Team,124.25,104.25
+2018,12,Blake's Team,Culture Change,62.25,56.5
+2018,12,Aubazette FC,2 More Years of Fellaini,85.75,97.25
+2018,12,Firmino's 1st Friend,Ashley notso Young,90.25,89.25
+2018,12,Ry Rob's Team,Woot's Team,93.5,79.25
+2018,12,Sturridge's Comeback Tour,Team I_am_Tim,69.75,101.25
+2018,12,Tim's Team,Romelu Bukake,69.25,46.0
+2018,13,Culture Change,Ry Rob's Team,104.75,99.5
+2018,13,Ashley notso Young,Sturridge's Comeback Tour,69.5,54.0
+2018,13,Firmino's 1st Friend,Blake's Team,72.25,108.0
+2018,13,Romelu Bukake,Aubazette FC,69.75,112.0
+2018,13,Team I_am_Tim,Tim's Team,130.25,111.75
+2018,13,Woot's Team,2 More Years of Fellaini,64.75,81.0
+2018,14,2 More Years of Fellaini,Culture Change,66.5,62.25
+2018,14,Aubazette FC,Woot's Team,151.75,78.5
+2018,14,Romelu Bukake,Team I_am_Tim,69.0,34.25
+2018,14,Ry Rob's Team,Firmino's 1st Friend,100.0,51.25
+2018,14,Sturridge's Comeback Tour,Blake's Team,88.0,94.25
+2018,14,Tim's Team,Ashley notso Young,65.5,74.75
+2018,15,Culture Change,Woot's Team,52.25,41.0
+2018,15,Ashley notso Young,Romelu Bukake,54.0,52.25
+2018,15,Blake's Team,Tim's Team,70.25,106.0
+2018,15,Firmino's 1st Friend,2 More Years of Fellaini,82.25,53.25
+2018,15,Sturridge's Comeback Tour,Ry Rob's Team,109.5,60.5
+2018,15,Team I_am_Tim,Aubazette FC,102.75,103.25
+2018,16,Aubazette FC,Culture Change,96.75,54.5
+2018,16,2 More Years of Fellaini,Sturridge's Comeback Tour,120.75,89.25
+2018,16,Romelu Bukake,Blake's Team,106.75,130.25
+2018,16,Team I_am_Tim,Ashley notso Young,29.25,42.25
+2018,16,Tim's Team,Ry Rob's Team,55.25,61.75
+2018,16,Woot's Team,Firmino's 1st Friend,105.0,116.5
+2018,17,Firmino's 1st Friend,Culture Change,74.5,41.0
+2018,17,Ashley notso Young,Aubazette FC,94.0,93.25
+2018,17,Blake's Team,Team I_am_Tim,69.0,57.75
+2018,17,Ry Rob's Team,Romelu Bukake,104.25,42.0
+2018,17,Sturridge's Comeback Tour,Woot's Team,84.5,47.5
+2018,17,Tim's Team,2 More Years of Fellaini,72.25,102.0
+2018,18,Culture Change,Sturridge's Comeback Tour,73.0,126.5
+2018,18,Ashley notso Young,Blake's Team,98.5,90.0
+2018,18,Aubazette FC,Firmino's 1st Friend,92.0,63.0
+2018,18,Romelu Bukake,2 More Years of Fellaini,37.25,109.5
+2018,18,Team I_am_Tim,Ry Rob's Team,78.0,106.5
+2018,18,Woot's Team,Tim's Team,89.5,73.75
+2018,19,Tim's Team,Culture Change,79.75,62.25
+2018,19,2 More Years of Fellaini,Team I_am_Tim,135.5,56.75
+2018,19,Blake's Team,Aubazette FC,59.0,123.0
+2018,19,Romelu Bukake,Woot's Team,85.0,114.25
+2018,19,Ry Rob's Team,Ashley notso Young,114.25,85.0
+2018,19,Sturridge's Comeback Tour,Firmino's 1st Friend,71.25,75.0
+2018,20,Culture Change,Romelu Bukake,73.25,56.75
+2018,20,Ashley notso Young,2 More Years of Fellaini,46.5,67.0
+2018,20,Aubazette FC,Sturridge's Comeback Tour,83.75,97.5
+2018,20,Blake's Team,Ry Rob's Team,120.75,44.5
+2018,20,Firmino's 1st Friend,Tim's Team,26.75,91.75
+2018,20,Team I_am_Tim,Woot's Team,38.25,118.0
+2018,21,Team I_am_Tim,Culture Change,74.25,115.75
+2018,21,2 More Years of Fellaini,Blake's Team,99.75,99.5
+2018,21,Romelu Bukake,Firmino's 1st Friend,48.25,59.25
+2018,21,Ry Rob's Team,Aubazette FC,44.5,113.0
+2018,21,Tim's Team,Sturridge's Comeback Tour,82.25,65.25
+2018,21,Woot's Team,Ashley notso Young,112.75,108.75
+2018,22,Ashley notso Young,Culture Change,89.5,87.0
+2018,22,Aubazette FC,Tim's Team,101.75,58.25
+2018,22,Blake's Team,Woot's Team,89.0,144.0
+2018,22,Firmino's 1st Friend,Team I_am_Tim,79.0,66.0
+2018,22,Ry Rob's Team,2 More Years of Fellaini,65.75,106.5
+2018,22,Sturridge's Comeback Tour,Romelu Bukake,71.0,57.5
+2018,23,Culture Change,Blake's Team,84.75,45.5
+2018,23,2 More Years of Fellaini,Aubazette FC,115.25,78.5
+2018,23,Ashley notso Young,Firmino's 1st Friend,88.5,93.75
+2018,23,Romelu Bukake,Tim's Team,75.75,70.75
+2018,23,Team I_am_Tim,Sturridge's Comeback Tour,59.0,115.5
+2018,23,Woot's Team,Ry Rob's Team,107.25,68.25
+2018,24,Ry Rob's Team,Culture Change,118.25,51.75
+2018,24,2 More Years of Fellaini,Woot's Team,89.5,64.25
+2018,24,Aubazette FC,Romelu Bukake,118.5,28.25
+2018,24,Blake's Team,Firmino's 1st Friend,33.5,45.25
+2018,24,Sturridge's Comeback Tour,Ashley notso Young,69.75,75.25
+2018,24,Tim's Team,Team I_am_Tim,121.25,64.25
+2018,25,Culture Change,2 More Years of Fellaini,80.5,79.75
+2018,25,Ashley notso Young,Tim's Team,50.0,80.0
+2018,25,Blake's Team,Sturridge's Comeback Tour,87.75,115.25
+2018,25,Firmino's 1st Friend,Ry Rob's Team,130.75,139.25
+2018,25,Team I_am_Tim,Romelu Bukake,118.25,49.75
+2018,25,Woot's Team,Aubazette FC,119.75,114.25
+2018,26,Woot's Team,Culture Change,139.25,62.0
+2018,26,2 More Years of Fellaini,Firmino's 1st Friend,117.0,92.25
+2018,26,Aubazette FC,Team I_am_Tim,90.5,94.25
+2018,26,Romelu Bukake,Ashley notso Young,88.0,90.25
+2018,26,Ry Rob's Team,Sturridge's Comeback Tour,89.25,97.25
+2018,26,Tim's Team,Blake's Team,100.75,155.75
+2018,27,Culture Change,Aubazette FC,78.0,97.0
+2018,27,Ashley notso Young,Team I_am_Tim,112.0,37.5
+2018,27,Blake's Team,Romelu Bukake,49.5,52.5
+2018,27,Firmino's 1st Friend,Woot's Team,33.0,32.5
+2018,27,Ry Rob's Team,Tim's Team,79.25,62.5
+2018,27,Sturridge's Comeback Tour,2 More Years of Fellaini,78.0,110.0
+2018,28,Culture Change,Firmino's 1st Friend,73.25,56.75
+2018,28,2 More Years of Fellaini,Tim's Team,95.5,66.25
+2018,28,Aubazette FC,Ashley notso Young,68.25,121.0
+2018,28,Romelu Bukake,Ry Rob's Team,103.75,108.5
+2018,28,Team I_am_Tim,Blake's Team,76.0,48.5
+2018,28,Woot's Team,Sturridge's Comeback Tour,100.0,119.5
+2018,29,Sturridge's Comeback Tour,Culture Change,55.0,91.75
+2018,29,2 More Years of Fellaini,Romelu Bukake,34.75,74.25
+2018,29,Blake's Team,Ashley notso Young,38.5,74.0
+2018,29,Firmino's 1st Friend,Aubazette FC,23.0,108.75
+2018,29,Ry Rob's Team,Team I_am_Tim,64.0,95.0
+2018,29,Tim's Team,Woot's Team,133.0,50.25
+2018,30,Culture Change,Tim's Team,125.25,32.5
+2018,30,Ashley notso Young,Ry Rob's Team,72.5,62.5
+2018,30,Aubazette FC,Blake's Team,136.75,61.75
+2018,30,Firmino's 1st Friend,Sturridge's Comeback Tour,22.75,116.75
+2018,30,Team I_am_Tim,2 More Years of Fellaini,70.25,90.25
+2018,30,Woot's Team,Romelu Bukake,65.0,66.75
+2018,31,Romelu Bukake,Culture Change,26.75,10.0
+2018,31,2 More Years of Fellaini,Ashley notso Young,63.5,67.25
+2018,31,Ry Rob's Team,Blake's Team,39.5,15.5
+2018,31,Sturridge's Comeback Tour,Aubazette FC,86.5,29.75
+2018,31,Tim's Team,Firmino's 1st Friend,25.5,25.5
+2018,31,Woot's Team,Team I_am_Tim,17.75,14.5
+2018,32,Culture Change,Team I_am_Tim,101.5,104.25
+2018,32,Ashley notso Young,Woot's Team,96.5,110.75
+2018,32,Aubazette FC,Ry Rob's Team,120.75,56.5
+2018,32,Blake's Team,2 More Years of Fellaini,45.75,89.75
+2018,32,Firmino's 1st Friend,Romelu Bukake,66.75,73.25
+2018,32,Sturridge's Comeback Tour,Tim's Team,115.5,55.5
+2018,33,Culture Change,Ashley notso Young,111.5,63.75
+2018,33,2 More Years of Fellaini,Ry Rob's Team,103.0,42.25
+2018,33,Romelu Bukake,Sturridge's Comeback Tour,70.75,167.25
+2018,33,Team I_am_Tim,Firmino's 1st Friend,109.0,41.5
+2018,33,Tim's Team,Aubazette FC,119.5,114.0
+2018,33,Woot's Team,Blake's Team,56.25,90.25
+2018,34,Blake's Team,Culture Change,93.5,35.25
+2018,34,Aubazette FC,2 More Years of Fellaini,93.0,79.5
+2018,34,Firmino's 1st Friend,Ashley notso Young,72.5,52.0
+2018,34,Ry Rob's Team,Woot's Team,112.25,81.75
+2018,34,Sturridge's Comeback Tour,Team I_am_Tim,132.0,53.25
+2018,34,Tim's Team,Romelu Bukake,114.5,53.25
+2018,35,Culture Change,Ry Rob's Team,44.5,117.75
+2018,35,Ashley notso Young,Sturridge's Comeback Tour,50.75,99.75
+2018,35,Firmino's 1st Friend,Blake's Team,53.25,45.25
+2018,35,Romelu Bukake,Aubazette FC,106.25,178.75
+2018,35,Team I_am_Tim,Tim's Team,96.0,111.75
+2018,35,Woot's Team,2 More Years of Fellaini,75.5,93.5

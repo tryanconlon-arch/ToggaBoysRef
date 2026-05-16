@@ -1,0 +1,191 @@
+year,week,t1_team,t2_team,t1_score,t2_score
+2021,1,Berkley McG’s U1s,Alex's Redemption Arc,86.25,138.75
+2021,1,Hale End Starbøys,Gabriel’s Sparkling Cider,153.75,84.5
+2021,1,Leo Gerard U2s Team,Gylfi’s Goobers,117.75,123.5
+2021,1,Roy Kent's U8 Girls,Sean Dyche's Great Escape,101.75,79.25
+2021,1,team_tim,The McB’s,64.75,155.75
+2021,2,Hale End Starbøys,Berkley McG’s U1s,128.0,155.75
+2021,2,Alex's Redemption Arc,team_tim,75.5,89.5
+2021,2,Gabriel’s Sparkling Cider,Leo Gerard U2s Team,125.0,120.75
+2021,2,Gylfi’s Goobers,Roy Kent's U8 Girls,86.0,121.5
+2021,2,Sean Dyche's Great Escape,The McB’s,106.25,151.5
+2021,3,Berkley McG’s U1s,Gabriel’s Sparkling Cider,111.25,46.75
+2021,3,Roy Kent's U8 Girls,Leo Gerard U2s Team,94.75,112.25
+2021,3,Sean Dyche's Great Escape,Alex's Redemption Arc,102.0,84.75
+2021,3,The McB’s,Gylfi’s Goobers,86.0,116.5
+2021,3,team_tim,Hale End Starbøys,70.5,129.75
+2021,4,Berkley McG’s U1s,team_tim,117.25,94.5
+2021,4,Gabriel’s Sparkling Cider,Roy Kent's U8 Girls,107.0,133.75
+2021,4,Gylfi’s Goobers,Alex's Redemption Arc,109.0,80.0
+2021,4,Hale End Starbøys,Sean Dyche's Great Escape,110.0,89.5
+2021,4,Leo Gerard U2s Team,The McB’s,101.0,77.25
+2021,5,Sean Dyche's Great Escape,Berkley McG’s U1s,125.25,104.0
+2021,5,Alex's Redemption Arc,Leo Gerard U2s Team,83.0,126.0
+2021,5,Gylfi’s Goobers,Hale End Starbøys,114.0,109.75
+2021,5,The McB’s,Roy Kent's U8 Girls,101.75,106.25
+2021,5,team_tim,Gabriel’s Sparkling Cider,94.75,129.75
+2021,6,Berkley McG’s U1s,Gylfi’s Goobers,101.5,112.25
+2021,6,Gabriel’s Sparkling Cider,The McB’s,53.5,93.25
+2021,6,Leo Gerard U2s Team,Hale End Starbøys,89.75,109.75
+2021,6,Roy Kent's U8 Girls,Alex's Redemption Arc,118.25,138.25
+2021,6,team_tim,Sean Dyche's Great Escape,96.75,77.0
+2021,7,Leo Gerard U2s Team,Berkley McG’s U1s,97.75,114.75
+2021,7,Alex's Redemption Arc,The McB’s,99.5,100.5
+2021,7,Gylfi’s Goobers,team_tim,129.25,68.75
+2021,7,Hale End Starbøys,Roy Kent's U8 Girls,62.75,45.25
+2021,7,Sean Dyche's Great Escape,Gabriel’s Sparkling Cider,83.25,87.0
+2021,8,Roy Kent's U8 Girls,Berkley McG’s U1s,79.5,81.0
+2021,8,Gabriel’s Sparkling Cider,Alex's Redemption Arc,81.25,99.75
+2021,8,Sean Dyche's Great Escape,Gylfi’s Goobers,92.75,136.0
+2021,8,The McB’s,Hale End Starbøys,77.75,122.75
+2021,8,team_tim,Leo Gerard U2s Team,116.75,151.25
+2021,9,Berkley McG’s U1s,The McB’s,107.25,120.5
+2021,9,Gylfi’s Goobers,Gabriel’s Sparkling Cider,154.75,75.5
+2021,9,Hale End Starbøys,Alex's Redemption Arc,129.5,81.0
+2021,9,Leo Gerard U2s Team,Sean Dyche's Great Escape,153.75,67.25
+2021,9,Roy Kent's U8 Girls,team_tim,51.25,111.5
+2021,10,Alex's Redemption Arc,Berkley McG’s U1s,95.25,153.0
+2021,10,Gabriel’s Sparkling Cider,Hale End Starbøys,135.5,110.25
+2021,10,Gylfi’s Goobers,Leo Gerard U2s Team,91.75,91.0
+2021,10,Sean Dyche's Great Escape,Roy Kent's U8 Girls,70.75,87.0
+2021,10,The McB’s,team_tim,97.5,68.25
+2021,11,Berkley McG’s U1s,Hale End Starbøys,91.5,119.5
+2021,11,Leo Gerard U2s Team,Gabriel’s Sparkling Cider,127.75,81.25
+2021,11,Roy Kent's U8 Girls,Gylfi’s Goobers,84.25,107.5
+2021,11,The McB’s,Sean Dyche's Great Escape,65.25,38.0
+2021,11,team_tim,Alex's Redemption Arc,82.0,71.0
+2021,12,Gabriel’s Sparkling Cider,Berkley McG’s U1s,66.75,120.5
+2021,12,Alex's Redemption Arc,Sean Dyche's Great Escape,64.5,100.0
+2021,12,Gylfi’s Goobers,The McB’s,108.0,150.25
+2021,12,Hale End Starbøys,team_tim,107.25,99.5
+2021,12,Leo Gerard U2s Team,Roy Kent's U8 Girls,101.0,83.25
+2021,13,team_tim,Berkley McG’s U1s,150.25,70.25
+2021,13,Alex's Redemption Arc,Gylfi’s Goobers,47.0,106.25
+2021,13,Roy Kent's U8 Girls,Gabriel’s Sparkling Cider,89.0,118.25
+2021,13,Sean Dyche's Great Escape,Hale End Starbøys,97.5,89.25
+2021,13,The McB’s,Leo Gerard U2s Team,90.75,153.5
+2021,14,Berkley McG’s U1s,Sean Dyche's Great Escape,132.75,81.25
+2021,14,Gabriel’s Sparkling Cider,team_tim,114.25,104.5
+2021,14,Hale End Starbøys,Gylfi’s Goobers,125.5,109.25
+2021,14,Leo Gerard U2s Team,Alex's Redemption Arc,115.5,131.5
+2021,14,Roy Kent's U8 Girls,The McB’s,84.5,120.5
+2021,15,Gylfi’s Goobers,Berkley McG’s U1s,112.0,120.0
+2021,15,Alex's Redemption Arc,Roy Kent's U8 Girls,63.75,56.5
+2021,15,Hale End Starbøys,Leo Gerard U2s Team,98.75,117.5
+2021,15,Sean Dyche's Great Escape,team_tim,75.0,115.0
+2021,15,The McB’s,Gabriel’s Sparkling Cider,99.25,93.0
+2021,16,Berkley McG’s U1s,Leo Gerard U2s Team,104.25,127.75
+2021,16,Gabriel’s Sparkling Cider,Sean Dyche's Great Escape,158.75,98.5
+2021,16,Roy Kent's U8 Girls,Hale End Starbøys,86.75,133.0
+2021,16,The McB’s,Alex's Redemption Arc,111.25,96.75
+2021,16,team_tim,Gylfi’s Goobers,109.5,76.5
+2021,17,Berkley McG’s U1s,Roy Kent's U8 Girls,179.75,62.5
+2021,17,Alex's Redemption Arc,Gabriel’s Sparkling Cider,78.75,110.0
+2021,17,Gylfi’s Goobers,Sean Dyche's Great Escape,122.0,112.25
+2021,17,Hale End Starbøys,The McB’s,134.5,62.0
+2021,17,Leo Gerard U2s Team,team_tim,102.0,44.0
+2021,18,The McB’s,Berkley McG’s U1s,52.75,96.75
+2021,18,Alex's Redemption Arc,Hale End Starbøys,41.75,151.0
+2021,18,Gabriel’s Sparkling Cider,Gylfi’s Goobers,86.0,23.75
+2021,18,Sean Dyche's Great Escape,Leo Gerard U2s Team,50.5,100.5
+2021,18,team_tim,Roy Kent's U8 Girls,46.75,57.75
+2021,19,Berkley McG’s U1s,Alex's Redemption Arc,99.25,98.5
+2021,19,Hale End Starbøys,Gabriel’s Sparkling Cider,133.75,131.5
+2021,19,Leo Gerard U2s Team,Gylfi’s Goobers,102.25,78.5
+2021,19,Roy Kent's U8 Girls,Sean Dyche's Great Escape,73.75,77.25
+2021,19,team_tim,The McB’s,142.75,97.5
+2021,20,Hale End Starbøys,Berkley McG’s U1s,97.75,74.75
+2021,20,Alex's Redemption Arc,team_tim,63.25,77.5
+2021,20,Gabriel’s Sparkling Cider,Leo Gerard U2s Team,90.75,102.25
+2021,20,Gylfi’s Goobers,Roy Kent's U8 Girls,49.5,87.25
+2021,20,Sean Dyche's Great Escape,The McB’s,37.0,69.5
+2021,21,Berkley McG’s U1s,Gabriel’s Sparkling Cider,82.5,125.0
+2021,21,Roy Kent's U8 Girls,Leo Gerard U2s Team,71.5,108.75
+2021,21,Sean Dyche's Great Escape,Alex's Redemption Arc,84.5,110.75
+2021,21,The McB’s,Gylfi’s Goobers,159.75,93.75
+2021,21,team_tim,Hale End Starbøys,78.5,69.25
+2021,22,Berkley McG’s U1s,team_tim,171.5,99.25
+2021,22,Gabriel’s Sparkling Cider,Roy Kent's U8 Girls,77.75,86.5
+2021,22,Gylfi’s Goobers,Alex's Redemption Arc,137.25,183.75
+2021,22,Hale End Starbøys,Sean Dyche's Great Escape,100.5,114.0
+2021,22,Leo Gerard U2s Team,The McB’s,117.25,143.25
+2021,23,Sean Dyche's Great Escape,Berkley McG’s U1s,107.5,134.25
+2021,23,Alex's Redemption Arc,Leo Gerard U2s Team,98.75,129.75
+2021,23,Gylfi’s Goobers,Hale End Starbøys,119.75,129.0
+2021,23,The McB’s,Roy Kent's U8 Girls,77.25,90.5
+2021,23,team_tim,Gabriel’s Sparkling Cider,97.75,148.0
+2021,24,Berkley McG’s U1s,Gylfi’s Goobers,97.25,110.25
+2021,24,Gabriel’s Sparkling Cider,The McB’s,85.5,63.25
+2021,24,Leo Gerard U2s Team,Hale End Starbøys,184.75,106.75
+2021,24,Roy Kent's U8 Girls,Alex's Redemption Arc,110.25,79.75
+2021,24,team_tim,Sean Dyche's Great Escape,83.0,67.0
+2021,25,Leo Gerard U2s Team,Berkley McG’s U1s,128.5,113.0
+2021,25,Alex's Redemption Arc,The McB’s,195.25,103.75
+2021,25,Gylfi’s Goobers,team_tim,61.25,118.75
+2021,25,Hale End Starbøys,Roy Kent's U8 Girls,140.75,85.0
+2021,25,Sean Dyche's Great Escape,Gabriel’s Sparkling Cider,99.5,109.75
+2021,26,Roy Kent's U8 Girls,Berkley McG’s U1s,101.75,150.5
+2021,26,Gabriel’s Sparkling Cider,Alex's Redemption Arc,137.0,133.0
+2021,26,Sean Dyche's Great Escape,Gylfi’s Goobers,120.0,153.0
+2021,26,The McB’s,Hale End Starbøys,121.75,149.5
+2021,26,team_tim,Leo Gerard U2s Team,163.0,234.0
+2021,27,Berkley McG’s U1s,The McB’s,149.0,93.0
+2021,27,Gylfi’s Goobers,Gabriel’s Sparkling Cider,125.5,150.0
+2021,27,Hale End Starbøys,Alex's Redemption Arc,69.0,82.25
+2021,27,Leo Gerard U2s Team,Sean Dyche's Great Escape,81.75,78.75
+2021,27,Roy Kent's U8 Girls,team_tim,105.0,124.0
+2021,28,Alex's Redemption Arc,Berkley McG’s U1s,98.75,187.5
+2021,28,Gabriel’s Sparkling Cider,Hale End Starbøys,150.0,194.75
+2021,28,Gylfi’s Goobers,Leo Gerard U2s Team,164.75,208.0
+2021,28,Sean Dyche's Great Escape,Roy Kent's U8 Girls,215.25,91.75
+2021,28,The McB’s,team_tim,117.25,192.25
+2021,29,Berkley McG’s U1s,Hale End Starbøys,128.0,184.25
+2021,29,Leo Gerard U2s Team,Gabriel’s Sparkling Cider,159.75,84.75
+2021,29,Roy Kent's U8 Girls,Gylfi’s Goobers,118.0,151.5
+2021,29,The McB’s,Sean Dyche's Great Escape,105.75,114.5
+2021,29,team_tim,Alex's Redemption Arc,103.5,119.0
+2021,30,Gabriel’s Sparkling Cider,Berkley McG’s U1s,11.75,53.0
+2021,30,Alex's Redemption Arc,Sean Dyche's Great Escape,58.25,46.75
+2021,30,Gylfi’s Goobers,The McB’s,23.5,65.25
+2021,30,Hale End Starbøys,team_tim,75.5,77.25
+2021,30,Leo Gerard U2s Team,Roy Kent's U8 Girls,18.5,33.25
+2021,31,team_tim,Berkley McG’s U1s,105.75,114.25
+2021,31,Alex's Redemption Arc,Gylfi’s Goobers,102.5,113.0
+2021,31,Roy Kent's U8 Girls,Gabriel’s Sparkling Cider,57.75,88.0
+2021,31,Sean Dyche's Great Escape,Hale End Starbøys,44.0,76.25
+2021,31,The McB’s,Leo Gerard U2s Team,169.25,117.5
+2021,32,Berkley McG’s U1s,Sean Dyche's Great Escape,117.0,57.25
+2021,32,Gabriel’s Sparkling Cider,team_tim,51.0,90.0
+2021,32,Hale End Starbøys,Gylfi’s Goobers,68.75,95.5
+2021,32,Leo Gerard U2s Team,Alex's Redemption Arc,119.5,121.75
+2021,32,Roy Kent's U8 Girls,The McB’s,57.75,148.25
+2021,33,Gylfi’s Goobers,Berkley McG’s U1s,146.5,142.0
+2021,33,Alex's Redemption Arc,Roy Kent's U8 Girls,103.0,124.25
+2021,33,Hale End Starbøys,Leo Gerard U2s Team,193.5,125.5
+2021,33,Sean Dyche's Great Escape,team_tim,77.0,111.75
+2021,33,The McB’s,Gabriel’s Sparkling Cider,107.0,137.25
+2021,34,Berkley McG’s U1s,Leo Gerard U2s Team,173.0,114.0
+2021,34,Gabriel’s Sparkling Cider,Sean Dyche's Great Escape,97.5,101.0
+2021,34,Roy Kent's U8 Girls,Hale End Starbøys,76.5,174.0
+2021,34,The McB’s,Alex's Redemption Arc,131.75,99.75
+2021,34,team_tim,Gylfi’s Goobers,103.5,108.75
+2021,35,Berkley McG’s U1s,Roy Kent's U8 Girls,152.25,95.0
+2021,35,Alex's Redemption Arc,Gabriel’s Sparkling Cider,60.25,96.0
+2021,35,Gylfi’s Goobers,Sean Dyche's Great Escape,85.25,80.75
+2021,35,Hale End Starbøys,The McB’s,118.75,66.25
+2021,35,Leo Gerard U2s Team,team_tim,131.0,124.75
+2021,36,The McB’s,Berkley McG’s U1s,139.75,206.5
+2021,36,Alex's Redemption Arc,Hale End Starbøys,155.0,136.0
+2021,36,Gabriel’s Sparkling Cider,Gylfi’s Goobers,188.25,145.0
+2021,36,Sean Dyche's Great Escape,Leo Gerard U2s Team,114.25,143.75
+2021,36,team_tim,Roy Kent's U8 Girls,175.75,195.5
+2021,37,Berkley McG’s U1s,Alex's Redemption Arc,117.5,90.25
+2021,37,Hale End Starbøys,Gabriel’s Sparkling Cider,87.0,113.75
+2021,37,Leo Gerard U2s Team,Gylfi’s Goobers,132.5,123.0
+2021,37,Roy Kent's U8 Girls,Sean Dyche's Great Escape,50.0,131.25
+2021,37,team_tim,The McB’s,77.0,225.5
+2021,38,Hale End Starbøys,Berkley McG’s U1s,103.25,119.25
+2021,38,Alex's Redemption Arc,team_tim,78.0,141.5
+2021,38,Gabriel’s Sparkling Cider,Leo Gerard U2s Team,121.0,92.25
+2021,38,Gylfi’s Goobers,Roy Kent's U8 Girls,100.5,20.5
+2021,38,Sean Dyche's Great Escape,The McB’s,102.5,110.75

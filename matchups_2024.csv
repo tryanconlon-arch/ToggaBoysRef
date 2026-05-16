@@ -1,0 +1,898 @@
+year,week,t1_team,t2_team,t1_score,t2_score
+2024,1,1-Cruel Summerville,1-Morgan Rodgers Neighborhood,123.6,113.49
+2024,1,1 - Law of Averages,1-The Riesterer Bunny,101.81,95.6
+2024,1,1-Diamond Dogs,1-Check Complete FC,94.65,78.42
+2024,1,1-Dirty little Slot,1-The Madd Hatters,100.31,138.44
+2024,1,1-Mateta’s Muppets,1-Tim's Team,81.98,66.5
+2024,1,1-john lim,1- Schärholder Value,102.86,117.78
+2024,1,2-Arteta's Angels,2-FC Bofa,133.81,56.46
+2024,1,2-Greek Prison XI,2-Wild Boars United,88.62,133.86
+2024,1,2-Rainy Night at Stoke,2-McGinn and Tonic,82.36,88.91
+2024,1,2-Reeces (broken to) Pieces,2-Lads FC,102.48,109.54
+2024,1,2-Roy Kent's U8 Girls,2-100 Virgils,89.9,129.47
+2024,1,"2-good kev, m.A.A.d eze",2-Diego Luna Fan Page,74.52,107.59
+2024,1,3- Ornaldo Perfect Brothers & Sisters,3- Mickey Mount Clubhouse,66.25,124.65
+2024,1,"3- if u lose 2 me, that is embarrassing",3-Ajer & Big Justice,83.53,120.62
+2024,1,3-Down with the Thickness,3-Bench Warmers FC,96.6,86.15
+2024,1,3-Hakuna Mateta,3-Shaq Moore Fan SC,70.29,167.99
+2024,1,3-Kelly’s Seagulls,3-Dijk in Diaz,90.73,61.49
+2024,1,3-Onana What's my name,3-Young Munoz $$,109.01,120.7
+2024,2,1-Morgan Rodgers Neighborhood,1-Check Complete FC,93.0,83.54
+2024,2,1- Schärholder Value,1-Mateta’s Muppets,99.24,99.0
+2024,2,1-The Madd Hatters,1-Diamond Dogs,118.27,150.98
+2024,2,1-The Riesterer Bunny,1-Cruel Summerville,153.48,78.25
+2024,2,1-Tim's Team,1-Dirty little Slot,137.05,127.31
+2024,2,1-john lim,1 - Law of Averages,103.71,155.43
+2024,2,2-100 Virgils,2-Arteta's Angels,130.73,76.18
+2024,2,2-Diego Luna Fan Page,2-Reeces (broken to) Pieces,139.4,95.46
+2024,2,2-FC Bofa,2-Rainy Night at Stoke,62.74,128.23
+2024,2,2-Lads FC,2-Wild Boars United,131.97,103.69
+2024,2,2-McGinn and Tonic,2-Greek Prison XI,150.23,105.3
+2024,2,2-Roy Kent's U8 Girls,"2-good kev, m.A.A.d eze",68.49,124.0
+2024,2,3-Ajer & Big Justice,3- Mickey Mount Clubhouse,97.7,64.72
+2024,2,3-Bench Warmers FC,3- Ornaldo Perfect Brothers & Sisters,121.96,116.98
+2024,2,3-Dijk in Diaz,"3- if u lose 2 me, that is embarrassing",96.3,103.24
+2024,2,3-Onana What's my name,3-Kelly’s Seagulls,134.97,124.36
+2024,2,3-Shaq Moore Fan SC,3-Down with the Thickness,120.85,124.32
+2024,2,3-Young Munoz $$,3-Hakuna Mateta,117.99,67.71
+2024,3,1-Morgan Rodgers Neighborhood,1-The Madd Hatters,118.25,103.21
+2024,3,1 - Law of Averages,1- Schärholder Value,118.25,90.0
+2024,3,1-Check Complete FC,1-The Riesterer Bunny,98.99,141.75
+2024,3,1-Cruel Summerville,1-john lim,103.5,78.0
+2024,3,1-Diamond Dogs,1-Tim's Team,101.24,123.5
+2024,3,1-Dirty little Slot,1-Mateta’s Muppets,118.99,75.75
+2024,3,2-Greek Prison XI,2-FC Bofa,81.0,54.5
+2024,3,2-Lads FC,2-McGinn and Tonic,98.23,100.0
+2024,3,2-Rainy Night at Stoke,2-Arteta's Angels,123.75,142.5
+2024,3,2-Reeces (broken to) Pieces,2-Roy Kent's U8 Girls,80.74,90.75
+2024,3,2-Wild Boars United,2-Diego Luna Fan Page,114.71,86.0
+2024,3,"2-good kev, m.A.A.d eze",2-100 Virgils,126.5,105.25
+2024,3,3- Mickey Mount Clubhouse,3-Dijk in Diaz,143.73,89.0
+2024,3,3- Ornaldo Perfect Brothers & Sisters,3-Shaq Moore Fan SC,113.25,152.75
+2024,3,"3- if u lose 2 me, that is embarrassing",3-Onana What's my name,51.75,104.21
+2024,3,3-Ajer & Big Justice,3-Bench Warmers FC,110.75,104.99
+2024,3,3-Down with the Thickness,3-Hakuna Mateta,75.25,57.5
+2024,3,3-Kelly’s Seagulls,3-Young Munoz $$,88.0,118.75
+2024,4,1-Tim's Team,1-Morgan Rodgers Neighborhood,141.66,138.23
+2024,4,1 - Law of Averages,1-Cruel Summerville,134.99,75.14
+2024,4,1- Schärholder Value,1-Dirty little Slot,89.22,77.74
+2024,4,1-Mateta’s Muppets,1-Diamond Dogs,125.75,82.24
+2024,4,1-The Riesterer Bunny,1-The Madd Hatters,94.24,97.13
+2024,4,1-john lim,1-Check Complete FC,80.55,118.99
+2024,4,2-100 Virgils,2-Rainy Night at Stoke,82.24,103.54
+2024,4,2-Arteta's Angels,2-Greek Prison XI,91.85,154.23
+2024,4,2-Diego Luna Fan Page,2-McGinn and Tonic,125.16,136.99
+2024,4,2-FC Bofa,2-Lads FC,112.38,89.75
+2024,4,2-Roy Kent's U8 Girls,2-Wild Boars United,75.73,68.14
+2024,4,"2-good kev, m.A.A.d eze",2-Reeces (broken to) Pieces,98.49,134.48
+2024,4,3-Dijk in Diaz,3-Bench Warmers FC,68.75,104.81
+2024,4,3-Hakuna Mateta,3- Ornaldo Perfect Brothers & Sisters,131.13,144.1
+2024,4,3-Kelly’s Seagulls,"3- if u lose 2 me, that is embarrassing",114.97,105.5
+2024,4,3-Onana What's my name,3- Mickey Mount Clubhouse,99.36,98.65
+2024,4,3-Shaq Moore Fan SC,3-Ajer & Big Justice,95.42,100.17
+2024,4,3-Young Munoz $$,3-Down with the Thickness,93.99,116.99
+2024,4,1-Mateta’s Muppets,1-john lim,125.75,80.55
+2024,4,2-Lads FC,2-FC Bofa,89.75,112.38
+2024,4,3-Young Munoz $$,3- Mickey Mount Clubhouse,93.99,98.65
+2024,4,1-The Madd Hatters,1-Diamond Dogs,97.13,82.24
+2024,4,2-Arteta's Angels,2-100 Virgils,91.85,82.24
+2024,4,3-Bench Warmers FC,3-Dijk in Diaz,104.81,68.75
+2024,4,1-The Riesterer Bunny,1-Dirty little Slot,94.24,77.74
+2024,4,2-Diego Luna Fan Page,2-McGinn and Tonic,125.16,136.99
+2024,4,3-Shaq Moore Fan SC,3-Down with the Thickness,95.42,116.99
+2024,4,1-Cruel Summerville,1-Check Complete FC,75.14,118.99
+2024,4,2-Wild Boars United,2-Greek Prison XI,68.14,154.23
+2024,4,3-Ajer & Big Justice,3-Onana What's my name,100.17,99.36
+2024,4,1- Schärholder Value,1-Morgan Rodgers Neighborhood,89.22,138.23
+2024,4,2-Rainy Night at Stoke,2-Reeces (broken to) Pieces,103.54,134.48
+2024,4,3-Kelly’s Seagulls,3- Ornaldo Perfect Brothers & Sisters,114.97,144.1
+2024,4,1 - Law of Averages,1-Tim's Team,134.99,141.66
+2024,4,"2-good kev, m.A.A.d eze",2-Roy Kent's U8 Girls,98.49,75.73
+2024,4,"3- if u lose 2 me, that is embarrassing",3-Hakuna Mateta,105.5,131.13
+2024,5,1-Morgan Rodgers Neighborhood,1-Mateta’s Muppets,119.01,84.0
+2024,5,1-Check Complete FC,1 - Law of Averages,66.99,76.57
+2024,5,1-Cruel Summerville,1- Schärholder Value,68.0,110.99
+2024,5,1-Diamond Dogs,1-Dirty little Slot,110.24,172.73
+2024,5,1-The Madd Hatters,1-john lim,150.74,69.0
+2024,5,1-The Riesterer Bunny,1-Tim's Team,141.66,146.22
+2024,5,2-Diego Luna Fan Page,2-FC Bofa,165.5,87.5
+2024,5,2-Greek Prison XI,2-Rainy Night at Stoke,119.81,116.93
+2024,5,2-Lads FC,2-Arteta's Angels,102.49,56.75
+2024,5,2-McGinn and Tonic,2-Roy Kent's U8 Girls,97.24,118.92
+2024,5,2-Reeces (broken to) Pieces,2-100 Virgils,99.23,99.64
+2024,5,2-Wild Boars United,"2-good kev, m.A.A.d eze",92.98,121.25
+2024,5,3- Mickey Mount Clubhouse,3-Kelly’s Seagulls,94.24,91.74
+2024,5,3- Ornaldo Perfect Brothers & Sisters,3-Down with the Thickness,133.48,116.48
+2024,5,"3- if u lose 2 me, that is embarrassing",3-Young Munoz $$,101.5,135.74
+2024,5,3-Ajer & Big Justice,3-Hakuna Mateta,98.5,90.49
+2024,5,3-Bench Warmers FC,3-Onana What's my name,132.8,102.23
+2024,5,3-Dijk in Diaz,3-Shaq Moore Fan SC,121.94,109.15
+2024,5,1-Mateta’s Muppets,2-FC Bofa,84.0,87.5
+2024,5,1-john lim,3-Young Munoz $$,69.0,135.74
+2024,5,2-Lads FC,3- Mickey Mount Clubhouse,102.49,94.24
+2024,5,1-Diamond Dogs,3-Bench Warmers FC,110.24,132.8
+2024,5,1-The Madd Hatters,2-100 Virgils,150.74,99.64
+2024,5,2-Arteta's Angels,3-Dijk in Diaz,56.75,121.94
+2024,5,1-Dirty little Slot,3-Shaq Moore Fan SC,172.73,109.15
+2024,5,1-The Riesterer Bunny,2-McGinn and Tonic,141.66,97.24
+2024,5,3-Down with the Thickness,2-Diego Luna Fan Page,116.48,165.5
+2024,5,1-Check Complete FC,3-Ajer & Big Justice,66.99,98.5
+2024,5,2-Greek Prison XI,1-Cruel Summerville,119.81,68.0
+2024,5,2-Wild Boars United,3-Onana What's my name,92.98,102.23
+2024,5,3- Ornaldo Perfect Brothers & Sisters,1-Morgan Rodgers Neighborhood,133.48,119.01
+2024,5,1- Schärholder Value,2-Rainy Night at Stoke,110.99,116.93
+2024,5,2-Reeces (broken to) Pieces,3-Kelly’s Seagulls,99.23,91.74
+2024,5,1 - Law of Averages,"3- if u lose 2 me, that is embarrassing",76.57,101.5
+2024,5,1-Tim's Team,2-Roy Kent's U8 Girls,146.22,118.92
+2024,5,"2-good kev, m.A.A.d eze",3-Hakuna Mateta,121.25,90.49
+2024,6,1-Dirty little Slot,1-Morgan Rodgers Neighborhood,97.83,179.25
+2024,6,1 - Law of Averages,1-The Madd Hatters,85.25,121.5
+2024,6,1- Schärholder Value,1-Diamond Dogs,112.23,115.46
+2024,6,1-Cruel Summerville,1-Check Complete FC,80.5,92.75
+2024,6,1-Mateta’s Muppets,1-The Riesterer Bunny,86.98,99.25
+2024,6,1-john lim,1-Tim's Team,160.49,88.5
+2024,6,2-100 Virgils,2-Greek Prison XI,74.24,98.0
+2024,6,2-Arteta's Angels,2-Diego Luna Fan Page,91.0,97.45
+2024,6,2-Rainy Night at Stoke,2-Lads FC,168.25,69.49
+2024,6,2-Reeces (broken to) Pieces,2-Wild Boars United,73.34,88.75
+2024,6,2-Roy Kent's U8 Girls,2-FC Bofa,114.23,99.5
+2024,6,"2-good kev, m.A.A.d eze",2-McGinn and Tonic,112.25,110.58
+2024,6,"3- if u lose 2 me, that is embarrassing",3- Mickey Mount Clubhouse,79.75,102.5
+2024,6,3-Down with the Thickness,3-Ajer & Big Justice,111.0,122.49
+2024,6,3-Hakuna Mateta,3-Dijk in Diaz,84.75,158.5
+2024,6,3-Kelly’s Seagulls,3-Bench Warmers FC,85.24,85.25
+2024,6,3-Onana What's my name,3-Shaq Moore Fan SC,100.75,77.32
+2024,6,3-Young Munoz $$,3- Ornaldo Perfect Brothers & Sisters,107.99,78.97
+2024,6,1-Mateta’s Muppets,3-Young Munoz $$,86.98,107.99
+2024,6,1-john lim,2-Lads FC,160.49,69.49
+2024,6,3- Mickey Mount Clubhouse,2-FC Bofa,102.5,99.5
+2024,6,1-The Madd Hatters,2-Arteta's Angels,121.5,91.0
+2024,6,3-Bench Warmers FC,2-100 Virgils,85.25,74.24
+2024,6,3-Dijk in Diaz,1-Diamond Dogs,158.5,115.46
+2024,6,1-The Riesterer Bunny,2-Diego Luna Fan Page,99.25,97.45
+2024,6,3-Down with the Thickness,1-Dirty little Slot,111.0,97.83
+2024,6,3-Shaq Moore Fan SC,2-McGinn and Tonic,77.32,110.58
+2024,6,1-Check Complete FC,3-Onana What's my name,92.75,100.75
+2024,6,1-Cruel Summerville,2-Wild Boars United,80.5,88.75
+2024,6,2-Greek Prison XI,3-Ajer & Big Justice,98.0,122.49
+2024,6,3-Kelly’s Seagulls,1-Morgan Rodgers Neighborhood,85.24,179.25
+2024,6,1- Schärholder Value,2-Reeces (broken to) Pieces,112.23,73.34
+2024,6,3- Ornaldo Perfect Brothers & Sisters,2-Rainy Night at Stoke,78.97,168.25
+2024,6,1 - Law of Averages,3-Hakuna Mateta,85.25,84.75
+2024,6,1-Tim's Team,"2-good kev, m.A.A.d eze",88.5,112.25
+2024,6,2-Roy Kent's U8 Girls,"3- if u lose 2 me, that is embarrassing",114.23,79.75
+2024,7,1-Morgan Rodgers Neighborhood,1-Diamond Dogs,100.99,131.0
+2024,7,1-Check Complete FC,1- Schärholder Value,127.08,101.99
+2024,7,1-The Madd Hatters,1-Cruel Summerville,109.89,137.65
+2024,7,1-The Riesterer Bunny,1-Dirty little Slot,106.17,151.95
+2024,7,1-Tim's Team,1 - Law of Averages,94.18,96.24
+2024,7,1-john lim,1-Mateta’s Muppets,106.11,93.72
+2024,7,2-Diego Luna Fan Page,2-Rainy Night at Stoke,60.75,90.0
+2024,7,2-FC Bofa,"2-good kev, m.A.A.d eze",104.23,108.5
+2024,7,2-Lads FC,2-Greek Prison XI,111.67,137.1
+2024,7,2-McGinn and Tonic,2-Reeces (broken to) Pieces,88.0,122.74
+2024,7,2-Roy Kent's U8 Girls,2-Arteta's Angels,68.17,111.34
+2024,7,2-Wild Boars United,2-100 Virgils,110.16,126.56
+2024,7,3- Mickey Mount Clubhouse,3-Young Munoz $$,147.41,83.5
+2024,7,3-Ajer & Big Justice,3- Ornaldo Perfect Brothers & Sisters,126.98,90.99
+2024,7,3-Bench Warmers FC,"3- if u lose 2 me, that is embarrassing",155.48,88.74
+2024,7,3-Dijk in Diaz,3-Down with the Thickness,111.74,129.23
+2024,7,3-Onana What's my name,3-Hakuna Mateta,73.0,104.33
+2024,7,3-Shaq Moore Fan SC,3-Kelly’s Seagulls,75.25,68.08
+2024,7,1-Mateta’s Muppets,3- Mickey Mount Clubhouse,93.72,147.41
+2024,7,1-john lim,2-FC Bofa,106.11,104.23
+2024,7,2-Lads FC,3-Young Munoz $$,111.67,83.5
+2024,7,1-The Madd Hatters,3-Dijk in Diaz,109.89,111.74
+2024,7,2-100 Virgils,1-Diamond Dogs,126.56,131.0
+2024,7,3-Bench Warmers FC,2-Arteta's Angels,155.48,111.34
+2024,7,1-The Riesterer Bunny,3-Down with the Thickness,106.17,129.23
+2024,7,2-McGinn and Tonic,1-Dirty little Slot,88.0,151.95
+2024,7,3-Shaq Moore Fan SC,2-Diego Luna Fan Page,75.25,60.75
+2024,7,1-Check Complete FC,2-Greek Prison XI,127.08,137.1
+2024,7,1-Cruel Summerville,3-Onana What's my name,137.65,73.0
+2024,7,2-Wild Boars United,3-Ajer & Big Justice,110.16,126.98
+2024,7,2-Rainy Night at Stoke,1-Morgan Rodgers Neighborhood,90.0,100.99
+2024,7,1- Schärholder Value,3-Kelly’s Seagulls,101.99,68.08
+2024,7,3- Ornaldo Perfect Brothers & Sisters,2-Reeces (broken to) Pieces,90.99,122.74
+2024,7,1 - Law of Averages,2-Roy Kent's U8 Girls,96.24,68.17
+2024,7,1-Tim's Team,3-Hakuna Mateta,94.18,104.33
+2024,7,"3- if u lose 2 me, that is embarrassing","2-good kev, m.A.A.d eze",88.74,108.5
+2024,8,1- Schärholder Value,1-Morgan Rodgers Neighborhood,116.99,81.25
+2024,8,1 - Law of Averages,1-Mateta’s Muppets,102.49,83.5
+2024,8,1-Check Complete FC,1-The Madd Hatters,85.75,173.24
+2024,8,1-Cruel Summerville,1-Tim's Team,111.0,106.48
+2024,8,1-Diamond Dogs,1-The Riesterer Bunny,87.99,90.03
+2024,8,1-Dirty little Slot,1-john lim,110.4,99.0
+2024,8,2-100 Virgils,2-Lads FC,100.75,104.24
+2024,8,2-Greek Prison XI,2-Diego Luna Fan Page,102.64,113.74
+2024,8,2-Rainy Night at Stoke,2-Roy Kent's U8 Girls,125.75,76.5
+2024,8,2-Reeces (broken to) Pieces,2-FC Bofa,80.25,109.75
+2024,8,2-Wild Boars United,2-McGinn and Tonic,85.94,76.28
+2024,8,"2-good kev, m.A.A.d eze",2-Arteta's Angels,139.99,81.18
+2024,8,3- Mickey Mount Clubhouse,3-Bench Warmers FC,106.48,82.25
+2024,8,3- Ornaldo Perfect Brothers & Sisters,3-Dijk in Diaz,67.5,101.5
+2024,8,"3- if u lose 2 me, that is embarrassing",3-Shaq Moore Fan SC,95.24,140.75
+2024,8,3-Down with the Thickness,3-Onana What's my name,109.0,80.0
+2024,8,3-Kelly’s Seagulls,3-Hakuna Mateta,96.78,85.69
+2024,8,3-Young Munoz $$,3-Ajer & Big Justice,131.49,65.25
+2024,8,1-Mateta’s Muppets,2-Lads FC,83.5,104.24
+2024,8,1-john lim,3- Mickey Mount Clubhouse,99.0,106.48
+2024,8,3-Young Munoz $$,2-FC Bofa,131.49,109.75
+2024,8,1-Diamond Dogs,2-Arteta's Angels,87.99,81.18
+2024,8,1-The Madd Hatters,3-Bench Warmers FC,173.24,82.25
+2024,8,2-100 Virgils,3-Dijk in Diaz,100.75,101.5
+2024,8,1-Dirty little Slot,2-Diego Luna Fan Page,110.4,113.74
+2024,8,1-The Riesterer Bunny,3-Shaq Moore Fan SC,90.03,140.75
+2024,8,3-Down with the Thickness,2-McGinn and Tonic,109.0,76.28
+2024,8,1-Check Complete FC,2-Wild Boars United,85.75,85.94
+2024,8,1-Cruel Summerville,3-Ajer & Big Justice,111.0,65.25
+2024,8,2-Greek Prison XI,3-Onana What's my name,102.64,80.0
+2024,8,1-Morgan Rodgers Neighborhood,2-Reeces (broken to) Pieces,81.25,80.25
+2024,8,1- Schärholder Value,3- Ornaldo Perfect Brothers & Sisters,116.99,67.5
+2024,8,2-Rainy Night at Stoke,3-Kelly’s Seagulls,125.75,96.78
+2024,8,1 - Law of Averages,"2-good kev, m.A.A.d eze",102.49,139.99
+2024,8,1-Tim's Team,"3- if u lose 2 me, that is embarrassing",106.48,95.24
+2024,8,3-Hakuna Mateta,2-Roy Kent's U8 Girls,85.69,76.5
+2024,9,1-The Riesterer Bunny,1-Morgan Rodgers Neighborhood,139.86,90.74
+2024,9,1 - Law of Averages,1-Dirty little Slot,86.49,83.25
+2024,9,1-Mateta’s Muppets,1-Cruel Summerville,88.72,129.18
+2024,9,1-The Madd Hatters,1- Schärholder Value,88.49,110.0
+2024,9,1-Tim's Team,1-Check Complete FC,133.49,110.25
+2024,9,1-john lim,1-Diamond Dogs,102.75,108.25
+2024,9,2-Arteta's Angels,2-Reeces (broken to) Pieces,91.49,110.74
+2024,9,2-Diego Luna Fan Page,2-Lads FC,90.0,84.24
+2024,9,2-FC Bofa,2-Wild Boars United,67.49,93.86
+2024,9,2-McGinn and Tonic,2-100 Virgils,112.24,97.99
+2024,9,2-Roy Kent's U8 Girls,2-Greek Prison XI,60.26,132.94
+2024,9,"2-good kev, m.A.A.d eze",2-Rainy Night at Stoke,104.5,90.24
+2024,9,3-Bench Warmers FC,3-Young Munoz $$,109.75,101.73
+2024,9,3-Dijk in Diaz,3-Ajer & Big Justice,118.23,60.25
+2024,9,3-Hakuna Mateta,"3- if u lose 2 me, that is embarrassing",84.74,98.75
+2024,9,3-Kelly’s Seagulls,3-Down with the Thickness,104.25,81.25
+2024,9,3-Onana What's my name,3- Ornaldo Perfect Brothers & Sisters,77.49,101.24
+2024,9,3-Shaq Moore Fan SC,3- Mickey Mount Clubhouse,100.49,94.25
+2024,9,2-FC Bofa,3-Young Munoz $$,67.49,101.73
+2024,9,2-Lads FC,1-Mateta’s Muppets,84.24,88.72
+2024,9,3- Mickey Mount Clubhouse,1-john lim,94.25,102.75
+2024,9,1-Diamond Dogs,2-Arteta's Angels,108.25,91.49
+2024,9,1-The Madd Hatters,3-Bench Warmers FC,88.49,109.75
+2024,9,2-100 Virgils,3-Dijk in Diaz,97.99,118.23
+2024,9,1-Dirty little Slot,2-Diego Luna Fan Page,83.25,90.0
+2024,9,1-The Riesterer Bunny,3-Shaq Moore Fan SC,139.86,100.49
+2024,9,3-Down with the Thickness,2-McGinn and Tonic,81.25,112.24
+2024,9,1-Check Complete FC,2-Wild Boars United,110.25,93.86
+2024,9,1-Cruel Summerville,3-Ajer & Big Justice,129.18,60.25
+2024,9,2-Greek Prison XI,3-Onana What's my name,132.94,77.49
+2024,9,1-Morgan Rodgers Neighborhood,2-Reeces (broken to) Pieces,90.74,110.74
+2024,9,1- Schärholder Value,3- Ornaldo Perfect Brothers & Sisters,110.0,101.24
+2024,9,3-Kelly’s Seagulls,2-Rainy Night at Stoke,104.25,90.24
+2024,9,1 - Law of Averages,"2-good kev, m.A.A.d eze",86.49,104.5
+2024,9,1-Tim's Team,"3- if u lose 2 me, that is embarrassing",133.49,98.75
+2024,9,2-Roy Kent's U8 Girls,3-Hakuna Mateta,60.26,84.74
+2024,10,1-Morgan Rodgers Neighborhood,1-john lim,96.75,89.75
+2024,10,1- Schärholder Value,1-The Riesterer Bunny,119.49,127.53
+2024,10,1-Check Complete FC,1-Mateta’s Muppets,126.5,110.72
+2024,10,1-Cruel Summerville,1-Dirty little Slot,121.24,75.48
+2024,10,1-Diamond Dogs,1 - Law of Averages,112.48,93.5
+2024,10,1-The Madd Hatters,1-Tim's Team,92.0,106.0
+2024,10,2-100 Virgils,2-Diego Luna Fan Page,155.49,118.48
+2024,10,2-Greek Prison XI,"2-good kev, m.A.A.d eze",110.24,78.25
+2024,10,2-Lads FC,2-Roy Kent's U8 Girls,120.49,102.49
+2024,10,2-McGinn and Tonic,2-FC Bofa,93.36,114.49
+2024,10,2-Reeces (broken to) Pieces,2-Rainy Night at Stoke,83.5,120.48
+2024,10,2-Wild Boars United,2-Arteta's Angels,75.25,77.75
+2024,10,3- Mickey Mount Clubhouse,3-Hakuna Mateta,80.85,53.53
+2024,10,3- Ornaldo Perfect Brothers & Sisters,3-Kelly’s Seagulls,123.69,99.83
+2024,10,"3- if u lose 2 me, that is embarrassing",3-Down with the Thickness,95.46,102.43
+2024,10,3-Ajer & Big Justice,3-Onana What's my name,56.5,106.5
+2024,10,3-Bench Warmers FC,3-Shaq Moore Fan SC,99.0,123.54
+2024,10,3-Young Munoz $$,3-Dijk in Diaz,105.75,138.74
+2024,10,2-FC Bofa,1-john lim,114.49,89.75
+2024,10,3- Mickey Mount Clubhouse,1-Mateta’s Muppets,80.85,110.72
+2024,10,3-Young Munoz $$,2-Lads FC,105.75,120.49
+2024,10,1-The Madd Hatters,3-Dijk in Diaz,92.0,138.74
+2024,10,2-100 Virgils,1-Diamond Dogs,155.49,112.48
+2024,10,3-Bench Warmers FC,2-Arteta's Angels,99.0,77.75
+2024,10,1-The Riesterer Bunny,3-Down with the Thickness,127.53,102.43
+2024,10,2-McGinn and Tonic,1-Dirty little Slot,93.36,75.48
+2024,10,3-Shaq Moore Fan SC,2-Diego Luna Fan Page,123.54,118.48
+2024,10,1-Check Complete FC,2-Greek Prison XI,126.5,110.24
+2024,10,1-Cruel Summerville,3-Onana What's my name,121.24,106.5
+2024,10,2-Wild Boars United,3-Ajer & Big Justice,75.25,56.5
+2024,10,2-Rainy Night at Stoke,1-Morgan Rodgers Neighborhood,120.48,96.75
+2024,10,1- Schärholder Value,3-Kelly’s Seagulls,119.49,99.83
+2024,10,3- Ornaldo Perfect Brothers & Sisters,2-Reeces (broken to) Pieces,123.69,83.5
+2024,10,1 - Law of Averages,2-Roy Kent's U8 Girls,93.5,102.49
+2024,10,1-Tim's Team,3-Hakuna Mateta,106.0,53.53
+2024,10,"3- if u lose 2 me, that is embarrassing","2-good kev, m.A.A.d eze",95.46,78.25
+2024,11,1 - Law of Averages,1-Morgan Rodgers Neighborhood,125.73,120.71
+2024,11,1-Cruel Summerville,1-Diamond Dogs,154.0,127.98
+2024,11,1-Dirty little Slot,1-Check Complete FC,81.95,114.6
+2024,11,1-Mateta’s Muppets,1-The Madd Hatters,92.15,154.73
+2024,11,1-Tim's Team,1- Schärholder Value,103.41,149.96
+2024,11,1-john lim,1-The Riesterer Bunny,55.6,92.48
+2024,11,2-Arteta's Angels,2-McGinn and Tonic,117.5,82.75
+2024,11,2-FC Bofa,2-100 Virgils,65.25,76.17
+2024,11,2-Rainy Night at Stoke,2-Wild Boars United,123.98,67.93
+2024,11,2-Reeces (broken to) Pieces,2-Greek Prison XI,93.73,118.08
+2024,11,2-Roy Kent's U8 Girls,2-Diego Luna Fan Page,107.48,135.98
+2024,11,"2-good kev, m.A.A.d eze",2-Lads FC,108.33,152.14
+2024,11,"3- if u lose 2 me, that is embarrassing",3- Ornaldo Perfect Brothers & Sisters,101.98,91.72
+2024,11,3-Down with the Thickness,3- Mickey Mount Clubhouse,98.58,63.74
+2024,11,3-Hakuna Mateta,3-Bench Warmers FC,81.25,132.83
+2024,11,3-Kelly’s Seagulls,3-Ajer & Big Justice,101.48,81.33
+2024,11,3-Onana What's my name,3-Dijk in Diaz,121.73,94.0
+2024,11,3-Shaq Moore Fan SC,3-Young Munoz $$,102.48,145.08
+2024,11,2-FC Bofa,3- Mickey Mount Clubhouse,65.25,63.74
+2024,11,2-Lads FC,1-john lim,152.14,55.6
+2024,11,3-Young Munoz $$,1-Mateta’s Muppets,145.08,92.15
+2024,11,1-The Madd Hatters,2-Arteta's Angels,154.73,117.5
+2024,11,2-100 Virgils,3-Bench Warmers FC,76.17,132.83
+2024,11,3-Dijk in Diaz,1-Diamond Dogs,94.0,127.98
+2024,11,1-The Riesterer Bunny,2-Diego Luna Fan Page,92.48,135.98
+2024,11,3-Down with the Thickness,1-Dirty little Slot,98.58,81.95
+2024,11,3-Shaq Moore Fan SC,2-McGinn and Tonic,102.48,82.75
+2024,11,1-Check Complete FC,3-Onana What's my name,114.6,121.73
+2024,11,1-Cruel Summerville,2-Wild Boars United,154.0,67.93
+2024,11,2-Greek Prison XI,3-Ajer & Big Justice,118.08,81.33
+2024,11,1-Morgan Rodgers Neighborhood,3-Kelly’s Seagulls,120.71,101.48
+2024,11,1- Schärholder Value,2-Reeces (broken to) Pieces,149.96,93.73
+2024,11,3- Ornaldo Perfect Brothers & Sisters,2-Rainy Night at Stoke,91.72,123.98
+2024,11,1 - Law of Averages,3-Hakuna Mateta,125.73,81.25
+2024,11,1-Tim's Team,"2-good kev, m.A.A.d eze",103.41,108.33
+2024,11,2-Roy Kent's U8 Girls,"3- if u lose 2 me, that is embarrassing",107.48,101.98
+2024,12,1-Morgan Rodgers Neighborhood,1-Cruel Summerville,132.99,124.71
+2024,12,1- Schärholder Value,1-john lim,89.23,114.65
+2024,12,1-Check Complete FC,1-Diamond Dogs,116.69,82.0
+2024,12,1-The Madd Hatters,1-Dirty little Slot,151.98,133.65
+2024,12,1-The Riesterer Bunny,1 - Law of Averages,118.89,112.03
+2024,12,1-Tim's Team,1-Mateta’s Muppets,90.0,89.74
+2024,12,2-100 Virgils,2-Roy Kent's U8 Girls,80.75,86.99
+2024,12,2-Diego Luna Fan Page,"2-good kev, m.A.A.d eze",83.98,91.92
+2024,12,2-FC Bofa,2-Arteta's Angels,116.44,76.75
+2024,12,2-Lads FC,2-Reeces (broken to) Pieces,89.91,93.23
+2024,12,2-McGinn and Tonic,2-Rainy Night at Stoke,129.74,120.03
+2024,12,2-Wild Boars United,2-Greek Prison XI,72.91,159.11
+2024,12,3- Mickey Mount Clubhouse,3- Ornaldo Perfect Brothers & Sisters,77.98,58.54
+2024,12,3-Ajer & Big Justice,"3- if u lose 2 me, that is embarrassing",107.43,101.37
+2024,12,3-Bench Warmers FC,3-Down with the Thickness,100.19,98.74
+2024,12,3-Dijk in Diaz,3-Kelly’s Seagulls,116.36,76.89
+2024,12,3-Shaq Moore Fan SC,3-Hakuna Mateta,107.4,73.25
+2024,12,3-Young Munoz $$,3-Onana What's my name,141.97,120.18
+2024,12,2-FC Bofa,1-Mateta’s Muppets,116.44,89.74
+2024,12,3- Mickey Mount Clubhouse,2-Lads FC,77.98,89.91
+2024,12,3-Young Munoz $$,1-john lim,141.97,114.65
+2024,12,1-Diamond Dogs,3-Bench Warmers FC,82.0,100.19
+2024,12,1-The Madd Hatters,2-100 Virgils,151.98,80.75
+2024,12,2-Arteta's Angels,3-Dijk in Diaz,76.75,116.36
+2024,12,1-Dirty little Slot,3-Shaq Moore Fan SC,133.65,107.4
+2024,12,1-The Riesterer Bunny,2-McGinn and Tonic,118.89,129.74
+2024,12,2-Diego Luna Fan Page,3-Down with the Thickness,83.98,98.74
+2024,12,1-Check Complete FC,3-Ajer & Big Justice,116.69,107.43
+2024,12,1-Cruel Summerville,2-Greek Prison XI,124.71,159.11
+2024,12,3-Onana What's my name,2-Wild Boars United,120.18,72.91
+2024,12,1-Morgan Rodgers Neighborhood,3- Ornaldo Perfect Brothers & Sisters,132.99,58.54
+2024,12,1- Schärholder Value,2-Rainy Night at Stoke,89.23,120.03
+2024,12,2-Reeces (broken to) Pieces,3-Kelly’s Seagulls,93.23,76.89
+2024,12,1 - Law of Averages,"3- if u lose 2 me, that is embarrassing",112.03,101.37
+2024,12,1-Tim's Team,2-Roy Kent's U8 Girls,90.0,86.99
+2024,12,"2-good kev, m.A.A.d eze",3-Hakuna Mateta,91.92,73.25
+2024,13,1-Check Complete FC,1-Morgan Rodgers Neighborhood,90.99,128.43
+2024,13,1 - Law of Averages,1-john lim,119.26,109.51
+2024,13,1-Cruel Summerville,1-The Riesterer Bunny,90.22,109.79
+2024,13,1-Diamond Dogs,1-The Madd Hatters,98.97,140.97
+2024,13,1-Dirty little Slot,1-Tim's Team,87.71,92.54
+2024,13,1-Mateta’s Muppets,1- Schärholder Value,73.0,108.24
+2024,13,2-Arteta's Angels,2-100 Virgils,80.51,125.52
+2024,13,2-Greek Prison XI,2-McGinn and Tonic,141.23,83.99
+2024,13,2-Rainy Night at Stoke,2-FC Bofa,136.6,99.75
+2024,13,2-Reeces (broken to) Pieces,2-Diego Luna Fan Page,80.64,83.24
+2024,13,2-Wild Boars United,2-Lads FC,118.33,98.21
+2024,13,"2-good kev, m.A.A.d eze",2-Roy Kent's U8 Girls,85.75,96.81
+2024,13,3- Mickey Mount Clubhouse,3-Ajer & Big Justice,88.94,112.56
+2024,13,3- Ornaldo Perfect Brothers & Sisters,3-Bench Warmers FC,78.5,118.98
+2024,13,"3- if u lose 2 me, that is embarrassing",3-Dijk in Diaz,68.46,117.69
+2024,13,3-Down with the Thickness,3-Shaq Moore Fan SC,101.29,97.16
+2024,13,3-Hakuna Mateta,3-Young Munoz $$,78.75,98.51
+2024,13,3-Kelly’s Seagulls,3-Onana What's my name,61.99,82.99
+2024,13,1-Mateta’s Muppets,1-john lim,73.0,109.51
+2024,13,2-FC Bofa,2-Lads FC,99.75,98.21
+2024,13,3- Mickey Mount Clubhouse,3-Young Munoz $$,88.94,98.51
+2024,13,1-The Madd Hatters,1-Diamond Dogs,140.97,98.97
+2024,13,2-Arteta's Angels,2-100 Virgils,80.51,125.52
+2024,13,3-Bench Warmers FC,3-Dijk in Diaz,118.98,117.69
+2024,13,1-The Riesterer Bunny,1-Dirty little Slot,109.79,87.71
+2024,13,2-Diego Luna Fan Page,2-McGinn and Tonic,83.24,83.99
+2024,13,3-Shaq Moore Fan SC,3-Down with the Thickness,97.16,101.29
+2024,13,1-Cruel Summerville,1-Check Complete FC,90.22,90.99
+2024,13,2-Greek Prison XI,2-Wild Boars United,141.23,118.33
+2024,13,3-Onana What's my name,3-Ajer & Big Justice,82.99,112.56
+2024,13,1- Schärholder Value,1-Morgan Rodgers Neighborhood,108.24,128.43
+2024,13,2-Reeces (broken to) Pieces,2-Rainy Night at Stoke,80.64,136.6
+2024,13,3-Kelly’s Seagulls,3- Ornaldo Perfect Brothers & Sisters,61.99,78.5
+2024,13,1 - Law of Averages,1-Tim's Team,119.26,92.54
+2024,13,"2-good kev, m.A.A.d eze",2-Roy Kent's U8 Girls,85.75,96.81
+2024,13,3-Hakuna Mateta,"3- if u lose 2 me, that is embarrassing",78.75,68.46
+2024,14,1-The Madd Hatters,1-Morgan Rodgers Neighborhood,126.76,133.23
+2024,14,1- Schärholder Value,1 - Law of Averages,135.75,150.57
+2024,14,1-Mateta’s Muppets,1-Dirty little Slot,145.15,96.99
+2024,14,1-The Riesterer Bunny,1-Check Complete FC,134.06,120.97
+2024,14,1-Tim's Team,1-Diamond Dogs,105.55,57.25
+2024,14,1-john lim,1-Cruel Summerville,70.49,112.2
+2024,14,2-100 Virgils,"2-good kev, m.A.A.d eze",83.02,109.23
+2024,14,2-Arteta's Angels,2-Rainy Night at Stoke,103.5,104.72
+2024,14,2-Diego Luna Fan Page,2-Wild Boars United,86.22,54.66
+2024,14,2-FC Bofa,2-Greek Prison XI,141.72,142.99
+2024,14,2-McGinn and Tonic,2-Lads FC,125.29,47.74
+2024,14,2-Roy Kent's U8 Girls,2-Reeces (broken to) Pieces,100.62,99.48
+2024,14,3-Bench Warmers FC,3-Ajer & Big Justice,109.64,132.99
+2024,14,3-Dijk in Diaz,3- Mickey Mount Clubhouse,101.73,92.24
+2024,14,3-Hakuna Mateta,3-Down with the Thickness,108.45,104.68
+2024,14,3-Onana What's my name,"3- if u lose 2 me, that is embarrassing",111.47,107.05
+2024,14,3-Shaq Moore Fan SC,3- Ornaldo Perfect Brothers & Sisters,80.82,88.25
+2024,14,3-Young Munoz $$,3-Kelly’s Seagulls,142.96,109.98
+2024,15,1-Morgan Rodgers Neighborhood,1-Tim's Team,144.5,87.35
+2024,15,1-Check Complete FC,1-john lim,85.75,97.75
+2024,15,1-Cruel Summerville,1 - Law of Averages,117.25,104.75
+2024,15,1-Diamond Dogs,1-Mateta’s Muppets,115.5,57.0
+2024,15,1-Dirty little Slot,1- Schärholder Value,109.5,89.14
+2024,15,1-The Madd Hatters,1-The Riesterer Bunny,88.89,70.25
+2024,15,2-Greek Prison XI,2-Arteta's Angels,92.5,106.25
+2024,15,2-Lads FC,2-FC Bofa,105.5,73.25
+2024,15,2-McGinn and Tonic,2-Diego Luna Fan Page,45.14,95.0
+2024,15,2-Rainy Night at Stoke,2-100 Virgils,147.75,87.0
+2024,15,2-Reeces (broken to) Pieces,"2-good kev, m.A.A.d eze",81.75,76.0
+2024,15,2-Wild Boars United,2-Roy Kent's U8 Girls,107.49,81.14
+2024,15,3- Mickey Mount Clubhouse,3-Onana What's my name,71.75,120.5
+2024,15,3- Ornaldo Perfect Brothers & Sisters,3-Hakuna Mateta,110.75,58.35
+2024,15,"3- if u lose 2 me, that is embarrassing",3-Kelly’s Seagulls,67.75,81.25
+2024,15,3-Ajer & Big Justice,3-Shaq Moore Fan SC,96.14,104.25
+2024,15,3-Bench Warmers FC,3-Dijk in Diaz,90.75,97.89
+2024,15,3-Down with the Thickness,3-Young Munoz $$,65.5,105.25
+2024,16,1-Mateta’s Muppets,1-Morgan Rodgers Neighborhood,91.95,102.0
+2024,16,1 - Law of Averages,1-Check Complete FC,131.74,54.15
+2024,16,1- Schärholder Value,1-Cruel Summerville,125.48,146.49
+2024,16,1-Dirty little Slot,1-Diamond Dogs,118.25,90.45
+2024,16,1-Tim's Team,1-The Riesterer Bunny,99.94,123.38
+2024,16,1-john lim,1-The Madd Hatters,93.99,122.14
+2024,16,2-100 Virgils,2-Reeces (broken to) Pieces,124.99,96.34
+2024,16,2-Arteta's Angels,2-Lads FC,89.75,89.05
+2024,16,2-FC Bofa,2-Diego Luna Fan Page,79.42,134.3
+2024,16,2-Rainy Night at Stoke,2-Greek Prison XI,115.2,110.05
+2024,16,2-Roy Kent's U8 Girls,2-McGinn and Tonic,77.48,134.61
+2024,16,"2-good kev, m.A.A.d eze",2-Wild Boars United,116.13,87.75
+2024,16,3-Down with the Thickness,3- Ornaldo Perfect Brothers & Sisters,76.64,82.49
+2024,16,3-Hakuna Mateta,3-Ajer & Big Justice,69.33,99.96
+2024,16,3-Kelly’s Seagulls,3- Mickey Mount Clubhouse,90.43,102.73
+2024,16,3-Onana What's my name,3-Bench Warmers FC,145.0,110.74
+2024,16,3-Shaq Moore Fan SC,3-Dijk in Diaz,124.9,69.3
+2024,16,3-Young Munoz $$,"3- if u lose 2 me, that is embarrassing",124.43,132.43
+2024,17,1-Morgan Rodgers Neighborhood,1-Dirty little Slot,100.25,68.65
+2024,17,1-Check Complete FC,1-Cruel Summerville,99.75,93.85
+2024,17,1-Diamond Dogs,1- Schärholder Value,92.71,191.48
+2024,17,1-The Madd Hatters,1 - Law of Averages,144.47,73.22
+2024,17,1-The Riesterer Bunny,1-Mateta’s Muppets,113.32,113.32
+2024,17,1-Tim's Team,1-john lim,186.67,57.0
+2024,17,2-Diego Luna Fan Page,2-Arteta's Angels,125.21,129.74
+2024,17,2-FC Bofa,2-Roy Kent's U8 Girls,95.14,108.73
+2024,17,2-Greek Prison XI,2-100 Virgils,130.6,114.23
+2024,17,2-Lads FC,2-Rainy Night at Stoke,119.98,116.31
+2024,17,2-McGinn and Tonic,"2-good kev, m.A.A.d eze",135.69,125.22
+2024,17,2-Wild Boars United,2-Reeces (broken to) Pieces,93.31,64.75
+2024,17,3- Mickey Mount Clubhouse,"3- if u lose 2 me, that is embarrassing",135.12,127.1
+2024,17,3- Ornaldo Perfect Brothers & Sisters,3-Young Munoz $$,60.81,191.59
+2024,17,3-Ajer & Big Justice,3-Down with the Thickness,86.42,94.48
+2024,17,3-Bench Warmers FC,3-Kelly’s Seagulls,94.73,97.28
+2024,17,3-Dijk in Diaz,3-Hakuna Mateta,76.49,77.27
+2024,17,3-Shaq Moore Fan SC,3-Onana What's my name,66.23,107.74
+2024,18,1-Diamond Dogs,1-Morgan Rodgers Neighborhood,92.23,104.99
+2024,18,1 - Law of Averages,1-Tim's Team,83.72,118.99
+2024,18,1- Schärholder Value,1-Check Complete FC,112.16,94.91
+2024,18,1-Cruel Summerville,1-The Madd Hatters,98.21,130.44
+2024,18,1-Dirty little Slot,1-The Riesterer Bunny,92.17,110.59
+2024,18,1-Mateta’s Muppets,1-john lim,105.58,159.22
+2024,18,2-100 Virgils,2-Wild Boars United,111.56,86.83
+2024,18,2-Arteta's Angels,2-Roy Kent's U8 Girls,128.29,116.73
+2024,18,2-Greek Prison XI,2-Lads FC,97.7,63.02
+2024,18,2-Rainy Night at Stoke,2-Diego Luna Fan Page,100.18,114.51
+2024,18,2-Reeces (broken to) Pieces,2-McGinn and Tonic,87.23,84.17
+2024,18,"2-good kev, m.A.A.d eze",2-FC Bofa,98.33,109.48
+2024,18,3- Ornaldo Perfect Brothers & Sisters,3-Ajer & Big Justice,107.38,121.22
+2024,18,"3- if u lose 2 me, that is embarrassing",3-Bench Warmers FC,89.71,94.48
+2024,18,3-Down with the Thickness,3-Dijk in Diaz,124.86,123.97
+2024,18,3-Hakuna Mateta,3-Onana What's my name,50.35,72.36
+2024,18,3-Kelly’s Seagulls,3-Shaq Moore Fan SC,125.65,82.21
+2024,18,3-Young Munoz $$,3- Mickey Mount Clubhouse,112.92,99.47
+2024,19,1-Morgan Rodgers Neighborhood,1- Schärholder Value,97.5,130.74
+2024,19,1-Mateta’s Muppets,1 - Law of Averages,105.25,139.79
+2024,19,1-The Madd Hatters,1-Check Complete FC,140.39,109.24
+2024,19,1-The Riesterer Bunny,1-Diamond Dogs,107.42,81.11
+2024,19,1-Tim's Team,1-Cruel Summerville,157.64,92.04
+2024,19,1-john lim,1-Dirty little Slot,89.49,115.75
+2024,19,2-Arteta's Angels,"2-good kev, m.A.A.d eze",94.29,72.93
+2024,19,2-Diego Luna Fan Page,2-Greek Prison XI,124.38,80.49
+2024,19,2-FC Bofa,2-Reeces (broken to) Pieces,69.31,74.71
+2024,19,2-Lads FC,2-100 Virgils,79.74,153.86
+2024,19,2-McGinn and Tonic,2-Wild Boars United,127.24,129.18
+2024,19,2-Roy Kent's U8 Girls,2-Rainy Night at Stoke,138.98,123.5
+2024,19,3-Ajer & Big Justice,3-Young Munoz $$,75.75,114.05
+2024,19,3-Bench Warmers FC,3- Mickey Mount Clubhouse,129.98,102.96
+2024,19,3-Dijk in Diaz,3- Ornaldo Perfect Brothers & Sisters,80.74,118.82
+2024,19,3-Hakuna Mateta,3-Kelly’s Seagulls,107.78,103.0
+2024,19,3-Onana What's my name,3-Down with the Thickness,77.86,124.67
+2024,19,3-Shaq Moore Fan SC,"3- if u lose 2 me, that is embarrassing",107.74,108.23
+2024,20,1-Morgan Rodgers Neighborhood,1-The Riesterer Bunny,106.5,70.1
+2024,20,1- Schärholder Value,1-The Madd Hatters,117.24,115.23
+2024,20,1-Check Complete FC,1-Tim's Team,112.25,119.02
+2024,20,1-Cruel Summerville,1-Mateta’s Muppets,130.5,120.88
+2024,20,1-Diamond Dogs,1-john lim,93.73,106.53
+2024,20,1-Dirty little Slot,1 - Law of Averages,127.12,105.49
+2024,20,2-100 Virgils,2-McGinn and Tonic,123.24,122.73
+2024,20,2-Greek Prison XI,2-Roy Kent's U8 Girls,50.74,83.25
+2024,20,2-Lads FC,2-Diego Luna Fan Page,0.0,74.25
+2024,20,2-Rainy Night at Stoke,"2-good kev, m.A.A.d eze",162.24,141.69
+2024,20,2-Reeces (broken to) Pieces,2-Arteta's Angels,86.75,108.0
+2024,20,2-Wild Boars United,2-FC Bofa,119.25,102.5
+2024,20,3- Mickey Mount Clubhouse,3-Shaq Moore Fan SC,0.0,108.69
+2024,20,3- Ornaldo Perfect Brothers & Sisters,3-Onana What's my name,103.97,128.91
+2024,20,"3- if u lose 2 me, that is embarrassing",3-Hakuna Mateta,132.99,61.5
+2024,20,3-Ajer & Big Justice,3-Dijk in Diaz,61.49,88.76
+2024,20,3-Down with the Thickness,3-Kelly’s Seagulls,134.24,83.24
+2024,20,3-Young Munoz $$,3-Bench Warmers FC,99.75,89.0
+2024,21,1-john lim,1-Morgan Rodgers Neighborhood,107.74,177.98
+2024,21,1 - Law of Averages,1-Diamond Dogs,97.98,75.57
+2024,21,1-Dirty little Slot,1-Cruel Summerville,99.15,121.43
+2024,21,1-Mateta’s Muppets,1-Check Complete FC,134.66,86.68
+2024,21,1-The Riesterer Bunny,1- Schärholder Value,130.24,160.74
+2024,21,1-Tim's Team,1-The Madd Hatters,102.22,128.23
+2024,21,2-Arteta's Angels,2-Wild Boars United,137.91,99.24
+2024,21,2-Diego Luna Fan Page,2-100 Virgils,95.24,136.12
+2024,21,2-FC Bofa,2-McGinn and Tonic,115.1,100.19
+2024,21,2-Rainy Night at Stoke,2-Reeces (broken to) Pieces,151.68,114.73
+2024,21,2-Roy Kent's U8 Girls,2-Lads FC,91.74,82.75
+2024,21,"2-good kev, m.A.A.d eze",2-Greek Prison XI,162.59,110.5
+2024,21,3-Dijk in Diaz,3-Young Munoz $$,159.22,95.84
+2024,21,3-Down with the Thickness,"3- if u lose 2 me, that is embarrassing",93.6,128.99
+2024,21,3-Hakuna Mateta,3- Mickey Mount Clubhouse,85.68,105.98
+2024,21,3-Kelly’s Seagulls,3- Ornaldo Perfect Brothers & Sisters,129.14,100.24
+2024,21,3-Onana What's my name,3-Ajer & Big Justice,99.24,60.0
+2024,21,3-Shaq Moore Fan SC,3-Bench Warmers FC,110.12,153.99
+2024,21,1-Check Complete FC,1 - Law of Averages,86.68,97.98
+2024,21,2-McGinn and Tonic,2-FC Bofa,100.19,115.1
+2024,22,1-Morgan Rodgers Neighborhood,1 - Law of Averages,84.99,132.35
+2024,22,1- Schärholder Value,1-Tim's Team,107.0,166.79
+2024,22,1-Check Complete FC,1-Dirty little Slot,83.85,96.49
+2024,22,1-Diamond Dogs,1-Cruel Summerville,83.89,101.49
+2024,22,1-The Madd Hatters,1-Mateta’s Muppets,127.97,158.45
+2024,22,1-The Riesterer Bunny,1-john lim,141.93,49.75
+2024,22,2-100 Virgils,2-FC Bofa,150.83,122.72
+2024,22,2-Diego Luna Fan Page,2-Roy Kent's U8 Girls,124.75,54.74
+2024,22,2-Greek Prison XI,2-Reeces (broken to) Pieces,67.0,120.93
+2024,22,2-Lads FC,"2-good kev, m.A.A.d eze",115.74,96.44
+2024,22,2-McGinn and Tonic,2-Arteta's Angels,119.53,96.13
+2024,22,2-Wild Boars United,2-Rainy Night at Stoke,89.88,164.97
+2024,22,3- Mickey Mount Clubhouse,3-Down with the Thickness,119.69,99.49
+2024,22,3- Ornaldo Perfect Brothers & Sisters,"3- if u lose 2 me, that is embarrassing",100.54,102.75
+2024,22,3-Ajer & Big Justice,3-Kelly’s Seagulls,71.23,64.75
+2024,22,3-Bench Warmers FC,3-Hakuna Mateta,124.16,83.49
+2024,22,3-Dijk in Diaz,3-Onana What's my name,135.73,124.98
+2024,22,3-Young Munoz $$,3-Shaq Moore Fan SC,101.99,127.07
+2024,22,1 - Law of Averages,1-Check Complete FC,132.35,83.85
+2024,22,2-FC Bofa,2-McGinn and Tonic,122.72,119.53
+2024,23,1-Cruel Summerville,1-Morgan Rodgers Neighborhood,102.25,67.0
+2024,23,1 - Law of Averages,1-The Riesterer Bunny,98.23,93.87
+2024,23,1-Diamond Dogs,1-Check Complete FC,55.25,88.46
+2024,23,1-Dirty little Slot,1-The Madd Hatters,111.49,113.69
+2024,23,1-Mateta’s Muppets,1-Tim's Team,90.23,154.97
+2024,23,1-john lim,1- Schärholder Value,116.35,139.25
+2024,23,2-Arteta's Angels,2-FC Bofa,109.5,119.0
+2024,23,2-Greek Prison XI,2-Wild Boars United,93.23,110.47
+2024,23,2-Rainy Night at Stoke,2-McGinn and Tonic,90.87,102.47
+2024,23,2-Reeces (broken to) Pieces,2-Lads FC,61.8,129.99
+2024,23,2-Roy Kent's U8 Girls,2-100 Virgils,76.08,129.73
+2024,23,"2-good kev, m.A.A.d eze",2-Diego Luna Fan Page,77.62,93.15
+2024,23,3- Ornaldo Perfect Brothers & Sisters,3- Mickey Mount Clubhouse,82.5,100.48
+2024,23,"3- if u lose 2 me, that is embarrassing",3-Ajer & Big Justice,80.73,89.99
+2024,23,3-Down with the Thickness,3-Bench Warmers FC,124.22,93.25
+2024,23,3-Hakuna Mateta,3-Shaq Moore Fan SC,66.8,0.0
+2024,23,3-Kelly’s Seagulls,3-Dijk in Diaz,108.99,97.46
+2024,23,3-Onana What's my name,3-Young Munoz $$,125.14,86.24
+2024,24,1-Morgan Rodgers Neighborhood,1-Check Complete FC,104.25,165.94
+2024,24,1- Schärholder Value,1-Mateta’s Muppets,122.71,89.04
+2024,24,1-The Madd Hatters,1-Diamond Dogs,246.87,110.71
+2024,24,1-The Riesterer Bunny,1-Cruel Summerville,89.74,95.97
+2024,24,1-Tim's Team,1-Dirty little Slot,134.34,111.4
+2024,24,1-john lim,1 - Law of Averages,99.98,109.35
+2024,24,2-100 Virgils,2-Arteta's Angels,145.1,82.25
+2024,24,2-Diego Luna Fan Page,2-Reeces (broken to) Pieces,124.71,82.24
+2024,24,2-FC Bofa,2-Rainy Night at Stoke,112.38,131.28
+2024,24,2-Lads FC,2-Wild Boars United,150.46,155.96
+2024,24,2-McGinn and Tonic,2-Greek Prison XI,110.78,78.54
+2024,24,2-Roy Kent's U8 Girls,"2-good kev, m.A.A.d eze",130.5,83.99
+2024,24,3-Ajer & Big Justice,3- Mickey Mount Clubhouse,118.71,105.48
+2024,24,3-Bench Warmers FC,3- Ornaldo Perfect Brothers & Sisters,102.24,113.7
+2024,24,3-Dijk in Diaz,"3- if u lose 2 me, that is embarrassing",142.73,118.23
+2024,24,3-Onana What's my name,3-Kelly’s Seagulls,120.3,38.25
+2024,24,3-Shaq Moore Fan SC,3-Down with the Thickness,97.74,117.64
+2024,24,3-Young Munoz $$,3-Hakuna Mateta,165.74,79.29
+2024,25,1-Morgan Rodgers Neighborhood,1-The Madd Hatters,54.75,157.93
+2024,25,1 - Law of Averages,1- Schärholder Value,104.0,164.22
+2024,25,1-Check Complete FC,1-The Riesterer Bunny,114.57,78.74
+2024,25,1-Cruel Summerville,1-john lim,91.35,132.4
+2024,25,1-Diamond Dogs,1-Tim's Team,139.25,179.2
+2024,25,1-Dirty little Slot,1-Mateta’s Muppets,128.47,84.14
+2024,25,2-Greek Prison XI,2-FC Bofa,97.75,128.71
+2024,25,2-Lads FC,2-McGinn and Tonic,129.98,124.48
+2024,25,2-Rainy Night at Stoke,2-Arteta's Angels,109.05,96.99
+2024,25,2-Reeces (broken to) Pieces,2-Roy Kent's U8 Girls,153.01,68.49
+2024,25,2-Wild Boars United,2-Diego Luna Fan Page,136.25,122.24
+2024,25,"2-good kev, m.A.A.d eze",2-100 Virgils,59.82,143.48
+2024,25,3- Mickey Mount Clubhouse,3-Dijk in Diaz,118.82,133.75
+2024,25,3- Ornaldo Perfect Brothers & Sisters,3-Shaq Moore Fan SC,89.22,109.48
+2024,25,"3- if u lose 2 me, that is embarrassing",3-Onana What's my name,149.0,157.0
+2024,25,3-Ajer & Big Justice,3-Bench Warmers FC,54.25,73.75
+2024,25,3-Down with the Thickness,3-Hakuna Mateta,101.07,87.25
+2024,25,3-Kelly’s Seagulls,3-Young Munoz $$,63.9,137.74
+2024,26,1-Tim's Team,1-Morgan Rodgers Neighborhood,116.83,103.37
+2024,26,1 - Law of Averages,1-Cruel Summerville,84.49,174.35
+2024,26,1- Schärholder Value,1-Dirty little Slot,129.41,72.24
+2024,26,1-Mateta’s Muppets,1-Diamond Dogs,87.19,83.06
+2024,26,1-The Riesterer Bunny,1-The Madd Hatters,124.99,109.97
+2024,26,1-john lim,1-Check Complete FC,87.89,118.46
+2024,26,2-100 Virgils,2-Rainy Night at Stoke,90.34,112.93
+2024,26,2-Arteta's Angels,2-Greek Prison XI,129.49,132.06
+2024,26,2-Diego Luna Fan Page,2-McGinn and Tonic,89.5,89.74
+2024,26,2-FC Bofa,2-Lads FC,133.77,94.48
+2024,26,2-Roy Kent's U8 Girls,2-Wild Boars United,95.75,77.36
+2024,26,"2-good kev, m.A.A.d eze",2-Reeces (broken to) Pieces,64.27,124.76
+2024,26,3-Dijk in Diaz,3-Bench Warmers FC,86.48,88.25
+2024,26,3-Hakuna Mateta,3- Ornaldo Perfect Brothers & Sisters,66.99,45.99
+2024,26,3-Kelly’s Seagulls,"3- if u lose 2 me, that is embarrassing",116.24,138.0
+2024,26,3-Onana What's my name,3- Mickey Mount Clubhouse,126.51,66.0
+2024,26,3-Shaq Moore Fan SC,3-Ajer & Big Justice,99.29,120.27
+2024,26,3-Young Munoz $$,3-Down with the Thickness,149.35,55.11
+2024,26,1-Morgan Rodgers Neighborhood,1- Schärholder Value,103.37,129.41
+2024,26,1 - Law of Averages,2-Rainy Night at Stoke,84.49,112.93
+2024,26,1-Tim's Team,3-Bench Warmers FC,116.83,88.25
+2024,26,2-FC Bofa,"2-good kev, m.A.A.d eze",133.77,64.27
+2024,26,2-Lads FC,2-Greek Prison XI,94.48,132.06
+2024,26,3-Dijk in Diaz,1-The Madd Hatters,86.48,109.97
+2024,26,3-Down with the Thickness,1-The Riesterer Bunny,55.11,124.99
+2024,26,3-Young Munoz $$,1-Cruel Summerville,149.35,174.35
+2024,27,1-Morgan Rodgers Neighborhood,1-Mateta’s Muppets,160.06,128.75
+2024,27,1-Check Complete FC,1 - Law of Averages,111.6,101.99
+2024,27,1-Cruel Summerville,1- Schärholder Value,105.22,103.24
+2024,27,1-Diamond Dogs,1-Dirty little Slot,90.19,109.58
+2024,27,1-The Madd Hatters,1-john lim,118.78,108.06
+2024,27,1-The Riesterer Bunny,1-Tim's Team,109.72,120.05
+2024,27,2-Diego Luna Fan Page,2-FC Bofa,105.93,105.91
+2024,27,2-Greek Prison XI,2-Rainy Night at Stoke,89.75,96.5
+2024,27,2-Lads FC,2-Arteta's Angels,108.73,97.57
+2024,27,2-McGinn and Tonic,2-Roy Kent's U8 Girls,145.32,94.47
+2024,27,2-Reeces (broken to) Pieces,2-100 Virgils,122.88,99.9
+2024,27,2-Wild Boars United,"2-good kev, m.A.A.d eze",105.18,58.5
+2024,27,3- Mickey Mount Clubhouse,3-Kelly’s Seagulls,58.65,81.34
+2024,27,3- Ornaldo Perfect Brothers & Sisters,3-Down with the Thickness,105.92,103.85
+2024,27,"3- if u lose 2 me, that is embarrassing",3-Young Munoz $$,108.74,125.07
+2024,27,3-Ajer & Big Justice,3-Hakuna Mateta,128.71,62.25
+2024,27,3-Bench Warmers FC,3-Onana What's my name,75.53,81.59
+2024,27,3-Dijk in Diaz,3-Shaq Moore Fan SC,95.5,93.99
+2024,27,1-Morgan Rodgers Neighborhood,1- Schärholder Value,160.06,103.24
+2024,27,1 - Law of Averages,2-Rainy Night at Stoke,101.99,96.5
+2024,27,1-Tim's Team,3-Bench Warmers FC,120.05,75.53
+2024,27,2-FC Bofa,"2-good kev, m.A.A.d eze",105.91,58.5
+2024,27,2-Lads FC,2-Greek Prison XI,108.73,89.75
+2024,27,3-Dijk in Diaz,1-The Madd Hatters,95.5,118.78
+2024,27,3-Down with the Thickness,1-The Riesterer Bunny,103.85,109.72
+2024,27,3-Young Munoz $$,1-Cruel Summerville,125.07,105.22
+2024,28,1-Dirty little Slot,1-Morgan Rodgers Neighborhood,128.0,128.57
+2024,28,1 - Law of Averages,1-The Madd Hatters,135.72,151.74
+2024,28,1- Schärholder Value,1-Diamond Dogs,69.24,85.21
+2024,28,1-Cruel Summerville,1-Check Complete FC,91.74,130.23
+2024,28,1-Mateta’s Muppets,1-The Riesterer Bunny,96.46,108.86
+2024,28,1-john lim,1-Tim's Team,72.92,112.43
+2024,28,2-100 Virgils,2-Greek Prison XI,68.23,87.74
+2024,28,2-Arteta's Angels,2-Diego Luna Fan Page,110.72,97.46
+2024,28,2-Rainy Night at Stoke,2-Lads FC,129.71,130.99
+2024,28,2-Reeces (broken to) Pieces,2-Wild Boars United,90.75,81.98
+2024,28,2-Roy Kent's U8 Girls,2-FC Bofa,125.49,87.48
+2024,28,"2-good kev, m.A.A.d eze",2-McGinn and Tonic,87.24,125.89
+2024,28,"3- if u lose 2 me, that is embarrassing",3- Mickey Mount Clubhouse,110.46,93.46
+2024,28,3-Down with the Thickness,3-Ajer & Big Justice,99.5,151.99
+2024,28,3-Hakuna Mateta,3-Dijk in Diaz,86.34,95.02
+2024,28,3-Kelly’s Seagulls,3-Bench Warmers FC,109.99,90.48
+2024,28,3-Onana What's my name,3-Shaq Moore Fan SC,92.2,76.99
+2024,28,3-Young Munoz $$,3- Ornaldo Perfect Brothers & Sisters,133.24,101.73
+2024,28,1-Tim's Team,1-Morgan Rodgers Neighborhood,112.43,128.57
+2024,28,1-Cruel Summerville,2-FC Bofa,91.74,87.48
+2024,28,1-The Madd Hatters,2-Greek Prison XI,151.74,87.74
+2024,28,1-The Riesterer Bunny,2-Rainy Night at Stoke,108.86,129.71
+2024,29,1-Morgan Rodgers Neighborhood,1-Diamond Dogs,70.75,113.99
+2024,29,1-Check Complete FC,1- Schärholder Value,74.97,55.94
+2024,29,1-The Madd Hatters,1-Cruel Summerville,75.36,145.5
+2024,29,1-The Riesterer Bunny,1-Dirty little Slot,79.74,146.98
+2024,29,1-Tim's Team,1 - Law of Averages,119.99,97.49
+2024,29,1-john lim,1-Mateta’s Muppets,104.23,111.23
+2024,29,2-Diego Luna Fan Page,2-Rainy Night at Stoke,78.99,88.49
+2024,29,2-FC Bofa,"2-good kev, m.A.A.d eze",110.48,103.69
+2024,29,2-Lads FC,2-Greek Prison XI,81.25,164.48
+2024,29,2-McGinn and Tonic,2-Reeces (broken to) Pieces,85.72,61.24
+2024,29,2-Roy Kent's U8 Girls,2-Arteta's Angels,79.98,27.11
+2024,29,2-Wild Boars United,2-100 Virgils,47.75,59.53
+2024,29,3- Mickey Mount Clubhouse,3-Young Munoz $$,49.74,107.74
+2024,29,3-Ajer & Big Justice,3- Ornaldo Perfect Brothers & Sisters,91.72,53.79
+2024,29,3-Bench Warmers FC,"3- if u lose 2 me, that is embarrassing",111.99,119.94
+2024,29,3-Dijk in Diaz,3-Down with the Thickness,73.75,84.24
+2024,29,3-Onana What's my name,3-Hakuna Mateta,95.61,19.62
+2024,29,3-Shaq Moore Fan SC,3-Kelly’s Seagulls,91.97,0.0
+2024,30,1- Schärholder Value,1-Morgan Rodgers Neighborhood,115.48,94.69
+2024,30,1 - Law of Averages,1-Mateta’s Muppets,58.46,82.75
+2024,30,1-Check Complete FC,1-The Madd Hatters,101.36,68.75
+2024,30,1-Cruel Summerville,1-Tim's Team,158.08,83.25
+2024,30,1-Diamond Dogs,1-The Riesterer Bunny,108.53,71.22
+2024,30,1-Dirty little Slot,1-john lim,115.09,83.25
+2024,30,2-100 Virgils,2-Lads FC,88.22,122.73
+2024,30,2-Greek Prison XI,2-Diego Luna Fan Page,106.6,87.98
+2024,30,2-Rainy Night at Stoke,2-Roy Kent's U8 Girls,101.48,73.73
+2024,30,2-Reeces (broken to) Pieces,2-FC Bofa,72.49,99.09
+2024,30,2-Wild Boars United,2-McGinn and Tonic,122.05,63.81
+2024,30,"2-good kev, m.A.A.d eze",2-Arteta's Angels,71.49,84.99
+2024,30,3- Mickey Mount Clubhouse,3-Bench Warmers FC,117.65,112.36
+2024,30,3- Ornaldo Perfect Brothers & Sisters,3-Dijk in Diaz,42.24,103.19
+2024,30,"3- if u lose 2 me, that is embarrassing",3-Shaq Moore Fan SC,101.49,0.0
+2024,30,3-Down with the Thickness,3-Onana What's my name,45.0,98.47
+2024,30,3-Kelly’s Seagulls,3-Hakuna Mateta,86.99,82.99
+2024,30,3-Young Munoz $$,3-Ajer & Big Justice,125.74,91.96
+2024,30,1-Tim's Team,1-Morgan Rodgers Neighborhood,83.25,94.69
+2024,30,1-Cruel Summerville,2-FC Bofa,158.08,99.09
+2024,30,1-The Madd Hatters,2-Greek Prison XI,68.75,106.6
+2024,30,1-The Riesterer Bunny,2-Rainy Night at Stoke,71.22,101.48
+2024,31,1-The Riesterer Bunny,1-Morgan Rodgers Neighborhood,107.23,85.19
+2024,31,1 - Law of Averages,1-Dirty little Slot,97.6,117.68
+2024,31,1-Mateta’s Muppets,1-Cruel Summerville,90.94,92.98
+2024,31,1-The Madd Hatters,1- Schärholder Value,113.0,96.65
+2024,31,1-Tim's Team,1-Check Complete FC,138.77,102.25
+2024,31,1-john lim,1-Diamond Dogs,57.0,148.49
+2024,31,2-Arteta's Angels,2-Reeces (broken to) Pieces,36.99,73.68
+2024,31,2-Diego Luna Fan Page,2-Lads FC,132.23,117.2
+2024,31,2-FC Bofa,2-Wild Boars United,91.94,79.3
+2024,31,2-McGinn and Tonic,2-100 Virgils,94.49,140.56
+2024,31,2-Roy Kent's U8 Girls,2-Greek Prison XI,54.74,119.74
+2024,31,"2-good kev, m.A.A.d eze",2-Rainy Night at Stoke,86.5,117.52
+2024,31,3-Bench Warmers FC,3-Young Munoz $$,132.23,115.54
+2024,31,3-Dijk in Diaz,3-Ajer & Big Justice,105.57,72.66
+2024,31,3-Hakuna Mateta,"3- if u lose 2 me, that is embarrassing",95.74,94.3
+2024,31,3-Kelly’s Seagulls,3-Down with the Thickness,59.98,69.24
+2024,31,3-Onana What's my name,3- Ornaldo Perfect Brothers & Sisters,112.0,59.0
+2024,31,3-Shaq Moore Fan SC,3- Mickey Mount Clubhouse,0.0,61.97
+2024,31,1-The Madd Hatters,1-Morgan Rodgers Neighborhood,113.0,85.19
+2024,31,1-Cruel Summerville,2-Rainy Night at Stoke,92.98,117.52
+2024,32,1-Morgan Rodgers Neighborhood,1-john lim,99.93,73.28
+2024,32,1- Schärholder Value,1-The Riesterer Bunny,132.99,151.97
+2024,32,1-Check Complete FC,1-Mateta’s Muppets,98.75,153.51
+2024,32,1-Cruel Summerville,1-Dirty little Slot,91.19,100.93
+2024,32,1-Diamond Dogs,1 - Law of Averages,105.5,70.74
+2024,32,1-The Madd Hatters,1-Tim's Team,111.23,175.91
+2024,32,2-100 Virgils,2-Diego Luna Fan Page,137.72,127.36
+2024,32,2-Greek Prison XI,"2-good kev, m.A.A.d eze",100.46,84.78
+2024,32,2-Lads FC,2-Roy Kent's U8 Girls,114.67,109.74
+2024,32,2-McGinn and Tonic,2-FC Bofa,91.29,143.17
+2024,32,2-Reeces (broken to) Pieces,2-Rainy Night at Stoke,79.75,107.53
+2024,32,2-Wild Boars United,2-Arteta's Angels,88.74,104.26
+2024,32,3- Mickey Mount Clubhouse,3-Hakuna Mateta,65.67,136.24
+2024,32,3- Ornaldo Perfect Brothers & Sisters,3-Kelly’s Seagulls,76.75,112.75
+2024,32,"3- if u lose 2 me, that is embarrassing",3-Down with the Thickness,70.74,54.23
+2024,32,3-Ajer & Big Justice,3-Onana What's my name,76.48,105.93
+2024,32,3-Bench Warmers FC,3-Shaq Moore Fan SC,166.99,0.0
+2024,32,3-Young Munoz $$,3-Dijk in Diaz,129.18,125.74
+2024,33,1 - Law of Averages,1-Morgan Rodgers Neighborhood,55.49,82.24
+2024,33,1-Cruel Summerville,1-Diamond Dogs,173.71,104.67
+2024,33,1-Dirty little Slot,1-Check Complete FC,97.49,144.9
+2024,33,1-Mateta’s Muppets,1-The Madd Hatters,103.23,160.56
+2024,33,1-Tim's Team,1- Schärholder Value,148.97,107.23
+2024,33,1-john lim,1-The Riesterer Bunny,148.28,151.56
+2024,33,2-Arteta's Angels,2-McGinn and Tonic,108.52,135.53
+2024,33,2-FC Bofa,2-100 Virgils,148.88,153.35
+2024,33,2-Rainy Night at Stoke,2-Wild Boars United,124.06,98.87
+2024,33,2-Reeces (broken to) Pieces,2-Greek Prison XI,70.86,106.5
+2024,33,2-Roy Kent's U8 Girls,2-Diego Luna Fan Page,55.49,82.0
+2024,33,"2-good kev, m.A.A.d eze",2-Lads FC,113.24,131.99
+2024,33,"3- if u lose 2 me, that is embarrassing",3- Ornaldo Perfect Brothers & Sisters,72.55,59.36
+2024,33,3-Down with the Thickness,3- Mickey Mount Clubhouse,100.91,148.11
+2024,33,3-Hakuna Mateta,3-Bench Warmers FC,146.6,104.1
+2024,33,3-Kelly’s Seagulls,3-Ajer & Big Justice,75.0,58.49
+2024,33,3-Onana What's my name,3-Dijk in Diaz,156.29,107.9
+2024,33,3-Shaq Moore Fan SC,3-Young Munoz $$,0.0,114.71
+2024,34,1-Morgan Rodgers Neighborhood,1-Cruel Summerville,81.32,142.09
+2024,34,1- Schärholder Value,1-john lim,99.96,65.5
+2024,34,1-Check Complete FC,1-Diamond Dogs,112.29,54.0
+2024,34,1-The Madd Hatters,1-Dirty little Slot,116.03,103.49
+2024,34,1-The Riesterer Bunny,1 - Law of Averages,123.07,67.71
+2024,34,1-Tim's Team,1-Mateta’s Muppets,128.22,144.22
+2024,34,2-100 Virgils,2-Roy Kent's U8 Girls,80.71,90.74
+2024,34,2-Diego Luna Fan Page,"2-good kev, m.A.A.d eze",93.33,0.0
+2024,34,2-FC Bofa,2-Arteta's Angels,103.85,102.98
+2024,34,2-Lads FC,2-Reeces (broken to) Pieces,96.49,81.24
+2024,34,2-McGinn and Tonic,2-Rainy Night at Stoke,31.75,148.71
+2024,34,2-Wild Boars United,2-Greek Prison XI,82.98,145.17
+2024,34,3- Mickey Mount Clubhouse,3- Ornaldo Perfect Brothers & Sisters,27.25,63.99
+2024,34,3-Ajer & Big Justice,"3- if u lose 2 me, that is embarrassing",75.91,54.5
+2024,34,3-Bench Warmers FC,3-Down with the Thickness,148.29,66.74
+2024,34,3-Dijk in Diaz,3-Kelly’s Seagulls,85.72,73.49
+2024,34,3-Shaq Moore Fan SC,3-Hakuna Mateta,0.0,36.55
+2024,34,3-Young Munoz $$,3-Onana What's my name,143.58,117.74
+2024,35,1-Check Complete FC,1-Morgan Rodgers Neighborhood,76.5,131.87
+2024,35,1 - Law of Averages,1-john lim,84.99,80.67
+2024,35,1-Cruel Summerville,1-The Riesterer Bunny,99.75,93.39
+2024,35,1-Diamond Dogs,1-The Madd Hatters,53.75,89.25
+2024,35,1-Dirty little Slot,1-Tim's Team,69.41,96.83
+2024,35,1-Mateta’s Muppets,1- Schärholder Value,94.5,144.17
+2024,35,2-Arteta's Angels,2-100 Virgils,73.25,86.75
+2024,35,2-Greek Prison XI,2-McGinn and Tonic,77.91,105.08
+2024,35,2-Rainy Night at Stoke,2-FC Bofa,128.42,87.15
+2024,35,2-Reeces (broken to) Pieces,2-Diego Luna Fan Page,70.25,98.5
+2024,35,2-Wild Boars United,2-Lads FC,72.99,29.75
+2024,35,"2-good kev, m.A.A.d eze",2-Roy Kent's U8 Girls,0.0,67.25
+2024,35,3- Mickey Mount Clubhouse,3-Ajer & Big Justice,62.05,79.0
+2024,35,3- Ornaldo Perfect Brothers & Sisters,3-Bench Warmers FC,0.0,93.5
+2024,35,"3- if u lose 2 me, that is embarrassing",3-Dijk in Diaz,0.0,81.16
+2024,35,3-Down with the Thickness,3-Shaq Moore Fan SC,48.5,0.0
+2024,35,3-Hakuna Mateta,3-Young Munoz $$,98.9,85.0
+2024,35,3-Kelly’s Seagulls,3-Onana What's my name,72.45,86.75
+2024,35,1-The Madd Hatters,1-Morgan Rodgers Neighborhood,89.25,131.87
+2024,35,1-Cruel Summerville,2-Rainy Night at Stoke,99.75,128.42
+2024,36,1-The Madd Hatters,1-Morgan Rodgers Neighborhood,126.28,131.93
+2024,36,1- Schärholder Value,1 - Law of Averages,79.76,80.73
+2024,36,1-Mateta’s Muppets,1-Dirty little Slot,115.51,126.72
+2024,36,1-The Riesterer Bunny,1-Check Complete FC,90.42,70.24
+2024,36,1-Tim's Team,1-Diamond Dogs,118.56,58.8
+2024,36,1-john lim,1-Cruel Summerville,104.45,114.84
+2024,36,2-100 Virgils,"2-good kev, m.A.A.d eze",147.73,0.0
+2024,36,2-Arteta's Angels,2-Rainy Night at Stoke,87.97,132.5
+2024,36,2-Diego Luna Fan Page,2-Wild Boars United,87.77,100.49
+2024,36,2-FC Bofa,2-Greek Prison XI,124.89,64.12
+2024,36,2-McGinn and Tonic,2-Lads FC,60.69,71.49
+2024,36,2-Roy Kent's U8 Girls,2-Reeces (broken to) Pieces,71.24,115.38
+2024,36,3-Bench Warmers FC,3-Ajer & Big Justice,102.02,46.43
+2024,36,3-Dijk in Diaz,3- Mickey Mount Clubhouse,60.98,58.56
+2024,36,3-Hakuna Mateta,3-Down with the Thickness,107.3,122.21
+2024,36,3-Onana What's my name,"3- if u lose 2 me, that is embarrassing",73.55,0.0
+2024,36,3-Shaq Moore Fan SC,3- Ornaldo Perfect Brothers & Sisters,0.0,72.91
+2024,36,3-Young Munoz $$,3-Kelly’s Seagulls,114.73,93.33
+2024,37,1-Morgan Rodgers Neighborhood,1-Tim's Team,79.49,104.76
+2024,37,1-Check Complete FC,1-john lim,76.47,65.05
+2024,37,1-Cruel Summerville,1 - Law of Averages,91.75,103.72
+2024,37,1-Diamond Dogs,1-Mateta’s Muppets,81.25,89.49
+2024,37,1-Dirty little Slot,1- Schärholder Value,106.0,83.98
+2024,37,1-The Madd Hatters,1-The Riesterer Bunny,114.18,91.25
+2024,37,2-Greek Prison XI,2-Arteta's Angels,104.49,66.0
+2024,37,2-Lads FC,2-FC Bofa,32.5,107.73
+2024,37,2-McGinn and Tonic,2-Diego Luna Fan Page,95.4,75.99
+2024,37,2-Rainy Night at Stoke,2-100 Virgils,119.99,113.71
+2024,37,2-Reeces (broken to) Pieces,"2-good kev, m.A.A.d eze",41.5,0.0
+2024,37,2-Wild Boars United,2-Roy Kent's U8 Girls,94.3,64.51
+2024,37,3- Mickey Mount Clubhouse,3-Onana What's my name,63.2,70.86
+2024,37,3- Ornaldo Perfect Brothers & Sisters,3-Hakuna Mateta,59.74,65.48
+2024,37,"3- if u lose 2 me, that is embarrassing",3-Kelly’s Seagulls,0.0,60.48
+2024,37,3-Ajer & Big Justice,3-Shaq Moore Fan SC,50.61,0.0
+2024,37,3-Bench Warmers FC,3-Dijk in Diaz,84.74,48.75
+2024,37,3-Down with the Thickness,3-Young Munoz $$,97.74,102.23
+2024,38,1-Mateta’s Muppets,1-Morgan Rodgers Neighborhood,103.22,107.99
+2024,38,1 - Law of Averages,1-Check Complete FC,83.96,107.25
+2024,38,1- Schärholder Value,1-Cruel Summerville,99.18,136.81
+2024,38,1-Dirty little Slot,1-Diamond Dogs,66.74,73.25
+2024,38,1-Tim's Team,1-The Riesterer Bunny,69.63,82.49
+2024,38,1-john lim,1-The Madd Hatters,88.49,116.75
+2024,38,2-100 Virgils,2-Reeces (broken to) Pieces,80.74,59.06
+2024,38,2-Arteta's Angels,2-Lads FC,75.48,80.0
+2024,38,2-FC Bofa,2-Diego Luna Fan Page,82.48,84.47
+2024,38,2-Rainy Night at Stoke,2-Greek Prison XI,99.5,121.48
+2024,38,2-Roy Kent's U8 Girls,2-McGinn and Tonic,55.5,143.48
+2024,38,"2-good kev, m.A.A.d eze",2-Wild Boars United,0.0,65.73
+2024,38,3-Down with the Thickness,3- Ornaldo Perfect Brothers & Sisters,72.98,68.24
+2024,38,3-Hakuna Mateta,3-Ajer & Big Justice,76.98,73.25
+2024,38,3-Kelly’s Seagulls,3- Mickey Mount Clubhouse,0.0,84.5
+2024,38,3-Onana What's my name,3-Bench Warmers FC,124.99,147.74
+2024,38,3-Shaq Moore Fan SC,3-Dijk in Diaz,0.0,97.47
+2024,38,3-Young Munoz $$,"3- if u lose 2 me, that is embarrassing",84.24,0.0
+2024,38,1-Morgan Rodgers Neighborhood,2-Rainy Night at Stoke,107.99,99.5

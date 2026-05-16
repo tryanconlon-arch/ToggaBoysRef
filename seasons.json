@@ -1,0 +1,70 @@
+{
+  "discovered_at": "2026-05-16",
+  "archive_url": "https://www.fantrax.com/fantasy/league/all;view=LEAGUES",
+  "league_count": 9,
+  "leagues": [
+    {
+      "league_id": "q5ykvvbmmdj5i0kx",
+      "label": "Togga Boys",
+      "year_guess": 2025,
+      "context_text": "2025-26\tEPL - Commissioner\tTogga Boys\t1 - Bruno\u2019s Big Bean Burritos\t26/10\tSat Aug 9 11:00 AM",
+      "href": "/fantasy/league/q5ykvvbmmdj5i0kx/home"
+    },
+    {
+      "league_id": "dsdrkvd6ly7km8nm",
+      "label": "Togga Boys",
+      "year_guess": 2024,
+      "context_text": "2024-25\tEPL - Commissioner\tTogga Boys\t1-Morgan Rodgers Neighborhood\t14/5\tSun Aug 11 8:30 PM",
+      "href": "/fantasy/league/dsdrkvd6ly7km8nm/home"
+    },
+    {
+      "league_id": "jg83m0qslk6wgt4u",
+      "label": "Togga Boys",
+      "year_guess": 2023,
+      "context_text": "2023-24\tEPL - Commissioner\tTogga Boys\t1-Koke Vegas\t27/11\tThu Aug 10 11:00 PM",
+      "href": "/fantasy/league/jg83m0qslk6wgt4u/home"
+    },
+    {
+      "league_id": "4k5rl4q0l59np7zg",
+      "label": "Lol went to a bbq last night",
+      "year_guess": 2022,
+      "context_text": "2022-23\tEPL - Commissioner\tLol went to a bbq last night\t\t-\t\t\nautorenew",
+      "href": "/fantasy/league/4k5rl4q0l59np7zg/home"
+    },
+    {
+      "league_id": "8dsbn2cul5adq5d4",
+      "label": "Togga Boys",
+      "year_guess": 2022,
+      "context_text": "2022-23\tEPL - Commissioner\tTogga Boys\t1-Jesus live at Red Rocks\t7/5\tThu Aug 4 8:30 PM",
+      "href": "/fantasy/league/8dsbn2cul5adq5d4/home"
+    },
+    {
+      "league_id": "mp4al1q3kqs4p57n",
+      "label": "Lol went to a bbq last night",
+      "year_guess": 2021,
+      "context_text": "2021-22\tEPL - Commissioner\tLol went to a bbq last night\tBerkley McG\u2019s U1s\t3\tThu Aug 12 10:00 PM",
+      "href": "/fantasy/league/mp4al1q3kqs4p57n/home"
+    },
+    {
+      "league_id": "1r470dnvkedmfgzc",
+      "label": "Anything but an Alex Five Peat",
+      "year_guess": 2020,
+      "context_text": "2020-21\tEPL - Commissioner\tAnything but an Alex Five Peat\tJesse's Last Touch\t5\tWed Sep 9 8:30 PM",
+      "href": "/fantasy/league/1r470dnvkedmfgzc/home"
+    },
+    {
+      "league_id": "gtsw8xtpjysyqnsa",
+      "label": "Laeka & the Lads",
+      "year_guess": 2019,
+      "context_text": "2019-20\tEPL - Commissioner\tLaeka & the Lads\tPhil Jones Moans\t5\tThu Aug 8 9:30 PM",
+      "href": "/fantasy/league/gtsw8xtpjysyqnsa/home"
+    },
+    {
+      "league_id": "69dkxf4yjjzuho4l",
+      "label": "Laeka & the Lads",
+      "year_guess": 2018,
+      "context_text": "2018-19\tEPL - Commissioner\tLaeka & the Lads\tCulture Change\t12\tWed Aug 8 9:15 PM",
+      "href": "/fantasy/league/69dkxf4yjjzuho4l/home"
+    }
+  ]
+}

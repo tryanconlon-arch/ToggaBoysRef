@@ -1,0 +1,729 @@
+"""
+build_historical_data.py
+------------------------
+Reads all per-season CSVs + owners.json, computes derived datasets,
+and writes fantrax_historical.js for the React app to consume.
+
+Inputs expected:
+    fantrax_data/historical/{year}/standings.csv   (2018-2024)
+    fantrax_data/historical/{year}/transactions.csv (optional, for Most Transactions record)
+    matchups_{year}.csv                            (optional, needed for weekly records + H2H)
+    owners.json                                    (output of scrape_members.py)
+
+Output:
+    fantrax_historical.js
+
+Globals written to fantrax_historical.js:
+    HIST_SEASONS    -- [2018, 2019, ..., 2024]
+    HIST_OWNERS     -- {owner_id: {seasons:{year:teamName}, color, name}}
+    HIST_STANDINGS  -- {year: [{owner_id, rank, w, d, l, pts, pf, pa, champion, team_name}]}
+    HIST_MATCHUPS   -- [{year, week, t1_owner, t2_owner, t1_score, t2_score}]
+    HIST_H2H        -- {"id1_id2": {wins,losses,pf,pa,matches:[{year,week,t1,t2,s1,s2}]}}
+    HIST_RECORDS    -- [{icon,label,value,unit,holder,ctx}]  (12 entries)
+
+Run:
+    python3 build_historical_data.py
+"""
+
+import csv
+import json
+import re
+from collections import defaultdict
+from pathlib import Path
+
+ROOT          = Path(__file__).parent
+HIST_ROOT     = ROOT / "fantrax_data" / "historical"
+OWNERS_PATH   = ROOT / "owners.json"
+OUT_PATH      = ROOT / "fantrax_historical.js"
+SEASONS_PATH  = ROOT / "seasons_filtered.json"
+
+# ── Helpers ──────────────────────────────────────────────────────────────────
+
+def parse_num(v):
+    try:
+        return float(str(v).replace(",", "").strip())
+    except (ValueError, TypeError):
+        return 0.0
+
+
+def clean_team_name(name):
+    return re.sub(r"^\d+\s*[-–]\s*", "", str(name)).strip()
+
+
+def find_header_line(lines, marker):
+    """Return the index of the first line containing marker, or None."""
+    for i, line in enumerate(lines):
+        if marker in line:
+            return i
+    return None
+
+
+def parse_standings_csv(path):
+    """
+    Parse a Fantrax standings.csv.
+    Returns list of dicts: {rank, team, w, d, l, pts, win_pct, pf, pa}.
+    """
+    rows = []
+    with open(path, encoding="utf-8", newline="") as f:
+        lines = f.readlines()
+
+    header_idx = find_header_line(lines, '"Rk"')
+    if header_idx is None:
+        header_idx = find_header_line(lines, "Rk")
+    if header_idx is None:
+        return rows
+
+    data_lines = []
+    for line in lines[header_idx:]:
+        if not line.strip():
+            break
+        data_lines.append(line)
+
+    for row in csv.DictReader(data_lines):
+        team = row.get("Team", "").strip()
+        if not team:
+            continue
+        rk = row.get("Rk", "0").strip()
+        rows.append({
+            "rank":    int(rk) if rk.isdigit() else 0,
+            "team":    team,
+            "w":       int(parse_num(row.get("W", 0))),
+            "d":       int(parse_num(row.get("D", 0))),
+            "l":       int(parse_num(row.get("L", 0))),
+            "pts":     int(parse_num(row.get("Points", 0))),
+            "win_pct": row.get("Win%", "").strip(),
+            "pf":      parse_num(row.get("FPtsF", 0)),
+            "pa":      parse_num(row.get("FPtsA", 0)),
+        })
+    return rows
+
+
+def parse_matchups_csv(path):
+    """
+    Parse a matchups_{year}.csv file.
+    Returns deduplicated list: {year, week, t1_team, t2_team, t1_score, t2_score}.
+
+    Fantrax scraper sometimes captures "cross-matchup" what-if rows in addition to
+    real games.  We deduplicate by keeping only the first row per (year, week) in
+    which each team appears — i.e. each team can play at most one real game per week.
+    """
+    raw = []
+    with open(path, encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            try:
+                raw.append({
+                    "year":     int(row["year"]),
+                    "week":     int(row["week"]),
+                    "t1_team":  row["t1_team"].strip(),
+                    "t2_team":  row["t2_team"].strip(),
+                    "t1_score": parse_num(row["t1_score"]),
+                    "t2_score": parse_num(row["t2_score"]),
+                })
+            except (KeyError, ValueError):
+                continue
+
+    # Drop rows where both scores are 0 — these are unloaded/scraper-artifact weeks.
+    raw = [r for r in raw if not (r["t1_score"] == 0.0 and r["t2_score"] == 0.0)]
+
+    # Deduplicate: one real game per team per week.
+    seen_teams: dict = {}   # (year, week) -> set of team names seen so far
+    rows = []
+    for r in raw:
+        key = (r["year"], r["week"])
+        seen = seen_teams.setdefault(key, set())
+        if r["t1_team"] not in seen and r["t2_team"] not in seen:
+            seen.add(r["t1_team"])
+            seen.add(r["t2_team"])
+            rows.append(r)
+    return rows
+
+
+def parse_transactions_csv(path):
+    """Return total transaction count for the season."""
+    count = 0
+    with open(path, encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            if row.get("Player", "").strip():
+                count += 1
+    return count
+
+
+# ── Owner / team name mapping ─────────────────────────────────────────────────
+
+def build_team_to_owner(owners: dict):
+    """
+    Build a dict from raw Fantrax team-name string → owner_id.
+    Handles both bare names ("Tonali Vision") and prefixed names ("3-Tonali Vision").
+    """
+    mapping = {}
+    for owner_id, data in owners.items():
+        for year, team_name in data.get("seasons", {}).items():
+            mapping[team_name.strip()] = owner_id
+            mapping[clean_team_name(team_name)] = owner_id
+    return mapping
+
+
+def resolve_owner(team_name: str, team_to_owner: dict):
+    """Return owner_id for a team name string, or None."""
+    t = team_name.strip()
+    if t in team_to_owner:
+        return team_to_owner[t]
+    cleaned = clean_team_name(t)
+    if cleaned in team_to_owner:
+        return team_to_owner[cleaned]
+    # Try case-insensitive match.
+    t_lower = t.lower()
+    c_lower = cleaned.lower()
+    for k, v in team_to_owner.items():
+        if k.lower() in (t_lower, c_lower):
+            return v
+    return None
+
+
+# ── Core computations ─────────────────────────────────────────────────────────
+
+def compute_standings(seasons, owners):
+    """
+    Build HIST_STANDINGS: {year: [{owner_id, rank, w, d, l, pts, pf, pa, champion, team_name}]}.
+    Rows without a resolved owner_id are still included with owner_id=None for inspection.
+    """
+    team_to_owner = build_team_to_owner(owners)
+    hist = {}
+
+    for s in seasons:
+        year = s["year"]
+        csv_path = HIST_ROOT / str(year) / "standings.csv"
+        if not csv_path.exists():
+            print(f"  [{year}] standings.csv not found — skipping")
+            continue
+
+        raw = parse_standings_csv(csv_path)
+        if not raw:
+            print(f"  [{year}] standings.csv parsed 0 rows — check file")
+            continue
+
+        rows = []
+        for r in raw:
+            owner_id = resolve_owner(r["team"], team_to_owner)
+            if not owner_id:
+                print(f"  [{year}] WARNING: no owner match for team '{r['team']}'")
+            rows.append({
+                "owner_id":  owner_id,
+                "team_name": r["team"],
+                "rank":      r["rank"],
+                "w":         r["w"],
+                "d":         r["d"],
+                "l":         r["l"],
+                "pts":       r["pts"],
+                "pf":        round(r["pf"], 3),
+                "pa":        round(r["pa"], 3),
+                "champion":  r["rank"] == 1,
+            })
+        hist[year] = sorted(rows, key=lambda x: x["rank"])
+        print(f"  [{year}] {len(rows)} teams in standings")
+
+    return hist
+
+
+def compute_matchups(seasons, owners):
+    """
+    Build HIST_MATCHUPS: flat list with owner IDs resolved.
+    Returns (matchup_rows, unresolved_count).
+    """
+    team_to_owner = build_team_to_owner(owners)
+    all_rows = []
+    unresolved = 0
+
+    for s in seasons:
+        year = s["year"]
+        csv_path = ROOT / f"matchups_{year}.csv"
+        if not csv_path.exists():
+            continue
+
+        raw = parse_matchups_csv(csv_path)
+        print(f"  [{year}] {len(raw)} matchup rows in CSV")
+        for r in raw:
+            t1_owner = resolve_owner(r["t1_team"], team_to_owner)
+            t2_owner = resolve_owner(r["t2_team"], team_to_owner)
+            if not t1_owner:
+                print(f"    WARNING [{year} Wk{r['week']}]: no owner for '{r['t1_team']}'")
+                unresolved += 1
+            if not t2_owner:
+                print(f"    WARNING [{year} Wk{r['week']}]: no owner for '{r['t2_team']}'")
+                unresolved += 1
+            all_rows.append({
+                "year":     r["year"],
+                "week":     r["week"],
+                "t1_owner": t1_owner,
+                "t2_owner": t2_owner,
+                "t1_team":  r["t1_team"],
+                "t2_team":  r["t2_team"],
+                "t1_score": round(r["t1_score"], 2),
+                "t2_score": round(r["t2_score"], 2),
+            })
+
+    return all_rows, unresolved
+
+
+def compute_h2h(matchups):
+    """
+    Build HIST_H2H: {"ownA:ownB": {wins,losses,pf,pa,matches:[last 8 desc]}}.
+    Key is always sorted(ownA, ownB) joined with ':' so each pair has one entry.
+    wins/losses are from ownA's perspective (lower sorted id = "first").
+    """
+    pairs = defaultdict(lambda: {"wins": 0, "losses": 0, "pf": 0.0, "pa": 0.0, "matches": []})
+
+    for m in matchups:
+        a, b = m["t1_owner"], m["t2_owner"]
+        if not a or not b or a == b:
+            continue
+        # Normalise pair key: alphabetically sorted.
+        first, second = (a, b) if a < b else (b, a)
+        key = f"{first}:{second}"
+        entry = pairs[key]
+
+        t1_win = m["t1_score"] > m["t2_score"]
+        if a == first:
+            # first=a=t1
+            if t1_win:
+                entry["wins"] += 1
+            else:
+                entry["losses"] += 1
+            entry["pf"] += m["t1_score"]
+            entry["pa"] += m["t2_score"]
+        else:
+            # first=b=t2
+            if not t1_win:
+                entry["wins"] += 1
+            else:
+                entry["losses"] += 1
+            entry["pf"] += m["t2_score"]
+            entry["pa"] += m["t1_score"]
+
+        entry["matches"].append({
+            "year":  m["year"],
+            "week":  m["week"],
+            "t1":    a,
+            "t2":    b,
+            "s1":    m["t1_score"],
+            "s2":    m["t2_score"],
+        })
+
+    # Sort match history desc, keep last 8.
+    result = {}
+    for key, entry in pairs.items():
+        entry["matches"] = sorted(
+            entry["matches"],
+            key=lambda x: (x["year"], x["week"]),
+            reverse=True,
+        )[:8]
+        entry["pf"] = round(entry["pf"], 2)
+        entry["pa"] = round(entry["pa"], 2)
+        result[key] = entry
+
+    return result
+
+
+def compute_records(hist_standings, matchups, owners, seasons):
+    """
+    Compute the 12 Records cards. Returns list of dicts matching the RECORDS shape.
+    Records not computable from available data get placeholder values.
+    """
+    # Helper: get display name for an owner_id.
+    def owner_name(owner_id):
+        if not owner_id or owner_id not in owners:
+            return "Unknown"
+        data = owners[owner_id]
+        if data.get("name"):
+            return data["name"]
+        # Fall back to most recent team name.
+        seasons_map = data.get("seasons", {})
+        if seasons_map:
+            latest_yr = max(seasons_map.keys(), key=int)
+            return clean_team_name(seasons_map[latest_yr])
+        return owner_id
+
+    records = []
+
+    # ── Records from matchups ─────────────────────────────────────────────────
+    if matchups:
+        flat = [(m, max(m["t1_score"], m["t2_score"])) for m in matchups]
+        flat_min = [(m, min(m["t1_score"], m["t2_score"])) for m in matchups]
+        margins = [(m, abs(m["t1_score"] - m["t2_score"])) for m in matchups]
+
+        # 1. Highest single-week score
+        best_m, best_score = max(flat, key=lambda x: x[1])
+        best_owner = best_m["t1_owner"] if best_m["t1_score"] == best_score else best_m["t2_owner"]
+        records.append({
+            "icon": "⚡", "label": "Highest Single-Week Score",
+            "value": f"{best_score:.1f}", "unit": "pts",
+            "holder": owner_name(best_owner),
+            "ctx": f"Week {best_m['week']} · {best_m['year']}",
+        })
+
+        # 2. Lowest single-week score
+        worst_m, worst_score = min(flat_min, key=lambda x: x[1])
+        worst_owner = worst_m["t1_owner"] if worst_m["t1_score"] == worst_score else worst_m["t2_owner"]
+        records.append({
+            "icon": "📉", "label": "Lowest Single-Week Score",
+            "value": f"{worst_score:.1f}", "unit": "pts",
+            "holder": owner_name(worst_owner),
+            "ctx": f"Week {worst_m['week']} · {worst_m['year']}",
+        })
+
+        # 3. Biggest win margin
+        big_m, big_margin = max(margins, key=lambda x: x[1])
+        winning_owner = big_m["t1_owner"] if big_m["t1_score"] > big_m["t2_score"] else big_m["t2_owner"]
+        losing_owner  = big_m["t2_owner"] if big_m["t1_score"] > big_m["t2_score"] else big_m["t1_owner"]
+        records.append({
+            "icon": "🏃", "label": "Biggest Win Margin",
+            "value": f"{big_margin:.1f}", "unit": "pts",
+            "holder": owner_name(winning_owner),
+            "ctx": f"def. {owner_name(losing_owner)} by {big_margin:.1f} · Wk {big_m['week']} · {big_m['year']}",
+        })
+
+    else:
+        for icon, label in [
+            ("⚡", "Highest Single-Week Score"),
+            ("📉", "Lowest Single-Week Score"),
+            ("🏃", "Biggest Win Margin"),
+        ]:
+            records.append({"icon": icon, "label": label, "value": "—", "unit": "pts",
+                            "holder": "—", "ctx": "Matchup data not yet collected"})
+
+    # ── Records from standings ────────────────────────────────────────────────
+
+    # 4. Most points in a season
+    best_pf = None
+    for year, rows in hist_standings.items():
+        for r in rows:
+            if best_pf is None or r["pf"] > best_pf[0]:
+                best_pf = (r["pf"], r["owner_id"], year)
+    if best_pf:
+        records.append({
+            "icon": "📅", "label": "Most Points in a Season",
+            "value": f"{best_pf[0]:,.1f}", "unit": "pts",
+            "holder": owner_name(best_pf[1]),
+            "ctx": f"{best_pf[2]} Regular Season",
+        })
+    else:
+        records.append({"icon": "📅", "label": "Most Points in a Season",
+                        "value": "—", "unit": "pts", "holder": "—", "ctx": "No standings data"})
+
+    # 5. Fewest points in a season
+    worst_pf = None
+    for year, rows in hist_standings.items():
+        for r in rows:
+            if r["pf"] > 0 and (worst_pf is None or r["pf"] < worst_pf[0]):
+                worst_pf = (r["pf"], r["owner_id"], year)
+    if worst_pf:
+        records.append({
+            "icon": "📉", "label": "Fewest Points in a Season",
+            "value": f"{worst_pf[0]:,.1f}", "unit": "pts",
+            "holder": owner_name(worst_pf[1]),
+            "ctx": f"{worst_pf[2]} Regular Season",
+        })
+    else:
+        records.append({"icon": "📉", "label": "Fewest Points in a Season",
+                        "value": "—", "unit": "pts", "holder": "—", "ctx": "No standings data"})
+
+    # 6. Best regular season record (highest win %)
+    best_rec = None
+    for year, rows in hist_standings.items():
+        for r in rows:
+            total = r["w"] + r["l"] + r["d"]
+            if total == 0:
+                continue
+            pct = r["w"] / total
+            if best_rec is None or pct > best_rec[0]:
+                best_rec = (pct, r["w"], r["l"], r["owner_id"], year)
+    if best_rec:
+        pct, w, l, oid, yr = best_rec
+        records.append({
+            "icon": "🏆", "label": "Best Regular Season Record",
+            "value": f"{w}-{l}", "unit": "",
+            "holder": owner_name(oid),
+            "ctx": f"{yr} · {pct*100:.1f}% win rate",
+        })
+    else:
+        records.append({"icon": "🏆", "label": "Best Regular Season Record",
+                        "value": "—", "unit": "", "holder": "—", "ctx": "No standings data"})
+
+    # 7 & 8. Longest winning / losing streak (need matchups per owner per season in order)
+    if matchups:
+        # Build per-season per-owner ordered result list.
+        # result[year][owner_id] = [True/False, ...] ordered by week.
+        season_results = defaultdict(lambda: defaultdict(list))
+        sorted_matchups = sorted(matchups, key=lambda m: (m["year"], m["week"]))
+        for m in sorted_matchups:
+            if m["t1_owner"]:
+                season_results[m["year"]][m["t1_owner"]].append(m["t1_score"] > m["t2_score"])
+            if m["t2_owner"]:
+                season_results[m["year"]][m["t2_owner"]].append(m["t2_score"] > m["t1_score"])
+
+        def longest_streak(results, win=True):
+            best = (0, None, None, None, None)  # (length, owner_id, year, start_wk, end_wk)
+            for year, owner_map in results.items():
+                for owner_id, res_list in owner_map.items():
+                    cur = 0
+                    start_idx = 0
+                    for i, outcome in enumerate(res_list):
+                        if outcome == win:
+                            if cur == 0:
+                                start_idx = i
+                            cur += 1
+                            if cur > best[0]:
+                                best = (cur, owner_id, year, start_idx + 1, i + 1)
+                        else:
+                            cur = 0
+            return best
+
+        wstreak = longest_streak(season_results, win=True)
+        records.append({
+            "icon": "🔥", "label": "Longest Winning Streak",
+            "value": str(wstreak[0]) if wstreak[0] else "—", "unit": "straight",
+            "holder": owner_name(wstreak[1]) if wstreak[1] else "—",
+            "ctx": (f"Weeks {wstreak[3]}–{wstreak[4]} · {wstreak[2]}"
+                    if wstreak[0] else "Matchup data not yet collected"),
+        })
+
+        lstreak = longest_streak(season_results, win=False)
+        records.append({
+            "icon": "💀", "label": "Longest Losing Streak",
+            "value": str(lstreak[0]) if lstreak[0] else "—", "unit": "straight",
+            "holder": owner_name(lstreak[1]) if lstreak[1] else "—",
+            "ctx": (f"Weeks {lstreak[3]}–{lstreak[4]} · {lstreak[2]}"
+                    if lstreak[0] else "Matchup data not yet collected"),
+        })
+    else:
+        records.append({"icon": "🔥", "label": "Longest Winning Streak",
+                        "value": "—", "unit": "straight", "holder": "—",
+                        "ctx": "Matchup data not yet collected"})
+        records.append({"icon": "💀", "label": "Longest Losing Streak",
+                        "value": "—", "unit": "straight", "holder": "—",
+                        "ctx": "Matchup data not yet collected"})
+
+    # 9. Highest scoring player week — not available without per-player weekly data.
+    records.append({
+        "icon": "⭐", "label": "Highest Scoring Player Week",
+        "value": "—", "unit": "pts", "holder": "—",
+        "ctx": "Requires per-player weekly data (not in Fantrax CSV exports)",
+    })
+
+    # 10. Most transactions in a season (from transactions.csv per season).
+    best_tx = None
+    for s in seasons:
+        year = s["year"]
+        tx_path = HIST_ROOT / str(year) / "transactions.csv"
+        if not tx_path.exists():
+            continue
+        # transactions.csv has one row per player per transaction.
+        # We count total rows, not unique teams.
+        try:
+            count = parse_transactions_csv(tx_path)
+            if best_tx is None or count > best_tx[0]:
+                # We don't have per-team breakdown here; just total for the season.
+                # To get per-team: would need to group by fantasyTeam column.
+                best_tx = (count, year)
+        except Exception:
+            pass
+
+    # Better: compute per-team transaction counts for the season with max total.
+    best_team_tx = None
+    for s in seasons:
+        year = s["year"]
+        tx_path = HIST_ROOT / str(year) / "transactions.csv"
+        if not tx_path.exists():
+            continue
+        try:
+            team_counts = defaultdict(int)
+            with open(tx_path, encoding="utf-8", newline="") as f:
+                for row in csv.DictReader(f):
+                    player = row.get("Player", "").strip()
+                    team   = row.get("Team", "").strip()
+                    if player and team:
+                        team_counts[team] += 1
+            if team_counts:
+                top_team, top_count = max(team_counts.items(), key=lambda x: x[1])
+                if best_team_tx is None or top_count > best_team_tx[0]:
+                    best_team_tx = (top_count, top_team, year)
+        except Exception:
+            pass
+
+    if best_team_tx:
+        tx_count, tx_team, tx_year = best_team_tx
+        team_to_owner = build_team_to_owner(owners)
+        tx_owner = resolve_owner(tx_team, team_to_owner)
+        records.append({
+            "icon": "🔄", "label": "Most Transactions in a Season",
+            "value": str(tx_count), "unit": "moves",
+            "holder": owner_name(tx_owner) if tx_owner else clean_team_name(tx_team),
+            "ctx": f"{tx_year} Season",
+        })
+    else:
+        records.append({
+            "icon": "🔄", "label": "Most Transactions in a Season",
+            "value": "—", "unit": "moves", "holder": "—",
+            "ctx": "Historical transaction data not yet collected",
+        })
+
+    # 11. Best trade return — not computable without FPts deltas.
+    records.append({
+        "icon": "💰", "label": "Best Trade Return",
+        "value": "—", "unit": "pts avg Δ", "holder": "—",
+        "ctx": "Requires pre/post-trade FPts data (not in Fantrax CSV exports)",
+    })
+
+    # 12. All-time win rate.
+    career = defaultdict(lambda: {"w": 0, "l": 0})
+    for year, rows in hist_standings.items():
+        for r in rows:
+            if r["owner_id"]:
+                career[r["owner_id"]]["w"] += r["w"]
+                career[r["owner_id"]]["l"] += r["l"]
+
+    best_winpct = None
+    for owner_id, rec in career.items():
+        total = rec["w"] + rec["l"]
+        if total == 0:
+            continue
+        pct = rec["w"] / total
+        if best_winpct is None or pct > best_winpct[0]:
+            best_winpct = (pct, owner_id, rec["w"], rec["l"])
+
+    if best_winpct:
+        pct, oid, w, l = best_winpct
+        records.append({
+            "icon": "📊", "label": "All-Time Win Rate",
+            "value": f"{pct*100:.1f}", "unit": "%",
+            "holder": owner_name(oid),
+            "ctx": f"{w}–{l} career record",
+        })
+    else:
+        records.append({"icon": "📊", "label": "All-Time Win Rate",
+                        "value": "—", "unit": "%", "holder": "—", "ctx": "No standings data"})
+
+    return records
+
+
+def build_managers_array(owners, hist_standings):
+    """
+    Derive the MANAGERS-compatible array from HIST_OWNERS + HIST_STANDINGS.
+    Used by index.html to replace the hardcoded MANAGERS constant.
+    This is emitted as HIST_MANAGERS for the React app.
+    """
+    team_to_owner = build_team_to_owner(owners)
+
+    # Collect championship years per owner.
+    champ_years = defaultdict(list)
+    for year, rows in hist_standings.items():
+        for r in rows:
+            if r["champion"] and r["owner_id"]:
+                champ_years[r["owner_id"]].append(year)
+
+    managers = []
+    for owner_id, data in owners.items():
+        seasons_map = data.get("seasons", {})
+        # Most recent team name.
+        latest_team = ""
+        if seasons_map:
+            latest_yr = max(seasons_map.keys(), key=int)
+            latest_team = clean_team_name(seasons_map[latest_yr])
+
+        real_name = data.get("name")
+        managers.append({
+            "id":            owner_id,
+            "has_name":      bool(real_name),
+            "name":          real_name or latest_team or owner_id,
+            "team":          latest_team,
+            "color":         data.get("color") or "#555555",
+            "championships": sorted(champ_years.get(owner_id, [])),
+            "seasons":       seasons_map,
+        })
+
+    return sorted(managers, key=lambda m: m["id"])
+
+
+# ── Main ─────────────────────────────────────────────────────────────────────
+
+def main():
+    if not SEASONS_PATH.exists():
+        raise SystemExit(f"{SEASONS_PATH} not found. Run discover_seasons.py first.")
+
+    seasons = json.loads(SEASONS_PATH.read_text())
+    seasons_sorted = sorted(seasons, key=lambda s: s["year"])
+    season_years = [s["year"] for s in seasons_sorted]
+
+    print(f"Building historical data for seasons: {season_years}")
+
+    # ── Load owners ──────────────────────────────────────────────────────────
+    owners = {}
+    if OWNERS_PATH.exists():
+        owners = json.loads(OWNERS_PATH.read_text())
+        print(f"Loaded {len(owners)} owners from {OWNERS_PATH}")
+    else:
+        print(f"WARNING: {OWNERS_PATH} not found — team→owner mapping will be empty.")
+        print("Run scrape_members.py first for full owner resolution.")
+
+    # ── Standings ────────────────────────────────────────────────────────────
+    print("\nProcessing standings...")
+    hist_standings = compute_standings(seasons_sorted, owners)
+
+    # ── Matchups ─────────────────────────────────────────────────────────────
+    print("\nProcessing matchups...")
+    matchups, unresolved = compute_matchups(seasons_sorted, owners)
+    if matchups:
+        print(f"  Total matchup rows: {len(matchups)}")
+        if unresolved:
+            print(f"  WARNING: {unresolved} team names could not be resolved to owner IDs")
+    else:
+        print("  No matchups_{year}.csv files found yet.")
+        print("  Run scrape_matchups.py to collect weekly scores.")
+
+    # ── H2H ──────────────────────────────────────────────────────────────────
+    print("\nComputing H2H...")
+    h2h = compute_h2h(matchups)
+    print(f"  {len(h2h)} unique H2H pairs")
+
+    # ── Records ──────────────────────────────────────────────────────────────
+    print("\nComputing records...")
+    records = compute_records(hist_standings, matchups, owners, seasons_sorted)
+    print(f"  {len(records)} records computed")
+
+    # ── Managers array ───────────────────────────────────────────────────────
+    managers = build_managers_array(owners, hist_standings)
+    print(f"  {len(managers)} managers in HIST_MANAGERS")
+
+    # ── Emit JS ──────────────────────────────────────────────────────────────
+    print(f"\nWriting {OUT_PATH}...")
+
+    # Convert hist_standings keys to int-keyed dict for JSON (years as ints).
+    hist_standings_out = {str(yr): rows for yr, rows in hist_standings.items()}
+
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
+        f.write("// Auto-generated by build_historical_data.py — do not edit by hand.\n")
+        f.write(f"const HIST_SEASONS = {json.dumps(season_years)};\n")
+        f.write(f"const HIST_OWNERS = {json.dumps(owners, indent=2)};\n")
+        f.write(f"const HIST_MANAGERS = {json.dumps(managers, indent=2)};\n")
+        f.write(f"const HIST_STANDINGS = {json.dumps(hist_standings_out, indent=2)};\n")
+        f.write(f"const HIST_MATCHUPS = {json.dumps(matchups, indent=2)};\n")
+        f.write(f"const HIST_H2H = {json.dumps(h2h, indent=2)};\n")
+        f.write(f"const HIST_RECORDS = {json.dumps(records, indent=2)};\n")
+
+    size_kb = OUT_PATH.stat().st_size // 1024
+    print(f"  ✓ Wrote {OUT_PATH}  ({size_kb} KB)")
+
+    # ── Summary ──────────────────────────────────────────────────────────────
+    print("\n── Summary ─────────────────────────────────────────────────")
+    print(f"  Seasons:  {len(hist_standings)} / {len(season_years)} have standings data")
+    print(f"  Matchups: {len(matchups)} weekly results across {len(season_years)} seasons")
+    print(f"  H2H:      {len(h2h)} pairs")
+    print(f"  Records:  {len(records)}")
+    missing = [yr for yr in season_years if yr not in hist_standings]
+    if missing:
+        print(f"\n  Missing standings for: {missing}")
+        print("  Run fantrax_history.py to collect them.")
+
+
+if __name__ == "__main__":
+    main()

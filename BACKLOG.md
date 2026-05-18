@@ -9,12 +9,6 @@ Rough notes — items captured but not yet scoped or fleshed out.
 - Fix trade data
 
 ## Major feature additions
-- Site-wide natural language search bar
-  - Open-ended, question-style queries (e.g. "Who's the highest scoring manager all time?")
-  - Should surface answers from across all data: managers, teams, scores, standings, records, etc.
-
-
-- Add player data and visibility
 - Add luck tracker (user will provide specific requirements when ready — do not pre-scope)
 
 ## Exploratory

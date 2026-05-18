@@ -423,7 +423,7 @@ function useActiveSection(ids){
 // ─── COMPONENTS ─────────────────────────────────────────────────────────────
 
 function StickyNav({active}){
-  const links=[['champions','Champions'],['seasons','Seasons'],['standings','Standings'],['moves','Moves'],['records','Records'],['h2h','H2H'],['managers','Managers']];
+  const links=[['champions','Champions'],['seasons','Seasons'],['records','Records'],['h2h','H2H'],['managers','Managers']];
   return(
     <nav className="nav">
       <a className="nav-brand" href="#hero">
@@ -1572,7 +1572,7 @@ function RecentMoves(){
 // ─── APP ─────────────────────────────────────────────────────────────────────
 
 function App(){
-  const sectionIds=['hero','champions','seasons','standings','moves','records','h2h','managers'];
+  const sectionIds=['hero','champions','seasons','records','h2h','managers'];
   const active=useActiveSection(sectionIds);
   return(
     <>
@@ -1580,8 +1580,7 @@ function App(){
       <HeroSection/>
       <HallOfChampions/>
       <SeasonResults/>
-      <LiveStandings/>
-      <RecentMoves/>
+      <div style={{display:'none'}}><LiveStandings/><RecentMoves/></div>
       <RecordsVault/>
       <HeadToHead/>
       <ManagerProfiles/>

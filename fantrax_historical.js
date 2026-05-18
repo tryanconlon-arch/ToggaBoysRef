@@ -37968,66 +37968,1218 @@ const HIST_RECORDS = [
   {
     "icon": "\u26a1",
     "label": "Highest Single-Week Score",
-    "value": "282.5",
     "unit": "pts",
+    "value": "282.5",
     "holder": "Blake",
-    "ctx": "Week 34 \u00b7 2023"
+    "ctx": "Week 34 \u00b7 2023",
+    "top_all": [
+      {
+        "value": "282.5",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "Week 34 \u00b7 2023"
+      },
+      {
+        "value": "264.4",
+        "unit": "pts",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "Week 34 \u00b7 2023"
+      },
+      {
+        "value": "252.8",
+        "unit": "pts",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "Week 29 \u00b7 2022"
+      },
+      {
+        "value": "252.0",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "Week 29 \u00b7 2022"
+      },
+      {
+        "value": "248.8",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "Week 19 \u00b7 2020"
+      },
+      {
+        "value": "246.9",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Week 24 \u00b7 2024"
+      },
+      {
+        "value": "246.8",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Week 26 \u00b7 2020"
+      },
+      {
+        "value": "240.2",
+        "unit": "pts",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "Week 37 \u00b7 2023"
+      },
+      {
+        "value": "234.4",
+        "unit": "pts",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Week 34 \u00b7 2023"
+      },
+      {
+        "value": "234.0",
+        "unit": "pts",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "Week 26 \u00b7 2021"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "282.5",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "Week 34 \u00b7 2023"
+      },
+      {
+        "value": "264.4",
+        "unit": "pts",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "Week 34 \u00b7 2023"
+      },
+      {
+        "value": "252.8",
+        "unit": "pts",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "Week 29 \u00b7 2022"
+      },
+      {
+        "value": "252.0",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "Week 29 \u00b7 2022"
+      },
+      {
+        "value": "246.9",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Week 24 \u00b7 2024"
+      },
+      {
+        "value": "234.4",
+        "unit": "pts",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Week 34 \u00b7 2023"
+      },
+      {
+        "value": "234.0",
+        "unit": "pts",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "Week 26 \u00b7 2021"
+      },
+      {
+        "value": "225.5",
+        "unit": "pts",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "Week 37 \u00b7 2021"
+      },
+      {
+        "value": "204.0",
+        "unit": "pts",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "Week 34 \u00b7 2023"
+      },
+      {
+        "value": "195.5",
+        "unit": "pts",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "Week 36 \u00b7 2021"
+      }
+    ]
   },
   {
     "icon": "\ud83d\udcc9",
     "label": "Lowest Single-Week Score",
-    "value": "0.0",
     "unit": "pts",
+    "value": "0.0",
     "holder": "Will",
-    "ctx": "Week 22 \u00b7 2022"
+    "ctx": "Week 22 \u00b7 2022",
+    "top_all": [
+      {
+        "value": "0.0",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Week 22 \u00b7 2022"
+      },
+      {
+        "value": "0.0",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Week 23 \u00b7 2022"
+      },
+      {
+        "value": "0.0",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Week 24 \u00b7 2022"
+      },
+      {
+        "value": "0.0",
+        "unit": "pts",
+        "holder": "Josh",
+        "owner_id": "t1xchwd8krmkab1z",
+        "ctx": "Week 27 \u00b7 2022"
+      },
+      {
+        "value": "6.2",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "Week 29 \u00b7 2023"
+      },
+      {
+        "value": "7.8",
+        "unit": "pts",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "Week 18 \u00b7 2020"
+      },
+      {
+        "value": "10.0",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "Week 31 \u00b7 2018"
+      },
+      {
+        "value": "11.8",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Week 30 \u00b7 2021"
+      },
+      {
+        "value": "14.5",
+        "unit": "pts",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Week 31 \u00b7 2018"
+      },
+      {
+        "value": "15.0",
+        "unit": "pts",
+        "holder": "Romelu Bukake",
+        "owner_id": "fgqojyh1irla6s8z",
+        "ctx": "Week 28 \u00b7 2019"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "0.0",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Week 22 \u00b7 2022"
+      },
+      {
+        "value": "0.0",
+        "unit": "pts",
+        "holder": "Josh",
+        "owner_id": "t1xchwd8krmkab1z",
+        "ctx": "Week 27 \u00b7 2022"
+      },
+      {
+        "value": "6.2",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "Week 29 \u00b7 2023"
+      },
+      {
+        "value": "7.8",
+        "unit": "pts",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "Week 18 \u00b7 2020"
+      },
+      {
+        "value": "10.0",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "Week 31 \u00b7 2018"
+      },
+      {
+        "value": "14.5",
+        "unit": "pts",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Week 31 \u00b7 2018"
+      },
+      {
+        "value": "15.0",
+        "unit": "pts",
+        "holder": "Romelu Bukake",
+        "owner_id": "fgqojyh1irla6s8z",
+        "ctx": "Week 28 \u00b7 2019"
+      },
+      {
+        "value": "15.8",
+        "unit": "pts",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "Week 30 \u00b7 2020"
+      },
+      {
+        "value": "17.8",
+        "unit": "pts",
+        "holder": "Woot's Team",
+        "owner_id": "i5v3cu1dj62f3j8x",
+        "ctx": "Week 31 \u00b7 2018"
+      },
+      {
+        "value": "18.2",
+        "unit": "pts",
+        "holder": "Jack",
+        "owner_id": "9alngs63ker9k110",
+        "ctx": "Week 29 \u00b7 2023"
+      }
+    ]
   },
   {
     "icon": "\ud83c\udfc3",
     "label": "Biggest Win Margin",
-    "value": "176.8",
     "unit": "pts",
+    "value": "176.8",
     "holder": "Blake",
-    "ctx": "def. Laeka by 176.8 \u00b7 Wk 34 \u00b7 2023"
+    "ctx": "def. Laeka by 176.8 \u00b7 Wk 34 \u00b7 2023",
+    "top_all": [
+      {
+        "value": "176.8",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "def. Laeka by 176.8 \u00b7 Wk 34 \u00b7 2023"
+      },
+      {
+        "value": "148.5",
+        "unit": "pts",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "def. JL by 148.5 \u00b7 Wk 37 \u00b7 2021"
+      },
+      {
+        "value": "144.6",
+        "unit": "pts",
+        "holder": "Bobby",
+        "owner_id": "fkos3xcokrml8ef6",
+        "ctx": "def. Josh by 144.6 \u00b7 Wk 27 \u00b7 2022"
+      },
+      {
+        "value": "136.2",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "def. Brad by 136.2 \u00b7 Wk 24 \u00b7 2024"
+      },
+      {
+        "value": "129.7",
+        "unit": "pts",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "def. JL by 129.7 \u00b7 Wk 17 \u00b7 2024"
+      },
+      {
+        "value": "125.2",
+        "unit": "pts",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "def. Romelu Bukake by 125.2 \u00b7 Wk 10 \u00b7 2019"
+      },
+      {
+        "value": "123.5",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "def. Tim by 123.5 \u00b7 Wk 28 \u00b7 2021"
+      },
+      {
+        "value": "120.3",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "def. Ry Rob by 120.3 \u00b7 Wk 29 \u00b7 2022"
+      },
+      {
+        "value": "117.2",
+        "unit": "pts",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "def. Ry Rob by 117.2 \u00b7 Wk 26 \u00b7 2020"
+      },
+      {
+        "value": "117.2",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "def. Tim by 117.2 \u00b7 Wk 17 \u00b7 2021"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "176.8",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "def. Laeka by 176.8 \u00b7 Wk 34 \u00b7 2023"
+      },
+      {
+        "value": "148.5",
+        "unit": "pts",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "def. JL by 148.5 \u00b7 Wk 37 \u00b7 2021"
+      },
+      {
+        "value": "144.6",
+        "unit": "pts",
+        "holder": "Bobby",
+        "owner_id": "fkos3xcokrml8ef6",
+        "ctx": "def. Josh by 144.6 \u00b7 Wk 27 \u00b7 2022"
+      },
+      {
+        "value": "136.2",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "def. Brad by 136.2 \u00b7 Wk 24 \u00b7 2024"
+      },
+      {
+        "value": "129.7",
+        "unit": "pts",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "def. JL by 129.7 \u00b7 Wk 17 \u00b7 2024"
+      },
+      {
+        "value": "125.2",
+        "unit": "pts",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "def. Romelu Bukake by 125.2 \u00b7 Wk 10 \u00b7 2019"
+      },
+      {
+        "value": "120.3",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "def. Ry Rob by 120.3 \u00b7 Wk 29 \u00b7 2022"
+      },
+      {
+        "value": "114.0",
+        "unit": "pts",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "def. Josh by 114.0 \u00b7 Wk 37 \u00b7 2023"
+      },
+      {
+        "value": "107.0",
+        "unit": "pts",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "def. Noah by 107.0 \u00b7 Wk 10 \u00b7 2019"
+      },
+      {
+        "value": "98.0",
+        "unit": "pts",
+        "holder": "Josh",
+        "owner_id": "t1xchwd8krmkab1z",
+        "ctx": "def. Jack by 98.0 \u00b7 Wk 7 \u00b7 2023"
+      }
+    ]
   },
   {
     "icon": "\ud83d\udcc5",
     "label": "Most Points in a Season",
-    "value": "5,269.4",
     "unit": "pts",
+    "value": "5,269.4",
     "holder": "Noah",
-    "ctx": "2023 Regular Season"
+    "ctx": "2023 Regular Season",
+    "top_all": [
+      {
+        "value": "5,269.4",
+        "unit": "pts",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "5,068.3",
+        "unit": "pts",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "5,063.9",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,987.0",
+        "unit": "pts",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,801.4",
+        "unit": "pts",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,791.0",
+        "unit": "pts",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,755.6",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2024 Regular Season"
+      },
+      {
+        "value": "4,726.2",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,680.5",
+        "unit": "pts",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2021 Regular Season"
+      },
+      {
+        "value": "4,667.2",
+        "unit": "pts",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "2023 Regular Season"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "5,269.4",
+        "unit": "pts",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "5,068.3",
+        "unit": "pts",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "5,063.9",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,987.0",
+        "unit": "pts",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,801.4",
+        "unit": "pts",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,791.0",
+        "unit": "pts",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,726.2",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,667.2",
+        "unit": "pts",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,538.2",
+        "unit": "pts",
+        "holder": "Bobby",
+        "owner_id": "fkos3xcokrml8ef6",
+        "ctx": "2023 Regular Season"
+      },
+      {
+        "value": "4,362.4",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "2023 Regular Season"
+      }
+    ]
   },
   {
     "icon": "\ud83d\udcc9",
     "label": "Fewest Points in a Season",
-    "value": "2,246.2",
     "unit": "pts",
+    "value": "2,246.2",
     "holder": "Romelu Bukake",
-    "ctx": "2019 Regular Season"
+    "ctx": "2019 Regular Season",
+    "top_all": [
+      {
+        "value": "2,246.2",
+        "unit": "pts",
+        "holder": "Romelu Bukake",
+        "owner_id": "fgqojyh1irla6s8z",
+        "ctx": "2019 Regular Season"
+      },
+      {
+        "value": "2,409.5",
+        "unit": "pts",
+        "holder": "Romelu Bukake",
+        "owner_id": "fgqojyh1irla6s8z",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,448.0",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,499.0",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,655.0",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,695.0",
+        "unit": "pts",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,828.5",
+        "unit": "pts",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "2019 Regular Season"
+      },
+      {
+        "value": "2,848.5",
+        "unit": "pts",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,868.8",
+        "unit": "pts",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,999.2",
+        "unit": "pts",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "2018 Regular Season"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "2,246.2",
+        "unit": "pts",
+        "holder": "Romelu Bukake",
+        "owner_id": "fgqojyh1irla6s8z",
+        "ctx": "2019 Regular Season"
+      },
+      {
+        "value": "2,448.0",
+        "unit": "pts",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,499.0",
+        "unit": "pts",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,655.0",
+        "unit": "pts",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,695.0",
+        "unit": "pts",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,828.5",
+        "unit": "pts",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "2019 Regular Season"
+      },
+      {
+        "value": "2,848.5",
+        "unit": "pts",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "2,868.8",
+        "unit": "pts",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "2018 Regular Season"
+      },
+      {
+        "value": "3,041.2",
+        "unit": "pts",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "2019 Regular Season"
+      },
+      {
+        "value": "3,065.0",
+        "unit": "pts",
+        "holder": "Woot's Team",
+        "owner_id": "i5v3cu1dj62f3j8x",
+        "ctx": "2018 Regular Season"
+      }
+    ]
   },
   {
     "icon": "\ud83c\udfc6",
     "label": "Best Regular Season Record",
-    "value": "29-6",
     "unit": "",
+    "value": "29-6",
     "holder": "Alex",
-    "ctx": "2018 \u00b7 82.9% win rate"
+    "ctx": "2018 \u00b7 82.9% win rate",
+    "top_all": [
+      {
+        "value": "29-6",
+        "unit": "",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "2018 \u00b7 82.9% win rate"
+      },
+      {
+        "value": "29-9",
+        "unit": "",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "2019 \u00b7 76.3% win rate"
+      },
+      {
+        "value": "27-10",
+        "unit": "",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "2022 \u00b7 73.0% win rate"
+      },
+      {
+        "value": "27-11",
+        "unit": "",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2024 \u00b7 71.1% win rate"
+      },
+      {
+        "value": "26-12",
+        "unit": "",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2020 \u00b7 68.4% win rate"
+      },
+      {
+        "value": "25-12",
+        "unit": "",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2022 \u00b7 67.6% win rate"
+      },
+      {
+        "value": "25-13",
+        "unit": "",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2021 \u00b7 65.8% win rate"
+      },
+      {
+        "value": "25-13",
+        "unit": "",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2021 \u00b7 65.8% win rate"
+      },
+      {
+        "value": "25-13",
+        "unit": "",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "2021 \u00b7 65.8% win rate"
+      },
+      {
+        "value": "25-13",
+        "unit": "",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "2023 \u00b7 65.8% win rate"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "29-6",
+        "unit": "",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "2018 \u00b7 82.9% win rate"
+      },
+      {
+        "value": "27-10",
+        "unit": "",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "2022 \u00b7 73.0% win rate"
+      },
+      {
+        "value": "27-11",
+        "unit": "",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2024 \u00b7 71.1% win rate"
+      },
+      {
+        "value": "26-12",
+        "unit": "",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2020 \u00b7 68.4% win rate"
+      },
+      {
+        "value": "25-13",
+        "unit": "",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2021 \u00b7 65.8% win rate"
+      },
+      {
+        "value": "25-13",
+        "unit": "",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "2023 \u00b7 65.8% win rate"
+      },
+      {
+        "value": "25-13",
+        "unit": "",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "2024 \u00b7 65.8% win rate"
+      },
+      {
+        "value": "24-14",
+        "unit": "",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "2023 \u00b7 63.2% win rate"
+      },
+      {
+        "value": "22-13",
+        "unit": "",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "2018 \u00b7 62.9% win rate"
+      },
+      {
+        "value": "20-18",
+        "unit": "",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "2019 \u00b7 52.6% win rate"
+      }
+    ]
   },
   {
     "icon": "\ud83d\udd25",
     "label": "Longest Winning Streak",
-    "value": "20",
     "unit": "straight",
+    "value": "20",
     "holder": "Alex",
-    "ctx": "Weeks 6\u201325 \u00b7 2019"
+    "ctx": "Weeks 6\u201325 \u00b7 2019",
+    "top_all": [
+      {
+        "value": "20",
+        "unit": "straight",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "Weeks 6\u201325 \u00b7 2019"
+      },
+      {
+        "value": "13",
+        "unit": "straight",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "Weeks 23\u201335 \u00b7 2019"
+      },
+      {
+        "value": "13",
+        "unit": "straight",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "Weeks 14\u201326 \u00b7 2022"
+      },
+      {
+        "value": "12",
+        "unit": "straight",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Weeks 7\u201318 \u00b7 2023"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Weeks 9\u201318 \u00b7 2020"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "Weeks 16\u201324 \u00b7 2018"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "Weeks 2\u201310 \u00b7 2018"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "Weeks 4\u201312 \u00b7 2018"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "Weeks 14\u201322 \u00b7 2020"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "Weeks 3\u201311 \u00b7 2021"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "20",
+        "unit": "straight",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "Weeks 6\u201325 \u00b7 2019"
+      },
+      {
+        "value": "13",
+        "unit": "straight",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "Weeks 23\u201335 \u00b7 2019"
+      },
+      {
+        "value": "13",
+        "unit": "straight",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "Weeks 14\u201326 \u00b7 2022"
+      },
+      {
+        "value": "12",
+        "unit": "straight",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Weeks 7\u201318 \u00b7 2023"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Weeks 9\u201318 \u00b7 2020"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "Weeks 4\u201312 \u00b7 2018"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "Weeks 14\u201322 \u00b7 2020"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "Weeks 3\u201311 \u00b7 2021"
+      },
+      {
+        "value": "8",
+        "unit": "straight",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "Weeks 31\u201338 \u00b7 2020"
+      },
+      {
+        "value": "8",
+        "unit": "straight",
+        "holder": "Blake",
+        "owner_id": "72e9g51ajkhfl8ya",
+        "ctx": "Weeks 23\u201330 \u00b7 2024"
+      }
+    ]
   },
   {
     "icon": "\ud83d\udc80",
     "label": "Longest Losing Streak",
-    "value": "17",
     "unit": "straight",
+    "value": "17",
     "holder": "Romelu Bukake",
-    "ctx": "Weeks 9\u201325 \u00b7 2019"
+    "ctx": "Weeks 9\u201325 \u00b7 2019",
+    "top_all": [
+      {
+        "value": "17",
+        "unit": "straight",
+        "holder": "Romelu Bukake",
+        "owner_id": "fgqojyh1irla6s8z",
+        "ctx": "Weeks 9\u201325 \u00b7 2019"
+      },
+      {
+        "value": "13",
+        "unit": "straight",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Weeks 26\u201338 \u00b7 2024"
+      },
+      {
+        "value": "12",
+        "unit": "straight",
+        "holder": "Brad",
+        "owner_id": "olhwawrnkrmjk12l",
+        "ctx": "Weeks 16\u201327 \u00b7 2024"
+      },
+      {
+        "value": "11",
+        "unit": "straight",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Weeks 14\u201324 \u00b7 2018"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Romelu Bukake",
+        "owner_id": "fgqojyh1irla6s8z",
+        "ctx": "Weeks 28\u201337 \u00b7 2019"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Weeks 17\u201326 \u00b7 2022"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "Weeks 19\u201328 \u00b7 2022"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "Weeks 25\u201334 \u00b7 2024"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "Weeks 29\u201337 \u00b7 2022"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "Weeks 20\u201328 \u00b7 2023"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "17",
+        "unit": "straight",
+        "holder": "Romelu Bukake",
+        "owner_id": "fgqojyh1irla6s8z",
+        "ctx": "Weeks 9\u201325 \u00b7 2019"
+      },
+      {
+        "value": "13",
+        "unit": "straight",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "Weeks 26\u201338 \u00b7 2024"
+      },
+      {
+        "value": "12",
+        "unit": "straight",
+        "holder": "Brad",
+        "owner_id": "olhwawrnkrmjk12l",
+        "ctx": "Weeks 16\u201327 \u00b7 2024"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "Weeks 17\u201326 \u00b7 2022"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Tim",
+        "owner_id": "ne2zuh87jkhghgad",
+        "ctx": "Weeks 19\u201328 \u00b7 2022"
+      },
+      {
+        "value": "10",
+        "unit": "straight",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "Weeks 25\u201334 \u00b7 2024"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "Weeks 20\u201328 \u00b7 2023"
+      },
+      {
+        "value": "9",
+        "unit": "straight",
+        "holder": "Josh",
+        "owner_id": "t1xchwd8krmkab1z",
+        "ctx": "Weeks 5\u201313 \u00b7 2024"
+      },
+      {
+        "value": "8",
+        "unit": "straight",
+        "holder": "Jack",
+        "owner_id": "9alngs63ker9k110",
+        "ctx": "Weeks 22\u201329 \u00b7 2023"
+      },
+      {
+        "value": "7",
+        "unit": "straight",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "Weeks 23\u201329 \u00b7 2021"
+      }
+    ]
   },
   {
     "icon": "\u2b50",
@@ -38035,15 +39187,161 @@ const HIST_RECORDS = [
     "value": "\u2014",
     "unit": "pts",
     "holder": "\u2014",
-    "ctx": "Requires per-player weekly data (not in Fantrax CSV exports)"
+    "ctx": "Requires per-player weekly data (not in Fantrax CSV exports)",
+    "top_all": [],
+    "top_per_manager": []
   },
   {
     "icon": "\ud83d\udd04",
     "label": "Most Transactions in a Season",
-    "value": "780",
     "unit": "moves",
+    "value": "780",
     "holder": "Laeka",
-    "ctx": "2023 Season"
+    "ctx": "2023 Season",
+    "top_all": [
+      {
+        "value": "780",
+        "unit": "moves",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2023 Season"
+      },
+      {
+        "value": "733",
+        "unit": "moves",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2024 Season"
+      },
+      {
+        "value": "708",
+        "unit": "moves",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2021 Season"
+      },
+      {
+        "value": "430",
+        "unit": "moves",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2022 Season"
+      },
+      {
+        "value": "368",
+        "unit": "moves",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2024 Season"
+      },
+      {
+        "value": "356",
+        "unit": "moves",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2024 Season"
+      },
+      {
+        "value": "353",
+        "unit": "moves",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "2021 Season"
+      },
+      {
+        "value": "343",
+        "unit": "moves",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2022 Season"
+      },
+      {
+        "value": "323",
+        "unit": "moves",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2021 Season"
+      },
+      {
+        "value": "321",
+        "unit": "moves",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2021 Season"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "780",
+        "unit": "moves",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "2023 Season"
+      },
+      {
+        "value": "368",
+        "unit": "moves",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "2024 Season"
+      },
+      {
+        "value": "356",
+        "unit": "moves",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "2024 Season"
+      },
+      {
+        "value": "353",
+        "unit": "moves",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "2021 Season"
+      },
+      {
+        "value": "300",
+        "unit": "moves",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "2022 Season"
+      },
+      {
+        "value": "288",
+        "unit": "moves",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "2023 Season"
+      },
+      {
+        "value": "209",
+        "unit": "moves",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "2021 Season"
+      },
+      {
+        "value": "206",
+        "unit": "moves",
+        "holder": "Bobby",
+        "owner_id": "fkos3xcokrml8ef6",
+        "ctx": "2023 Season"
+      },
+      {
+        "value": "195",
+        "unit": "moves",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "2023 Season"
+      },
+      {
+        "value": "184",
+        "unit": "moves",
+        "holder": "Josh",
+        "owner_id": "t1xchwd8krmkab1z",
+        "ctx": "2022 Season"
+      }
+    ]
   },
   {
     "icon": "\ud83d\udcb0",
@@ -38051,14 +39349,160 @@ const HIST_RECORDS = [
     "value": "\u2014",
     "unit": "pts avg \u0394",
     "holder": "\u2014",
-    "ctx": "Requires pre/post-trade FPts data (not in Fantrax CSV exports)"
+    "ctx": "Requires pre/post-trade FPts data (not in Fantrax CSV exports)",
+    "top_all": [],
+    "top_per_manager": []
   },
   {
     "icon": "\ud83d\udcca",
     "label": "All-Time Win Rate",
-    "value": "64.9",
     "unit": "%",
+    "value": "64.9",
     "holder": "Laeka",
-    "ctx": "170\u201392 career record"
+    "ctx": "170\u201392 career record",
+    "top_all": [
+      {
+        "value": "64.9",
+        "unit": "%",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "170\u201392 career record"
+      },
+      {
+        "value": "58.4",
+        "unit": "%",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "153\u2013109 career record"
+      },
+      {
+        "value": "57.3",
+        "unit": "%",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "150\u2013112 career record"
+      },
+      {
+        "value": "56.5",
+        "unit": "%",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "148\u2013114 career record"
+      },
+      {
+        "value": "54.6",
+        "unit": "%",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "143\u2013119 career record"
+      },
+      {
+        "value": "51.9",
+        "unit": "%",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "136\u2013126 career record"
+      },
+      {
+        "value": "48.7",
+        "unit": "%",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "127\u2013134 career record"
+      },
+      {
+        "value": "45.7",
+        "unit": "%",
+        "holder": "Woot's Team",
+        "owner_id": "i5v3cu1dj62f3j8x",
+        "ctx": "16\u201319 career record"
+      },
+      {
+        "value": "45.1",
+        "unit": "%",
+        "holder": "Bobby",
+        "owner_id": "fkos3xcokrml8ef6",
+        "ctx": "51\u201362 career record"
+      },
+      {
+        "value": "42.4",
+        "unit": "%",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "95\u2013129 career record"
+      }
+    ],
+    "top_per_manager": [
+      {
+        "value": "64.9",
+        "unit": "%",
+        "holder": "Laeka",
+        "owner_id": "n49bivscjjztp1no",
+        "ctx": "170\u201392 career record"
+      },
+      {
+        "value": "58.4",
+        "unit": "%",
+        "holder": "Alex",
+        "owner_id": "x46g9ztbjk06jgh0",
+        "ctx": "153\u2013109 career record"
+      },
+      {
+        "value": "57.3",
+        "unit": "%",
+        "holder": "Connor",
+        "owner_id": "7kh2l9uqjk8tphpy",
+        "ctx": "150\u2013112 career record"
+      },
+      {
+        "value": "56.5",
+        "unit": "%",
+        "holder": "Ry Rob",
+        "owner_id": "e44gvyjsjk90uswv",
+        "ctx": "148\u2013114 career record"
+      },
+      {
+        "value": "54.6",
+        "unit": "%",
+        "holder": "Will",
+        "owner_id": "wd22oqeqjjzw73b3",
+        "ctx": "143\u2013119 career record"
+      },
+      {
+        "value": "51.9",
+        "unit": "%",
+        "holder": "Conlon",
+        "owner_id": "sjh9eqr4jk8nfodx",
+        "ctx": "136\u2013126 career record"
+      },
+      {
+        "value": "48.7",
+        "unit": "%",
+        "holder": "Noah",
+        "owner_id": "ijur5702jk8kadcp",
+        "ctx": "127\u2013134 career record"
+      },
+      {
+        "value": "45.7",
+        "unit": "%",
+        "holder": "Woot's Team",
+        "owner_id": "i5v3cu1dj62f3j8x",
+        "ctx": "16\u201319 career record"
+      },
+      {
+        "value": "45.1",
+        "unit": "%",
+        "holder": "Bobby",
+        "owner_id": "fkos3xcokrml8ef6",
+        "ctx": "51\u201362 career record"
+      },
+      {
+        "value": "42.4",
+        "unit": "%",
+        "holder": "JL",
+        "owner_id": "1iq04ho9jk8vz3yv",
+        "ctx": "95\u2013129 career record"
+      }
+    ]
   }
 ];

@@ -145,6 +145,26 @@ section{padding:96px 0 72px}
 .rec-val{font-family:'Barlow Semi Condensed',sans-serif;font-size:2.3rem;font-weight:800;line-height:1;margin-bottom:.4rem}
 .rec-holder{font-family:'Barlow Semi Condensed',sans-serif;font-size:.95rem;font-weight:700;color:var(--green-l);margin-bottom:.2rem}
 .rec-ctx{font-size:.78rem;color:var(--muted)}
+.rec-card.clickable{cursor:pointer}
+.rec-card.expanded{border-color:var(--green);box-shadow:0 0 22px rgba(0,112,60,.18);grid-column:1/-1}
+.rec-expand-hint{margin-top:.7rem;font-size:.68rem;font-weight:700;letter-spacing:.12em;color:var(--green-l);text-transform:uppercase;opacity:.75}
+.rec-card:hover .rec-expand-hint{opacity:1}
+.rec-expand{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)}
+.rec-toggle{display:flex;gap:.4rem;margin-bottom:.85rem}
+.rec-toggle-btn{font-family:'Barlow Semi Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.4rem .75rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s}
+.rec-toggle-btn:hover{color:var(--text);border-color:var(--green)}
+.rec-toggle-btn.on{background:rgba(0,112,60,.18);border-color:var(--green);color:var(--green-l)}
+.rec-top{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.25rem}
+.rec-top li{display:grid;grid-template-columns:28px 1fr 1fr 1.6fr;gap:.6rem;align-items:baseline;padding:.45rem .55rem;border-radius:6px;font-size:.85rem}
+.rec-top li:nth-child(odd){background:rgba(255,255,255,.018)}
+.rec-top li:hover{background:rgba(0,112,60,.08)}
+.rec-top-rank{font-family:'Barlow Semi Condensed',sans-serif;font-weight:800;color:var(--dim);text-align:right}
+.rec-top li:first-child .rec-top-rank{color:#D4AF37}
+.rec-top-val{font-family:'Barlow Semi Condensed',sans-serif;font-weight:800;font-size:1rem;color:var(--text);white-space:nowrap}
+.rec-top-val em{font-style:normal;font-size:.7rem;font-weight:500;color:var(--muted);margin-left:3px}
+.rec-top-holder{font-weight:600;color:var(--green-l)}
+.rec-top-ctx{font-size:.78rem;color:var(--muted)}
+@media(max-width:600px){.rec-top li{grid-template-columns:24px 1fr 1fr;gap:.4rem}.rec-top-ctx{grid-column:2/-1;font-size:.72rem;margin-top:2px}}
 
 /* H2H */
 .h2h-selectors{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center;margin-bottom:1.75rem}
@@ -679,24 +699,66 @@ function SeasonResults(){
 function RecordsVault(){
   const ref=React.useRef();
   const inView=useInView(ref);
+  const [openIdx, setOpenIdx] = React.useState(null);
+  const [viewMode, setViewMode] = React.useState({}); // {idx: 'all' | 'per_manager'}
+  const setMode = (i, mode) => setViewMode(prev => ({...prev, [i]: mode}));
   return(
     <section id="records" ref={ref}>
       <div className="container">
         <div style={{opacity:inView?1:0,transform:inView?'none':'translateY(24px)',transition:'opacity .6s,transform .6s'}}>
           <div className="s-label">Records Vault</div>
           <h2 className="s-title">All-Time Records</h2>
-          <p className="s-sub">The marks that define the league's history.</p>
+          <p className="s-sub">The marks that define the league's history. Click any card to see the top 10.</p>
         </div>
         <div className="rec-grid">
-          {RECORDS.map((r,i)=>(
-            <div className="rec-card" key={i} style={{opacity:inView?1:0,transform:inView?'none':'translateY(20px)',transition:`opacity .5s ${.05*i}s,transform .5s ${.05*i}s`}}>
-              <div className="rec-icon">{r.icon}</div>
-              <div className="rec-lbl">{r.label}</div>
-              <div className="rec-val">{r.value}<span style={{fontSize:'1rem',color:'var(--muted)',fontWeight:400,marginLeft:'4px'}}>{r.unit}</span></div>
-              <div className="rec-holder">{r.holder}</div>
-              <div className="rec-ctx">{r.ctx}</div>
-            </div>
-          ))}
+          {RECORDS.map((r,i)=>{
+            const topAll = r.top_all || [];
+            const topPer = r.top_per_manager || [];
+            const hasTop = topAll.length > 0;
+            const isOpen = openIdx === i;
+            const mode = viewMode[i] || 'all';
+            // Toggle is hidden when the two lists are identical (per-owner records like Win Rate).
+            const listsIdentical = hasTop && topAll.length === topPer.length &&
+              topAll.every((x, j) => topPer[j] && x.holder === topPer[j].holder && x.value === topPer[j].value);
+            const showList = mode === 'per_manager' ? topPer : topAll;
+            return (
+              <div
+                className={`rec-card${isOpen?' expanded':''}${hasTop?' clickable':''}`}
+                key={i}
+                style={{opacity:inView?1:0,transform:inView?'none':'translateY(20px)',transition:`opacity .5s ${.05*i}s,transform .5s ${.05*i}s`}}
+                onClick={() => hasTop && setOpenIdx(isOpen ? null : i)}
+              >
+                <div className="rec-icon">{r.icon}</div>
+                <div className="rec-lbl">{r.label}</div>
+                <div className="rec-val">{r.value}<span style={{fontSize:'1rem',color:'var(--muted)',fontWeight:400,marginLeft:'4px'}}>{r.unit}</span></div>
+                <div className="rec-holder">{r.holder}</div>
+                <div className="rec-ctx">{r.ctx}</div>
+                {hasTop && (
+                  <div className="rec-expand-hint">{isOpen ? '▲ Collapse' : '▼ See top 10'}</div>
+                )}
+                {isOpen && hasTop && (
+                  <div className="rec-expand" onClick={e=>e.stopPropagation()}>
+                    {!listsIdentical && (
+                      <div className="rec-toggle">
+                        <button className={`rec-toggle-btn${mode==='all'?' on':''}`} onClick={()=>setMode(i,'all')}>All instances</button>
+                        <button className={`rec-toggle-btn${mode==='per_manager'?' on':''}`} onClick={()=>setMode(i,'per_manager')}>Best per manager</button>
+                      </div>
+                    )}
+                    <ol className="rec-top">
+                      {showList.map((e, j) => (
+                        <li key={j}>
+                          <span className="rec-top-rank">{j+1}</span>
+                          <span className="rec-top-val">{e.value}<em>{e.unit||r.unit}</em></span>
+                          <span className="rec-top-holder">{e.holder}</span>
+                          <span className="rec-top-ctx">{e.ctx}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

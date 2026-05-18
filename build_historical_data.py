@@ -366,8 +366,14 @@ def compute_h2h(matchups):
 
 def compute_records(hist_standings, matchups, owners, seasons):
     """
-    Compute the 12 Records cards. Returns list of dicts matching the RECORDS shape.
-    Records not computable from available data get placeholder values.
+    Compute the 12 Records cards. Returns list of dicts.
+    Each non-placeholder card also carries:
+      - top_all: list of up to 10 instances ranked by the record metric (best first).
+      - top_per_manager: same, but at most one entry per manager (best entry per owner).
+    Placeholder records (#9, #11) have no top lists.
+
+    All inputs are filtered to PL-eligible (tier 1) for 2022+ seasons; pre-tier
+    seasons (2018-2021) count fully.
     """
     # Helper: get display name for an owner_id.
     def owner_name(owner_id):
@@ -376,104 +382,158 @@ def compute_records(hist_standings, matchups, owners, seasons):
         data = owners[owner_id]
         if data.get("name"):
             return data["name"]
-        # Fall back to most recent team name.
         seasons_map = data.get("seasons", {})
         if seasons_map:
             latest_yr = max(seasons_map.keys(), key=int)
             return clean_team_name(seasons_map[latest_yr])
         return owner_id
 
+    def take_top_lists(candidates, n=10):
+        """
+        candidates: pre-sorted list of dicts each with {value, holder, ctx, owner_id, _sort}
+        Returns (top_all, top_per_manager) — each up to n items, internal keys stripped.
+        """
+        def strip(x):
+            return {k: v for k, v in x.items() if not k.startswith("_")}
+        top_all = [strip(c) for c in candidates[:n]]
+        seen = set()
+        top_per_mgr = []
+        for c in candidates:
+            oid = c.get("owner_id")
+            if oid in seen:
+                continue
+            seen.add(oid)
+            top_per_mgr.append(strip(c))
+            if len(top_per_mgr) >= n:
+                break
+        return top_all, top_per_mgr
+
+    def empty_card(icon, label, unit, ctx_msg):
+        return {"icon": icon, "label": label, "value": "—", "unit": unit,
+                "holder": "—", "ctx": ctx_msg, "top_all": [], "top_per_manager": []}
+
     records = []
 
-    # ── Records from matchups (PL-only / pre-tier only) ──────────────────────
+    # PL-eligible matchups only.
     pl_matchups = [m for m in matchups if is_pl_eligible(m.get("tier"))]
+
+    # ── #1 Highest Single-Week Score ─────────────────────────────────────────
     if pl_matchups:
-        flat = [(m, max(m["t1_score"], m["t2_score"])) for m in pl_matchups]
-        flat_min = [(m, min(m["t1_score"], m["t2_score"])) for m in pl_matchups]
-        margins = [(m, abs(m["t1_score"] - m["t2_score"])) for m in pl_matchups]
-
-        # 1. Highest single-week score
-        best_m, best_score = max(flat, key=lambda x: x[1])
-        best_owner = best_m["t1_owner"] if best_m["t1_score"] == best_score else best_m["t2_owner"]
+        cands = []
+        for m in pl_matchups:
+            for side in (1, 2):
+                score = m[f"t{side}_score"]
+                oid = m[f"t{side}_owner"]
+                cands.append({
+                    "value": f"{score:.1f}", "_sort": score, "unit": "pts",
+                    "holder": owner_name(oid), "owner_id": oid,
+                    "ctx": f"Week {m['week']} · {m['year']}",
+                })
+        cands.sort(key=lambda x: x["_sort"], reverse=True)
+        top_all, top_per = take_top_lists(cands)
         records.append({
-            "icon": "⚡", "label": "Highest Single-Week Score",
-            "value": f"{best_score:.1f}", "unit": "pts",
-            "holder": owner_name(best_owner),
-            "ctx": f"Week {best_m['week']} · {best_m['year']}",
+            "icon": "⚡", "label": "Highest Single-Week Score", "unit": "pts",
+            "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+            "top_all": top_all, "top_per_manager": top_per,
         })
-
-        # 2. Lowest single-week score
-        worst_m, worst_score = min(flat_min, key=lambda x: x[1])
-        worst_owner = worst_m["t1_owner"] if worst_m["t1_score"] == worst_score else worst_m["t2_owner"]
-        records.append({
-            "icon": "📉", "label": "Lowest Single-Week Score",
-            "value": f"{worst_score:.1f}", "unit": "pts",
-            "holder": owner_name(worst_owner),
-            "ctx": f"Week {worst_m['week']} · {worst_m['year']}",
-        })
-
-        # 3. Biggest win margin
-        big_m, big_margin = max(margins, key=lambda x: x[1])
-        winning_owner = big_m["t1_owner"] if big_m["t1_score"] > big_m["t2_score"] else big_m["t2_owner"]
-        losing_owner  = big_m["t2_owner"] if big_m["t1_score"] > big_m["t2_score"] else big_m["t1_owner"]
-        records.append({
-            "icon": "🏃", "label": "Biggest Win Margin",
-            "value": f"{big_margin:.1f}", "unit": "pts",
-            "holder": owner_name(winning_owner),
-            "ctx": f"def. {owner_name(losing_owner)} by {big_margin:.1f} · Wk {big_m['week']} · {big_m['year']}",
-        })
-
     else:
-        for icon, label in [
-            ("⚡", "Highest Single-Week Score"),
-            ("📉", "Lowest Single-Week Score"),
-            ("🏃", "Biggest Win Margin"),
-        ]:
-            records.append({"icon": icon, "label": label, "value": "—", "unit": "pts",
-                            "holder": "—", "ctx": "Matchup data not yet collected"})
+        records.append(empty_card("⚡", "Highest Single-Week Score", "pts", "Matchup data not yet collected"))
 
-    # ── Records from standings ────────────────────────────────────────────────
+    # ── #2 Lowest Single-Week Score ──────────────────────────────────────────
+    if pl_matchups:
+        cands = []
+        for m in pl_matchups:
+            for side in (1, 2):
+                score = m[f"t{side}_score"]
+                oid = m[f"t{side}_owner"]
+                cands.append({
+                    "value": f"{score:.1f}", "_sort": score, "unit": "pts",
+                    "holder": owner_name(oid), "owner_id": oid,
+                    "ctx": f"Week {m['week']} · {m['year']}",
+                })
+        cands.sort(key=lambda x: x["_sort"])  # ascending — lowest first
+        top_all, top_per = take_top_lists(cands)
+        records.append({
+            "icon": "📉", "label": "Lowest Single-Week Score", "unit": "pts",
+            "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+            "top_all": top_all, "top_per_manager": top_per,
+        })
+    else:
+        records.append(empty_card("📉", "Lowest Single-Week Score", "pts", "Matchup data not yet collected"))
 
-    # 4. Most points in a season (PL-only / pre-tier)
-    best_pf = None
+    # ── #3 Biggest Win Margin ────────────────────────────────────────────────
+    if pl_matchups:
+        cands = []
+        for m in pl_matchups:
+            margin = abs(m["t1_score"] - m["t2_score"])
+            t1_won = m["t1_score"] > m["t2_score"]
+            win_oid = m["t1_owner"] if t1_won else m["t2_owner"]
+            lose_oid = m["t2_owner"] if t1_won else m["t1_owner"]
+            cands.append({
+                "value": f"{margin:.1f}", "_sort": margin, "unit": "pts",
+                "holder": owner_name(win_oid), "owner_id": win_oid,
+                "ctx": f"def. {owner_name(lose_oid)} by {margin:.1f} · Wk {m['week']} · {m['year']}",
+            })
+        cands.sort(key=lambda x: x["_sort"], reverse=True)
+        top_all, top_per = take_top_lists(cands)
+        records.append({
+            "icon": "🏃", "label": "Biggest Win Margin", "unit": "pts",
+            "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+            "top_all": top_all, "top_per_manager": top_per,
+        })
+    else:
+        records.append(empty_card("🏃", "Biggest Win Margin", "pts", "Matchup data not yet collected"))
+
+    # ── #4 Most Points in a Season ───────────────────────────────────────────
+    cands = []
     for year, rows in hist_standings.items():
         for r in rows:
             if not is_pl_eligible(r.get("tier")):
                 continue
-            if best_pf is None or r["pf"] > best_pf[0]:
-                best_pf = (r["pf"], r["owner_id"], year)
-    if best_pf:
+            if r["pf"] <= 0:
+                continue
+            cands.append({
+                "value": f"{r['pf']:,.1f}", "_sort": r["pf"], "unit": "pts",
+                "holder": owner_name(r["owner_id"]), "owner_id": r["owner_id"],
+                "ctx": f"{year} Regular Season",
+            })
+    if cands:
+        cands.sort(key=lambda x: x["_sort"], reverse=True)
+        top_all, top_per = take_top_lists(cands)
         records.append({
-            "icon": "📅", "label": "Most Points in a Season",
-            "value": f"{best_pf[0]:,.1f}", "unit": "pts",
-            "holder": owner_name(best_pf[1]),
-            "ctx": f"{best_pf[2]} Regular Season",
+            "icon": "📅", "label": "Most Points in a Season", "unit": "pts",
+            "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+            "top_all": top_all, "top_per_manager": top_per,
         })
     else:
-        records.append({"icon": "📅", "label": "Most Points in a Season",
-                        "value": "—", "unit": "pts", "holder": "—", "ctx": "No standings data"})
+        records.append(empty_card("📅", "Most Points in a Season", "pts", "No standings data"))
 
-    # 5. Fewest points in a season (PL-only / pre-tier)
-    worst_pf = None
+    # ── #5 Fewest Points in a Season ─────────────────────────────────────────
+    cands = []
     for year, rows in hist_standings.items():
         for r in rows:
             if not is_pl_eligible(r.get("tier")):
                 continue
-            if r["pf"] > 0 and (worst_pf is None or r["pf"] < worst_pf[0]):
-                worst_pf = (r["pf"], r["owner_id"], year)
-    if worst_pf:
+            if r["pf"] <= 0:
+                continue
+            cands.append({
+                "value": f"{r['pf']:,.1f}", "_sort": r["pf"], "unit": "pts",
+                "holder": owner_name(r["owner_id"]), "owner_id": r["owner_id"],
+                "ctx": f"{year} Regular Season",
+            })
+    if cands:
+        cands.sort(key=lambda x: x["_sort"])  # ascending — fewest first
+        top_all, top_per = take_top_lists(cands)
         records.append({
-            "icon": "📉", "label": "Fewest Points in a Season",
-            "value": f"{worst_pf[0]:,.1f}", "unit": "pts",
-            "holder": owner_name(worst_pf[1]),
-            "ctx": f"{worst_pf[2]} Regular Season",
+            "icon": "📉", "label": "Fewest Points in a Season", "unit": "pts",
+            "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+            "top_all": top_all, "top_per_manager": top_per,
         })
     else:
-        records.append({"icon": "📉", "label": "Fewest Points in a Season",
-                        "value": "—", "unit": "pts", "holder": "—", "ctx": "No standings data"})
+        records.append(empty_card("📉", "Fewest Points in a Season", "pts", "No standings data"))
 
-    # 6. Best regular season record (PL-only / pre-tier, highest win %)
-    best_rec = None
+    # ── #6 Best Regular Season Record ────────────────────────────────────────
+    cands = []
     for year, rows in hist_standings.items():
         for r in rows:
             if not is_pl_eligible(r.get("tier")):
@@ -482,102 +542,101 @@ def compute_records(hist_standings, matchups, owners, seasons):
             if total == 0:
                 continue
             pct = r["w"] / total
-            if best_rec is None or pct > best_rec[0]:
-                best_rec = (pct, r["w"], r["l"], r["owner_id"], year)
-    if best_rec:
-        pct, w, l, oid, yr = best_rec
+            cands.append({
+                "value": f"{r['w']}-{r['l']}", "_sort": pct, "unit": "",
+                "holder": owner_name(r["owner_id"]), "owner_id": r["owner_id"],
+                "ctx": f"{year} · {pct*100:.1f}% win rate",
+            })
+    if cands:
+        cands.sort(key=lambda x: x["_sort"], reverse=True)
+        top_all, top_per = take_top_lists(cands)
         records.append({
-            "icon": "🏆", "label": "Best Regular Season Record",
-            "value": f"{w}-{l}", "unit": "",
-            "holder": owner_name(oid),
-            "ctx": f"{yr} · {pct*100:.1f}% win rate",
+            "icon": "🏆", "label": "Best Regular Season Record", "unit": "",
+            "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+            "top_all": top_all, "top_per_manager": top_per,
         })
     else:
-        records.append({"icon": "🏆", "label": "Best Regular Season Record",
-                        "value": "—", "unit": "", "holder": "—", "ctx": "No standings data"})
+        records.append(empty_card("🏆", "Best Regular Season Record", "", "No standings data"))
 
-    # 7 & 8. Longest winning / losing streak (PL-only / pre-tier matchups)
+    # ── #7 + #8: streaks — enumerate every streak, take top 10 ───────────────
+    def enumerate_streaks(season_results, win=True):
+        out = []
+        for year, omap in season_results.items():
+            for oid, res_list in omap.items():
+                cur, start_idx = 0, 0
+                for i, outcome in enumerate(res_list):
+                    if outcome == win:
+                        if cur == 0:
+                            start_idx = i
+                        cur += 1
+                    else:
+                        if cur > 0:
+                            out.append({"owner_id": oid, "year": year, "length": cur,
+                                        "start_wk": start_idx + 1, "end_wk": i})
+                        cur = 0
+                if cur > 0:  # trailing
+                    out.append({"owner_id": oid, "year": year, "length": cur,
+                                "start_wk": start_idx + 1, "end_wk": len(res_list)})
+        return out
+
     if pl_matchups:
-        # Build per-season per-owner ordered result list.
-        # result[year][owner_id] = [True/False, ...] ordered by week.
         season_results = defaultdict(lambda: defaultdict(list))
-        sorted_matchups = sorted(pl_matchups, key=lambda m: (m["year"], m["week"]))
-        for m in sorted_matchups:
+        for m in sorted(pl_matchups, key=lambda m: (m["year"], m["week"])):
             if m["t1_owner"]:
                 season_results[m["year"]][m["t1_owner"]].append(m["t1_score"] > m["t2_score"])
             if m["t2_owner"]:
                 season_results[m["year"]][m["t2_owner"]].append(m["t2_score"] > m["t1_score"])
 
-        def longest_streak(results, win=True):
-            best = (0, None, None, None, None)  # (length, owner_id, year, start_wk, end_wk)
-            for year, owner_map in results.items():
-                for owner_id, res_list in owner_map.items():
-                    cur = 0
-                    start_idx = 0
-                    for i, outcome in enumerate(res_list):
-                        if outcome == win:
-                            if cur == 0:
-                                start_idx = i
-                            cur += 1
-                            if cur > best[0]:
-                                best = (cur, owner_id, year, start_idx + 1, i + 1)
-                        else:
-                            cur = 0
-            return best
+        # Winning streaks
+        w_streaks = enumerate_streaks(season_results, win=True)
+        w_cands = [{
+            "value": str(s["length"]), "_sort": s["length"], "unit": "straight",
+            "holder": owner_name(s["owner_id"]), "owner_id": s["owner_id"],
+            "ctx": f"Weeks {s['start_wk']}–{s['end_wk']} · {s['year']}",
+        } for s in w_streaks]
+        w_cands.sort(key=lambda x: x["_sort"], reverse=True)
+        if w_cands:
+            top_all, top_per = take_top_lists(w_cands)
+            records.append({
+                "icon": "🔥", "label": "Longest Winning Streak", "unit": "straight",
+                "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+                "top_all": top_all, "top_per_manager": top_per,
+            })
+        else:
+            records.append(empty_card("🔥", "Longest Winning Streak", "straight", "No streaks computed"))
 
-        wstreak = longest_streak(season_results, win=True)
-        records.append({
-            "icon": "🔥", "label": "Longest Winning Streak",
-            "value": str(wstreak[0]) if wstreak[0] else "—", "unit": "straight",
-            "holder": owner_name(wstreak[1]) if wstreak[1] else "—",
-            "ctx": (f"Weeks {wstreak[3]}–{wstreak[4]} · {wstreak[2]}"
-                    if wstreak[0] else "Matchup data not yet collected"),
-        })
-
-        lstreak = longest_streak(season_results, win=False)
-        records.append({
-            "icon": "💀", "label": "Longest Losing Streak",
-            "value": str(lstreak[0]) if lstreak[0] else "—", "unit": "straight",
-            "holder": owner_name(lstreak[1]) if lstreak[1] else "—",
-            "ctx": (f"Weeks {lstreak[3]}–{lstreak[4]} · {lstreak[2]}"
-                    if lstreak[0] else "Matchup data not yet collected"),
-        })
+        # Losing streaks
+        l_streaks = enumerate_streaks(season_results, win=False)
+        l_cands = [{
+            "value": str(s["length"]), "_sort": s["length"], "unit": "straight",
+            "holder": owner_name(s["owner_id"]), "owner_id": s["owner_id"],
+            "ctx": f"Weeks {s['start_wk']}–{s['end_wk']} · {s['year']}",
+        } for s in l_streaks]
+        l_cands.sort(key=lambda x: x["_sort"], reverse=True)
+        if l_cands:
+            top_all, top_per = take_top_lists(l_cands)
+            records.append({
+                "icon": "💀", "label": "Longest Losing Streak", "unit": "straight",
+                "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+                "top_all": top_all, "top_per_manager": top_per,
+            })
+        else:
+            records.append(empty_card("💀", "Longest Losing Streak", "straight", "No streaks computed"))
     else:
-        records.append({"icon": "🔥", "label": "Longest Winning Streak",
-                        "value": "—", "unit": "straight", "holder": "—",
-                        "ctx": "Matchup data not yet collected"})
-        records.append({"icon": "💀", "label": "Longest Losing Streak",
-                        "value": "—", "unit": "straight", "holder": "—",
-                        "ctx": "Matchup data not yet collected"})
+        records.append(empty_card("🔥", "Longest Winning Streak", "straight", "Matchup data not yet collected"))
+        records.append(empty_card("💀", "Longest Losing Streak", "straight", "Matchup data not yet collected"))
 
-    # 9. Highest scoring player week — not available without per-player weekly data.
+    # ── #9 Highest Scoring Player Week (placeholder) ─────────────────────────
     records.append({
         "icon": "⭐", "label": "Highest Scoring Player Week",
         "value": "—", "unit": "pts", "holder": "—",
         "ctx": "Requires per-player weekly data (not in Fantrax CSV exports)",
+        "top_all": [], "top_per_manager": [],
     })
 
-    # 10. Most transactions in a season (from transactions.csv per season).
-    best_tx = None
-    for s in seasons:
-        year = s["year"]
-        tx_path = HIST_ROOT / str(year) / "transactions.csv"
-        if not tx_path.exists():
-            continue
-        # transactions.csv has one row per player per transaction.
-        # We count total rows, not unique teams.
-        try:
-            count = parse_transactions_csv(tx_path)
-            if best_tx is None or count > best_tx[0]:
-                # We don't have per-team breakdown here; just total for the season.
-                # To get per-team: would need to group by fantasyTeam column.
-                best_tx = (count, year)
-        except Exception:
-            pass
-
-    # Better: compute per-team transaction counts for the season with max total.
-    # PL-only: skip teams whose tier-prefix is not 1 (pre-tier years have no prefix and count).
-    best_team_tx = None
+    # ── #10 Most Transactions in a Season ────────────────────────────────────
+    team_to_owner = build_team_to_owner(owners)
+    tx_cands = []
     for s in seasons:
         year = s["year"]
         tx_path = HIST_ROOT / str(year) / "transactions.csv"
@@ -588,41 +647,40 @@ def compute_records(hist_standings, matchups, owners, seasons):
             with open(tx_path, encoding="utf-8", newline="") as f:
                 for row in csv.DictReader(f):
                     player = row.get("Player", "").strip()
-                    team   = row.get("Team", "").strip()
+                    team = row.get("Team", "").strip()
                     if player and team and is_pl_eligible(parse_tier(team)):
                         team_counts[team] += 1
-            if team_counts:
-                top_team, top_count = max(team_counts.items(), key=lambda x: x[1])
-                if best_team_tx is None or top_count > best_team_tx[0]:
-                    best_team_tx = (top_count, top_team, year)
+            for team, count in team_counts.items():
+                oid = resolve_owner(team, team_to_owner)
+                tx_cands.append({
+                    "value": str(count), "_sort": count, "unit": "moves",
+                    "holder": owner_name(oid) if oid else clean_team_name(team),
+                    "owner_id": oid, "ctx": f"{year} Season",
+                })
         except Exception:
             pass
 
-    if best_team_tx:
-        tx_count, tx_team, tx_year = best_team_tx
-        team_to_owner = build_team_to_owner(owners)
-        tx_owner = resolve_owner(tx_team, team_to_owner)
+    if tx_cands:
+        tx_cands.sort(key=lambda x: x["_sort"], reverse=True)
+        top_all, top_per = take_top_lists(tx_cands)
         records.append({
-            "icon": "🔄", "label": "Most Transactions in a Season",
-            "value": str(tx_count), "unit": "moves",
-            "holder": owner_name(tx_owner) if tx_owner else clean_team_name(tx_team),
-            "ctx": f"{tx_year} Season",
+            "icon": "🔄", "label": "Most Transactions in a Season", "unit": "moves",
+            "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+            "top_all": top_all, "top_per_manager": top_per,
         })
     else:
-        records.append({
-            "icon": "🔄", "label": "Most Transactions in a Season",
-            "value": "—", "unit": "moves", "holder": "—",
-            "ctx": "Historical transaction data not yet collected",
-        })
+        records.append(empty_card("🔄", "Most Transactions in a Season", "moves",
+                                  "Historical transaction data not yet collected"))
 
-    # 11. Best trade return — not computable without FPts deltas.
+    # ── #11 Best Trade Return (placeholder) ──────────────────────────────────
     records.append({
         "icon": "💰", "label": "Best Trade Return",
         "value": "—", "unit": "pts avg Δ", "holder": "—",
         "ctx": "Requires pre/post-trade FPts data (not in Fantrax CSV exports)",
+        "top_all": [], "top_per_manager": [],
     })
 
-    # 12. All-time win rate (PL-only / pre-tier).
+    # ── #12 All-Time Win Rate ────────────────────────────────────────────────
     career = defaultdict(lambda: {"w": 0, "l": 0})
     for year, rows in hist_standings.items():
         for r in rows:
@@ -632,26 +690,28 @@ def compute_records(hist_standings, matchups, owners, seasons):
                 career[r["owner_id"]]["w"] += r["w"]
                 career[r["owner_id"]]["l"] += r["l"]
 
-    best_winpct = None
-    for owner_id, rec in career.items():
+    wr_cands = []
+    for oid, rec in career.items():
         total = rec["w"] + rec["l"]
         if total == 0:
             continue
         pct = rec["w"] / total
-        if best_winpct is None or pct > best_winpct[0]:
-            best_winpct = (pct, owner_id, rec["w"], rec["l"])
-
-    if best_winpct:
-        pct, oid, w, l = best_winpct
+        wr_cands.append({
+            "value": f"{pct*100:.1f}", "_sort": pct, "unit": "%",
+            "holder": owner_name(oid), "owner_id": oid,
+            "ctx": f"{rec['w']}–{rec['l']} career record",
+        })
+    if wr_cands:
+        wr_cands.sort(key=lambda x: x["_sort"], reverse=True)
+        top_all, top_per = take_top_lists(wr_cands)
+        # For this record, top_all and top_per_manager are identical (per-owner already).
         records.append({
-            "icon": "📊", "label": "All-Time Win Rate",
-            "value": f"{pct*100:.1f}", "unit": "%",
-            "holder": owner_name(oid),
-            "ctx": f"{w}–{l} career record",
+            "icon": "📊", "label": "All-Time Win Rate", "unit": "%",
+            "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+            "top_all": top_all, "top_per_manager": top_per,
         })
     else:
-        records.append({"icon": "📊", "label": "All-Time Win Rate",
-                        "value": "—", "unit": "%", "holder": "—", "ctx": "No standings data"})
+        records.append(empty_card("📊", "All-Time Win Rate", "%", "No standings data"))
 
     return records
 

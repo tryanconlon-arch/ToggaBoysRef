@@ -4,3 +4,4 @@ SETUP.md
 .env
 .DS_Store
 .claude/
+_debug/

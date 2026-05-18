@@ -50,6 +50,23 @@ def clean_team_name(name):
     return re.sub(r"^\d+\s*[-–]\s*", "", str(name)).strip()
 
 
+def parse_tier(team_name):
+    """
+    Return tier (1, 2, or 3) parsed from the team-name prefix.
+    Returns None for pre-tier era teams (2018-2021, no prefix).
+    Tier 1 = Premier League, Tier 2 = Championship, Tier 3 = League One.
+    """
+    if not team_name:
+        return None
+    m = re.match(r"^([123])\s*[-–]\s*", str(team_name).strip())
+    return int(m.group(1)) if m else None
+
+
+def is_pl_eligible(tier):
+    """A row qualifies for site-wide stats iff PL (tier=1) or pre-tier era (tier=None)."""
+    return tier is None or tier == 1
+
+
 def find_header_line(lines, marker):
     """Return the index of the first line containing marker, or None."""
     for i, line in enumerate(lines):
@@ -207,18 +224,31 @@ def compute_standings(seasons, owners):
             owner_id = resolve_owner(r["team"], team_to_owner)
             if not owner_id:
                 print(f"  [{year}] WARNING: no owner match for team '{r['team']}'")
+            tier = parse_tier(r["team"])
             rows.append({
                 "owner_id":  owner_id,
-                "team_name": r["team"],
+                "team_name": clean_team_name(r["team"]),
+                "tier":      tier,
                 "rank":      r["rank"],
+                "tier_rank": 0,        # filled in below
                 "w":         r["w"],
                 "d":         r["d"],
                 "l":         r["l"],
                 "pts":       r["pts"],
                 "pf":        round(r["pf"], 3),
                 "pa":        round(r["pa"], 3),
-                "champion":  r["rank"] == 1,
+                "champion":  False,    # filled in below
             })
+        # Compute tier_rank by grouping rows by tier and renumbering within group.
+        by_tier = defaultdict(list)
+        for row in rows:
+            by_tier[row["tier"]].append(row)
+        for tier_val, group in by_tier.items():
+            group.sort(key=lambda x: x["rank"])
+            for i, row in enumerate(group, start=1):
+                row["tier_rank"] = i
+                if i == 1 and is_pl_eligible(tier_val):
+                    row["champion"] = True
         hist[year] = sorted(rows, key=lambda x: x["rank"])
         print(f"  [{year}] {len(rows)} teams in standings")
 
@@ -236,7 +266,10 @@ def compute_matchups(seasons, owners):
 
     for s in seasons:
         year = s["year"]
-        csv_path = ROOT / f"matchups_{year}.csv"
+        # Look in HIST_ROOT/{year}/matchups_{year}.csv first; fall back to ROOT.
+        csv_path = HIST_ROOT / str(year) / f"matchups_{year}.csv"
+        if not csv_path.exists():
+            csv_path = ROOT / f"matchups_{year}.csv"
         if not csv_path.exists():
             continue
 
@@ -251,13 +284,18 @@ def compute_matchups(seasons, owners):
             if not t2_owner:
                 print(f"    WARNING [{year} Wk{r['week']}]: no owner for '{r['t2_team']}'")
                 unresolved += 1
+            t1_tier = parse_tier(r["t1_team"])
+            t2_tier = parse_tier(r["t2_team"])
+            # Same-tier always expected (verified: 0 cross-tier rows). Fall back to None if mismatch.
+            mtier = t1_tier if t1_tier == t2_tier else None
             all_rows.append({
                 "year":     r["year"],
                 "week":     r["week"],
+                "tier":     mtier,
                 "t1_owner": t1_owner,
                 "t2_owner": t2_owner,
-                "t1_team":  r["t1_team"],
-                "t2_team":  r["t2_team"],
+                "t1_team":  clean_team_name(r["t1_team"]),
+                "t2_team":  clean_team_name(r["t2_team"]),
                 "t1_score": round(r["t1_score"], 2),
                 "t2_score": round(r["t2_score"], 2),
             })
@@ -274,6 +312,8 @@ def compute_h2h(matchups):
     pairs = defaultdict(lambda: {"wins": 0, "losses": 0, "pf": 0.0, "pa": 0.0, "matches": []})
 
     for m in matchups:
+        if not is_pl_eligible(m.get("tier")):
+            continue
         a, b = m["t1_owner"], m["t2_owner"]
         if not a or not b or a == b:
             continue
@@ -345,11 +385,12 @@ def compute_records(hist_standings, matchups, owners, seasons):
 
     records = []
 
-    # ── Records from matchups ─────────────────────────────────────────────────
-    if matchups:
-        flat = [(m, max(m["t1_score"], m["t2_score"])) for m in matchups]
-        flat_min = [(m, min(m["t1_score"], m["t2_score"])) for m in matchups]
-        margins = [(m, abs(m["t1_score"] - m["t2_score"])) for m in matchups]
+    # ── Records from matchups (PL-only / pre-tier only) ──────────────────────
+    pl_matchups = [m for m in matchups if is_pl_eligible(m.get("tier"))]
+    if pl_matchups:
+        flat = [(m, max(m["t1_score"], m["t2_score"])) for m in pl_matchups]
+        flat_min = [(m, min(m["t1_score"], m["t2_score"])) for m in pl_matchups]
+        margins = [(m, abs(m["t1_score"] - m["t2_score"])) for m in pl_matchups]
 
         # 1. Highest single-week score
         best_m, best_score = max(flat, key=lambda x: x[1])
@@ -393,10 +434,12 @@ def compute_records(hist_standings, matchups, owners, seasons):
 
     # ── Records from standings ────────────────────────────────────────────────
 
-    # 4. Most points in a season
+    # 4. Most points in a season (PL-only / pre-tier)
     best_pf = None
     for year, rows in hist_standings.items():
         for r in rows:
+            if not is_pl_eligible(r.get("tier")):
+                continue
             if best_pf is None or r["pf"] > best_pf[0]:
                 best_pf = (r["pf"], r["owner_id"], year)
     if best_pf:
@@ -410,10 +453,12 @@ def compute_records(hist_standings, matchups, owners, seasons):
         records.append({"icon": "📅", "label": "Most Points in a Season",
                         "value": "—", "unit": "pts", "holder": "—", "ctx": "No standings data"})
 
-    # 5. Fewest points in a season
+    # 5. Fewest points in a season (PL-only / pre-tier)
     worst_pf = None
     for year, rows in hist_standings.items():
         for r in rows:
+            if not is_pl_eligible(r.get("tier")):
+                continue
             if r["pf"] > 0 and (worst_pf is None or r["pf"] < worst_pf[0]):
                 worst_pf = (r["pf"], r["owner_id"], year)
     if worst_pf:
@@ -427,10 +472,12 @@ def compute_records(hist_standings, matchups, owners, seasons):
         records.append({"icon": "📉", "label": "Fewest Points in a Season",
                         "value": "—", "unit": "pts", "holder": "—", "ctx": "No standings data"})
 
-    # 6. Best regular season record (highest win %)
+    # 6. Best regular season record (PL-only / pre-tier, highest win %)
     best_rec = None
     for year, rows in hist_standings.items():
         for r in rows:
+            if not is_pl_eligible(r.get("tier")):
+                continue
             total = r["w"] + r["l"] + r["d"]
             if total == 0:
                 continue
@@ -449,12 +496,12 @@ def compute_records(hist_standings, matchups, owners, seasons):
         records.append({"icon": "🏆", "label": "Best Regular Season Record",
                         "value": "—", "unit": "", "holder": "—", "ctx": "No standings data"})
 
-    # 7 & 8. Longest winning / losing streak (need matchups per owner per season in order)
-    if matchups:
+    # 7 & 8. Longest winning / losing streak (PL-only / pre-tier matchups)
+    if pl_matchups:
         # Build per-season per-owner ordered result list.
         # result[year][owner_id] = [True/False, ...] ordered by week.
         season_results = defaultdict(lambda: defaultdict(list))
-        sorted_matchups = sorted(matchups, key=lambda m: (m["year"], m["week"]))
+        sorted_matchups = sorted(pl_matchups, key=lambda m: (m["year"], m["week"]))
         for m in sorted_matchups:
             if m["t1_owner"]:
                 season_results[m["year"]][m["t1_owner"]].append(m["t1_score"] > m["t2_score"])
@@ -529,6 +576,7 @@ def compute_records(hist_standings, matchups, owners, seasons):
             pass
 
     # Better: compute per-team transaction counts for the season with max total.
+    # PL-only: skip teams whose tier-prefix is not 1 (pre-tier years have no prefix and count).
     best_team_tx = None
     for s in seasons:
         year = s["year"]
@@ -541,7 +589,7 @@ def compute_records(hist_standings, matchups, owners, seasons):
                 for row in csv.DictReader(f):
                     player = row.get("Player", "").strip()
                     team   = row.get("Team", "").strip()
-                    if player and team:
+                    if player and team and is_pl_eligible(parse_tier(team)):
                         team_counts[team] += 1
             if team_counts:
                 top_team, top_count = max(team_counts.items(), key=lambda x: x[1])
@@ -574,10 +622,12 @@ def compute_records(hist_standings, matchups, owners, seasons):
         "ctx": "Requires pre/post-trade FPts data (not in Fantrax CSV exports)",
     })
 
-    # 12. All-time win rate.
+    # 12. All-time win rate (PL-only / pre-tier).
     career = defaultdict(lambda: {"w": 0, "l": 0})
     for year, rows in hist_standings.items():
         for r in rows:
+            if not is_pl_eligible(r.get("tier")):
+                continue
             if r["owner_id"]:
                 career[r["owner_id"]]["w"] += r["w"]
                 career[r["owner_id"]]["l"] += r["l"]

@@ -91,6 +91,10 @@ section{padding:96px 0 72px}
 .m-avatar{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Barlow Semi Condensed',sans-serif;font-weight:800;font-size:.8rem;flex-shrink:0;color:#fff}
 .m-team{font-size:.72rem;color:var(--muted);margin-top:1px}
 .badge-champ{display:inline-block;background:rgba(0,112,60,.22);color:var(--green-l);font-size:.6rem;font-weight:700;letter-spacing:.08em;padding:2px 7px;border-radius:4px;text-transform:uppercase;margin-left:6px;white-space:nowrap}
+.tier-pill{display:inline-block;font-family:'Barlow Semi Condensed',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.1em;padding:2px 7px;border-radius:4px;text-transform:uppercase}
+.tier-pill.tier-1{background:rgba(0,112,60,.22);color:var(--green-l);border:1px solid rgba(0,112,60,.45)}
+.tier-pill.tier-2{background:rgba(120,120,120,.15);color:var(--muted);border:1px solid rgba(120,120,120,.35)}
+.tier-pill.tier-3{background:rgba(180,80,40,.15);color:#d99a78;border:1px solid rgba(180,80,40,.35)}
 .num-green{color:var(--green-l);font-weight:600}
 .num-red{color:#E55;font-weight:500}
 
@@ -302,12 +306,20 @@ const RECORDS  = HIST_RECORDS;
 
 function mgr(id){return MANAGERS.find(m=>m.id===id)}
 function initials(name){return name.split(/[\s']+/).map(p=>p[0]).join('').slice(0,2).toUpperCase()}
+// Tier 1 (Premier League) or pre-tier era (tier=null) qualify for site-wide stats.
+function isPlEligible(tier){return tier==null||tier===1}
+function isPLRow(row){return !!row && isPlEligible(row.tier)}
+// Strip leading '1-' / '2-' / '3-' from a team name string (defensive — most data is pre-cleaned by builder).
+function cleanTeam(t){return (t==null?'':String(t)).replace(/^\s*[123]\s*[-\u2013]\s*/,'').trim()}
+function tierLabel(tier){return tier===1?'Premier League':tier===2?'Championship':tier===3?'League One':''}
+function tierShort(tier){return tier===1?'PL':tier===2?'CH':tier===3?'L1':''}
 
 function computeAllTime(){
   const stats={};
   MANAGERS.forEach(m=>{stats[m.id]={wins:0,losses:0,draws:0,pf:0,pa:0,championships:m.championships.length,seasons:0}});
   SEASONS.forEach(yr=>{
     (SEASON_STANDINGS[yr]||[]).forEach(row=>{
+      if(!isPLRow(row))return;          // PL-only / pre-tier for site-wide stats
       const s=stats[row.owner_id];
       if(!s)return;
       s.wins+=row.w; s.losses+=row.l; s.draws+=(row.d||0); s.pf+=row.pf; s.pa+=row.pa; s.seasons+=1;
@@ -512,7 +524,7 @@ function HallOfChampions(){
         </div>
         <div className="champ-row">
           {SEASONS.map(yr=>{
-            const champRow=(SEASON_STANDINGS[yr]||[]).find(s=>s.rank===1)||{};
+            const champRow=(SEASON_STANDINGS[yr]||[]).find(s=>s.champion)||{};
             const champ=mgr(champRow.owner_id)||{name:champRow.team_name||'—',team:champRow.team_name||'',color:'#555'};
             return(
               <div className="champ-card" key={yr}>
@@ -576,9 +588,18 @@ function SeasonResults(){
   const inView=useInView(ref);
   const selectYr=y=>{setYr(y);setKey(k=>k+1)};
   const standings=SEASON_STANDINGS[yr]||[];
-  const champRow=standings.find(s=>s.rank===1)||{};
-  const topScore=standings.reduce((a,b)=>b.pf>a.pf?b:a,champRow);
+  const champRow=standings.find(s=>s.champion)||{};
+  // Top scorer of the season is computed within PL-eligible rows only.
+  const plRows=standings.filter(isPLRow);
+  const topScore=plRows.reduce((a,b)=>b.pf>(a.pf||0)?b:a, plRows[0]||champRow);
   const champ=mgr(champRow.owner_id)||{name:champRow.team_name||'—',team:champRow.team_name||''};
+  // Tier filter for the table: 'all' | 1 | 2 | 3. Pre-tier years (no tiered rows) only show 'all'.
+  const tiersInYear = Array.from(new Set(standings.map(r=>r.tier))).filter(t=>t!=null).sort();
+  const [tierFilter, setTierFilter] = React.useState('all');
+  React.useEffect(()=>{setTierFilter('all')}, [yr]);
+  const tableRows = tierFilter==='all' ? standings : standings.filter(r=>r.tier===tierFilter);
+  // When viewing a tier, use tier_rank for display; for 'all', use overall rank.
+  const rankFor = (r)=> tierFilter==='all' ? r.rank : (r.tier_rank||r.rank);
   return(
     <section id="seasons" ref={ref}>
       <div className="container">
@@ -605,20 +626,28 @@ function SeasonResults(){
               <div style={{fontSize:'.8rem',color:'var(--muted)',marginTop:'4px'}}>{topScore.pf.toFixed(1)} pts · {yr} season</div>
             </div>
           </div>
+          {tiersInYear.length>0 && (
+            <div className="ftabs" style={{marginTop:'.5rem',marginBottom:'.75rem'}}>
+              <button className={`ftab${tierFilter==='all'?' on':''}`} onClick={()=>setTierFilter('all')}>All</button>
+              {tiersInYear.includes(1) && <button className={`ftab${tierFilter===1?' on':''}`} onClick={()=>setTierFilter(1)}>Premier League</button>}
+              {tiersInYear.includes(2) && <button className={`ftab${tierFilter===2?' on':''}`} onClick={()=>setTierFilter(2)}>Championship</button>}
+              {tiersInYear.includes(3) && <button className={`ftab${tierFilter===3?' on':''}`} onClick={()=>setTierFilter(3)}>League One</button>}
+            </div>
+          )}
           <div className="table-wrap" style={{marginBottom:'1.75rem'}}>
             <table className="dt">
               <thead>
                 <tr>
-                  <th>Rk</th><th>Team</th><th>W</th><th>D</th><th>L</th>
+                  <th>Rk</th><th>Team</th>{tierFilter==='all' && tiersInYear.length>0 && <th>Tier</th>}<th>W</th><th>D</th><th>L</th>
                   <th>Pts</th><th>FPts For</th><th>FPts Ag</th>
                 </tr>
               </thead>
               <tbody>
-                {standings.map(row=>{
+                {tableRows.map(row=>{
                   const m=mgr(row.owner_id)||{name:row.team_name,team:row.team_name,color:'#555555'};
                   return(
-                    <tr key={row.owner_id}>
-                      <td><span className={`rank-num${row.rank===1?' gold':row.rank===2?' silver':row.rank===3?' bronze':''}`}>{row.rank}</span></td>
+                    <tr key={`${row.tier||0}-${row.rank}-${row.owner_id||row.team_name}`}>
+                      <td><span className={`rank-num${rankFor(row)===1?' gold':rankFor(row)===2?' silver':rankFor(row)===3?' bronze':''}`}>{rankFor(row)}</span></td>
                       <td>
                         <div className="m-cell">
                           <div className="m-avatar" style={{background:m.color}}>{initials(m.name)}</div>
@@ -628,6 +657,7 @@ function SeasonResults(){
                           </div>
                         </div>
                       </td>
+                      {tierFilter==='all' && tiersInYear.length>0 && <td><span className={`tier-pill tier-${row.tier||0}`}>{tierShort(row.tier)||'—'}</span></td>}
                       <td className="num-green">{row.w}</td>
                       <td style={{color:'var(--muted)'}}>{row.d}</td>
                       <td style={{color:'var(--dim)'}}>{row.l}</td>
@@ -772,10 +802,12 @@ function HeadToHead(){
 
 function ManagerModal({manager,onClose}){
   const career=computeManagerCareer(manager.id);
-  const totalW=career.reduce((a,b)=>a+b.w,0);
-  const totalL=career.reduce((a,b)=>a+b.l,0);
-  const totalPF=career.reduce((a,b)=>a+b.pf,0);
-  const bestSzn=career.reduce((a,b)=>b.pf>a.pf?b:a,career[0]);
+  // Career totals only include PL years (or pre-tier era). Season-by-season still lists all rows.
+  const plCareer=career.filter(isPLRow);
+  const totalW=plCareer.reduce((a,b)=>a+b.w,0);
+  const totalL=plCareer.reduce((a,b)=>a+b.l,0);
+  const totalPF=plCareer.reduce((a,b)=>a+b.pf,0);
+  const bestSzn=plCareer.length?plCareer.reduce((a,b)=>b.pf>a.pf?b:a,plCareer[0]):(career[0]||{});
 
   return(
     <div className="modal-overlay" onClick={e=>{if(e.target===e.currentTarget)onClose()}}>

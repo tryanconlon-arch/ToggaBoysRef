@@ -716,6 +716,220 @@ def compute_records(hist_standings, matchups, owners, seasons):
     return records
 
 
+
+# ── Player records (OF + GK) ─────────────────────────────────────────────────
+
+OF_STAT_DEFS = [
+    # (internal_key, [csv_aliases], label, unit, format, featured, icon)
+    ("FPts", ["FPts"],         "Fantasy Points",    "pts", ",.1f", True,  "⚡"),
+    ("G",    ["G"],            "Goals",             "",    ".0f",  True,  "⚽"),
+    ("A",    ["A", "AT"],      "Assists",           "",    ".0f",  True,  "🅰"),
+    ("KP",   ["KP"],           "Key Passes",        "",    ".0f",  True,  "🔑"),
+    ("YC",   ["YC"],           "Yellow Cards",      "",    ".0f",  False, "🟨"),
+    ("RC",   ["RC", "SYC"],    "Red Cards",         "",    ".0f",  False, "🟥"),
+    ("A2",   ["A2"],           "Secondary Assists", "",    ".0f",  False, ""),
+    ("SOT",  ["SOT"],          "Shots on Target",   "",    ".0f",  False, "🎯"),
+    ("TkW",  ["TkW"],          "Tackles Won",       "",    ".0f",  False, ""),
+    ("Int",  ["Int"],          "Interceptions",     "",    ".0f",  False, ""),
+    ("CLR",  ["CLR"],          "Clearances",        "",    ".0f",  False, ""),
+    ("AER",  ["AER"],          "Aerials Won",       "",    ".0f",  False, ""),
+    ("DIS",  ["DIS"],          "Dispossessed",      "",    ".0f",  False, ""),
+    ("FS",   ["FS"],           "Fouls Suffered",    "",    ".0f",  False, ""),
+    ("PKD",  ["PKD"],          "Penalties Drawn",   "",    ".0f",  False, ""),
+    ("PKM",  ["PKM"],          "Penalties Missed",  "",    ".0f",  False, ""),
+    ("OG",   ["OG"],           "Own Goals",         "",    ".0f",  False, ""),
+    ("CS",   ["MCS", "CS"],    "Clean Sheets",      "",    ",.0f", False, "🛡"),
+    ("GP",   ["GP"],           "Games Played",      "",    ".0f",  False, ""),
+    ("Min",  ["Min"],          "Minutes",           "",    ",.0f", False, ""),
+]
+
+GK_STAT_DEFS = [
+    ("FPts", ["FPts"],         "Fantasy Points",    "pts", ",.1f", True,  "⚡"),
+    ("Sv",   ["Sv"],           "Saves",             "",    ".0f",  True,  "🧤"),
+    ("GA",   ["GA"],           "Goals Allowed",     "",    ".0f",  True,  "🥅"),
+    ("CS",   ["MCS", "CS"],    "Clean Sheets",      "",    ",.0f", True,  "🛡"),
+    ("PKS",  ["PKS"],          "Penalty Saves",     "",    ".0f",  False, ""),
+    ("YC",   ["YC"],           "Yellow Cards",      "",    ".0f",  False, "🟨"),
+    ("RC",   ["RC"],           "Red Cards",         "",    ".0f",  False, "🟥"),
+    ("GP",   ["GP"],           "Games Played",      "",    ".0f",  False, ""),
+    ("Min",  ["Min"],          "Minutes",           "",    ",.0f", False, ""),
+]
+
+
+def _clean_player_name(name):
+    """Strip HTML tags from a player name (some Fantrax rows have artifacts)."""
+    return re.sub(r"<[^>]+>", "", str(name)).strip()
+
+
+def _player_row_is_junk(r):
+    """Skip rows whose Status field contains HTML markup (Fantrax export glitch)."""
+    st = str(r.get("Status", ""))
+    return "<" in st or ">" in st
+
+
+def _player_first_present_col(row, aliases):
+    """Return value of the first alias present in row, or None."""
+    for c in aliases:
+        if c in row:
+            return row[c]
+    return None
+
+
+def _player_take_top(candidates, n=10):
+    """Sort already-sorted candidates; return (top_all, top_per_player) lists."""
+    def strip(x):
+        return {k: v for k, v in x.items() if not k.startswith("_")}
+    top_all = [strip(c) for c in candidates[:n]]
+    seen = set()
+    top_per = []
+    for c in candidates:
+        pid = c.get("player_id") or c.get("holder")
+        if pid in seen:
+            continue
+        seen.add(pid)
+        top_per.append(strip(c))
+        if len(top_per) >= n:
+            break
+    return top_all, top_per
+
+
+def load_player_csv(year, split):
+    """Load players_{split}.csv for a given year. Returns list of dicts (junk filtered, FAs included)."""
+    path = HIST_ROOT / str(year) / f"players_{split}.csv"
+    if not path.exists():
+        return []
+    rows = []
+    with open(path, encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            if _player_row_is_junk(r):
+                continue
+            rows.append(r)
+    return rows
+
+
+def load_player_csv_weekly(year, week, split):
+    """Load one week's player CSV. Returns list of dicts (junk filtered, FAs included)."""
+    path = HIST_ROOT / str(year) / "weekly" / f"players_{split}_wk{week:02d}.csv"
+    if not path.exists():
+        return []
+    rows = []
+    with open(path, encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            if _player_row_is_junk(r):
+                continue
+            rows.append(r)
+    return rows
+
+
+def compute_player_records_weekly(seasons, split, stat_defs):
+    """Single-gameweek player records. For each stat, top_all by (player × season × week)."""
+    # Load all (year, week, row).
+    all_triples = []
+    for s in seasons:
+        year = s["year"]
+        for wk in range(1, 39):
+            for r in load_player_csv_weekly(year, wk, split):
+                all_triples.append((year, wk, r))
+
+    records = []
+    for key, aliases, label, unit, fmt, featured, icon in stat_defs:
+        cands = []
+        for year, wk, r in all_triples:
+            raw = _player_first_present_col(r, aliases)
+            if raw is None:
+                continue
+            val = parse_num(raw)
+            if val == 0:
+                continue
+            pid = (r.get("ID") or "").strip()
+            player = _clean_player_name(r.get("Player", ""))
+            epl_team = (r.get("Team") or "").strip()
+            status = (r.get("Status") or "").strip()
+            ctx = f"{epl_team} · Wk{wk} · {year}" if epl_team else f"Wk{wk} · {year}"
+            cands.append({
+                "value": format(val, fmt),
+                "_sort": val,
+                "unit": unit,
+                "holder": player,
+                "player_id": pid,
+                "ctx": ctx,
+                "manager": status,
+            })
+        cands.sort(key=lambda x: x["_sort"], reverse=True)
+        if cands:
+            top_all, _ = _player_take_top(cands)        # top_per_player not used for weekly UI
+            records.append({
+                "key": key, "icon": icon, "label": label, "unit": unit,
+                "featured": featured,
+                "value": top_all[0]["value"], "holder": top_all[0]["holder"], "ctx": top_all[0]["ctx"],
+                "top_all": top_all,
+            })
+        else:
+            records.append({
+                "key": key, "icon": icon, "label": label, "unit": unit,
+                "featured": featured,
+                "value": "—", "holder": "—", "ctx": "No data",
+                "top_all": [],
+            })
+    return records
+
+
+def compute_player_records(seasons, split, stat_defs):
+    """For each stat in stat_defs, compute top_all (instances) + top_per_player (deduped)."""
+    # Load all (year, row) pairs once.
+    all_pairs = []
+    for s in seasons:
+        for r in load_player_csv(s["year"], split):
+            all_pairs.append((s["year"], r))
+
+    records = []
+    for key, aliases, label, unit, fmt, featured, icon in stat_defs:
+        cands = []
+        for year, r in all_pairs:
+            raw = _player_first_present_col(r, aliases)
+            if raw is None:
+                continue
+            val = parse_num(raw)
+            if val == 0:
+                continue
+            pid = (r.get("ID") or "").strip()
+            player = _clean_player_name(r.get("Player", ""))
+            epl_team = (r.get("Team") or "").strip()
+            status = (r.get("Status") or "").strip()
+            cands.append({
+                "value": format(val, fmt),
+                "_sort": val,
+                "unit": unit,
+                "holder": player,
+                "player_id": pid,
+                "ctx": f"{epl_team} · {year}" if epl_team else str(year),
+                "manager": status,           # raw Fantrax handle; mapping deferred
+            })
+        cands.sort(key=lambda x: x["_sort"], reverse=True)
+        if cands:
+            top_all, top_per = _player_take_top(cands)
+            records.append({
+                "key": key,
+                "icon": icon,
+                "label": label,
+                "unit": unit,
+                "featured": featured,
+                "value": top_all[0]["value"],
+                "holder": top_all[0]["holder"],
+                "ctx": top_all[0]["ctx"],
+                "top_all": top_all,
+                "top_per_player": top_per,
+            })
+        else:
+            records.append({
+                "key": key, "icon": icon, "label": label, "unit": unit,
+                "featured": featured,
+                "value": "—", "holder": "—", "ctx": "No data",
+                "top_all": [], "top_per_player": [],
+            })
+    return records
+
+
 def build_managers_array(owners, hist_standings):
     """
     Derive the MANAGERS-compatible array from HIST_OWNERS + HIST_STANDINGS.
@@ -810,6 +1024,20 @@ def main():
     # Convert hist_standings keys to int-keyed dict for JSON (years as ints).
     hist_standings_out = {str(yr): rows for yr, rows in hist_standings.items()}
 
+    print("\nComputing player records (OF, season totals)...")
+    of_records = compute_player_records(seasons_sorted, "OF", OF_STAT_DEFS)
+    print(f"  {len(of_records)} OF season-record categories")
+    print("Computing player records (GK, season totals)...")
+    gk_records = compute_player_records(seasons_sorted, "GK", GK_STAT_DEFS)
+    print(f"  {len(gk_records)} GK season-record categories")
+
+    print("Computing player records (OF, single-week)...")
+    of_records_weekly = compute_player_records_weekly(seasons_sorted, "OF", OF_STAT_DEFS)
+    print(f"  {len(of_records_weekly)} OF weekly-record categories")
+    print("Computing player records (GK, single-week)...")
+    gk_records_weekly = compute_player_records_weekly(seasons_sorted, "GK", GK_STAT_DEFS)
+    print(f"  {len(gk_records_weekly)} GK weekly-record categories")
+
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         f.write("// Auto-generated by build_historical_data.py — do not edit by hand.\n")
         f.write(f"const HIST_SEASONS = {json.dumps(season_years)};\n")
@@ -819,6 +1047,10 @@ def main():
         f.write(f"const HIST_MATCHUPS = {json.dumps(matchups, indent=2)};\n")
         f.write(f"const HIST_H2H = {json.dumps(h2h, indent=2)};\n")
         f.write(f"const HIST_RECORDS = {json.dumps(records, indent=2)};\n")
+        f.write(f"const HIST_PLAYER_RECORDS_OF = {json.dumps(of_records, indent=2, ensure_ascii=False)};\n")
+        f.write(f"const HIST_PLAYER_RECORDS_GK = {json.dumps(gk_records, indent=2, ensure_ascii=False)};\n")
+        f.write(f"const HIST_PLAYER_RECORDS_OF_WEEKLY = {json.dumps(of_records_weekly, indent=2, ensure_ascii=False)};\n")
+        f.write(f"const HIST_PLAYER_RECORDS_GK_WEEKLY = {json.dumps(gk_records_weekly, indent=2, ensure_ascii=False)};\n")
 
     size_kb = OUT_PATH.stat().st_size // 1024
     print(f"  ✓ Wrote {OUT_PATH}  ({size_kb} KB)")

@@ -39506,3 +39506,7581 @@ const HIST_RECORDS = [
     ]
   }
 ];
+const HIST_PLAYER_RECORDS_OF = [
+  {
+    "key": "FPts",
+    "icon": "⚡",
+    "label": "Fantasy Points",
+    "unit": "pts",
+    "featured": true,
+    "value": "767.5",
+    "holder": "Mohamed Salah",
+    "ctx": "LIV · 2024",
+    "top_all": [
+      {
+        "value": "767.5",
+        "unit": "pts",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "706.5",
+        "unit": "pts",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "650.0",
+        "unit": "pts",
+        "holder": "Bukayo Saka",
+        "player_id": "*04y92*",
+        "ctx": "ARS · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "645.5",
+        "unit": "pts",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "638.6",
+        "unit": "pts",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2023",
+        "manager": "RyRob"
+      },
+      {
+        "value": "634.5",
+        "unit": "pts",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2022",
+        "manager": "DDT"
+      },
+      {
+        "value": "627.3",
+        "unit": "pts",
+        "holder": "Cole Palmer",
+        "player_id": "*05l8q*",
+        "ctx": "MCI/CHE · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "625.2",
+        "unit": "pts",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "616.5",
+        "unit": "pts",
+        "holder": "Phil Foden",
+        "player_id": "*04abb*",
+        "ctx": "MCI · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "605.5",
+        "unit": "pts",
+        "holder": "Cole Palmer",
+        "player_id": "*05l8q*",
+        "ctx": "CHE · 2024",
+        "manager": "thomas"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "767.5",
+        "unit": "pts",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "706.5",
+        "unit": "pts",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "650.0",
+        "unit": "pts",
+        "holder": "Bukayo Saka",
+        "player_id": "*04y92*",
+        "ctx": "ARS · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "645.5",
+        "unit": "pts",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "638.6",
+        "unit": "pts",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2023",
+        "manager": "RyRob"
+      },
+      {
+        "value": "634.5",
+        "unit": "pts",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2022",
+        "manager": "DDT"
+      },
+      {
+        "value": "627.3",
+        "unit": "pts",
+        "holder": "Cole Palmer",
+        "player_id": "*05l8q*",
+        "ctx": "MCI/CHE · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "616.5",
+        "unit": "pts",
+        "holder": "Phil Foden",
+        "player_id": "*04abb*",
+        "ctx": "MCI · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "601.9",
+        "unit": "pts",
+        "holder": "Kieran Trippier",
+        "player_id": "*03dx3*",
+        "ctx": "NEW · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "597.0",
+        "unit": "pts",
+        "holder": "Bryan Mbeumo",
+        "player_id": "*05trb*",
+        "ctx": "BRF · 2024",
+        "manager": "RyRob"
+      }
+    ]
+  },
+  {
+    "key": "G",
+    "icon": "⚽",
+    "label": "Goals",
+    "unit": "",
+    "featured": true,
+    "value": "36",
+    "holder": "Erling Haaland",
+    "ctx": "MCI · 2022",
+    "top_all": [
+      {
+        "value": "36",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "30",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2022",
+        "manager": "DDT"
+      },
+      {
+        "value": "29",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "27",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Jamie Vardy",
+        "player_id": "*03dyk*",
+        "ctx": "LEI · 2019",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2020",
+        "manager": "No Slips"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2021",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2021",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Alexander Isak",
+        "player_id": "*0646f*",
+        "ctx": "NEW · 2024",
+        "manager": "STONKS"
+      },
+      {
+        "value": "22",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2018",
+        "manager": "Alex R"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "36",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "30",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2022",
+        "manager": "DDT"
+      },
+      {
+        "value": "29",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Jamie Vardy",
+        "player_id": "*03dyk*",
+        "ctx": "LEI · 2019",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2021",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Alexander Isak",
+        "player_id": "*0646f*",
+        "ctx": "NEW · 2024",
+        "manager": "STONKS"
+      },
+      {
+        "value": "22",
+        "unit": "",
+        "holder": "Sadio Mane",
+        "player_id": "*03jv0*",
+        "ctx": "LIV · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "22",
+        "unit": "",
+        "holder": "Pierre-Emerick Aubameyang",
+        "player_id": "*04mqy*",
+        "ctx": "ARS · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "22",
+        "unit": "",
+        "holder": "Danny Ings",
+        "player_id": "*03dxq*",
+        "ctx": "SOU · 2019",
+        "manager": "Noah B"
+      },
+      {
+        "value": "22",
+        "unit": "",
+        "holder": "Cole Palmer",
+        "player_id": "*05l8q*",
+        "ctx": "MCI/CHE · 2023",
+        "manager": "Noah B"
+      }
+    ]
+  },
+  {
+    "key": "A",
+    "icon": "🅰",
+    "label": "Assists",
+    "unit": "",
+    "featured": true,
+    "value": "23",
+    "holder": "Kevin De Bruyne",
+    "ctx": "MCI · 2019",
+    "top_all": [
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "18",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "16",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "Raheem Sterling",
+        "player_id": "*02lkp*",
+        "ctx": "MCI · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "Trent Alexander-Arnold",
+        "player_id": "*03srg*",
+        "ctx": "LIV · 2019",
+        "manager": "Wee Joe"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Ryan Fraser",
+        "player_id": "*03r8r*",
+        "ctx": "BOU · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Riyad Mahrez",
+        "player_id": "*03dyp*",
+        "ctx": "MCI · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2020",
+        "manager": "No Slips"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Trent Alexander-Arnold",
+        "player_id": "*03srg*",
+        "ctx": "LIV · 2018",
+        "manager": "John L"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "18",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "Raheem Sterling",
+        "player_id": "*02lkp*",
+        "ctx": "MCI · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "Trent Alexander-Arnold",
+        "player_id": "*03srg*",
+        "ctx": "LIV · 2019",
+        "manager": "Wee Joe"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Ryan Fraser",
+        "player_id": "*03r8r*",
+        "ctx": "BOU · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Riyad Mahrez",
+        "player_id": "*03dyp*",
+        "ctx": "MCI · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2020",
+        "manager": "No Slips"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Ollie Watkins",
+        "player_id": "*05ocl*",
+        "ctx": "AVL · 2023",
+        "manager": "Laeka B"
+      }
+    ]
+  },
+  {
+    "key": "KP",
+    "icon": "🔑",
+    "label": "Key Passes",
+    "unit": "",
+    "featured": true,
+    "value": "135",
+    "holder": "Kevin De Bruyne",
+    "ctx": "MCI · 2019",
+    "top_all": [
+      {
+        "value": "135",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "119",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "114",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2023",
+        "manager": "RyRob"
+      },
+      {
+        "value": "110",
+        "unit": "",
+        "holder": "Kieran Trippier",
+        "player_id": "*03dx3*",
+        "ctx": "NEW · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "104",
+        "unit": "",
+        "holder": "Pascal Gross",
+        "player_id": "*04fk1*",
+        "ctx": "BHA · 2023",
+        "manager": "MID"
+      },
+      {
+        "value": "102",
+        "unit": "",
+        "holder": "Martin Odegaard",
+        "player_id": "*05r9b*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "99",
+        "unit": "",
+        "holder": "James Maddison",
+        "player_id": "*0414o*",
+        "ctx": "LEI · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "98",
+        "unit": "",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "98",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "95",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2020",
+        "manager": "FA"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "135",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "119",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "110",
+        "unit": "",
+        "holder": "Kieran Trippier",
+        "player_id": "*03dx3*",
+        "ctx": "NEW · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "104",
+        "unit": "",
+        "holder": "Pascal Gross",
+        "player_id": "*04fk1*",
+        "ctx": "BHA · 2023",
+        "manager": "MID"
+      },
+      {
+        "value": "102",
+        "unit": "",
+        "holder": "Martin Odegaard",
+        "player_id": "*05r9b*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "99",
+        "unit": "",
+        "holder": "James Maddison",
+        "player_id": "*0414o*",
+        "ctx": "LEI · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "98",
+        "unit": "",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "93",
+        "unit": "",
+        "holder": "Ryan Fraser",
+        "player_id": "*03r8r*",
+        "ctx": "BOU · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "92",
+        "unit": "",
+        "holder": "Jack Grealish",
+        "player_id": "*02lm7*",
+        "ctx": "AVL · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "91",
+        "unit": "",
+        "holder": "Bukayo Saka",
+        "player_id": "*04y92*",
+        "ctx": "ARS · 2023",
+        "manager": "j.l."
+      }
+    ]
+  },
+  {
+    "key": "YC",
+    "icon": "🟨",
+    "label": "Yellow Cards",
+    "unit": "",
+    "featured": false,
+    "value": "14",
+    "holder": "Etienne Capoue",
+    "ctx": "WAT · 2018",
+    "top_all": [
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Etienne Capoue",
+        "player_id": "*036nb*",
+        "ctx": "WAT · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Joao Palhinha",
+        "player_id": "*062dt*",
+        "ctx": "FUL · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Joao Palhinha",
+        "player_id": "*062dt*",
+        "ctx": "FUL · 2023",
+        "manager": "BBFC"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Marcos Senesi",
+        "player_id": "*063e7*",
+        "ctx": "BOU · 2023",
+        "manager": "W’s"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Fabian Schar",
+        "player_id": "*04tig*",
+        "ctx": "NEW · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Jose Holebas",
+        "player_id": "*03rn2*",
+        "ctx": "WAT · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Ryan Bennett",
+        "player_id": "*02m38*",
+        "ctx": "WOL · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Jefferson Lerma",
+        "player_id": "*04tzt*",
+        "ctx": "BOU · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Sokratis",
+        "player_id": "*04ril*",
+        "ctx": "ARS · 2018",
+        "manager": "BUK"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Luka Milivojevic",
+        "player_id": "*04ami*",
+        "ctx": "CRY · 2019",
+        "manager": "FA"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Etienne Capoue",
+        "player_id": "*036nb*",
+        "ctx": "WAT · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Joao Palhinha",
+        "player_id": "*062dt*",
+        "ctx": "FUL · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Marcos Senesi",
+        "player_id": "*063e7*",
+        "ctx": "BOU · 2023",
+        "manager": "W’s"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Fabian Schar",
+        "player_id": "*04tig*",
+        "ctx": "NEW · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Jose Holebas",
+        "player_id": "*03rn2*",
+        "ctx": "WAT · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Ryan Bennett",
+        "player_id": "*02m38*",
+        "ctx": "WOL · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Jefferson Lerma",
+        "player_id": "*04tzt*",
+        "ctx": "BOU · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Sokratis",
+        "player_id": "*04ril*",
+        "ctx": "ARS · 2018",
+        "manager": "BUK"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Luka Milivojevic",
+        "player_id": "*04ami*",
+        "ctx": "CRY · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "John McGinn",
+        "player_id": "*051k0*",
+        "ctx": "AVL · 2020",
+        "manager": "Noah B"
+      }
+    ]
+  },
+  {
+    "key": "RC",
+    "icon": "🟥",
+    "label": "Red Cards",
+    "unit": "",
+    "featured": false,
+    "value": "2",
+    "holder": "Pierre-Emile Hojbjerg",
+    "ctx": "SOU · 2018",
+    "top_all": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Pierre-Emile Hojbjerg",
+        "player_id": "*043qz*",
+        "ctx": "SOU · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wes Morgan",
+        "player_id": "*03dy4*",
+        "ctx": "LEI · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Christian Kabasele",
+        "player_id": "*0436l*",
+        "ctx": "WAT · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "David Luiz",
+        "player_id": "*02m7w*",
+        "ctx": "ARS · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Fernandinho",
+        "player_id": "*03278*",
+        "ctx": "MCI · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Lewis Dunk",
+        "player_id": "*04e1c*",
+        "ctx": "BHA · 2020",
+        "manager": "Yum"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Raul Jimenez",
+        "player_id": "*04qrc*",
+        "ctx": "WOL · 2021",
+        "manager": "YUM"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Ezri Konsa",
+        "player_id": "*052ca*",
+        "ctx": "AVL · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Casemiro",
+        "player_id": "*0642l*",
+        "ctx": "MUN · 2022",
+        "manager": "thomas"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Pierre-Emile Hojbjerg",
+        "player_id": "*043qz*",
+        "ctx": "SOU · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wes Morgan",
+        "player_id": "*03dy4*",
+        "ctx": "LEI · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Christian Kabasele",
+        "player_id": "*0436l*",
+        "ctx": "WAT · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "David Luiz",
+        "player_id": "*02m7w*",
+        "ctx": "ARS · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Fernandinho",
+        "player_id": "*03278*",
+        "ctx": "MCI · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Lewis Dunk",
+        "player_id": "*04e1c*",
+        "ctx": "BHA · 2020",
+        "manager": "Yum"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Raul Jimenez",
+        "player_id": "*04qrc*",
+        "ctx": "WOL · 2021",
+        "manager": "YUM"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Ezri Konsa",
+        "player_id": "*052ca*",
+        "ctx": "AVL · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Casemiro",
+        "player_id": "*0642l*",
+        "ctx": "MUN · 2022",
+        "manager": "thomas"
+      }
+    ]
+  },
+  {
+    "key": "A2",
+    "icon": "",
+    "label": "Secondary Assists",
+    "unit": "",
+    "featured": false,
+    "value": "3",
+    "holder": "Andrew Robertson",
+    "ctx": "LIV · 2023",
+    "top_all": [
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Andrew Robertson",
+        "player_id": "*03gu5*",
+        "ctx": "LIV · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Trent Alexander-Arnold",
+        "player_id": "*03srg*",
+        "ctx": "LIV · 2024",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Bukayo Saka",
+        "player_id": "*04y92*",
+        "ctx": "ARS · 2024",
+        "manager": "j.l."
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "James Ward-Prowse",
+        "player_id": "*02oq8*",
+        "ctx": "SOU · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Pascal Gross",
+        "player_id": "*04fk1*",
+        "ctx": "BHA · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Morgan Gibbs-White",
+        "player_id": "*04qr9*",
+        "ctx": "WOL/NOT · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bryan Mbeumo",
+        "player_id": "*05trb*",
+        "ctx": "BRF · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Mathias Jensen",
+        "player_id": "*05tr9*",
+        "ctx": "BRF · 2022",
+        "manager": "j.l."
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Andrew Robertson",
+        "player_id": "*03gu5*",
+        "ctx": "LIV · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Trent Alexander-Arnold",
+        "player_id": "*03srg*",
+        "ctx": "LIV · 2024",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Bukayo Saka",
+        "player_id": "*04y92*",
+        "ctx": "ARS · 2024",
+        "manager": "j.l."
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "James Ward-Prowse",
+        "player_id": "*02oq8*",
+        "ctx": "SOU · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Pascal Gross",
+        "player_id": "*04fk1*",
+        "ctx": "BHA · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Morgan Gibbs-White",
+        "player_id": "*04qr9*",
+        "ctx": "WOL/NOT · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bryan Mbeumo",
+        "player_id": "*05trb*",
+        "ctx": "BRF · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Mathias Jensen",
+        "player_id": "*05tr9*",
+        "ctx": "BRF · 2022",
+        "manager": "j.l."
+      }
+    ]
+  },
+  {
+    "key": "SOT",
+    "icon": "🎯",
+    "label": "Shots on Target",
+    "unit": "",
+    "featured": false,
+    "value": "64",
+    "holder": "Mohamed Salah",
+    "ctx": "LIV · 2018",
+    "top_all": [
+      {
+        "value": "64",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "63",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2022",
+        "manager": "DDT"
+      },
+      {
+        "value": "61",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "60",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2021",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "60",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "60",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · 2024",
+        "manager": "Noah B"
+      },
+      {
+        "value": "59",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "59",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "56",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2023",
+        "manager": "BBFC"
+      },
+      {
+        "value": "55",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2021",
+        "manager": "McGinn"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "64",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "63",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · 2022",
+        "manager": "DDT"
+      },
+      {
+        "value": "60",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "51",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "51",
+        "unit": "",
+        "holder": "Cole Palmer",
+        "player_id": "*05l8q*",
+        "ctx": "CHE · 2024",
+        "manager": "thomas"
+      },
+      {
+        "value": "50",
+        "unit": "",
+        "holder": "Paul Pogba",
+        "player_id": "*02lnq*",
+        "ctx": "MUN · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "50",
+        "unit": "",
+        "holder": "Marcus Rashford",
+        "player_id": "*03ybi*",
+        "ctx": "MUN · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "49",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2021",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "48",
+        "unit": "",
+        "holder": "Aleksandar Mitrovic",
+        "player_id": "*03scr*",
+        "ctx": "FUL · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "48",
+        "unit": "",
+        "holder": "Gabriel Jesus",
+        "player_id": "*045c8*",
+        "ctx": "MCI · 2019",
+        "manager": "Noah B"
+      }
+    ]
+  },
+  {
+    "key": "TkW",
+    "icon": "",
+    "label": "Tackles Won",
+    "unit": "",
+    "featured": false,
+    "value": "101",
+    "holder": "Wilfred Ndidi",
+    "ctx": "LEI · 2018",
+    "top_all": [
+      {
+        "value": "101",
+        "unit": "",
+        "holder": "Wilfred Ndidi",
+        "player_id": "*04aiz*",
+        "ctx": "LEI · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "89",
+        "unit": "",
+        "holder": "Aaron Wan-Bissaka",
+        "player_id": "*04adp*",
+        "ctx": "CRY · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "85",
+        "unit": "",
+        "holder": "Idrissa Gueye",
+        "player_id": "*03rxa*",
+        "ctx": "EVE · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "83",
+        "unit": "",
+        "holder": "Joao Palhinha",
+        "player_id": "*062dt*",
+        "ctx": "FUL · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "82",
+        "unit": "",
+        "holder": "Aaron Wan-Bissaka",
+        "player_id": "*04adp*",
+        "ctx": "MUN · 2019",
+        "manager": "Noah B"
+      },
+      {
+        "value": "80",
+        "unit": "",
+        "holder": "Daniel Munoz",
+        "player_id": "*06jgi*",
+        "ctx": "CRY · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "80",
+        "unit": "",
+        "holder": "Idrissa Gueye",
+        "player_id": "*03rxa*",
+        "ctx": "EVE · 2024",
+        "manager": "Brad"
+      },
+      {
+        "value": "76",
+        "unit": "",
+        "holder": "Vinicius de Souza Costa",
+        "player_id": "*06f7b*",
+        "ctx": "SHU · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "75",
+        "unit": "",
+        "holder": "Joao Palhinha",
+        "player_id": "*062dt*",
+        "ctx": "FUL · 2023",
+        "manager": "BBFC"
+      },
+      {
+        "value": "75",
+        "unit": "",
+        "holder": "Joao Gomes",
+        "player_id": "*068yd*",
+        "ctx": "WOL · 2023",
+        "manager": "Slab"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "101",
+        "unit": "",
+        "holder": "Wilfred Ndidi",
+        "player_id": "*04aiz*",
+        "ctx": "LEI · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "89",
+        "unit": "",
+        "holder": "Aaron Wan-Bissaka",
+        "player_id": "*04adp*",
+        "ctx": "CRY · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "85",
+        "unit": "",
+        "holder": "Idrissa Gueye",
+        "player_id": "*03rxa*",
+        "ctx": "EVE · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "83",
+        "unit": "",
+        "holder": "Joao Palhinha",
+        "player_id": "*062dt*",
+        "ctx": "FUL · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "80",
+        "unit": "",
+        "holder": "Daniel Munoz",
+        "player_id": "*06jgi*",
+        "ctx": "CRY · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "76",
+        "unit": "",
+        "holder": "Vinicius de Souza Costa",
+        "player_id": "*06f7b*",
+        "ctx": "SHU · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "75",
+        "unit": "",
+        "holder": "Joao Gomes",
+        "player_id": "*068yd*",
+        "ctx": "WOL · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "73",
+        "unit": "",
+        "holder": "Moises Caicedo",
+        "player_id": "*05rb8*",
+        "ctx": "CHE · 2024",
+        "manager": "CC FC"
+      },
+      {
+        "value": "71",
+        "unit": "",
+        "holder": "Serge Aurier",
+        "player_id": "*04kj7*",
+        "ctx": "TOT · 2019",
+        "manager": "OATW"
+      },
+      {
+        "value": "70",
+        "unit": "",
+        "holder": "Luka Milivojevic",
+        "player_id": "*04ami*",
+        "ctx": "CRY · 2018",
+        "manager": "Connor L"
+      }
+    ]
+  },
+  {
+    "key": "Int",
+    "icon": "",
+    "label": "Interceptions",
+    "unit": "",
+    "featured": false,
+    "value": "86",
+    "holder": "Aaron Wan-Bissaka",
+    "ctx": "CRY · 2018",
+    "top_all": [
+      {
+        "value": "86",
+        "unit": "",
+        "holder": "Aaron Wan-Bissaka",
+        "player_id": "*04adp*",
+        "ctx": "CRY · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "86",
+        "unit": "",
+        "holder": "Etienne Capoue",
+        "player_id": "*036nb*",
+        "ctx": "WAT · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "84",
+        "unit": "",
+        "holder": "Sol Bamba",
+        "player_id": "*04qf2*",
+        "ctx": "CAR · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "83",
+        "unit": "",
+        "holder": "Wilfred Ndidi",
+        "player_id": "*04aiz*",
+        "ctx": "LEI · 2019",
+        "manager": "Tim O"
+      },
+      {
+        "value": "83",
+        "unit": "",
+        "holder": "Jan Bednarek",
+        "player_id": "*04fk9*",
+        "ctx": "SOU · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "80",
+        "unit": "",
+        "holder": "Diego Rico",
+        "player_id": "*04t3u*",
+        "ctx": "BOU · 2019",
+        "manager": "NEAL"
+      },
+      {
+        "value": "80",
+        "unit": "",
+        "holder": "Antonee Robinson",
+        "player_id": "*03rzp*",
+        "ctx": "FUL · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "Wilfred Ndidi",
+        "player_id": "*04aiz*",
+        "ctx": "LEI · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "Bruno Ecuele Manga",
+        "player_id": "*04qf1*",
+        "ctx": "CAR · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "78",
+        "unit": "",
+        "holder": "Declan Rice",
+        "player_id": "*04agz*",
+        "ctx": "WHU · 2019",
+        "manager": "Willy B"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "86",
+        "unit": "",
+        "holder": "Aaron Wan-Bissaka",
+        "player_id": "*04adp*",
+        "ctx": "CRY · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "86",
+        "unit": "",
+        "holder": "Etienne Capoue",
+        "player_id": "*036nb*",
+        "ctx": "WAT · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "84",
+        "unit": "",
+        "holder": "Sol Bamba",
+        "player_id": "*04qf2*",
+        "ctx": "CAR · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "83",
+        "unit": "",
+        "holder": "Wilfred Ndidi",
+        "player_id": "*04aiz*",
+        "ctx": "LEI · 2019",
+        "manager": "Tim O"
+      },
+      {
+        "value": "83",
+        "unit": "",
+        "holder": "Jan Bednarek",
+        "player_id": "*04fk9*",
+        "ctx": "SOU · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "80",
+        "unit": "",
+        "holder": "Diego Rico",
+        "player_id": "*04t3u*",
+        "ctx": "BOU · 2019",
+        "manager": "NEAL"
+      },
+      {
+        "value": "80",
+        "unit": "",
+        "holder": "Antonee Robinson",
+        "player_id": "*03rzp*",
+        "ctx": "FUL · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "Bruno Ecuele Manga",
+        "player_id": "*04qf1*",
+        "ctx": "CAR · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "78",
+        "unit": "",
+        "holder": "Declan Rice",
+        "player_id": "*04agz*",
+        "ctx": "WHU · 2019",
+        "manager": "Willy B"
+      },
+      {
+        "value": "78",
+        "unit": "",
+        "holder": "Mohammed Salisu",
+        "player_id": "*05n5p*",
+        "ctx": "SOU · 2021",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "CLR",
+    "icon": "",
+    "label": "Clearances",
+    "unit": "",
+    "featured": false,
+    "value": "242",
+    "holder": "Murillo",
+    "ctx": "NOT · 2024",
+    "top_all": [
+      {
+        "value": "242",
+        "unit": "",
+        "holder": "Murillo",
+        "player_id": "*06fwz*",
+        "ctx": "NOT · 2024",
+        "manager": "STONKS"
+      },
+      {
+        "value": "241",
+        "unit": "",
+        "holder": "Shane Duffy",
+        "player_id": "*02lpr*",
+        "ctx": "BHA · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "237",
+        "unit": "",
+        "holder": "Ben Mee",
+        "player_id": "*03dx7*",
+        "ctx": "BUR · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "235",
+        "unit": "",
+        "holder": "James Tarkowski",
+        "player_id": "*0427d*",
+        "ctx": "BUR · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "232",
+        "unit": "",
+        "holder": "Nathan Ake",
+        "player_id": "*02y6o*",
+        "ctx": "BOU · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "220",
+        "unit": "",
+        "holder": "Nathan Collins",
+        "player_id": "*05u1m*",
+        "ctx": "BRF · 2024",
+        "manager": "Bobbo"
+      },
+      {
+        "value": "219",
+        "unit": "",
+        "holder": "Dara O'Shea",
+        "player_id": "*04gpx*",
+        "ctx": "BUR/IPS · 2024",
+        "manager": "TRB"
+      },
+      {
+        "value": "218",
+        "unit": "",
+        "holder": "Jamaal Lascelles",
+        "player_id": "*03pig*",
+        "ctx": "NEW · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "214",
+        "unit": "",
+        "holder": "Ethan Pinnock",
+        "player_id": "*05tr1*",
+        "ctx": "BRF · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "210",
+        "unit": "",
+        "holder": "Max Kilman",
+        "player_id": "*04yey*",
+        "ctx": "WHU · 2024",
+        "manager": "j.l."
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "242",
+        "unit": "",
+        "holder": "Murillo",
+        "player_id": "*06fwz*",
+        "ctx": "NOT · 2024",
+        "manager": "STONKS"
+      },
+      {
+        "value": "241",
+        "unit": "",
+        "holder": "Shane Duffy",
+        "player_id": "*02lpr*",
+        "ctx": "BHA · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "237",
+        "unit": "",
+        "holder": "Ben Mee",
+        "player_id": "*03dx7*",
+        "ctx": "BUR · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "235",
+        "unit": "",
+        "holder": "James Tarkowski",
+        "player_id": "*0427d*",
+        "ctx": "BUR · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "232",
+        "unit": "",
+        "holder": "Nathan Ake",
+        "player_id": "*02y6o*",
+        "ctx": "BOU · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "220",
+        "unit": "",
+        "holder": "Nathan Collins",
+        "player_id": "*05u1m*",
+        "ctx": "BRF · 2024",
+        "manager": "Bobbo"
+      },
+      {
+        "value": "219",
+        "unit": "",
+        "holder": "Dara O'Shea",
+        "player_id": "*04gpx*",
+        "ctx": "BUR/IPS · 2024",
+        "manager": "TRB"
+      },
+      {
+        "value": "218",
+        "unit": "",
+        "holder": "Jamaal Lascelles",
+        "player_id": "*03pig*",
+        "ctx": "NEW · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "214",
+        "unit": "",
+        "holder": "Ethan Pinnock",
+        "player_id": "*05tr1*",
+        "ctx": "BRF · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "210",
+        "unit": "",
+        "holder": "Max Kilman",
+        "player_id": "*04yey*",
+        "ctx": "WHU · 2024",
+        "manager": "j.l."
+      }
+    ]
+  },
+  {
+    "key": "AER",
+    "icon": "",
+    "label": "Aerials Won",
+    "unit": "",
+    "featured": false,
+    "value": "234",
+    "holder": "Tomas Soucek",
+    "ctx": "WHU · 2020",
+    "top_all": [
+      {
+        "value": "234",
+        "unit": "",
+        "holder": "Tomas Soucek",
+        "player_id": "*05gcp*",
+        "ctx": "WHU · 2020",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "232",
+        "unit": "",
+        "holder": "Aleksandar Mitrovic",
+        "player_id": "*03scr*",
+        "ctx": "FUL · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "223",
+        "unit": "",
+        "holder": "Sean Morrison",
+        "player_id": "*02t21*",
+        "ctx": "CAR · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "211",
+        "unit": "",
+        "holder": "Sebastien Haller",
+        "player_id": "*052ka*",
+        "ctx": "WHU · 2019",
+        "manager": "OATW"
+      },
+      {
+        "value": "207",
+        "unit": "",
+        "holder": "Steve Mounie",
+        "player_id": "*04fqh*",
+        "ctx": "HUD · 2018",
+        "manager": "John L"
+      },
+      {
+        "value": "205",
+        "unit": "",
+        "holder": "Christian Benteke",
+        "player_id": "*02w6v*",
+        "ctx": "CRY · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "205",
+        "unit": "",
+        "holder": "Chris Wood",
+        "player_id": "*02m5b*",
+        "ctx": "BUR/NEW · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "204",
+        "unit": "",
+        "holder": "Troy Deeney",
+        "player_id": "*03ra1*",
+        "ctx": "WAT · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "202",
+        "unit": "",
+        "holder": "Callum Paterson",
+        "player_id": "*04qf4*",
+        "ctx": "CAR · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "198",
+        "unit": "",
+        "holder": "James Tarkowski",
+        "player_id": "*0427d*",
+        "ctx": "BUR · 2019",
+        "manager": "Noah B"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "234",
+        "unit": "",
+        "holder": "Tomas Soucek",
+        "player_id": "*05gcp*",
+        "ctx": "WHU · 2020",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "232",
+        "unit": "",
+        "holder": "Aleksandar Mitrovic",
+        "player_id": "*03scr*",
+        "ctx": "FUL · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "223",
+        "unit": "",
+        "holder": "Sean Morrison",
+        "player_id": "*02t21*",
+        "ctx": "CAR · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "211",
+        "unit": "",
+        "holder": "Sebastien Haller",
+        "player_id": "*052ka*",
+        "ctx": "WHU · 2019",
+        "manager": "OATW"
+      },
+      {
+        "value": "207",
+        "unit": "",
+        "holder": "Steve Mounie",
+        "player_id": "*04fqh*",
+        "ctx": "HUD · 2018",
+        "manager": "John L"
+      },
+      {
+        "value": "205",
+        "unit": "",
+        "holder": "Christian Benteke",
+        "player_id": "*02w6v*",
+        "ctx": "CRY · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "205",
+        "unit": "",
+        "holder": "Chris Wood",
+        "player_id": "*02m5b*",
+        "ctx": "BUR/NEW · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "204",
+        "unit": "",
+        "holder": "Troy Deeney",
+        "player_id": "*03ra1*",
+        "ctx": "WAT · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "202",
+        "unit": "",
+        "holder": "Callum Paterson",
+        "player_id": "*04qf4*",
+        "ctx": "CAR · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "198",
+        "unit": "",
+        "holder": "James Tarkowski",
+        "player_id": "*0427d*",
+        "ctx": "BUR · 2019",
+        "manager": "Noah B"
+      }
+    ]
+  },
+  {
+    "key": "DIS",
+    "icon": "",
+    "label": "Dispossessed",
+    "unit": "",
+    "featured": false,
+    "value": "145",
+    "holder": "Wilfried Zaha",
+    "ctx": "CRY · 2019",
+    "top_all": [
+      {
+        "value": "145",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2019",
+        "manager": "Willy B"
+      },
+      {
+        "value": "136",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2018",
+        "manager": "BUK"
+      },
+      {
+        "value": "120",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "110",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "99",
+        "unit": "",
+        "holder": "Joshua King",
+        "player_id": "*02lnf*",
+        "ctx": "BOU · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "95",
+        "unit": "",
+        "holder": "Jordan Ayew",
+        "player_id": "*03sgc*",
+        "ctx": "CRY · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "94",
+        "unit": "",
+        "holder": "Aleksandar Mitrovic",
+        "player_id": "*03scr*",
+        "ctx": "FUL · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "93",
+        "unit": "",
+        "holder": "Mohammed Kudus",
+        "player_id": "*06fv8*",
+        "ctx": "WHU · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "93",
+        "unit": "",
+        "holder": "Mohammed Kudus",
+        "player_id": "*06fv8*",
+        "ctx": "WHU · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "91",
+        "unit": "",
+        "holder": "Raheem Sterling",
+        "player_id": "*02lkp*",
+        "ctx": "MCI · 2018",
+        "manager": "Blake R"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "145",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2019",
+        "manager": "Willy B"
+      },
+      {
+        "value": "120",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "99",
+        "unit": "",
+        "holder": "Joshua King",
+        "player_id": "*02lnf*",
+        "ctx": "BOU · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "95",
+        "unit": "",
+        "holder": "Jordan Ayew",
+        "player_id": "*03sgc*",
+        "ctx": "CRY · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "94",
+        "unit": "",
+        "holder": "Aleksandar Mitrovic",
+        "player_id": "*03scr*",
+        "ctx": "FUL · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "93",
+        "unit": "",
+        "holder": "Mohammed Kudus",
+        "player_id": "*06fv8*",
+        "ctx": "WHU · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "91",
+        "unit": "",
+        "holder": "Raheem Sterling",
+        "player_id": "*02lkp*",
+        "ctx": "MCI · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "91",
+        "unit": "",
+        "holder": "Paul Pogba",
+        "player_id": "*02lnq*",
+        "ctx": "MUN · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "90",
+        "unit": "",
+        "holder": "Allan Saint-Maximin",
+        "player_id": "*056iw*",
+        "ctx": "NEW · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "88",
+        "unit": "",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · 2018",
+        "manager": "Laeka B"
+      }
+    ]
+  },
+  {
+    "key": "FS",
+    "icon": "",
+    "label": "Fouls Suffered",
+    "unit": "",
+    "featured": false,
+    "value": "108",
+    "holder": "Bruno Guimaraes",
+    "ctx": "NEW · 2023",
+    "top_all": [
+      {
+        "value": "108",
+        "unit": "",
+        "holder": "Bruno Guimaraes",
+        "player_id": "*05ylj*",
+        "ctx": "NEW · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "108",
+        "unit": "",
+        "holder": "Bruno Guimaraes",
+        "player_id": "*05ylj*",
+        "ctx": "NEW · 2024",
+        "manager": "Mateta"
+      },
+      {
+        "value": "94",
+        "unit": "",
+        "holder": "Jordan Ayew",
+        "player_id": "*03sgc*",
+        "ctx": "CRY · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "90",
+        "unit": "",
+        "holder": "Jordan Ayew",
+        "player_id": "*03sgc*",
+        "ctx": "CRY · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "83",
+        "unit": "",
+        "holder": "Bruno Guimaraes",
+        "player_id": "*05ylj*",
+        "ctx": "NEW · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "James Maddison",
+        "player_id": "*0414o*",
+        "ctx": "LEI · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "78",
+        "unit": "",
+        "holder": "Jack Grealish",
+        "player_id": "*02lm7*",
+        "ctx": "MCI · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "77",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "75",
+        "unit": "",
+        "holder": "Mohammed Kudus",
+        "player_id": "*06fv8*",
+        "ctx": "WHU · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "74",
+        "unit": "",
+        "holder": "Ivan Toney",
+        "player_id": "*03v6w*",
+        "ctx": "BRF · 2022",
+        "manager": "FA"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "108",
+        "unit": "",
+        "holder": "Bruno Guimaraes",
+        "player_id": "*05ylj*",
+        "ctx": "NEW · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "94",
+        "unit": "",
+        "holder": "Jordan Ayew",
+        "player_id": "*03sgc*",
+        "ctx": "CRY · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "James Maddison",
+        "player_id": "*0414o*",
+        "ctx": "LEI · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "78",
+        "unit": "",
+        "holder": "Jack Grealish",
+        "player_id": "*02lm7*",
+        "ctx": "MCI · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "77",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "75",
+        "unit": "",
+        "holder": "Mohammed Kudus",
+        "player_id": "*06fv8*",
+        "ctx": "WHU · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "74",
+        "unit": "",
+        "holder": "Ivan Toney",
+        "player_id": "*03v6w*",
+        "ctx": "BRF · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "71",
+        "unit": "",
+        "holder": "Matheus Cunha",
+        "player_id": "*067yz*",
+        "ctx": "WOL · 2024",
+        "manager": "TRB"
+      },
+      {
+        "value": "71",
+        "unit": "",
+        "holder": "Anthony Gordon",
+        "player_id": "*04mdn*",
+        "ctx": "NEW · 2024",
+        "manager": "TRB"
+      },
+      {
+        "value": "69",
+        "unit": "",
+        "holder": "Michael Olise",
+        "player_id": "*05u94*",
+        "ctx": "CRY · 2022",
+        "manager": "Laeka B"
+      }
+    ]
+  },
+  {
+    "key": "PKD",
+    "icon": "",
+    "label": "Penalties Drawn",
+    "unit": "",
+    "featured": false,
+    "value": "6",
+    "holder": "Anthony Gordon",
+    "ctx": "NEW · 2023",
+    "top_all": [
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Anthony Gordon",
+        "player_id": "*04mdn*",
+        "ctx": "NEW · 2023",
+        "manager": "RyRob"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Evanilson",
+        "player_id": "*06p6j*",
+        "ctx": "BOU · 2024",
+        "manager": "Noah B"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Alexandre Lacazette",
+        "player_id": "*04fw3*",
+        "ctx": "ARS · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Ivan Toney",
+        "player_id": "*03v6w*",
+        "ctx": "BRF · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Romelu Lukaku",
+        "player_id": "*02m7x*",
+        "ctx": "CHE · 2021",
+        "manager": "RK U8"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Ivan Toney",
+        "player_id": "*03v6w*",
+        "ctx": "BRF · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Jarrod Bowen",
+        "player_id": "*046c5*",
+        "ctx": "WHU · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Raheem Sterling",
+        "player_id": "*02lkp*",
+        "ctx": "CHE · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Joao Pedro",
+        "player_id": "*05g2o*",
+        "ctx": "BHA · 2024",
+        "manager": "CC FC"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2021",
+        "manager": "I_am_Tim"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Anthony Gordon",
+        "player_id": "*04mdn*",
+        "ctx": "NEW · 2023",
+        "manager": "RyRob"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Evanilson",
+        "player_id": "*06p6j*",
+        "ctx": "BOU · 2024",
+        "manager": "Noah B"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Alexandre Lacazette",
+        "player_id": "*04fw3*",
+        "ctx": "ARS · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Ivan Toney",
+        "player_id": "*03v6w*",
+        "ctx": "BRF · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Romelu Lukaku",
+        "player_id": "*02m7x*",
+        "ctx": "CHE · 2021",
+        "manager": "RK U8"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Jarrod Bowen",
+        "player_id": "*046c5*",
+        "ctx": "WHU · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Raheem Sterling",
+        "player_id": "*02lkp*",
+        "ctx": "CHE · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Joao Pedro",
+        "player_id": "*05g2o*",
+        "ctx": "BHA · 2024",
+        "manager": "CC FC"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · 2021",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2021",
+        "manager": "Laeka B"
+      }
+    ]
+  },
+  {
+    "key": "PKM",
+    "icon": "",
+    "label": "Penalties Missed",
+    "unit": "",
+    "featured": false,
+    "value": "4",
+    "holder": "Aleksandar Mitrovic",
+    "ctx": "FUL · 2022",
+    "top_all": [
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Aleksandar Mitrovic",
+        "player_id": "*03scr*",
+        "ctx": "FUL · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Jorginho",
+        "player_id": "*04s8k*",
+        "ctx": "CHE · 2020",
+        "manager": "JLINGZ"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2021",
+        "manager": "ARA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Pierre-Emerick Aubameyang",
+        "player_id": "*04mqy*",
+        "ctx": "ARS · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "James Ward-Prowse",
+        "player_id": "*02oq8*",
+        "ctx": "SOU · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Brennan Johnson",
+        "player_id": "*061ya*",
+        "ctx": "NOT · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Patrick Bamford",
+        "player_id": "*03ek4*",
+        "ctx": "LEE · 2022",
+        "manager": "FA"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Aleksandar Mitrovic",
+        "player_id": "*03scr*",
+        "ctx": "FUL · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Jorginho",
+        "player_id": "*04s8k*",
+        "ctx": "CHE · 2020",
+        "manager": "JLINGZ"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2021",
+        "manager": "ARA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Pierre-Emerick Aubameyang",
+        "player_id": "*04mqy*",
+        "ctx": "ARS · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "James Ward-Prowse",
+        "player_id": "*02oq8*",
+        "ctx": "SOU · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Brennan Johnson",
+        "player_id": "*061ya*",
+        "ctx": "NOT · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Patrick Bamford",
+        "player_id": "*03ek4*",
+        "ctx": "LEE · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Marco Asensio",
+        "player_id": "*06rm3*",
+        "ctx": "AVL · 2024",
+        "manager": "Mateta"
+      }
+    ]
+  },
+  {
+    "key": "OG",
+    "icon": "",
+    "label": "Own Goals",
+    "unit": "",
+    "featured": false,
+    "value": "3",
+    "holder": "Conor Coady",
+    "ctx": "WOL · 2018",
+    "top_all": [
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Conor Coady",
+        "player_id": "*02ljr*",
+        "ctx": "WOL · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Marc Guehi",
+        "player_id": "*050jq*",
+        "ctx": "CRY · 2024",
+        "manager": "Mateta"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Ben Mee",
+        "player_id": "*03dx7*",
+        "ctx": "BUR · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Craig Cathcart",
+        "player_id": "*02rlu*",
+        "ctx": "WAT · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Craig Dawson",
+        "player_id": "*02m4d*",
+        "ctx": "WAT/WHU · 2020",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Michael Keane",
+        "player_id": "*0327r*",
+        "ctx": "EVE · 2021",
+        "manager": "RK U8"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Jamaal Lascelles",
+        "player_id": "*03pig*",
+        "ctx": "NEW · 2021",
+        "manager": "ARA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Joachim Andersen",
+        "player_id": "*05os8*",
+        "ctx": "CRY · 2022",
+        "manager": "KFFC"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wout Faes",
+        "player_id": "*0649k*",
+        "ctx": "LEI · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Chris Mepham",
+        "player_id": "*04ylt*",
+        "ctx": "BOU · 2022",
+        "manager": "FA"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Conor Coady",
+        "player_id": "*02ljr*",
+        "ctx": "WOL · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Marc Guehi",
+        "player_id": "*050jq*",
+        "ctx": "CRY · 2024",
+        "manager": "Mateta"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Ben Mee",
+        "player_id": "*03dx7*",
+        "ctx": "BUR · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Craig Cathcart",
+        "player_id": "*02rlu*",
+        "ctx": "WAT · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Craig Dawson",
+        "player_id": "*02m4d*",
+        "ctx": "WAT/WHU · 2020",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Michael Keane",
+        "player_id": "*0327r*",
+        "ctx": "EVE · 2021",
+        "manager": "RK U8"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Jamaal Lascelles",
+        "player_id": "*03pig*",
+        "ctx": "NEW · 2021",
+        "manager": "ARA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Joachim Andersen",
+        "player_id": "*05os8*",
+        "ctx": "CRY · 2022",
+        "manager": "KFFC"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wout Faes",
+        "player_id": "*0649k*",
+        "ctx": "LEI · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Chris Mepham",
+        "player_id": "*04ylt*",
+        "ctx": "BOU · 2022",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "CS",
+    "icon": "🛡",
+    "label": "Clean Sheets",
+    "unit": "",
+    "featured": false,
+    "value": "1,620",
+    "holder": "William Saliba",
+    "ctx": "ARS · 2023",
+    "top_all": [
+      {
+        "value": "1,620",
+        "unit": "",
+        "holder": "William Saliba",
+        "player_id": "*0558w*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,528",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "1,522",
+        "unit": "",
+        "holder": "Martin Odegaard",
+        "player_id": "*05r9b*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,469",
+        "unit": "",
+        "holder": "Declan Rice",
+        "player_id": "*04agz*",
+        "ctx": "ARS · 2023",
+        "manager": "W’s"
+      },
+      {
+        "value": "1,449",
+        "unit": "",
+        "holder": "Gabriel Magalhaes",
+        "player_id": "*05nzu*",
+        "ctx": "ARS · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "1,444",
+        "unit": "",
+        "holder": "Ben White",
+        "player_id": "*04e1e*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,296",
+        "unit": "",
+        "holder": "Kai Havertz",
+        "player_id": "*05o6h*",
+        "ctx": "ARS · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Kieran Trippier",
+        "player_id": "*03dx3*",
+        "ctx": "NEW · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Gabriel Magalhaes",
+        "player_id": "*05nzu*",
+        "ctx": "ARS · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Virgil van Dijk",
+        "player_id": "*03vlj*",
+        "ctx": "LIV · 2024",
+        "manager": "CC FC"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "1,620",
+        "unit": "",
+        "holder": "William Saliba",
+        "player_id": "*0558w*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,528",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "1,522",
+        "unit": "",
+        "holder": "Martin Odegaard",
+        "player_id": "*05r9b*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,469",
+        "unit": "",
+        "holder": "Declan Rice",
+        "player_id": "*04agz*",
+        "ctx": "ARS · 2023",
+        "manager": "W’s"
+      },
+      {
+        "value": "1,449",
+        "unit": "",
+        "holder": "Gabriel Magalhaes",
+        "player_id": "*05nzu*",
+        "ctx": "ARS · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "1,444",
+        "unit": "",
+        "holder": "Ben White",
+        "player_id": "*04e1e*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,296",
+        "unit": "",
+        "holder": "Kai Havertz",
+        "player_id": "*05o6h*",
+        "ctx": "ARS · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Kieran Trippier",
+        "player_id": "*03dx3*",
+        "ctx": "NEW · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Virgil van Dijk",
+        "player_id": "*03vlj*",
+        "ctx": "LIV · 2024",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,250",
+        "unit": "",
+        "holder": "Fabian Schar",
+        "player_id": "*04tig*",
+        "ctx": "NEW · 2022",
+        "manager": "RK U8"
+      }
+    ]
+  },
+  {
+    "key": "GP",
+    "icon": "",
+    "label": "Games Played",
+    "unit": "",
+    "featured": false,
+    "value": "38",
+    "holder": "Mohamed Salah",
+    "ctx": "LIV · 2018",
+    "top_all": [
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Matt Doherty",
+        "player_id": "*02m11*",
+        "ctx": "WOL · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Gylfi Sigurdsson",
+        "player_id": "*02m2u*",
+        "ctx": "EVE · 2018",
+        "manager": "Noah B"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Ryan Fraser",
+        "player_id": "*03r8r*",
+        "ctx": "BOU · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Virgil van Dijk",
+        "player_id": "*03vlj*",
+        "ctx": "LIV · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Luka Milivojevic",
+        "player_id": "*04ami*",
+        "ctx": "CRY · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Raul Jimenez",
+        "player_id": "*04qrc*",
+        "ctx": "WOL · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Andros Townsend",
+        "player_id": "*02lp7*",
+        "ctx": "CRY · 2018",
+        "manager": "Noah B"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Joao Moutinho",
+        "player_id": "*04t3s*",
+        "ctx": "WOL · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Cesar Azpilicueta",
+        "player_id": "*02vlk*",
+        "ctx": "CHE · 2018",
+        "manager": "Tim O"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Matt Doherty",
+        "player_id": "*02m11*",
+        "ctx": "WOL · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Gylfi Sigurdsson",
+        "player_id": "*02m2u*",
+        "ctx": "EVE · 2018",
+        "manager": "Noah B"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Ryan Fraser",
+        "player_id": "*03r8r*",
+        "ctx": "BOU · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Virgil van Dijk",
+        "player_id": "*03vlj*",
+        "ctx": "LIV · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Luka Milivojevic",
+        "player_id": "*04ami*",
+        "ctx": "CRY · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Raul Jimenez",
+        "player_id": "*04qrc*",
+        "ctx": "WOL · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Andros Townsend",
+        "player_id": "*02lp7*",
+        "ctx": "CRY · 2018",
+        "manager": "Noah B"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Joao Moutinho",
+        "player_id": "*04t3s*",
+        "ctx": "WOL · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Cesar Azpilicueta",
+        "player_id": "*02vlk*",
+        "ctx": "CHE · 2018",
+        "manager": "Tim O"
+      }
+    ]
+  },
+  {
+    "key": "Min",
+    "icon": "",
+    "label": "Minutes",
+    "unit": "",
+    "featured": false,
+    "value": "3,420",
+    "holder": "James Ward-Prowse",
+    "ctx": "SOU · 2020",
+    "top_all": [
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "James Ward-Prowse",
+        "player_id": "*02oq8*",
+        "ctx": "SOU · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Pierre-Emile Hojbjerg",
+        "player_id": "*043qz*",
+        "ctx": "TOT · 2020",
+        "manager": "Tim O"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "James Tarkowski",
+        "player_id": "*0427d*",
+        "ctx": "EVE · 2022",
+        "manager": "DDT"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "William Saliba",
+        "player_id": "*0558w*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Max Kilman",
+        "player_id": "*04yey*",
+        "ctx": "WOL · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Nathan Collins",
+        "player_id": "*05u1m*",
+        "ctx": "BRF · 2024",
+        "manager": "Bobbo"
+      },
+      {
+        "value": "3,418",
+        "unit": "",
+        "holder": "Tomas Soucek",
+        "player_id": "*05gcp*",
+        "ctx": "WHU · 2020",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "3,418",
+        "unit": "",
+        "holder": "James Tarkowski",
+        "player_id": "*0427d*",
+        "ctx": "EVE · 2023",
+        "manager": "BBFC"
+      },
+      {
+        "value": "3,414",
+        "unit": "",
+        "holder": "Joachim Andersen",
+        "player_id": "*05os8*",
+        "ctx": "CRY · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "3,412",
+        "unit": "",
+        "holder": "Bryan Mbeumo",
+        "player_id": "*05trb*",
+        "ctx": "BRF · 2024",
+        "manager": "RyRob"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "James Ward-Prowse",
+        "player_id": "*02oq8*",
+        "ctx": "SOU · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Pierre-Emile Hojbjerg",
+        "player_id": "*043qz*",
+        "ctx": "TOT · 2020",
+        "manager": "Tim O"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "James Tarkowski",
+        "player_id": "*0427d*",
+        "ctx": "EVE · 2022",
+        "manager": "DDT"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "William Saliba",
+        "player_id": "*0558w*",
+        "ctx": "ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Max Kilman",
+        "player_id": "*04yey*",
+        "ctx": "WOL · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Nathan Collins",
+        "player_id": "*05u1m*",
+        "ctx": "BRF · 2024",
+        "manager": "Bobbo"
+      },
+      {
+        "value": "3,418",
+        "unit": "",
+        "holder": "Tomas Soucek",
+        "player_id": "*05gcp*",
+        "ctx": "WHU · 2020",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "3,414",
+        "unit": "",
+        "holder": "Joachim Andersen",
+        "player_id": "*05os8*",
+        "ctx": "CRY · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "3,412",
+        "unit": "",
+        "holder": "Bryan Mbeumo",
+        "player_id": "*05trb*",
+        "ctx": "BRF · 2024",
+        "manager": "RyRob"
+      },
+      {
+        "value": "3,410",
+        "unit": "",
+        "holder": "Ashley Westwood",
+        "player_id": "*02w6w*",
+        "ctx": "BUR · 2020",
+        "manager": "I_am_Tim"
+      }
+    ]
+  }
+];
+const HIST_PLAYER_RECORDS_GK = [
+  {
+    "key": "FPts",
+    "icon": "⚡",
+    "label": "Fantasy Points",
+    "unit": "pts",
+    "featured": true,
+    "value": "411.5",
+    "holder": "David Raya",
+    "ctx": "BRF · 2022",
+    "top_all": [
+      {
+        "value": "411.5",
+        "unit": "pts",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "400.1",
+        "unit": "pts",
+        "holder": "Mark Flekken",
+        "player_id": "*06clu*",
+        "ctx": "BRF · 2024",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "377.4",
+        "unit": "pts",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2024",
+        "manager": "j.l."
+      },
+      {
+        "value": "359.6",
+        "unit": "pts",
+        "holder": "Matz Sels",
+        "player_id": "*04f6h*",
+        "ctx": "NOT · 2024",
+        "manager": "Brad"
+      },
+      {
+        "value": "354.0",
+        "unit": "pts",
+        "holder": "Andre Onana",
+        "player_id": "*06dps*",
+        "ctx": "MUN · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "351.0",
+        "unit": "pts",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "341.8",
+        "unit": "pts",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "ARS/AVL · 2020",
+        "manager": "CFPL"
+      },
+      {
+        "value": "338.1",
+        "unit": "pts",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "ARS · 2024",
+        "manager": "CC FC"
+      },
+      {
+        "value": "328.8",
+        "unit": "pts",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "325.9",
+        "unit": "pts",
+        "holder": "Robert Sanchez",
+        "player_id": "*04yme*",
+        "ctx": "CHE · 2024",
+        "manager": "FA"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "411.5",
+        "unit": "pts",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "400.1",
+        "unit": "pts",
+        "holder": "Mark Flekken",
+        "player_id": "*06clu*",
+        "ctx": "BRF · 2024",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "377.4",
+        "unit": "pts",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2024",
+        "manager": "j.l."
+      },
+      {
+        "value": "359.6",
+        "unit": "pts",
+        "holder": "Matz Sels",
+        "player_id": "*04f6h*",
+        "ctx": "NOT · 2024",
+        "manager": "Brad"
+      },
+      {
+        "value": "354.0",
+        "unit": "pts",
+        "holder": "Andre Onana",
+        "player_id": "*06dps*",
+        "ctx": "MUN · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "351.0",
+        "unit": "pts",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "341.8",
+        "unit": "pts",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "ARS/AVL · 2020",
+        "manager": "CFPL"
+      },
+      {
+        "value": "328.8",
+        "unit": "pts",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "325.9",
+        "unit": "pts",
+        "holder": "Robert Sanchez",
+        "player_id": "*04yme*",
+        "ctx": "CHE · 2024",
+        "manager": "FA"
+      },
+      {
+        "value": "322.5",
+        "unit": "pts",
+        "holder": "Jose Sa",
+        "player_id": "*05udg*",
+        "ctx": "WOL · 2021",
+        "manager": "RyRob"
+      }
+    ]
+  },
+  {
+    "key": "Sv",
+    "icon": "🧤",
+    "label": "Saves",
+    "unit": "",
+    "featured": true,
+    "value": "166",
+    "holder": "Sam Johnstone",
+    "ctx": "WBA · 2020",
+    "top_all": [
+      {
+        "value": "166",
+        "unit": "",
+        "holder": "Sam Johnstone",
+        "player_id": "*02xtd*",
+        "ctx": "WBA · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "154",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "153",
+        "unit": "",
+        "holder": "Mark Flekken",
+        "player_id": "*06clu*",
+        "ctx": "BRF · 2024",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "149",
+        "unit": "",
+        "holder": "Andre Onana",
+        "player_id": "*06dps*",
+        "ctx": "MUN · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "148",
+        "unit": "",
+        "holder": "Lukasz Fabianski",
+        "player_id": "*02lym*",
+        "ctx": "WHU · 2018",
+        "manager": "Noah B"
+      },
+      {
+        "value": "147",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "SHU · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "145",
+        "unit": "",
+        "holder": "Thomas Kaminski",
+        "player_id": "*06ewr*",
+        "ctx": "LUT · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "144",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "143",
+        "unit": "",
+        "holder": "Illan Meslier",
+        "player_id": "*05mzt*",
+        "ctx": "LEE · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "142",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "ARS/AVL · 2020",
+        "manager": "CFPL"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "166",
+        "unit": "",
+        "holder": "Sam Johnstone",
+        "player_id": "*02xtd*",
+        "ctx": "WBA · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "154",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "153",
+        "unit": "",
+        "holder": "Mark Flekken",
+        "player_id": "*06clu*",
+        "ctx": "BRF · 2024",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "149",
+        "unit": "",
+        "holder": "Andre Onana",
+        "player_id": "*06dps*",
+        "ctx": "MUN · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "148",
+        "unit": "",
+        "holder": "Lukasz Fabianski",
+        "player_id": "*02lym*",
+        "ctx": "WHU · 2018",
+        "manager": "Noah B"
+      },
+      {
+        "value": "147",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "SHU · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "145",
+        "unit": "",
+        "holder": "Thomas Kaminski",
+        "player_id": "*06ewr*",
+        "ctx": "LUT · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "144",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "143",
+        "unit": "",
+        "holder": "Illan Meslier",
+        "player_id": "*05mzt*",
+        "ctx": "LEE · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "142",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "ARS/AVL · 2020",
+        "manager": "CFPL"
+      }
+    ]
+  },
+  {
+    "key": "GA",
+    "icon": "🥅",
+    "label": "Goals Allowed",
+    "unit": "",
+    "featured": true,
+    "value": "85",
+    "holder": "Thomas Kaminski",
+    "ctx": "LUT · 2023",
+    "top_all": [
+      {
+        "value": "85",
+        "unit": "",
+        "holder": "Thomas Kaminski",
+        "player_id": "*06ewr*",
+        "ctx": "LUT · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "Illan Meslier",
+        "player_id": "*05mzt*",
+        "ctx": "LEE · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "Wes Foderingham",
+        "player_id": "*05n0a*",
+        "ctx": "SHU · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "74",
+        "unit": "",
+        "holder": "Sam Johnstone",
+        "player_id": "*02xtd*",
+        "ctx": "WBA · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "69",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "68",
+        "unit": "",
+        "holder": "Tim Krul",
+        "player_id": "*02lu3*",
+        "ctx": "NOR · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "67",
+        "unit": "",
+        "holder": "Illan Meslier",
+        "player_id": "*05mzt*",
+        "ctx": "LEE · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "66",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "ARS/SOU · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "64",
+        "unit": "",
+        "holder": "Ben Foster",
+        "player_id": "*02m4i*",
+        "ctx": "WAT · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "64",
+        "unit": "",
+        "holder": "Vicente Guaita",
+        "player_id": "*04rhc*",
+        "ctx": "CRY · 2020",
+        "manager": "Yum"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "85",
+        "unit": "",
+        "holder": "Thomas Kaminski",
+        "player_id": "*06ewr*",
+        "ctx": "LUT · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "Illan Meslier",
+        "player_id": "*05mzt*",
+        "ctx": "LEE · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "79",
+        "unit": "",
+        "holder": "Wes Foderingham",
+        "player_id": "*05n0a*",
+        "ctx": "SHU · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "74",
+        "unit": "",
+        "holder": "Sam Johnstone",
+        "player_id": "*02xtd*",
+        "ctx": "WBA · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "69",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "68",
+        "unit": "",
+        "holder": "Tim Krul",
+        "player_id": "*02lu3*",
+        "ctx": "NOR · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "66",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "ARS/SOU · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "64",
+        "unit": "",
+        "holder": "Ben Foster",
+        "player_id": "*02m4i*",
+        "ctx": "WAT · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "64",
+        "unit": "",
+        "holder": "Vicente Guaita",
+        "player_id": "*04rhc*",
+        "ctx": "CRY · 2020",
+        "manager": "Yum"
+      },
+      {
+        "value": "63",
+        "unit": "",
+        "holder": "Mark Flekken",
+        "player_id": "*06clu*",
+        "ctx": "BRF · 2023",
+        "manager": "BBFC"
+      }
+    ]
+  },
+  {
+    "key": "CS",
+    "icon": "🛡",
+    "label": "Clean Sheets",
+    "unit": "",
+    "featured": true,
+    "value": "1,530",
+    "holder": "David de Gea",
+    "ctx": "MUN · 2022",
+    "top_all": [
+      {
+        "value": "1,530",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "1,440",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF/ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "NEW · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "ARS · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "1,170",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "1,170",
+        "unit": "",
+        "holder": "Matz Sels",
+        "player_id": "*04f6h*",
+        "ctx": "NOT · 2024",
+        "manager": "Brad"
+      },
+      {
+        "value": "1,170",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "ARS · 2024",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,080",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "1,080",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2024",
+        "manager": "j.l."
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "1,530",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "1,440",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF/ARS · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "NEW · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "1,260",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "ARS · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "1,170",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "1,170",
+        "unit": "",
+        "holder": "Matz Sels",
+        "player_id": "*04f6h*",
+        "ctx": "NOT · 2024",
+        "manager": "Brad"
+      },
+      {
+        "value": "1,013",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "990",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "AVL · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "990",
+        "unit": "",
+        "holder": "Jose Sa",
+        "player_id": "*05udg*",
+        "ctx": "WOL · 2022",
+        "manager": "Noah B"
+      }
+    ]
+  },
+  {
+    "key": "PKS",
+    "icon": "",
+    "label": "Penalty Saves",
+    "unit": "",
+    "featured": false,
+    "value": "3",
+    "holder": "Neil Etheridge",
+    "ctx": "CAR · 2018",
+    "top_all": [
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Lukasz Fabianski",
+        "player_id": "*02lym*",
+        "ctx": "WHU · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Hugo Lloris",
+        "player_id": "*02w72*",
+        "ctx": "TOT · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Rui Patricio",
+        "player_id": "*04rzm*",
+        "ctx": "WOL · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Tim Krul",
+        "player_id": "*02lu3*",
+        "ctx": "NOR · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · 2021",
+        "manager": "YUM"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "NEW · 2022",
+        "manager": "Noah B"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Lukasz Fabianski",
+        "player_id": "*02lym*",
+        "ctx": "WHU · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Hugo Lloris",
+        "player_id": "*02w72*",
+        "ctx": "TOT · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Rui Patricio",
+        "player_id": "*04rzm*",
+        "ctx": "WOL · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Tim Krul",
+        "player_id": "*02lu3*",
+        "ctx": "NOR · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "NEW · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Jose Sa",
+        "player_id": "*05udg*",
+        "ctx": "WOL · 2022",
+        "manager": "Noah B"
+      }
+    ]
+  },
+  {
+    "key": "YC",
+    "icon": "🟨",
+    "label": "Yellow Cards",
+    "unit": "",
+    "featured": false,
+    "value": "7",
+    "holder": "Emiliano Martinez",
+    "ctx": "AVL · 2022",
+    "top_all": [
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "AVL · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2024",
+        "manager": "j.l."
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Andre Onana",
+        "player_id": "*06dps*",
+        "ctx": "MUN · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Neto",
+        "player_id": "*063e3*",
+        "ctx": "BOU · 2023",
+        "manager": "MID"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Robert Sanchez",
+        "player_id": "*04yme*",
+        "ctx": "CHE · 2024",
+        "manager": "FA"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "AVL · 2024",
+        "manager": "thomas"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · 2024",
+        "manager": "FA"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "AVL · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2024",
+        "manager": "j.l."
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Andre Onana",
+        "player_id": "*06dps*",
+        "ctx": "MUN · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Neto",
+        "player_id": "*063e3*",
+        "ctx": "BOU · 2023",
+        "manager": "MID"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Robert Sanchez",
+        "player_id": "*04yme*",
+        "ctx": "CHE · 2024",
+        "manager": "FA"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · 2024",
+        "manager": "FA"
+      },
+      {
+        "value": "5",
+        "unit": "",
+        "holder": "Bart Verbruggen",
+        "player_id": "*06cmu*",
+        "ctx": "BHA · 2024",
+        "manager": "Bobbo"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Tim Krul",
+        "player_id": "*02lu3*",
+        "ctx": "NOR · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Matz Sels",
+        "player_id": "*04f6h*",
+        "ctx": "NOT · 2024",
+        "manager": "Brad"
+      }
+    ]
+  },
+  {
+    "key": "RC",
+    "icon": "🟥",
+    "label": "Red Cards",
+    "unit": "",
+    "featured": false,
+    "value": "1",
+    "holder": "Bernd Leno",
+    "ctx": "ARS · 2020",
+    "top_all": [
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "ARS · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Robert Sanchez",
+        "player_id": "*04yme*",
+        "ctx": "BHA · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "NEW · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "AVL · 2024",
+        "manager": "thomas"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "ARS · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Robert Sanchez",
+        "player_id": "*04yme*",
+        "ctx": "BHA · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "NEW · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "AVL · 2024",
+        "manager": "thomas"
+      }
+    ]
+  },
+  {
+    "key": "GP",
+    "icon": "",
+    "label": "Games Played",
+    "unit": "",
+    "featured": false,
+    "value": "38",
+    "holder": "Alisson",
+    "ctx": "LIV · 2018",
+    "top_all": [
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Lukasz Fabianski",
+        "player_id": "*02lym*",
+        "ctx": "WHU · 2018",
+        "manager": "Noah B"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Ben Foster",
+        "player_id": "*02m4i*",
+        "ctx": "WAT · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Martin Dubravka",
+        "player_id": "*04mr4*",
+        "ctx": "NEW · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "BUR · 2019",
+        "manager": "Willy B"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Lukasz Fabianski",
+        "player_id": "*02lym*",
+        "ctx": "WHU · 2018",
+        "manager": "Noah B"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Ben Foster",
+        "player_id": "*02m4i*",
+        "ctx": "WAT · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Martin Dubravka",
+        "player_id": "*04mr4*",
+        "ctx": "NEW · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "38",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "BUR · 2019",
+        "manager": "Willy B"
+      }
+    ]
+  },
+  {
+    "key": "Min",
+    "icon": "",
+    "label": "Minutes",
+    "unit": "",
+    "featured": false,
+    "value": "3,420",
+    "holder": "Emiliano Martinez",
+    "ctx": "ARS/AVL · 2020",
+    "top_all": [
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "ARS/AVL · 2020",
+        "manager": "CFPL"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Hugo Lloris",
+        "player_id": "*02w72*",
+        "ctx": "TOT · 2020",
+        "manager": "No Slips"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "SHU · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Hugo Lloris",
+        "player_id": "*02w72*",
+        "ctx": "TOT · 2021",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "ARS · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Andre Onana",
+        "player_id": "*06dps*",
+        "ctx": "MUN · 2023",
+        "manager": "RDN"
+      }
+    ],
+    "top_per_player": [
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "ARS/AVL · 2020",
+        "manager": "CFPL"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Hugo Lloris",
+        "player_id": "*02w72*",
+        "ctx": "TOT · 2020",
+        "manager": "No Slips"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "SHU · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Andre Onana",
+        "player_id": "*06dps*",
+        "ctx": "MUN · 2023",
+        "manager": "RDN"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · 2023",
+        "manager": "RyRob"
+      },
+      {
+        "value": "3,420",
+        "unit": "",
+        "holder": "Guglielmo Vicario",
+        "player_id": "*06cmb*",
+        "ctx": "TOT · 2023",
+        "manager": "FA"
+      }
+    ]
+  }
+];
+const HIST_PLAYER_RECORDS_OF_WEEKLY = [
+  {
+    "key": "FPts",
+    "icon": "⚡",
+    "label": "Fantasy Points",
+    "unit": "pts",
+    "featured": true,
+    "value": "70.0",
+    "holder": "Eden Hazard",
+    "ctx": "CHE · Wk33 · 2018",
+    "top_all": [
+      {
+        "value": "70.0",
+        "unit": "pts",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · Wk33 · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "65.0",
+        "unit": "pts",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · Wk36 · 2021",
+        "manager": "McGinn"
+      },
+      {
+        "value": "64.8",
+        "unit": "pts",
+        "holder": "Jean-Philippe Mateta",
+        "player_id": "*05r8o*",
+        "ctx": "CRY · Wk34 · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "63.5",
+        "unit": "pts",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · Wk26 · 2021",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "63.0",
+        "unit": "pts",
+        "holder": "Gabriel Jesus",
+        "player_id": "*045c8*",
+        "ctx": "MCI · Wk34 · 2021",
+        "manager": "McGinn"
+      },
+      {
+        "value": "61.2",
+        "unit": "pts",
+        "holder": "Sadio Mane",
+        "player_id": "*03jv0*",
+        "ctx": "LIV · Wk26 · 2021",
+        "manager": "RyRob"
+      },
+      {
+        "value": "61.0",
+        "unit": "pts",
+        "holder": "Michail Antonio",
+        "player_id": "*03vll*",
+        "ctx": "WHU · Wk35 · 2019",
+        "manager": "OATW"
+      },
+      {
+        "value": "59.3",
+        "unit": "pts",
+        "holder": "Ben White",
+        "player_id": "*04e1e*",
+        "ctx": "ARS · Wk34 · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "59.2",
+        "unit": "pts",
+        "holder": "Cole Palmer",
+        "player_id": "*05l8q*",
+        "ctx": "MCI/CHE · Wk31 · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "58.8",
+        "unit": "pts",
+        "holder": "Ollie Watkins",
+        "player_id": "*05ocl*",
+        "ctx": "AVL · Wk7 · 2023",
+        "manager": "Laeka B"
+      }
+    ]
+  },
+  {
+    "key": "G",
+    "icon": "⚽",
+    "label": "Goals",
+    "unit": "",
+    "featured": true,
+    "value": "4",
+    "holder": "Michail Antonio",
+    "ctx": "WHU · Wk35 · 2019",
+    "top_all": [
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Michail Antonio",
+        "player_id": "*03vll*",
+        "ctx": "WHU · Wk35 · 2019",
+        "manager": "OATW"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · Wk2 · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Gabriel Jesus",
+        "player_id": "*045c8*",
+        "ctx": "MCI · Wk34 · 2021",
+        "manager": "McGinn"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · Wk36 · 2021",
+        "manager": "McGinn"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Cole Palmer",
+        "player_id": "*05l8q*",
+        "ctx": "MCI/CHE · Wk33 · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Jean-Philippe Mateta",
+        "player_id": "*05r8o*",
+        "ctx": "CRY · Wk34 · 2023",
+        "manager": "Noah B"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · Wk36 · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Cole Palmer",
+        "player_id": "*05l8q*",
+        "ctx": "CHE · Wk6 · 2024",
+        "manager": "thomas"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Sergio Aguero",
+        "player_id": "*02lun*",
+        "ctx": "MCI · Wk2 · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Eden Hazard",
+        "player_id": "*02ooy*",
+        "ctx": "CHE · Wk5 · 2018",
+        "manager": "Laeka B"
+      }
+    ]
+  },
+  {
+    "key": "A",
+    "icon": "🅰",
+    "label": "Assists",
+    "unit": "",
+    "featured": true,
+    "value": "4",
+    "holder": "Harry Kane",
+    "ctx": "TOT · Wk2 · 2020",
+    "top_all": [
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · Wk2 · 2020",
+        "manager": "No Slips"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Paul Pogba",
+        "player_id": "*02lnq*",
+        "ctx": "MUN · Wk1 · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "4",
+        "unit": "",
+        "holder": "Jeremy Doku",
+        "player_id": "*06fup*",
+        "ctx": "MCI · Wk11 · 2023",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Paul Pogba",
+        "player_id": "*02lnq*",
+        "ctx": "MUN · Wk18 · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Kyle Walker-Peters",
+        "player_id": "*03zsq*",
+        "ctx": "TOT · Wk19 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Trent Alexander-Arnold",
+        "player_id": "*03srg*",
+        "ctx": "LIV · Wk28 · 2018",
+        "manager": "John L"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Michail Antonio",
+        "player_id": "*03vll*",
+        "ctx": "WHU · Wk38 · 2018",
+        "manager": "John L"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Wilfried Zaha",
+        "player_id": "*0327v*",
+        "ctx": "CRY · Wk38 · 2018",
+        "manager": "BUK"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Riyad Mahrez",
+        "player_id": "*03dyp*",
+        "ctx": "MCI · Wk1 · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Lys Mousset",
+        "player_id": "*0436h*",
+        "ctx": "SHU · Wk11 · 2019",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "KP",
+    "icon": "🔑",
+    "label": "Key Passes",
+    "unit": "",
+    "featured": true,
+    "value": "13",
+    "holder": "Alfie Doughty",
+    "ctx": "LUT · Wk7 · 2023",
+    "top_all": [
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Alfie Doughty",
+        "player_id": "*06c6a*",
+        "ctx": "LUT · Wk7 · 2023",
+        "manager": "thomas"
+      },
+      {
+        "value": "11",
+        "unit": "",
+        "holder": "Mason Mount",
+        "player_id": "*052cd*",
+        "ctx": "CHE · Wk19 · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "11",
+        "unit": "",
+        "holder": "Sadio Mane",
+        "player_id": "*03jv0*",
+        "ctx": "LIV · Wk19 · 2020",
+        "manager": "Yum"
+      },
+      {
+        "value": "11",
+        "unit": "",
+        "holder": "Martin Odegaard",
+        "player_id": "*05r9b*",
+        "ctx": "ARS · Wk34 · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Pascal Gross",
+        "player_id": "*04fk1*",
+        "ctx": "BHA · Wk25 · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · Wk38 · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Raphinha",
+        "player_id": "*05os7*",
+        "ctx": "LEE · Wk25 · 2020",
+        "manager": "RyRob"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Trent Alexander-Arnold",
+        "player_id": "*03srg*",
+        "ctx": "LIV · Wk35 · 2020",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · Wk6 · 2021",
+        "manager": "ARA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Ryan Fraser",
+        "player_id": "*03r8r*",
+        "ctx": "BOU · Wk37 · 2018",
+        "manager": "Laeka B"
+      }
+    ]
+  },
+  {
+    "key": "YC",
+    "icon": "🟨",
+    "label": "Yellow Cards",
+    "unit": "",
+    "featured": false,
+    "value": "2",
+    "holder": "Etienne Capoue",
+    "ctx": "WAT · Wk36 · 2018",
+    "top_all": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Etienne Capoue",
+        "player_id": "*036nb*",
+        "ctx": "WAT · Wk36 · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Oriol Romeu",
+        "player_id": "*02m87*",
+        "ctx": "SOU · Wk36 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Florin Andone",
+        "player_id": "*04qez*",
+        "ctx": "BHA · Wk36 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Ashley Barnes",
+        "player_id": "*03dxr*",
+        "ctx": "BUR · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wesley Fofana",
+        "player_id": "*05opl*",
+        "ctx": "LEI · Wk19 · 2020",
+        "manager": "JADON"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Hakim Ziyech",
+        "player_id": "*05mxb*",
+        "ctx": "CHE · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Fabinho",
+        "player_id": "*04rhd*",
+        "ctx": "LIV · Wk19 · 2020",
+        "manager": "Tim O"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "John McGinn",
+        "player_id": "*051k0*",
+        "ctx": "AVL · Wk35 · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Ivan Toney",
+        "player_id": "*03v6w*",
+        "ctx": "BRF · Wk21 · 2021",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Marcos Alonso",
+        "player_id": "*02m66*",
+        "ctx": "CHE · Wk22 · 2021",
+        "manager": "RyRob"
+      }
+    ]
+  },
+  {
+    "key": "RC",
+    "icon": "🟥",
+    "label": "Red Cards",
+    "unit": "",
+    "featured": false,
+    "value": "1",
+    "holder": "Phil Jagielka",
+    "ctx": "EVE · Wk1 · 2018",
+    "top_all": [
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Phil Jagielka",
+        "player_id": "*02lpz*",
+        "ctx": "EVE · Wk1 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Aaron Wan-Bissaka",
+        "player_id": "*04adp*",
+        "ctx": "CRY · Wk2 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Isaac Hayden",
+        "player_id": "*035mq*",
+        "ctx": "NEW · Wk2 · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Jamie Vardy",
+        "player_id": "*03dyk*",
+        "ctx": "LEI · Wk2 · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Pierre-Emile Hojbjerg",
+        "player_id": "*043qz*",
+        "ctx": "SOU · Wk3 · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Adam Smith",
+        "player_id": "*02lp5*",
+        "ctx": "BOU · Wk3 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Richarlison",
+        "player_id": "*04io4*",
+        "ctx": "EVE · Wk3 · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Jonathan Hogg",
+        "player_id": "*02lmb*",
+        "ctx": "HUD · Wk3 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Marcus Rashford",
+        "player_id": "*03ybi*",
+        "ctx": "MUN · Wk4 · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Nemanja Matic",
+        "player_id": "*03aoj*",
+        "ctx": "MUN · Wk5 · 2018",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "A2",
+    "icon": "",
+    "label": "Secondary Assists",
+    "unit": "",
+    "featured": false,
+    "value": "2",
+    "holder": "Trent Alexander-Arnold",
+    "ctx": "LIV · Wk9 · 2024",
+    "top_all": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Trent Alexander-Arnold",
+        "player_id": "*03srg*",
+        "ctx": "LIV · Wk9 · 2024",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bukayo Saka",
+        "player_id": "*04y92*",
+        "ctx": "ARS · Wk33 · 2024",
+        "manager": "j.l."
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Pedro Neto",
+        "player_id": "*056iy*",
+        "ctx": "WOL · Wk1 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Leandro Trossard",
+        "player_id": "*0520r*",
+        "ctx": "BHA/ARS · Wk1 · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Bukayo Saka",
+        "player_id": "*04y92*",
+        "ctx": "ARS · Wk1 · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Brenden Aaronson",
+        "player_id": "*061vp*",
+        "ctx": "LEE · Wk2 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Ben White",
+        "player_id": "*04e1e*",
+        "ctx": "ARS · Wk3 · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Mohammed Salisu",
+        "player_id": "*05n5p*",
+        "ctx": "SOU · Wk3 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Daniel James",
+        "player_id": "*03yr0*",
+        "ctx": "LEE/FUL · Wk3 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · Wk3 · 2022",
+        "manager": "j.l."
+      }
+    ]
+  },
+  {
+    "key": "SOT",
+    "icon": "🎯",
+    "label": "Shots on Target",
+    "unit": "",
+    "featured": false,
+    "value": "7",
+    "holder": "Mohamed Salah",
+    "ctx": "LIV · Wk26 · 2021",
+    "top_all": [
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · Wk26 · 2021",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Erling Haaland",
+        "player_id": "*061vq*",
+        "ctx": "MCI · Wk36 · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Harry Kane",
+        "player_id": "*02lol*",
+        "ctx": "TOT · Wk11 · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Teemu Pukki",
+        "player_id": "*051ks*",
+        "ctx": "NOR · Wk2 · 2019",
+        "manager": "Noah B"
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Son Heung-Min",
+        "player_id": "*03v9d*",
+        "ctx": "TOT · Wk26 · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Michail Antonio",
+        "player_id": "*03vll*",
+        "ctx": "WHU · Wk35 · 2019",
+        "manager": "OATW"
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Anwar El Ghazi",
+        "player_id": "*0522t*",
+        "ctx": "AVL · Wk14 · 2020",
+        "manager": "Yum"
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Christian Benteke",
+        "player_id": "*02w6v*",
+        "ctx": "CRY · Wk35 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Ivan Toney",
+        "player_id": "*03v6w*",
+        "ctx": "BRF · Wk16 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "6",
+        "unit": "",
+        "holder": "Solly March",
+        "player_id": "*04e1k*",
+        "ctx": "BHA · Wk29 · 2022",
+        "manager": "DDT"
+      }
+    ]
+  },
+  {
+    "key": "TkW",
+    "icon": "",
+    "label": "Tackles Won",
+    "unit": "",
+    "featured": false,
+    "value": "11",
+    "holder": "Lucas Paqueta",
+    "ctx": "WHU · Wk29 · 2022",
+    "top_all": [
+      {
+        "value": "11",
+        "unit": "",
+        "holder": "Lucas Paqueta",
+        "player_id": "*0647t*",
+        "ctx": "WHU · Wk29 · 2022",
+        "manager": "RyRob"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Cesar Azpilicueta",
+        "player_id": "*02vlk*",
+        "ctx": "CHE · Wk16 · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Pierre-Emile Hojbjerg",
+        "player_id": "*043qz*",
+        "ctx": "SOU · Wk36 · 2018",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Dan Burn",
+        "player_id": "*02lsa*",
+        "ctx": "NEW · Wk29 · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Daniel Munoz",
+        "player_id": "*06jgi*",
+        "ctx": "CRY · Wk34 · 2023",
+        "manager": "thomas"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Idrissa Gueye",
+        "player_id": "*03rxa*",
+        "ctx": "EVE · Wk26 · 2024",
+        "manager": "Brad"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Ben Davies",
+        "player_id": "*02oo1*",
+        "ctx": "TOT · Wk16 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Wilfred Ndidi",
+        "player_id": "*04aiz*",
+        "ctx": "LEI · Wk32 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Oriol Romeu",
+        "player_id": "*02m87*",
+        "ctx": "SOU · Wk6 · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Lucas Moura",
+        "player_id": "*04mqz*",
+        "ctx": "TOT · Wk35 · 2019",
+        "manager": "Tim O"
+      }
+    ]
+  },
+  {
+    "key": "Int",
+    "icon": "",
+    "label": "Interceptions",
+    "unit": "",
+    "featured": false,
+    "value": "13",
+    "holder": "Antonee Robinson",
+    "ctx": "FUL · Wk14 · 2023",
+    "top_all": [
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Antonee Robinson",
+        "player_id": "*03rzp*",
+        "ctx": "FUL · Wk14 · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Ander Herrera",
+        "player_id": "*03ekd*",
+        "ctx": "MUN · Wk16 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Hassane Kamara",
+        "player_id": "*05ycu*",
+        "ctx": "WAT · Wk28 · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Jan Bednarek",
+        "player_id": "*04fk9*",
+        "ctx": "SOU/AVL · Wk22 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Zanka",
+        "player_id": "*04fyg*",
+        "ctx": "HUD · Wk11 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Dale Stephens",
+        "player_id": "*04e1h*",
+        "ctx": "BHA · Wk36 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Philip Billing",
+        "player_id": "*04f67*",
+        "ctx": "BOU · Wk17 · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Tyrick Mitchell",
+        "player_id": "*05akv*",
+        "ctx": "CRY · Wk20 · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Zanka",
+        "player_id": "*04fyg*",
+        "ctx": "HUD · Wk10 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Maya Yoshida",
+        "player_id": "*02w5x*",
+        "ctx": "SOU · Wk21 · 2018",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "CLR",
+    "icon": "",
+    "label": "Clearances",
+    "unit": "",
+    "featured": false,
+    "value": "25",
+    "holder": "Jarrad Branthwaite",
+    "ctx": "EVE · Wk24 · 2024",
+    "top_all": [
+      {
+        "value": "25",
+        "unit": "",
+        "holder": "Jarrad Branthwaite",
+        "player_id": "*05l27*",
+        "ctx": "EVE · Wk24 · 2024",
+        "manager": "FA"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Joachim Andersen",
+        "player_id": "*05os8*",
+        "ctx": "FUL · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "20",
+        "unit": "",
+        "holder": "Ben Mee",
+        "player_id": "*03dx7*",
+        "ctx": "BUR · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "19",
+        "unit": "",
+        "holder": "Shane Duffy",
+        "player_id": "*02lpr*",
+        "ctx": "BHA · Wk9 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "19",
+        "unit": "",
+        "holder": "Kurt Zouma",
+        "player_id": "*03arh*",
+        "ctx": "EVE · Wk26 · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "19",
+        "unit": "",
+        "holder": "Lewis Dunk",
+        "player_id": "*04e1c*",
+        "ctx": "BHA · Wk36 · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "19",
+        "unit": "",
+        "holder": "Ethan Pinnock",
+        "player_id": "*05tr1*",
+        "ctx": "BRF · Wk29 · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "19",
+        "unit": "",
+        "holder": "James Tarkowski",
+        "player_id": "*0427d*",
+        "ctx": "EVE · Wk24 · 2024",
+        "manager": "FA"
+      },
+      {
+        "value": "18",
+        "unit": "",
+        "holder": "Sean Morrison",
+        "player_id": "*02t21*",
+        "ctx": "CAR · Wk35 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "18",
+        "unit": "",
+        "holder": "Tyrone Mings",
+        "player_id": "*03rec*",
+        "ctx": "AVL · Wk19 · 2020",
+        "manager": "JADON"
+      }
+    ]
+  },
+  {
+    "key": "AER",
+    "icon": "",
+    "label": "Aerials Won",
+    "unit": "",
+    "featured": false,
+    "value": "25",
+    "holder": "Christian Benteke",
+    "ctx": "CRY · Wk35 · 2020",
+    "top_all": [
+      {
+        "value": "25",
+        "unit": "",
+        "holder": "Christian Benteke",
+        "player_id": "*02w6v*",
+        "ctx": "CRY · Wk35 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "24",
+        "unit": "",
+        "holder": "Andy Carroll",
+        "player_id": "*02ljq*",
+        "ctx": "NEW · Wk20 · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "24",
+        "unit": "",
+        "holder": "Dominic Calvert-Lewin",
+        "player_id": "*049tq*",
+        "ctx": "EVE · Wk37 · 2021",
+        "manager": "RyRob"
+      },
+      {
+        "value": "23",
+        "unit": "",
+        "holder": "Callum Paterson",
+        "player_id": "*04qf4*",
+        "ctx": "CAR · Wk7 · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "22",
+        "unit": "",
+        "holder": "Christian Benteke",
+        "player_id": "*02w6v*",
+        "ctx": "CRY · Wk26 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "21",
+        "unit": "",
+        "holder": "Lewis Dunk",
+        "player_id": "*04e1c*",
+        "ctx": "BHA · Wk35 · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "20",
+        "unit": "",
+        "holder": "Troy Deeney",
+        "player_id": "*03ra1*",
+        "ctx": "WAT · Wk23 · 2019",
+        "manager": "RyRob"
+      },
+      {
+        "value": "19",
+        "unit": "",
+        "holder": "Sean Morrison",
+        "player_id": "*02t21*",
+        "ctx": "CAR · Wk7 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "19",
+        "unit": "",
+        "holder": "Sebastien Haller",
+        "player_id": "*052ka*",
+        "ctx": "WHU · Wk22 · 2019",
+        "manager": "OATW"
+      },
+      {
+        "value": "19",
+        "unit": "",
+        "holder": "Chris Wood",
+        "player_id": "*02m5b*",
+        "ctx": "BUR/NEW · Wk29 · 2021",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "DIS",
+    "icon": "",
+    "label": "Dispossessed",
+    "unit": "",
+    "featured": false,
+    "value": "13",
+    "holder": "Jordan Ayew",
+    "ctx": "CRY · Wk1 · 2020",
+    "top_all": [
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Jordan Ayew",
+        "player_id": "*03sgc*",
+        "ctx": "CRY · Wk1 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "11",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · Wk18 · 2018",
+        "manager": "Alex R"
+      },
+      {
+        "value": "11",
+        "unit": "",
+        "holder": "Mohammed Kudus",
+        "player_id": "*06fv8*",
+        "ctx": "WHU · Wk38 · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Salomon Rondon",
+        "player_id": "*03tip*",
+        "ctx": "NEW · Wk23 · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · Wk15 · 2021",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Adama Diakhaby",
+        "player_id": "*04sq0*",
+        "ctx": "HUD · Wk25 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Michail Antonio",
+        "player_id": "*03vll*",
+        "ctx": "WHU · Wk35 · 2018",
+        "manager": "John L"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Raheem Sterling",
+        "player_id": "*02lkp*",
+        "ctx": "MCI · Wk35 · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Sofiane Boufal",
+        "player_id": "*047j1*",
+        "ctx": "SOU · Wk7 · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Michail Antonio",
+        "player_id": "*03vll*",
+        "ctx": "WHU · Wk5 · 2020",
+        "manager": "JLINGZ"
+      }
+    ]
+  },
+  {
+    "key": "FS",
+    "icon": "",
+    "label": "Fouls Suffered",
+    "unit": "",
+    "featured": false,
+    "value": "9",
+    "holder": "Riyad Mahrez",
+    "ctx": "MCI · Wk20 · 2022",
+    "top_all": [
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Riyad Mahrez",
+        "player_id": "*03dyp*",
+        "ctx": "MCI · Wk20 · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Moises Caicedo",
+        "player_id": "*05rb8*",
+        "ctx": "BHA/CHE · Wk35 · 2023",
+        "manager": "CmBk"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Gabriel Jesus",
+        "player_id": "*045c8*",
+        "ctx": "ARS · Wk6 · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Moises Caicedo",
+        "player_id": "*05rb8*",
+        "ctx": "BHA · Wk36 · 2022",
+        "manager": "YUM"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Carlton Morris",
+        "player_id": "*0414p*",
+        "ctx": "LUT · Wk28 · 2023",
+        "manager": "j.l."
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Conor Gallagher",
+        "player_id": "*051k8*",
+        "ctx": "CHE · Wk33 · 2023",
+        "manager": "RyRob"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Jordan Ayew",
+        "player_id": "*03sgc*",
+        "ctx": "CRY · Wk10 · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Ryan Yates",
+        "player_id": "*061y6*",
+        "ctx": "NOT · Wk10 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Jack Grealish",
+        "player_id": "*02lm7*",
+        "ctx": "MCI · Wk22 · 2022",
+        "manager": "011"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Ashley Young",
+        "player_id": "*02lny*",
+        "ctx": "AVL · Wk29 · 2022",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "PKD",
+    "icon": "",
+    "label": "Penalties Drawn",
+    "unit": "",
+    "featured": false,
+    "value": "3",
+    "holder": "Evanilson",
+    "ctx": "BOU · Wk13 · 2024",
+    "top_all": [
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Evanilson",
+        "player_id": "*06p6j*",
+        "ctx": "BOU · Wk13 · 2024",
+        "manager": "Noah B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Antonio Rudiger",
+        "player_id": "*04g1w*",
+        "ctx": "CHE · Wk16 · 2021",
+        "manager": "ARA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Alejandro Garnacho",
+        "player_id": "*060wh*",
+        "ctx": "MUN · Wk28 · 2023",
+        "manager": "MID"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Anthony Gordon",
+        "player_id": "*04mdn*",
+        "ctx": "NEW · Wk30 · 2023",
+        "manager": "RyRob"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Pablo Fornals",
+        "player_id": "*051lc*",
+        "ctx": "WHU · Wk1 · 2021",
+        "manager": "DYCHE"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Bertrand Traore",
+        "player_id": "*035n1*",
+        "ctx": "AVL · Wk1 · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Dominic Calvert-Lewin",
+        "player_id": "*049tq*",
+        "ctx": "EVE · Wk2 · 2021",
+        "manager": "RyRob"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Dele Alli",
+        "player_id": "*03mml*",
+        "ctx": "TOT/EVE · Wk2 · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Seamus Coleman",
+        "player_id": "*02lpl*",
+        "ctx": "EVE · Wk3 · 2021",
+        "manager": "RyRob"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Adam Armstrong",
+        "player_id": "*03ar4*",
+        "ctx": "SOU · Wk3 · 2021",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "PKM",
+    "icon": "",
+    "label": "Penalties Missed",
+    "unit": "",
+    "featured": false,
+    "value": "2",
+    "holder": "Marco Asensio",
+    "ctx": "AVL · Wk32 · 2024",
+    "top_all": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Marco Asensio",
+        "player_id": "*06rm3*",
+        "ctx": "AVL · Wk32 · 2024",
+        "manager": "Mateta"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Jorginho",
+        "player_id": "*04s8k*",
+        "ctx": "CHE · Wk2 · 2020",
+        "manager": "JLINGZ"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "John Lundstram",
+        "player_id": "*0327p*",
+        "ctx": "SHU · Wk2 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · Wk5 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Aleksandar Mitrovic",
+        "player_id": "*03scr*",
+        "ctx": "FUL · Wk5 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Jamie Vardy",
+        "player_id": "*03dyk*",
+        "ctx": "LEI · Wk8 · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Kevin De Bruyne",
+        "player_id": "*02oox*",
+        "ctx": "MCI · Wk8 · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Ademola Lookman",
+        "player_id": "*04aj0*",
+        "ctx": "EVE/FUL · Wk8 · 2020",
+        "manager": "I_am_Tim"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Ivan Cavaleiro",
+        "player_id": "*04qrd*",
+        "ctx": "FUL · Wk9 · 2020",
+        "manager": "JLINGZ"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Neal Maupay",
+        "player_id": "*056mf*",
+        "ctx": "BHA · Wk10 · 2020",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "OG",
+    "icon": "",
+    "label": "Own Goals",
+    "unit": "",
+    "featured": false,
+    "value": "2",
+    "holder": "Wout Faes",
+    "ctx": "LEI · Wk18 · 2022",
+    "top_all": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Wout Faes",
+        "player_id": "*0649k*",
+        "ctx": "LEI · Wk18 · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Craig Dawson",
+        "player_id": "*02m4d*",
+        "ctx": "WOL · Wk14 · 2024",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Matt Doherty",
+        "player_id": "*02m11*",
+        "ctx": "WOL · Wk2 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Terence Kongolo",
+        "player_id": "*04mks*",
+        "ctx": "HUD · Wk2 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "DeAndre Yedlin",
+        "player_id": "*03m1q*",
+        "ctx": "NEW · Wk3 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Issa Diop",
+        "player_id": "*04qos*",
+        "ctx": "WHU · Wk3 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Abdoulaye Doucoure",
+        "player_id": "*03yu2*",
+        "ctx": "WAT · Wk4 · 2018",
+        "manager": "John L"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Craig Cathcart",
+        "player_id": "*02rlu*",
+        "ctx": "WAT · Wk7 · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Victor Lindelof",
+        "player_id": "*04fk8*",
+        "ctx": "MUN · Wk7 · 2018",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Hector Bellerin",
+        "player_id": "*0326y*",
+        "ctx": "ARS · Wk9 · 2018",
+        "manager": "BUK"
+      }
+    ]
+  },
+  {
+    "key": "CS",
+    "icon": "🛡",
+    "label": "Clean Sheets",
+    "unit": "",
+    "featured": false,
+    "value": "180",
+    "holder": "Gabriel Martinelli",
+    "ctx": "ARS · Wk25 · 2022",
+    "top_all": [
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Gabriel Martinelli",
+        "player_id": "*052h5*",
+        "ctx": "ARS · Wk25 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Virgil van Dijk",
+        "player_id": "*03vlj*",
+        "ctx": "LIV · Wk25 · 2022",
+        "manager": "RK U8"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Mohamed Salah",
+        "player_id": "*03aqp*",
+        "ctx": "LIV · Wk25 · 2022",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Gabriel Magalhaes",
+        "player_id": "*05nzu*",
+        "ctx": "ARS · Wk25 · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Ben White",
+        "player_id": "*04e1e*",
+        "ctx": "ARS · Wk25 · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "William Saliba",
+        "player_id": "*0558w*",
+        "ctx": "ARS · Wk25 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Pervis Estupinan",
+        "player_id": "*063zg*",
+        "ctx": "BHA · Wk34 · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Adam Webster",
+        "player_id": "*056ir*",
+        "ctx": "BHA · Wk34 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Lewis Dunk",
+        "player_id": "*04e1c*",
+        "ctx": "BHA · Wk34 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Ben White",
+        "player_id": "*04e1e*",
+        "ctx": "ARS · Wk34 · 2023",
+        "manager": "CC FC"
+      }
+    ]
+  },
+  {
+    "key": "GP",
+    "icon": "",
+    "label": "Games Played",
+    "unit": "",
+    "featured": false,
+    "value": "3",
+    "holder": "Bruno Fernandes",
+    "ctx": "MUN · Wk35 · 2020",
+    "top_all": [
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Marcus Rashford",
+        "player_id": "*03ybi*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Mason Greenwood",
+        "player_id": "*04spy*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Edinson Cavani",
+        "player_id": "*05os6*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Nemanja Matic",
+        "player_id": "*03aoj*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "3",
+        "unit": "",
+        "holder": "Eric Bailly",
+        "player_id": "*0435u*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Raheem Sterling",
+        "player_id": "*02lkp*",
+        "ctx": "MCI · Wk26 · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Sergio Aguero",
+        "player_id": "*02lun*",
+        "ctx": "MCI · Wk26 · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Aymeric Laporte",
+        "player_id": "*04mqu*",
+        "ctx": "MCI · Wk26 · 2018",
+        "manager": "Blake R"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Kyle Walker",
+        "player_id": "*02lp9*",
+        "ctx": "MCI · Wk26 · 2018",
+        "manager": "Woot"
+      }
+    ]
+  },
+  {
+    "key": "Min",
+    "icon": "",
+    "label": "Minutes",
+    "unit": "",
+    "featured": false,
+    "value": "203",
+    "holder": "Marcus Rashford",
+    "ctx": "MUN · Wk35 · 2020",
+    "top_all": [
+      {
+        "value": "203",
+        "unit": "",
+        "holder": "Marcus Rashford",
+        "player_id": "*03ybi*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "186",
+        "unit": "",
+        "holder": "Bruno Fernandes",
+        "player_id": "*05gcr*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "186",
+        "unit": "",
+        "holder": "Eric Bailly",
+        "player_id": "*0435u*",
+        "ctx": "MUN · Wk35 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Mason Mount",
+        "player_id": "*052cd*",
+        "ctx": "CHE · Wk19 · 2020",
+        "manager": "Laeka B"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "John Stones",
+        "player_id": "*02yl5*",
+        "ctx": "MCI · Wk19 · 2020",
+        "manager": "CFPL"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Harvey Barnes",
+        "player_id": "*04abn*",
+        "ctx": "LEI · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Ruben Dias",
+        "player_id": "*05omu*",
+        "ctx": "MCI · Wk19 · 2020",
+        "manager": "No Slips"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Sadio Mane",
+        "player_id": "*03jv0*",
+        "ctx": "LIV · Wk19 · 2020",
+        "manager": "Yum"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Jonny Evans",
+        "player_id": "*02ln2*",
+        "ctx": "LEI · Wk19 · 2020",
+        "manager": "Tim O"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Thiago Alcantara",
+        "player_id": "*05oh2*",
+        "ctx": "LIV · Wk19 · 2020",
+        "manager": "No Slips"
+      }
+    ]
+  }
+];
+const HIST_PLAYER_RECORDS_GK_WEEKLY = [
+  {
+    "key": "FPts",
+    "icon": "⚡",
+    "label": "Fantasy Points",
+    "unit": "pts",
+    "featured": true,
+    "value": "38.8",
+    "holder": "Jordan Pickford",
+    "ctx": "EVE · Wk34 · 2023",
+    "top_all": [
+      {
+        "value": "38.8",
+        "unit": "pts",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · Wk34 · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "38.5",
+        "unit": "pts",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "BUR · Wk23 · 2021",
+        "manager": "McGinn"
+      },
+      {
+        "value": "35.2",
+        "unit": "pts",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "NEW · Wk32 · 2024",
+        "manager": "Mateta"
+      },
+      {
+        "value": "34.2",
+        "unit": "pts",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · Wk19 · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "34.0",
+        "unit": "pts",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · Wk26 · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "34.0",
+        "unit": "pts",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · Wk38 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "33.5",
+        "unit": "pts",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "33.2",
+        "unit": "pts",
+        "holder": "Vicente Guaita",
+        "player_id": "*04rhc*",
+        "ctx": "CRY · Wk33 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "32.2",
+        "unit": "pts",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · Wk29 · 2021",
+        "manager": "DYCHE"
+      },
+      {
+        "value": "32.0",
+        "unit": "pts",
+        "holder": "Jose Sa",
+        "player_id": "*05udg*",
+        "ctx": "WOL · Wk6 · 2021",
+        "manager": "RyRob"
+      }
+    ]
+  },
+  {
+    "key": "Sv",
+    "icon": "🧤",
+    "label": "Saves",
+    "unit": "",
+    "featured": true,
+    "value": "15",
+    "holder": "David de Gea",
+    "ctx": "MUN · Wk22 · 2021",
+    "top_all": [
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · Wk22 · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · Wk19 · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "15",
+        "unit": "",
+        "holder": "Thomas Kaminski",
+        "player_id": "*06ewr*",
+        "ctx": "LUT · Wk25 · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "14",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "BUR · Wk37 · 2021",
+        "manager": "McGinn"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Vicente Guaita",
+        "player_id": "*04rhc*",
+        "ctx": "CRY · Wk33 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Illan Meslier",
+        "player_id": "*05mzt*",
+        "ctx": "LEE · Wk26 · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF · Wk29 · 2022",
+        "manager": "thomas"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Mark Flekken",
+        "player_id": "*06clu*",
+        "ctx": "BRF · Wk25 · 2023",
+        "manager": "BBFC"
+      },
+      {
+        "value": "13",
+        "unit": "",
+        "holder": "Mads Hermansen",
+        "player_id": "*06mga*",
+        "ctx": "LEI · Wk6 · 2024",
+        "manager": "FA"
+      },
+      {
+        "value": "12",
+        "unit": "",
+        "holder": "Paulo Gazzaniga",
+        "player_id": "*02t1m*",
+        "ctx": "TOT · Wk10 · 2019",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "GA",
+    "icon": "🥅",
+    "label": "Goals Allowed",
+    "unit": "",
+    "featured": true,
+    "value": "10",
+    "holder": "Illan Meslier",
+    "ctx": "LEE · Wk26 · 2021",
+    "top_all": [
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Illan Meslier",
+        "player_id": "*05mzt*",
+        "ctx": "LEE · Wk26 · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "10",
+        "unit": "",
+        "holder": "Dean Henderson",
+        "player_id": "*03yww*",
+        "ctx": "CRY · Wk32 · 2024",
+        "manager": "RyRob"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Angus Gunn",
+        "player_id": "*044i7*",
+        "ctx": "SOU · Wk10 · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Alex McCarthy",
+        "player_id": "*02t20*",
+        "ctx": "SOU · Wk22 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "9",
+        "unit": "",
+        "holder": "Mark Travers",
+        "player_id": "*04vy4*",
+        "ctx": "BOU · Wk4 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Ben Foster",
+        "player_id": "*02m4i*",
+        "ctx": "WAT · Wk6 · 2019",
+        "manager": "FA"
+      },
+      {
+        "value": "8",
+        "unit": "",
+        "holder": "Wes Foderingham",
+        "player_id": "*05n0a*",
+        "ctx": "SHU · Wk6 · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Adrian",
+        "player_id": "*03274*",
+        "ctx": "LIV · Wk4 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Vicente Guaita",
+        "player_id": "*04rhc*",
+        "ctx": "CRY · Wk14 · 2020",
+        "manager": "Yum"
+      },
+      {
+        "value": "7",
+        "unit": "",
+        "holder": "Tim Krul",
+        "player_id": "*02lu3*",
+        "ctx": "NOR · Wk9 · 2021",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "CS",
+    "icon": "🛡",
+    "label": "Clean Sheets",
+    "unit": "",
+    "featured": true,
+    "value": "180",
+    "holder": "Aaron Ramsdale",
+    "ctx": "ARS · Wk25 · 2022",
+    "top_all": [
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "ARS · Wk25 · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · Wk25 · 2022",
+        "manager": "AUTO REL"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Jason Steele",
+        "player_id": "*04rha*",
+        "ctx": "BHA · Wk34 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · Wk34 · 2023",
+        "manager": "Slab"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "David Raya",
+        "player_id": "*05tqx*",
+        "ctx": "BRF/ARS · Wk34 · 2023",
+        "manager": "CC FC"
+      },
+      {
+        "value": "158",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · Wk37 · 2023",
+        "manager": "FA"
+      },
+      {
+        "value": "90",
+        "unit": "",
+        "holder": "Edouard Mendy",
+        "player_id": "*05oje*",
+        "ctx": "CHE · Wk1 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "90",
+        "unit": "",
+        "holder": "Mark Travers",
+        "player_id": "*04vy4*",
+        "ctx": "BOU · Wk1 · 2022",
+        "manager": "FA"
+      },
+      {
+        "value": "90",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "ARS · Wk1 · 2022",
+        "manager": "j.l."
+      },
+      {
+        "value": "90",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · Wk1 · 2022",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "PKS",
+    "icon": "",
+    "label": "Penalty Saves",
+    "unit": "",
+    "featured": false,
+    "value": "2",
+    "holder": "Tim Krul",
+    "ctx": "NOR · Wk10 · 2019",
+    "top_all": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Tim Krul",
+        "player_id": "*02lu3*",
+        "ctx": "NOR · Wk10 · 2019",
+        "manager": "Ryan C"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Aaron Ramsdale",
+        "player_id": "*04amh*",
+        "ctx": "ARS/SOU · Wk32 · 2024",
+        "manager": "Will"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · Wk1 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · Wk2 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Joe Hart",
+        "player_id": "*02lv2*",
+        "ctx": "BUR · Wk4 · 2018",
+        "manager": "John L"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Wayne Hennessey",
+        "player_id": "*02m1g*",
+        "ctx": "CRY · Wk4 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Marcus Bettinelli",
+        "player_id": "*02ls8*",
+        "ctx": "FUL · Wk4 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · Wk9 · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · Wk10 · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Lukasz Fabianski",
+        "player_id": "*02lym*",
+        "ctx": "WHU · Wk15 · 2018",
+        "manager": "Noah B"
+      }
+    ]
+  },
+  {
+    "key": "YC",
+    "icon": "🟨",
+    "label": "Yellow Cards",
+    "unit": "",
+    "featured": false,
+    "value": "2",
+    "holder": "Bernd Leno",
+    "ctx": "FUL · Wk19 · 2022",
+    "top_all": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "FUL · Wk19 · 2022",
+        "manager": "DF"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Marcus Bettinelli",
+        "player_id": "*02ls8*",
+        "ctx": "FUL · Wk3 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Alex McCarthy",
+        "player_id": "*02t20*",
+        "ctx": "SOU · Wk5 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · Wk5 · 2018",
+        "manager": "Ryan R"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · Wk12 · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · Wk13 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · Wk15 · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Vicente Guaita",
+        "player_id": "*04rhc*",
+        "ctx": "CRY · Wk17 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Kepa",
+        "player_id": "*04u40*",
+        "ctx": "CHE · Wk17 · 2018",
+        "manager": "BUK"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Vicente Guaita",
+        "player_id": "*04rhc*",
+        "ctx": "CRY · Wk18 · 2018",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "RC",
+    "icon": "🟥",
+    "label": "Red Cards",
+    "unit": "",
+    "featured": false,
+    "value": "1",
+    "holder": "Bernd Leno",
+    "ctx": "ARS · Wk22 · 2020",
+    "top_all": [
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "ARS · Wk22 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Robert Sanchez",
+        "player_id": "*04yme*",
+        "ctx": "BHA · Wk11 · 2021",
+        "manager": "FA"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "NEW · Wk24 · 2022",
+        "manager": "Noah B"
+      },
+      {
+        "value": "1",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "AVL · Wk38 · 2024",
+        "manager": "thomas"
+      }
+    ]
+  },
+  {
+    "key": "GP",
+    "icon": "",
+    "label": "Games Played",
+    "unit": "",
+    "featured": false,
+    "value": "2",
+    "holder": "Ederson",
+    "ctx": "MCI · Wk26 · 2018",
+    "top_all": [
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · Wk26 · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Jordan Pickford",
+        "player_id": "*032f9*",
+        "ctx": "EVE · Wk26 · 2018",
+        "manager": "Tim O"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Vicente Guaita",
+        "player_id": "*04rhc*",
+        "ctx": "CRY · Wk33 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Kepa",
+        "player_id": "*04u40*",
+        "ctx": "CHE · Wk33 · 2018",
+        "manager": "BUK"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Neil Etheridge",
+        "player_id": "*02lsh*",
+        "ctx": "CAR · Wk35 · 2018",
+        "manager": "Connor L"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Mat Ryan",
+        "player_id": "*04fjy*",
+        "ctx": "BHA · Wk35 · 2018",
+        "manager": "FA"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Hugo Lloris",
+        "player_id": "*02w72*",
+        "ctx": "TOT · Wk36 · 2018",
+        "manager": "Willy B"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · Wk36 · 2018",
+        "manager": "Woot"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Bernd Leno",
+        "player_id": "*04qor*",
+        "ctx": "ARS · Wk36 · 2018",
+        "manager": "BUK"
+      },
+      {
+        "value": "2",
+        "unit": "",
+        "holder": "Mat Ryan",
+        "player_id": "*04fjy*",
+        "ctx": "BHA · Wk36 · 2018",
+        "manager": "FA"
+      }
+    ]
+  },
+  {
+    "key": "Min",
+    "icon": "",
+    "label": "Minutes",
+    "unit": "",
+    "featured": false,
+    "value": "180",
+    "holder": "Kasper Schmeichel",
+    "ctx": "LEI · Wk19 · 2020",
+    "top_all": [
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Kasper Schmeichel",
+        "player_id": "*03dxv*",
+        "ctx": "LEI · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Ederson",
+        "player_id": "*04fk5*",
+        "ctx": "MCI · Wk19 · 2020",
+        "manager": "JADON"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Nick Pope",
+        "player_id": "*044ei*",
+        "ctx": "BUR · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Emiliano Martinez",
+        "player_id": "*02lz0*",
+        "ctx": "ARS/AVL · Wk19 · 2020",
+        "manager": "CFPL"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Alisson",
+        "player_id": "*04sjt*",
+        "ctx": "LIV · Wk19 · 2020",
+        "manager": "RyRob"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "David de Gea",
+        "player_id": "*02ln1*",
+        "ctx": "MUN · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Edouard Mendy",
+        "player_id": "*05oje*",
+        "ctx": "CHE · Wk19 · 2020",
+        "manager": "FA"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Lukasz Fabianski",
+        "player_id": "*02lym*",
+        "ctx": "WHU · Wk19 · 2020",
+        "manager": "Yum"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Alphonse Areola",
+        "player_id": "*05oef*",
+        "ctx": "FUL · Wk19 · 2020",
+        "manager": "Noah B"
+      },
+      {
+        "value": "180",
+        "unit": "",
+        "holder": "Karl Darlow",
+        "player_id": "*03pif*",
+        "ctx": "NEW · Wk19 · 2020",
+        "manager": "FA"
+      }
+    ]
+  }
+];

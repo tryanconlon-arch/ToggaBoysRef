@@ -164,6 +164,7 @@ section{padding:96px 0 72px}
 .rec-top-val em{font-style:normal;font-size:.7rem;font-weight:500;color:var(--muted);margin-left:3px}
 .rec-top-holder{font-weight:600;color:var(--green-l)}
 .rec-top-ctx{font-size:.78rem;color:var(--muted)}
+.rec-top-mgr{font-weight:500;color:var(--dim);font-size:.8em;margin-left:2px}
 @media(max-width:600px){.rec-top li{grid-template-columns:24px 1fr 1fr;gap:.4rem}.rec-top-ctx{grid-column:2/-1;font-size:.72rem;margin-top:2px}}
 
 /* H2H */
@@ -423,7 +424,7 @@ function useActiveSection(ids){
 // ─── COMPONENTS ─────────────────────────────────────────────────────────────
 
 function StickyNav({active}){
-  const links=[['champions','Champions'],['seasons','Seasons'],['records','Records'],['h2h','H2H'],['managers','Managers']];
+  const links=[['champions','Champions'],['seasons','Seasons'],['records','Records'],['players','Players'],['h2h','H2H'],['managers','Managers']];
   return(
     <nav className="nav">
       <a className="nav-brand" href="#hero">
@@ -760,6 +761,105 @@ function RecordsVault(){
             );
           })}
         </div>
+      </div>
+    </section>
+  );
+}
+
+function PlayerRecordsVault(){
+  const ref=React.useRef();
+  const inView=useInView(ref);
+  const [scope, setScope] = React.useState('season');             // 'season' | 'weekly'
+  const [tab, setTab] = React.useState('OF');                     // 'OF' | 'GK'
+  const [showAll, setShowAll] = React.useState({OF:false, GK:false});
+  const [openIdx, setOpenIdx] = React.useState(null);
+
+  // Reset open card whenever scope or tab changes.
+  React.useEffect(()=>{setOpenIdx(null)}, [tab, scope]);
+
+  const SOURCES = {
+    'season-OF': typeof HIST_PLAYER_RECORDS_OF !== 'undefined' ? HIST_PLAYER_RECORDS_OF : [],
+    'season-GK': typeof HIST_PLAYER_RECORDS_GK !== 'undefined' ? HIST_PLAYER_RECORDS_GK : [],
+    'weekly-OF': typeof HIST_PLAYER_RECORDS_OF_WEEKLY !== 'undefined' ? HIST_PLAYER_RECORDS_OF_WEEKLY : [],
+    'weekly-GK': typeof HIST_PLAYER_RECORDS_GK_WEEKLY !== 'undefined' ? HIST_PLAYER_RECORDS_GK_WEEKLY : [],
+  };
+  const allRecords = SOURCES[`${scope}-${tab}`] || [];
+
+  const featured = allRecords.filter(r => r.featured);
+  const secondary = allRecords.filter(r => !r.featured);
+  const visibleRecords = showAll[tab] ? allRecords : featured;
+
+  return(
+    <section id="players" ref={ref}>
+      <div className="container">
+        <div style={{opacity:inView?1:0,transform:inView?'none':'translateY(24px)',transition:'opacity .6s,transform .6s'}}>
+          <div className="s-label">Player Records</div>
+          <h2 className="s-title">Top Performers</h2>
+          <p className="s-sub">Every fantasy player across every season — drafted or free agent. Switch between season totals and single-week highs; click any card for the top 10.</p>
+        </div>
+        <div className="ftabs" style={{marginTop:'1rem'}}>
+          <button className={`ftab${scope==='season'?' on':''}`} onClick={()=>setScope('season')}>Season Totals</button>
+          <button className={`ftab${scope==='weekly'?' on':''}`} onClick={()=>setScope('weekly')}>Single Week</button>
+        </div>
+        <div className="ftabs" style={{marginTop:'.5rem'}}>
+          <button className={`ftab${tab==='OF'?' on':''}`} onClick={()=>setTab('OF')}>Outfielders</button>
+          <button className={`ftab${tab==='GK'?' on':''}`} onClick={()=>setTab('GK')}>Goalkeepers</button>
+        </div>
+
+        <div className="rec-grid" style={{marginTop:'1rem'}}>
+          {visibleRecords.map((r, i) => {
+            // Find the record's true index inside allRecords for stable open state.
+            const realIdx = allRecords.indexOf(r);
+            const topAll = r.top_all || [];
+            const hasTop = topAll.length > 0;
+            const isOpen = openIdx === realIdx;
+            const showList = topAll;
+
+            return (
+              <div
+                className={`rec-card${isOpen?' expanded':''}${hasTop?' clickable':''}`}
+                key={r.key + '-' + tab + '-' + scope}
+                style={{opacity:inView?1:0,transform:inView?'none':'translateY(20px)',transition:`opacity .5s ${.04*i}s,transform .5s ${.04*i}s`}}
+                onClick={() => hasTop && setOpenIdx(isOpen ? null : realIdx)}
+              >
+                <div className="rec-icon">{r.icon || '📊'}</div>
+                <div className="rec-lbl">{r.label}</div>
+                <div className="rec-val">{r.value}<span style={{fontSize:'1rem',color:'var(--muted)',fontWeight:400,marginLeft:'4px'}}>{r.unit}</span></div>
+                <div className="rec-holder">{r.holder}</div>
+                <div className="rec-ctx">{r.ctx}</div>
+                {hasTop && (
+                  <div className="rec-expand-hint">{isOpen ? '▲ Collapse' : '▼ See top 10'}</div>
+                )}
+                {isOpen && hasTop && (
+                  <div className="rec-expand" onClick={e=>e.stopPropagation()}>
+                    <ol className="rec-top">
+                      {showList.map((e, j) => (
+                        <li key={j}>
+                          <span className="rec-top-rank">{j+1}</span>
+                          <span className="rec-top-val">{e.value}<em>{e.unit||r.unit}</em></span>
+                          <span className="rec-top-holder">{e.holder}{e.manager?<span className="rec-top-mgr"> · @{e.manager}</span>:''}</span>
+                          <span className="rec-top-ctx">{e.ctx}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {secondary.length > 0 && (
+          <div style={{textAlign:'center', marginTop:'1.2rem'}}>
+            <button
+              className="rec-toggle-btn"
+              style={{padding:'.55rem 1rem'}}
+              onClick={()=>setShowAll(prev=>({...prev, [tab]: !prev[tab]}))}
+            >
+              {showAll[tab] ? `▲ Show featured only` : `▼ Show all ${allRecords.length} ${scope==='weekly' ? 'single-week records' : 'stats'}`}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
@@ -1572,7 +1672,7 @@ function RecentMoves(){
 // ─── APP ─────────────────────────────────────────────────────────────────────
 
 function App(){
-  const sectionIds=['hero','champions','seasons','records','h2h','managers'];
+  const sectionIds=['hero','champions','seasons','records','players','h2h','managers'];
   const active=useActiveSection(sectionIds);
   return(
     <>
@@ -1582,6 +1682,7 @@ function App(){
       <SeasonResults/>
       <div style={{display:'none'}}><LiveStandings/><RecentMoves/></div>
       <RecordsVault/>
+      <PlayerRecordsVault/>
       <HeadToHead/>
       <ManagerProfiles/>
       <Footer/>

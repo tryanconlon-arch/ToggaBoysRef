@@ -6,10 +6,14 @@ Rough notes — items captured but not yet scoped or fleshed out.
 - Team name vs. user name — consistency across views
   - Historical standings tables: show both team name and manager name
   - Record book / all-time leaderboards (e.g. top scorer): manager name + year only; team name not relevant
-- Top 10 for every record (click to expand / "see more"?)
 - Fix trade data
 
 ## Major feature additions
+- Site-wide natural language search bar
+  - Open-ended, question-style queries (e.g. "Who's the highest scoring manager all time?")
+  - Should surface answers from across all data: managers, teams, scores, standings, records, etc.
+
+
 - Add player data and visibility
 - Add luck tracker (user will provide specific requirements when ready — do not pre-scope)
 

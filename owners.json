@@ -1,4 +1,18 @@
 {
+  "01c86a63lc9eozki": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3-ekitik\u00e9's etiquette"
+    }
+  },
+  "06wiyx87mdnnojf7": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3 -Haaland Dazs FC"
+    }
+  },
   "0pnjju6zl5sxv6je": {
     "color": null,
     "name": null,
@@ -12,7 +26,8 @@
     "name": null,
     "seasons": {
       "2023": "2-FC Becky-Lowe-Na",
-      "2024": "2-McGinn and Tonic"
+      "2024": "2-McGinn and Tonic",
+      "2025": "2-Benteke Fried Chicken"
     }
   },
   "1gczjfv6krmlevuz": {
@@ -32,7 +47,15 @@
       "2021": "team_tim",
       "2022": "1-john lim",
       "2023": "1-john lim",
-      "2024": "1-john lim"
+      "2024": "1-john lim",
+      "2025": "2-john lim"
+    }
+  },
+  "25j2rf1zmdn8ovzd": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "2-Lads FC"
     }
   },
   "3q9chve4lzj93i29": {
@@ -60,7 +83,15 @@
       "2021": "Sean Dyche's Great Escape",
       "2022": "1-Autodraft Relegated FC",
       "2023": "1-Check Complete FC",
-      "2024": "1-Check Complete FC"
+      "2024": "1-Check Complete FC",
+      "2025": "1-The Gy\u00f6k Gy\u00f6k 3000"
+    }
+  },
+  "7gseh3v6mfi7k07m": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3-Get Tae VAR"
     }
   },
   "7kh2l9uqjk8tphpy": {
@@ -73,7 +104,8 @@
       "2021": "Hale End Starb\u00f8ys",
       "2022": "1-Vecna's M\u00f8st Hated XI",
       "2023": "1-Burnley and Old Trafford",
-      "2024": "1- Sch\u00e4rholder Value"
+      "2024": "1- Sch\u00e4rholder Value",
+      "2025": "1- Black Friday @ Nordi\u2019s"
     }
   },
   "7shny9o4ks688txq": {
@@ -82,7 +114,8 @@
     "seasons": {
       "2022": "2-100 Virgils",
       "2023": "2-100 Virgils",
-      "2024": "2-100 Virgils"
+      "2024": "2-100 Virgils",
+      "2025": "2-100 Virgils"
     }
   },
   "7szfu2milkhijtes": {
@@ -90,7 +123,8 @@
     "name": "Max",
     "seasons": {
       "2023": "3-Rainy Night at Stoke",
-      "2024": "2-Rainy Night at Stoke"
+      "2024": "2-Rainy Night at Stoke",
+      "2025": "1-Rainy Night at Stoke"
     }
   },
   "8cw98dkykrmk6wcr": {
@@ -108,7 +142,8 @@
     "seasons": {
       "2022": "2-Greek Prison XI",
       "2023": "1-Greek Prison XI",
-      "2024": "2-Greek Prison XI"
+      "2024": "2-Greek Prison XI",
+      "2025": "2-Greek Prison XI"
     }
   },
   "9phrqhagl6106n37": {
@@ -130,7 +165,8 @@
     "name": null,
     "seasons": {
       "2023": "3-Bench Warmers FC",
-      "2024": "3-Bench Warmers FC"
+      "2024": "3-Bench Warmers FC",
+      "2025": "3-Bench Warmers FC"
     }
   },
   "cfkr8otxkrmkufov": {
@@ -138,6 +174,13 @@
     "name": null,
     "seasons": {
       "2022": "2-We Don\u2019t Talk About Bruno"
+    }
+  },
+  "dbn9qdlumdrtemd5": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3 - Bags"
     }
   },
   "e44gvyjsjk90uswv": {
@@ -150,7 +193,8 @@
       "2021": "The McB\u2019s",
       "2022": "1-TAAp in Merchants",
       "2023": "1-bruNO HARD FEELINGS",
-      "2024": "1-Cruel Summerville"
+      "2024": "1-Cruel Summerville",
+      "2025": "1-DeezRut(ter)z"
     }
   },
   "fgqojyh1irla6s8z": {
@@ -167,7 +211,8 @@
     "seasons": {
       "2022": "1-Drafted@3am FC",
       "2023": "1-rice cooker",
-      "2024": "1-Dirty little Slot"
+      "2024": "1-Dirty little Slot",
+      "2025": "1 - Absolute Ekitekkers"
     }
   },
   "fxw7t5nulkg7s0b2": {
@@ -175,7 +220,15 @@
     "name": null,
     "seasons": {
       "2023": "3-Fati Dati",
-      "2024": "3-Onana What's my name"
+      "2024": "3-Onana What's my name",
+      "2025": "3-Tonali Vision"
+    }
+  },
+  "h5f9xh0qmdw7fs6t": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3 -Ben\u2019s team"
     }
   },
   "hedxzq4il5x3sks1": {
@@ -184,6 +237,13 @@
     "seasons": {
       "2023": "3- Mickey Mount Clubhouse",
       "2024": "3- Mickey Mount Clubhouse"
+    }
+  },
+  "hfi3wirvmdqe8chc": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3 -Vote for Pedro"
     }
   },
   "i5v3cu1dj62f3j8x": {
@@ -203,7 +263,8 @@
       "2021": "Gylfi\u2019s Goobers",
       "2022": "1-Midtable Merchant",
       "2023": "1 - The Narrative",
-      "2024": "1 - Law of Averages"
+      "2024": "1 - Law of Averages",
+      "2025": "1 - Moises parts the Red Seamen"
     }
   },
   "j57s8ecsj5h5510r": {
@@ -212,7 +273,15 @@
     "seasons": {
       "2022": "2-Kyle Walker\u2019s Party Planners",
       "2023": "2-Matt Turner Overdrive",
-      "2024": "2-Reeces (broken to) Pieces"
+      "2024": "2-Reeces (broken to) Pieces",
+      "2025": "2-Eze like SuNdiaye morning"
+    }
+  },
+  "jev6xcxcmdrd6oqv": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "2-Lads FC"
     }
   },
   "kqbm20pxl66untok": {
@@ -231,6 +300,13 @@
       "2024": "3-Dijk in Diaz"
     }
   },
+  "lvod5fw8kmwcdqlo": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3-William's Team"
+    }
+  },
   "n49bivscjjztp1no": {
     "color": "#fb7185",
     "name": "Laeka",
@@ -241,7 +317,8 @@
       "2021": "Leo Gerard U2s Team",
       "2022": "1-Leo Gerard U3s Team",
       "2023": "1-The Dentist",
-      "2024": "1-Tim's Team"
+      "2024": "1-Tim's Team",
+      "2025": "1-Daam Daniel"
     }
   },
   "ne2zuh87jkhghgad": {
@@ -254,7 +331,8 @@
       "2021": "Roy Kent's U8 Girls",
       "2022": "1-Roy Kent's U8 Girls",
       "2023": "2-Roy Kent's U8 Girls",
-      "2024": "2-Roy Kent's U8 Girls"
+      "2024": "2-Roy Kent's U8 Girls",
+      "2025": "2-Roy Kent's U8 Girls"
     }
   },
   "nr4x5t03krmkqnxn": {
@@ -263,7 +341,15 @@
     "seasons": {
       "2022": "2-Diego Luna Fan Page",
       "2023": "2-Diego Luna Fan Page",
-      "2024": "2-Diego Luna Fan Page"
+      "2024": "2-Diego Luna Fan Page",
+      "2025": "2-Diego Luna Fan Page"
+    }
+  },
+  "nsn4iacnmdqtnwhf": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3- Deanooo"
     }
   },
   "o20ceuf9jue66iaf": {
@@ -279,7 +365,8 @@
     "seasons": {
       "2022": "2-Diamond Dogs",
       "2023": "2-Diamond Dogs",
-      "2024": "1-Diamond Dogs"
+      "2024": "1-Diamond Dogs",
+      "2025": "1-Diamond Dogs"
     }
   },
   "q6lhk7xplzvb91li": {
@@ -301,7 +388,8 @@
     "name": null,
     "seasons": {
       "2023": "3-Jamie's Tartts",
-      "2024": "3-Young Munoz $$"
+      "2024": "3-Young Munoz $$",
+      "2025": "2-Young Munoz $$"
     }
   },
   "sjh9eqr4jk8nfodx": {
@@ -314,7 +402,8 @@
       "2021": "Berkley McG\u2019s U1s",
       "2022": "1-Jesus live at Red Rocks",
       "2023": "1-Koke Vegas",
-      "2024": "1-Morgan Rodgers Neighborhood"
+      "2024": "1-Morgan Rodgers Neighborhood",
+      "2025": "1 - Bruno\u2019s Big Bean Burritos"
     }
   },
   "t1xchwd8krmkab1z": {
@@ -323,7 +412,8 @@
     "seasons": {
       "2022": "1- KFFC",
       "2023": "1-ComeBack Szn",
-      "2024": "1-Mateta\u2019s Muppets"
+      "2024": "1-Mateta\u2019s Muppets",
+      "2025": "1-What The Hecke"
     }
   },
   "t2kvkic1krmjq9mi": {
@@ -332,7 +422,8 @@
     "seasons": {
       "2022": "2-FC Bofa",
       "2023": "2-FC Bofa",
-      "2024": "2-FC Bofa"
+      "2024": "2-FC Bofa",
+      "2025": "2-FC Bofa"
     }
   },
   "tc6bqbjckrmjhhtj": {
@@ -341,14 +432,16 @@
     "seasons": {
       "2022": "2-Lets Ride",
       "2023": "2- Martins Men",
-      "2024": "2-Arteta's Angels"
+      "2024": "2-Arteta's Angels",
+      "2025": "2-Reckless Abandon"
     }
   },
   "tcrceopjlz05ok2v": {
     "color": null,
     "name": null,
     "seasons": {
-      "2024": "3-Kelly\u2019s Seagulls"
+      "2024": "3-Kelly\u2019s Seagulls",
+      "2025": "3-Kelly\u2019s Seagulls"
     }
   },
   "tjalvypsl5x46cn7": {
@@ -377,7 +470,8 @@
       "2021": "Gabriel\u2019s Sparkling Cider",
       "2022": "1-Mystery Box U0s",
       "2023": "1-OGBEAN'S",
-      "2024": "1-The Madd Hatters"
+      "2024": "1-The Madd Hatters",
+      "2025": "1-Floetry in Motion"
     }
   },
   "x46g9ztbjk06jgh0": {
@@ -390,7 +484,8 @@
       "2021": "Alex's Redemption Arc",
       "2022": "1-Commissioner Gordon & the Tark Knight",
       "2023": "1-Barkley\u2019s Balls Sponsored by Baileys",
-      "2024": "1-The Riesterer Bunny"
+      "2024": "1-The Riesterer Bunny",
+      "2025": "1-Dr. Dioufenshmirtz"
     }
   },
   "xv1url47lkg3lcuc": {
@@ -398,7 +493,8 @@
     "name": null,
     "seasons": {
       "2023": "2-Wild Boars United",
-      "2024": "2-Wild Boars United"
+      "2024": "2-Wild Boars United",
+      "2025": "2-Wild Boars United"
     }
   },
   "yhbesbxrl5b5lpu5": {
@@ -408,6 +504,13 @@
       "2022": "2-Lads FC",
       "2023": "2-Lads FC",
       "2024": "2-Lads FC"
+    }
+  },
+  "zaan2ilemdpxqzqz": {
+    "color": null,
+    "name": null,
+    "seasons": {
+      "2025": "3 -The Darwizard"
     }
   },
   "zn6ejadjkesvm0d0": {

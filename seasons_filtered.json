@@ -1,9 +1,42 @@
 [
-  {"year": 2018, "league_id": "69dkxf4yjjzuho4l", "league_name": "Laeka & the Lads"},
-  {"year": 2019, "league_id": "gtsw8xtpjysyqnsa", "league_name": "Laeka & the Lads"},
-  {"year": 2020, "league_id": "1r470dnvkedmfgzc", "league_name": "Anything but an Alex Five Peat"},
-  {"year": 2021, "league_id": "mp4al1q3kqs4p57n", "league_name": "Lol went to a bbq last night"},
-  {"year": 2022, "league_id": "8dsbn2cul5adq5d4", "league_name": "Togga Boys"},
-  {"year": 2023, "league_id": "jg83m0qslk6wgt4u", "league_name": "Togga Boys"},
-  {"year": 2024, "league_id": "dsdrkvd6ly7km8nm", "league_name": "Togga Boys"}
+  {
+    "year": 2018,
+    "league_id": "69dkxf4yjjzuho4l",
+    "league_name": "Laeka & the Lads"
+  },
+  {
+    "year": 2019,
+    "league_id": "gtsw8xtpjysyqnsa",
+    "league_name": "Laeka & the Lads"
+  },
+  {
+    "year": 2020,
+    "league_id": "1r470dnvkedmfgzc",
+    "league_name": "Anything but an Alex Five Peat"
+  },
+  {
+    "year": 2021,
+    "league_id": "mp4al1q3kqs4p57n",
+    "league_name": "Lol went to a bbq last night"
+  },
+  {
+    "year": 2022,
+    "league_id": "8dsbn2cul5adq5d4",
+    "league_name": "Togga Boys"
+  },
+  {
+    "year": 2023,
+    "league_id": "jg83m0qslk6wgt4u",
+    "league_name": "Togga Boys"
+  },
+  {
+    "year": 2024,
+    "league_id": "dsdrkvd6ly7km8nm",
+    "league_name": "Togga Boys"
+  },
+  {
+    "year": 2025,
+    "league_id": "q5ykvvbmmdj5i0kx",
+    "league_name": "Togga Boys"
+  }
 ]

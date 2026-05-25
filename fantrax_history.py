@@ -120,50 +120,58 @@ def export_season(page, year, league_id):
     results = {}
 
     # ── Standings ──────────────────────────────────────────────────────────
-    url = f"{base}/standings"
-    print(f"[standings] {url}")
-    try:
-        page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        wait_for_page_ready(page)
-        dismiss_banners(page)
-        dest = out_dir / "standings.csv"
-        if try_export(page, dest):
-            print(f"  ✓ {dest}")
-            results["standings"] = "✓"
-        else:
-            page.screenshot(path=str(out_dir / "_debug_standings.png"))
-            print(f"  ✗ no export button found — screenshot saved")
-            results["standings"] = "✗"
-    except Exception as e:
-        print(f"  ! {e}")
-        results["standings"] = f"✗ ({e})"
-
-    # ── Transactions ───────────────────────────────────────────────────────
-    url = f"{base}/transactions/history"
-    print(f"[transactions] {url}")
-    try:
-        page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        wait_for_page_ready(page)
-        dismiss_banners(page)
-        # The Transactions nav sometimes needs to be expanded; mirrors fantrax_export.py.
+    dest = out_dir / "standings.csv"
+    if dest.exists() and dest.stat().st_size > 200:
+        print(f"[standings] ↷ already exists ({dest.stat().st_size:,}B) — skipping")
+        results["standings"] = "↷"
+    else:
+        url = f"{base}/standings"
+        print(f"[standings] {url}")
         try:
-            page.click("button:has-text('Transactions')", timeout=3000)
-            time.sleep(1)
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
             wait_for_page_ready(page)
-        except PlaywrightTimeout:
-            pass
-        dest = out_dir / "transactions.csv"
-        if try_export(page, dest):
-            print(f"  ✓ {dest}")
-            results["transactions"] = "✓"
-        else:
-            page.screenshot(path=str(out_dir / "_debug_transactions.png"))
-            print(f"  ✗ no export button found — screenshot saved")
-            results["transactions"] = "✗"
-    except Exception as e:
-        print(f"  ! {e}")
-        results["transactions"] = f"✗ ({e})"
+            dismiss_banners(page)
+            if try_export(page, dest):
+                print(f"  ✓ {dest}")
+                results["standings"] = "✓"
+            else:
+                page.screenshot(path=str(out_dir / "_debug_standings.png"))
+                print(f"  ✗ no export button found — screenshot saved")
+                results["standings"] = "✗"
+        except Exception as e:
+            print(f"  ! {e}")
+            results["standings"] = f"✗ ({e})"
+
+    # ── Transactions ───────────────────────────────────────────────────────
+    dest = out_dir / "transactions.csv"
+    if dest.exists() and dest.stat().st_size > 200:
+        print(f"[transactions] ↷ already exists ({dest.stat().st_size:,}B) — skipping")
+        results["transactions"] = "↷"
+    else:
+        url = f"{base}/transactions/history"
+        print(f"[transactions] {url}")
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            wait_for_page_ready(page)
+            dismiss_banners(page)
+            # The Transactions nav sometimes needs to be expanded; mirrors fantrax_export.py.
+            try:
+                page.click("button:has-text('Transactions')", timeout=3000)
+                time.sleep(1)
+                page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                wait_for_page_ready(page)
+            except PlaywrightTimeout:
+                pass
+            if try_export(page, dest):
+                print(f"  ✓ {dest}")
+                results["transactions"] = "✓"
+            else:
+                page.screenshot(path=str(out_dir / "_debug_transactions.png"))
+                print(f"  ✗ no export button found — screenshot saved")
+                results["transactions"] = "✗"
+        except Exception as e:
+            print(f"  ! {e}")
+            results["transactions"] = f"✗ ({e})"
 
     return results
 

@@ -19,7 +19,8 @@ Week navigation: league-livescoring-filters-period mat-select dropdown.
 
 Usage:
     DISCOVER=1 python3 scrape_matchups.py   # screenshot + stop after first week
-    python3 scrape_matchups.py              # full run
+    python3 scrape_matchups.py              # all seasons in seasons_filtered.json
+    python3 scrape_matchups.py --year 2025  # single season only
 
 Output:  matchups_{year}.csv  columns: year, week, t1_team, t2_team, t1_score, t2_score
 
@@ -33,6 +34,7 @@ import re
 import csv
 import time
 import json
+import argparse
 from pathlib import Path
 from dotenv import load_dotenv
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
@@ -343,6 +345,10 @@ def scrape_season(page, year, league_id):
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--year", type=int, help="Only scrape this one year")
+    args = ap.parse_args()
+
     if not EMAIL or not PASSWORD:
         raise SystemExit("FANTRAX_EMAIL and FANTRAX_PASSWORD must be set in .env")
     if not SEASONS_PATH.exists():
@@ -351,6 +357,12 @@ def main():
     seasons = json.loads(SEASONS_PATH.read_text())
     if not isinstance(seasons, list):
         raise SystemExit("seasons_filtered.json must be a list of {year, league_id} objects.")
+
+    if args.year is not None:
+        seasons = [s for s in seasons if s["year"] == args.year]
+        if not seasons:
+            raise SystemExit(f"No season with year={args.year} in {SEASONS_PATH}")
+        print(f"Filtering to year={args.year} only.")
 
     if DISCOVER:
         print("DISCOVER mode: screenshot dropdown + first week, then stop per season.\n")

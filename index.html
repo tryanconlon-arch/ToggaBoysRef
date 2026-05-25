@@ -525,8 +525,9 @@ function HeroSection(){
   const seasonsCount=useCountUp(SEASONS.length,inView);
   const mgrsCount=useCountUp(MANAGERS.length,inView);
   const score=useCountUp(topScore,inView,1);
-  const champRow2024=(SEASON_STANDINGS[2024]||[]).find(s=>s.champion);
-  const latestChamp=champRow2024?(mgr(champRow2024.owner_id)||{name:champRow2024.team_name,team:champRow2024.team_name}):null;
+  const latestYear=SEASONS[SEASONS.length-1];
+  const champRowLatest=(SEASON_STANDINGS[latestYear]||[]).find(s=>s.champion);
+  const latestChamp=champRowLatest?(mgr(champRowLatest.owner_id)||{name:champRowLatest.team_name,team:champRowLatest.team_name}):null;
   return(
     <section id="hero" ref={ref}>
       <div className="hero-stripe"/>
@@ -559,7 +560,7 @@ function HeroSection(){
         <div style={{opacity:inView?1:0,transition:'opacity .6s .55s'}}>
           {latestChamp&&<div className="champ-badge">
             <div className="champ-badge-dot"/>
-            <span className="champ-badge-text">2024 Champion&nbsp;·&nbsp;</span>
+            <span className="champ-badge-text">{latestYear} Champion&nbsp;·&nbsp;</span>
             <span className="champ-badge-name">{latestChamp.name} — {latestChamp.team}</span>
           </div>}
         </div>
@@ -681,7 +682,7 @@ function HallOfChampions(){
 }
 
 function SeasonResults(){
-  const[yr,setYr]=React.useState(2024);
+  const[yr,setYr]=React.useState(SEASONS[SEASONS.length-1]);
   const[key,setKey]=React.useState(0);
   const ref=React.useRef();
   const inView=useInView(ref);
@@ -1808,13 +1809,13 @@ const QA = (() => {
   // Year extraction. Supports 2018-2026, plus "last year", "this year", "all time"/"ever"/"career"/"history".
   const findYear = (text) => {
     if (/\b(all[- ]?time|career|ever|history|all years)\b/.test(text)) return { mode: "all" };
-    if (/\b(this year|this season)\b/.test(text)) return { year: 2024, mode: "single" };
-    if (/\b(last year|last season)\b/.test(text)) return { year: 2023, mode: "single" };
+    if (/\b(this year|this season)\b/.test(text)) return { year: SEASONS[SEASONS.length-1], mode: "single" };
+    if (/\b(last year|last season)\b/.test(text)) return { year: SEASONS[SEASONS.length-2], mode: "single" };
     const m = text.match(/\b(20\d{2})\b/);
     if (m) {
       let y = parseInt(m[1], 10);
-      // Accept ranges 2018-2024 (we only have data through 2024-25 season).
-      if (y >= 2018 && y <= 2024) return { year: y, mode: "single" };
+      // Accept any year we have historical data for.
+      if (SEASONS.includes(y)) return { year: y, mode: "single" };
     }
     return null;
   };
@@ -2012,7 +2013,7 @@ const QA = (() => {
       '"Who has the most championships?"',
       '"Tell me about Laeka"',
       '"Who won 2023?"',
-      '"Most goals in 2024?"',
+      '"Most goals in 2025?"',
       '"Biggest single-week score?"',
       '"Laeka vs Will"',
     ];
@@ -2101,7 +2102,7 @@ function Chatbot() {
     return () => { document.body.style.overflow = prev; };
   }, [open]);
   const [messages, setMessages] = React.useState([
-    { role: "assistant", text: "Hi! Ask me anything about the league. Try: \"Who has the most championships?\" or \"Most goals in 2024?\"" }
+    { role: "assistant", text: "Hi! Ask me anything about the league. Try: \"Who has the most championships?\" or \"Most goals in 2025?\"" }
   ]);
   const [input, setInput] = React.useState("");
   const scrollRef = React.useRef(null);
@@ -2110,7 +2111,7 @@ function Chatbot() {
     "Who has the most championships?",
     "Tell me about Laeka",
     "Who won 2023?",
-    "Most goals in 2024?",
+    "Most goals in 2025?",
     "Biggest single-week score?",
     "Laeka vs Will",
   ];
